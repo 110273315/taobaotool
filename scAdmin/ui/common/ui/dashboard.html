@@ -1,0 +1,68 @@
+<link rel="stylesheet" href="./common/resources/style/dashboard.css">
+<div class="content-widgets">
+  <div class="page-nav-header clearfix">
+    <h3 class="page-nav-header__name pull-left">Dashboard</h3>
+  </div>
+
+  <div class="widget-container">
+    <div class="row-fluid">
+      <div class="span4 card card--customer">
+        <div class="card__num">{{todyCustomerInfo.newAddMember || 0}}</div>
+        <div class="card__title">今日新增会员数</div>
+        <div class="card__icon"></div>
+        <div class="row-fluid">
+          <div class="span4">粉丝总计 {{todyCustomerInfo.totalFans || 0}}</div>
+          <div class="span4">会员总计 {{todyCustomerInfo.totalMember || 0}}</div>
+          <div class="span4">今日消费人次 {{todyCustomerInfo.totalTrade || 0}}</div>
+        </div>
+      </div>
+
+      <div class="span4 card card--coupon">
+        <div class="card__num">{{todyCoupon.todaysent || 0}}</div>
+        <div class="card__title">今日发券总数</div>
+        <div class="card__icon"></div>
+        <div class="row-fluid">
+          <div class="span4">今日核销数 {{todyCoupon.todayused || 0}}</div>
+          <div class="span4">昨日发券数 {{todyCoupon.yesterdaysent || 0}}</div>
+          <div class="span4">昨日核销数 {{todyCoupon.yesterdayused || 0}}</div>
+        </div>
+      </div>
+
+      <div class="span4 card card--income">
+        <div class="card__num">{{todyIncomeInfo.todayamount || 0}}</div>
+        <div class="card__title">今日消费总额</div>
+        <div class="card__icon"></div>
+        <div class="row-fluid">
+          <div class="span4">昨日 ¥{{todyIncomeInfo.yesterdayamount || 0}}</div>
+          <div class="span4">本周 ¥{{todyIncomeInfo.weekamount || 0}}</div>
+          <div class="span4">本月 ¥{{todyIncomeInfo.monthamount || 0}}</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab tab--chart">
+      <div class="tab__header row-fluid">
+        <div class="tab__header-item tab__header-item--active span4">
+          客户增长
+        </div>
+        <div class="tab__header-item span4">
+          卡券核销
+        </div>
+        <div class="tab__header-item span4">
+          消费额
+        </div>
+      </div>
+      <div class="tab__body">
+        <div class="tab__body-item tab__body-item--active tab__body-item--customer"></div>
+        <div class="tab__body-item tab__body-item--coupon"></div>
+        <div class="tab__body-item tab__body-item--income"></div>
+      </div>
+      <div class="weather">
+        <div class="weather__item" ng-repeat="item in weathers">
+          <span class="weather__icon weather__icon--{{item.weather}}"></span>
+          <span>{{item.temperature}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

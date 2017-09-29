@@ -1,0 +1,684 @@
+﻿/*
+ * 新皮肤
+ * 2014-10-27 tww
+ */
+/* 右侧区域 */
+.main-wrapper {
+	background: #f2f2f2;
+	margin-left: 261px;
+}
+/* 左侧区域 */
+.leftbar {
+	background: #d9dadc;
+	border-right: 1px solid #cbccce;
+}
+/* 左侧菜单区 */
+.left-secondary-nav, .left-nav {
+	background: #d9dadc;
+}
+/* 用户信息 */
+.admin-info {
+    border-bottom: #ff6556 5px solid;
+    background-color: #3b4651;
+    color: #fff;
+}
+.admin-meta ul li.admin-username {
+	color: #fff;
+}
+/* 弹窗 */
+.modal-header {
+    border-bottom: 1px solid #53b2ea;
+    background-color: #53b2ea;
+    color: #fff;
+}
+/* 标题 */
+.bondi-blue {
+    background-color: #53b2ea;
+}
+/* 标题上的按钮 */
+.widget-head .title_btn {
+	background-color: #4aa7de;
+}
+.widget-head .title_btn:hover {
+	background-color: #2b7dae;
+}
+/* tab样式 */
+.my-tabs {
+	border-bottom: 1px dashed #ccc;
+}
+.nav-tabs li a {
+	color: #818181;
+	font-size: 14px;
+	margin-right: 0px;
+	background: #e2e2e2;
+	padding: 8px 20px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+.my-tabs > .active > a, .my-tabs > .active > a:hover {
+	color: #fff;
+	background: #53b2ea;
+}
+.nav-tabs li a:hover {
+	color: #fff;
+	background: #FFB770;
+}
+/* 表格样式 */
+.table {
+	margin-bottom: 0;
+}
+.table td {
+	color: #616161;
+}
+.dataTables_info {
+	color: #7d7d7d;
+}
+.table thead {
+	height: 38px;
+	color: #3e3e3e;
+	font: bold 13px Microsoft Yahei;
+	background: linear-gradient(to bottom,#f2f2f2,#e5e5e5);
+}
+.table tbody tr:nth-child(odd) {
+	background: #fff;
+}
+.table tbody tr:nth-child(even) {
+	background: #eee;
+}
+/* 分页 */
+.pagination ul > .active > button {
+    background-color: #92d0ff !important;
+    color: #FFF !important;
+}
+.pagination ul > li > button {
+	font-family: inherit;
+}
+.pagination .pagebtn {
+	color: #7d7d7d;
+}
+.pagination ul > li > button:hover, .pagination .pagebtn:hover {
+	background-color: #ffb770 !important;
+}
+.the-icons li:hover {
+	background-color:#53b2ea !important;
+}
+/* 树 */
+.jstree.jstree-proton .jstree-hovered {
+    color: #418ace !important;
+}
+.jstree.jstree-proton .jstree-clicked {
+    color: #418ace !important;
+}
+/* 一级菜单 */
+.left-primary-nav {
+	background: #418acd;
+}
+.left-primary-nav ul li.active a, .left-primary-nav ul li a:hover {
+	background-color: #235482;
+}
+/* 一级菜单标题 */
+.side-head {
+	color: #418acd;
+	text-align: center;
+	font-size: 16px;
+	font-weight: normal;
+	font-family: Microsoft Yahei;
+}
+/* 工具栏 */
+.tool_wrapper:hover .btn_tool {
+	background: #418acd;
+}
+.tool_wrapper > dd {
+	background-color: #367bb9;
+}
+.skin_list li:hover {
+	background: #418acd;
+}
+.lan_list li:hover {
+	background: #418acd;
+}
+.pro_list li:hover {
+	background: #3fa3dd;
+}
+.shortcut-menu dd:hover > .shortcut-item {
+	background-color: #418acd;
+}
+.shortcut-menu dd > .shortcut-item:hover, .shortcut-menu dd > .shortcut-item:focus {
+	background-color: #418acd;
+}
+.shortcut-menu dd:hover > .shortcut-del:hover {
+	background: #367bb9;
+}
+/* 5套随机颜色，背景色统一为白色 */
+.accordion-nav li .aBindBack0{
+    background-color:#fff;
+}
+.accordion-nav li .aBindBack1{
+    background-color:#fff;
+}
+.accordion-nav li .aBindBack2{
+    background-color:#fff;
+}
+.accordion-nav li .aBindBack3{
+    background-color:#fff;
+}
+.accordion-nav li .aBindBack4{
+    background-color:#fff;
+}
+/* 二级菜单 */
+.accordion-nav > li a span {
+	color: #707070;
+}
+.metro-sidenav li a.bondi-blue {
+	width: 80px;
+    height: 80px;
+	box-shadow: none;
+	border-radius: 6px;
+	border: 1px solid #c7c7c7;
+}
+.metro-sidenav li a.bondi-blue span {
+	font-size: 12.5px;
+	font-family: Microsoft Yahei;
+}
+.metro-sidenav li a.bondi-blue:hover {
+	background: #ffab58;
+	border: 1px solid #ffab58;
+}
+.metro-sidenav li a.bondi-blue:hover span {
+	color: #fff;
+}
+.metro-sidenav li a.bondi-blue-on {
+	background: #ff634d;
+	border: 1px solid #ff634d;
+}
+.metro-sidenav li a.bondi-blue-on:hover {
+	background: #ff634d;
+	border: 1px solid #ff634d;
+}
+.metro-sidenav li a.bondi-blue-on span {
+	color: #fff;
+}
+/* 磁贴 */
+/*SR → 会员管理 → 会员列表*/
+.metro-sidenav li a i.icon_SR_custlist {
+    background: url("../images/icons/metro_new/sr_icon_custlist.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SR_custlist, .metro-sidenav li a.bondi-blue-on i.icon_SR_custlist {
+    background: url("../images/icons/metro/sr_icon_custlist.png") center center no-repeat;
+}
+/*SR → 会员管理 → 标签列表*/
+.metro-sidenav li a i.icon_SR_lablist {
+    background: url("../images/icons/metro_new/sr_icon_lablist.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SR_lablist, .metro-sidenav li a.bondi-blue-on i.icon_SR_lablist {
+    background: url("../images/icons/metro/sr_icon_lablist.png") center center no-repeat;
+}
+/*SR → 会员管理 → 会员卡列表*/
+.metro-sidenav li a i.icon_SR_custcardlist {
+    background: url("../images/icons/metro_new/sr_icon_custcard.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SR_custcardlist, .metro-sidenav li a.bondi-blue-on i.icon_SR_custcardlist {
+    background: url("../images/icons/metro/sr_icon_custcard.png") center center no-repeat;
+}
+/*SR → 卡券管理 → 卡券列表*/
+.metro-sidenav li a i.icon_SR_couponlist {
+    background: url("../images/icons/metro_new/sr_icon_couponlist.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SR_couponlist, .metro-sidenav li a.bondi-blue-on i.icon_SR_couponlist {
+    background: url("../images/icons/metro/sr_icon_couponlist.png") center center no-repeat;
+}
+/*SR → 卡券管理 → 卡券历史*/
+.metro-sidenav li a i.icon_SR_couponhistory {
+    background: url("../images/icons/metro_new/sr_icon_couponhistory.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SR_couponhistory, .metro-sidenav li a.bondi-blue-on i.icon_SR_couponhistory {
+    background: url("../images/icons/metro/sr_icon_couponhistory.png") center center no-repeat;
+}
+/*SR → 基础数据 → 账号管理*/
+.metro-sidenav li a i.icon_SR_account {
+    background: url("../images/icons/metro_new/sr_icon_account.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SR_account, .metro-sidenav li a.bondi-blue-on i.icon_SR_account {
+    background: url("../images/icons/metro/sr_icon_account.png") center center no-repeat;
+}
+/*SR → 基础数据 → 奖赏规则*/
+.metro-sidenav li a i.icon_SR_rule {
+    background: url("../images/icons/metro_new/sr_icon_rule.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SR_rule, .metro-sidenav li a.bondi-blue-on i.icon_SR_rule {
+    background: url("../images/icons/metro/sr_icon_rule.png") center center no-repeat;
+}
+/*SR → 基础数据 → 业务参数*/
+.metro-sidenav li a i.icon_SR_multiple {
+    background: url("../images/icons/metro_new/sr_icon_multiple.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SR_multiple, .metro-sidenav li a.bondi-blue-on i.icon_SR_multiple {
+    background: url("../images/icons/metro/sr_icon_multiple.png") center center no-repeat;
+}
+/*SR → 基础数据 → 计划任务*/
+.metro-sidenav li a i.icon_SR_job {
+    background: url("../images/icons/metro_new/sr_icon_job.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SR_job, .metro-sidenav li a.bondi-blue-on i.icon_SR_job {
+    background: url("../images/icons/metro/sr_icon_job.png") center center no-repeat;
+}
+/*SR → 基础数据 → 模板消息*/
+.metro-sidenav li a i.icon_SR_tempmsg {
+    background: url("../images/icons/metro_new/sr_icon_tempmsg.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SR_tempmsg, .metro-sidenav li a.bondi-blue-on i.icon_SR_tempmsg {
+    background: url("../images/icons/metro/sr_icon_tempmsg.png") center center no-repeat;
+}
+/*SR → 基础数据 → 素材管理*/
+.metro-sidenav li a i.icon_SR_news {
+    background: url("../images/icons/metro_new/sr_icon_news.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SR_news, .metro-sidenav li a.bondi-blue-on i.icon_SR_news {
+    background: url("../images/icons/metro/sr_icon_news.png") center center no-repeat;
+}
+/*SR → 客服管理 → 客服管理*/
+.metro-sidenav li a i.icon_SR_multicustservice {
+    background: url("../images/icons/metro_new/sr_icon_multiservice.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SR_multicustservice, .metro-sidenav li a.bondi-blue-on i.icon_SR_multicustservice {
+    background: url("../images/icons/metro/sr_icon_multiservice.png") center center no-repeat;
+}
+/*SR → 市场活动 → 推送消息*/
+.metro-sidenav li a i.icon_SR_message {
+    background: url("../images/icons/metro_new/sr_icon_message.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SR_message, .metro-sidenav li a.bondi-blue-on i.icon_SR_message {
+    background: url("../images/icons/metro/sr_icon_message.png") center center no-repeat;
+}
+/*SR → 市场活动 → 推送奖赏*/
+.metro-sidenav li a i.icon_SR_reward {
+    background: url("../images/icons/metro_new/sr_icon_reward.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SR_reward, .metro-sidenav li a.bondi-blue-on i.icon_SR_reward {
+    background: url("../images/icons/metro/sr_icon_reward.png") center center no-repeat;
+}
+/*SR → 市场活动 → 游戏管理*/
+.metro-sidenav li a i.icon_SR_game {
+    background: url("../images/icons/metro_new/sr_icon_game.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SR_game, .metro-sidenav li a.bondi-blue-on i.icon_SR_game {
+    background: url("../images/icons/metro/sr_icon_game.png") center center no-repeat;
+}
+
+/*SR → 数据分析 → 交易类报表*/
+.metro-sidenav li a i.icon_SR_trade {
+    background: url("../images/icons/metro_new/sr_icon_trade.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SR_trade, .metro-sidenav li a.bondi-blue-on i.icon_SR_trade {
+    background: url("../images/icons/metro/sr_icon_trade.png") center center no-repeat;
+}
+
+/*BASE → 管理 → 菜单管理*/
+.metro-sidenav li a i.icon_Base_MenuManagement {
+    background: url("../images/icons/metro_new/base_icon_MenuManagement.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_Base_MenuManagement, .metro-sidenav li a.bondi-blue-on i.icon_Base_MenuManagement {
+	background: url("../images/icons/metro/base_icon_MenuManagement.png") center center no-repeat;
+}
+/*BASE → 管理 → 角色管理*/
+.metro-sidenav li a i.icon_Base_RoleManagement {
+    background: url("../images/icons/metro_new/base_icon_RoleManagement.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_Base_RoleManagement, .metro-sidenav li a.bondi-blue-on i.icon_Base_RoleManagement {
+    background: url("../images/icons/metro/base_icon_RoleManagement.png") center center no-repeat;
+}
+/*BASE → 管理 → 模块管理*/
+.metro-sidenav li a i.icon_Base_ModuleManagement {
+    background: url("../images/icons/metro_new/base_icon_ModuleManagement.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_Base_ModuleManagement, .metro-sidenav li a.bondi-blue-on i.icon_Base_ModuleManagement {
+    background: url("../images/icons/metro/base_icon_ModuleManagement.png") center center no-repeat;
+}
+/*BASE → 管理 → 职员管理*/
+.metro-sidenav li a i.icon_Base_StaffManagement {
+    background: url("../images/icons/metro_new/base_icon_StaffManagement.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_Base_StaffManagement, .metro-sidenav li a.bondi-blue-on i.icon_Base_StaffManagement {
+    background: url("../images/icons/metro/base_icon_StaffManagement.png") center center no-repeat;
+}
+/*BASE → 管理 → 日志管理*/
+.metro-sidenav li a i.icon_Base_LogManagement {
+    background: url("../images/icons/metro_new/base_icon_LogManagement.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_Base_LogManagement, .metro-sidenav li a.bondi-blue-on i.icon_Base_LogManagement {
+    background: url("../images/icons/metro/base_icon_LogManagement.png") center center no-repeat;
+}
+/*BASE → 管理 → 数据权限*/
+.metro-sidenav li a i.icon_Base_DataPower {
+    background: url("../images/icons/metro_new/base_icon_DataPower.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_Base_DataPower, .metro-sidenav li a.bondi-blue-on i.icon_Base_DataPower {
+    background: url("../images/icons/metro/base_icon_DataPower.png") center center no-repeat;
+}
+/*BASE → 管理 → 公告列表*/
+.metro-sidenav li a i.icon_Base_notice {
+    background: url("../images/icons/metro_new/base_icon_notice.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_Base_notice, .metro-sidenav li a.bondi-blue-on i.icon_Base_notice {
+    background: url("../images/icons/metro/base_icon_notice.png") center center no-repeat;
+}
+/*BASE → 报表 → Dashboard*/
+.metro-sidenav li a i.icon_Base_dashboard {
+    background: url("../images/icons/metro_new/base_icon_dashboard.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_Base_dashboard, .metro-sidenav li a.bondi-blue-on i.icon_Base_dashboard {
+    background: url("../images/icons/metro/base_icon_dashboard.png") center center no-repeat;
+}
+/*SS → 基础设定 → 分发管理*/
+.metro-sidenav li a i.icon_SS_instance {
+    background: url("../images/icons/metro_new/ss_icon_instance.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SS_instance, .metro-sidenav li a.bondi-blue-on i.icon_SS_instance {
+    background: url("../images/icons/metro/ss_icon_instance.png") center center no-repeat;
+}
+/*SS → 基础设定 → 素材管理*/
+.metro-sidenav li a i.icon_SS_material {
+    background: url("../images/icons/metro_new/ss_icon_material.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SS_material, .metro-sidenav li a.bondi-blue-on i.icon_SS_material {
+    background: url("../images/icons/metro/ss_icon_material.png") center center no-repeat;
+}
+/*SS → 基础设定 → 问卷列表*/
+.metro-sidenav li a i.icon_SS_survey {
+    background: url("../images/icons/metro_new/ss_icon_survey.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SS_survey, .metro-sidenav li a.bondi-blue-on i.icon_SS_survey {
+    background: url("../images/icons/metro/ss_icon_survey.png") center center no-repeat;
+}
+/*SS → 基础设定 → 模版管理*/
+.metro-sidenav li a i.icon_SS_template {
+    background: url("../images/icons/metro_new/ss_icon_template.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SS_template, .metro-sidenav li a.bondi-blue-on i.icon_SS_template {
+    background: url("../images/icons/metro/ss_icon_template.png") center center no-repeat;
+}
+/*SS → 基础设定 → 组件管理*/
+.metro-sidenav li a i.icon_SS_plugin {
+    background: url("../images/icons/metro_new/ss_icon_plugin.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SS_plugin, .metro-sidenav li a.bondi-blue-on i.icon_SS_plugin {
+    background: url("../images/icons/metro/ss_icon_plugin.png") center center no-repeat;
+}
+/*SS → 报表 → Dashboard*/
+.metro-sidenav li a i.icon_SS_dashboard {
+    background: url("../images/icons/metro_new/ss_icon_dashboard.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SS_dashboard, .metro-sidenav li a.bondi-blue-on i.icon_SS_dashboard {
+    background: url("../images/icons/metro/ss_icon_dashboard.png") center center no-repeat;
+}
+/*SS → 报表 → 品牌统计*/
+.metro-sidenav li a i.icon_SS_brand {
+    background: url("../images/icons/metro_new/ss_icon_brand.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SS_brand, .metro-sidenav li a.bondi-blue-on i.icon_SS_brand {
+    background: url("../images/icons/metro/ss_icon_brand.png") center center no-repeat;
+}
+/*SS → 报表 → 点击量统计*/
+.metro-sidenav li a i.icon_SS_click {
+    background: url("../images/icons/metro_new/ss_icon_click.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SS_click, .metro-sidenav li a.bondi-blue-on i.icon_SS_click {
+    background: url("../images/icons/metro/ss_icon_click.png") center center no-repeat;
+}
+/*SS → 报表 → 浏览器统计*/
+.metro-sidenav li a i.icon_SS_browser {
+    background: url("../images/icons/metro_new/ss_icon_browser.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SS_browser, .metro-sidenav li a.bondi-blue-on i.icon_SS_browser {
+    background: url("../images/icons/metro/ss_icon_browser.png") center center no-repeat;
+}
+/*SS → 基础设定 → 摇一摇*/
+.metro-sidenav li a i.icon_SS_shake {
+    background: url("../images/icons/metro_new/ss_icon_shake.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SS_shake, .metro-sidenav li a.bondi-blue-on i.icon_SS_shake {
+    background: url("../images/icons/metro/ss_icon_shake.png") center center no-repeat;
+}
+/*SA → DashBoard → DashBoard*/
+.metro-sidenav li a i.icon_SA_dashboard {
+    background: url("../images/icons/metro_new/sa_icon_dashboard.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SA_dashboard, .metro-sidenav li a.bondi-blue-on i.icon_SA_dashboard {
+    background: url("../images/icons/metro/sa_icon_dashboard.png") center center no-repeat;
+}
+/*SA → WLAN管理 → 区域管理*/
+.metro-sidenav li a i.icon_SA_region {
+    background: url("../images/icons/metro_new/sa_icon_region.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SA_region, .metro-sidenav li a.bondi-blue-on i.icon_SA_region {
+    background: url("../images/icons/metro/sa_icon_region.png") center center no-repeat;
+}
+/*SA → WLAN管理 → AP管理*/
+.metro-sidenav li a i.icon_SA_ap {
+    background: url("../images/icons/metro_new/sa_icon_ap.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SA_ap, .metro-sidenav li a.bondi-blue-on i.icon_SA_ap {
+    background: url("../images/icons/metro/sa_icon_ap.png") center center no-repeat;
+}
+/*SA → WLAN管理 → SSID管理*/
+.metro-sidenav li a i.icon_SA_ssid {
+    background: url("../images/icons/metro_new/sa_icon_ssid.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SA_ssid, .metro-sidenav li a.bondi-blue-on i.icon_SA_ssid {
+    background: url("../images/icons/metro/sa_icon_ssid.png") center center no-repeat;
+}
+/*SA → WLAN管理 → AC管理*/
+.metro-sidenav li a i.icon_SA_ac {
+    background: url("../images/icons/metro_new/sa_icon_ac.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SA_ac, .metro-sidenav li a.bondi-blue-on i.icon_SA_ac {
+    background: url("../images/icons/metro/sa_icon_ac.png") center center no-repeat;
+}
+/*SA → WLAN管理 → NAC管理*/
+.metro-sidenav li a i.icon_SA_nac {
+    background: url("../images/icons/metro_new/sa_icon_nac.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SA_nac, .metro-sidenav li a.bondi-blue-on i.icon_SA_nac {
+    background: url("../images/icons/metro/sa_icon_nac.png") center center no-repeat;
+}
+/*SA → AAA管理 → 访客管理*/
+.metro-sidenav li a i.icon_SA_visitor {
+    background: url("../images/icons/metro_new/sa_icon_visitor.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SA_visitor, .metro-sidenav li a.bondi-blue-on i.icon_SA_visitor {
+    background: url("../images/icons/metro/sa_icon_visitor.png") center center no-repeat;
+}
+/*SA → AAA管理 → 认证管理*/
+.metro-sidenav li a i.icon_SA_authentication {
+    background: url("../images/icons/metro_new/sa_icon_authentication.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SA_authentication, .metro-sidenav li a.bondi-blue-on i.icon_SA_authentication {
+    background: url("../images/icons/metro/sa_icon_authentication.png") center center no-repeat;
+}
+/*SA → AAA管理 → 授权管理*/
+.metro-sidenav li a i.icon_SA_authorize {
+    background: url("../images/icons/metro_new/sa_icon_authorize.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SA_authorize, .metro-sidenav li a.bondi-blue-on i.icon_SA_authorize {
+    background: url("../images/icons/metro/sa_icon_authorize.png") center center no-repeat;
+}
+/*SA → AAA管理 → 计费管理*/
+.metro-sidenav li a i.icon_SA_charge {
+    background: url("../images/icons/metro_new/sa_icon_charge.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SA_charge, .metro-sidenav li a.bondi-blue-on i.icon_SA_charge {
+    background: url("../images/icons/metro/sa_icon_charge.png") center center no-repeat;
+}
+/*SA → 报表 → 在线客户*/
+.metro-sidenav li a i.icon_SA_onlineuser {
+    background: url("../images/icons/metro_new/sa_icon_onlineuser.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SA_onlineuser, .metro-sidenav li a.bondi-blue-on i.icon_SA_onlineuser {
+    background: url("../images/icons/metro/sa_icon_onlineuser.png") center center no-repeat;
+}
+/*SA → 报表 → 客户登陆记录*/
+.metro-sidenav li a i.icon_SA_lastuser {
+    background: url("../images/icons/metro_new/sa_icon_lastuser.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SA_lastuser, .metro-sidenav li a.bondi-blue-on i.icon_SA_lastuser {
+    background: url("../images/icons/metro/sa_icon_lastuser.png") center center no-repeat;
+}
+/*SA → 报表 → 客户流量排行榜*/
+.metro-sidenav li a i.icon_SA_topuser {
+    background: url("../images/icons/metro_new/sa_icon_topuser.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SA_topuser, .metro-sidenav li a.bondi-blue-on i.icon_SA_topuser {
+    background: url("../images/icons/metro/sa_icon_topuser.png") center center no-repeat;
+}
+/*SA → 报表 → 客户计费信息一览*/
+.metro-sidenav li a i.icon_SA_cdr {
+    background: url("../images/icons/metro_new/sa_icon_cdr.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SA_cdr, .metro-sidenav li a.bondi-blue-on i.icon_SA_cdr {
+    background: url("../images/icons/metro/sa_icon_cdr.png") center center no-repeat;
+}
+/*SA → 报表 → 账户活跃度*/
+.metro-sidenav li a i.icon_SA_active {
+    background: url("../images/icons/metro_new/sa_icon_active.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SA_active, .metro-sidenav li a.bondi-blue-on i.icon_SA_active {
+    background: url("../images/icons/metro/sa_icon_active.png") center center no-repeat;
+}
+/*SA → 报表 → 账户聚集度*/
+.metro-sidenav li a i.icon_SA_gather {
+    background: url("../images/icons/metro_new/sa_icon_gather.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SA_gather, .metro-sidenav li a.bondi-blue-on i.icon_SA_gather {
+    background: url("../images/icons/metro/sa_icon_gather.png") center center no-repeat;
+}
+/*SA → 系统设置 → 代码类型*/
+.metro-sidenav li a i.icon_SA_codetype {
+    background: url("../images/icons/metro_new/sa_icon_codetype.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SA_codetype, .metro-sidenav li a.bondi-blue-on i.icon_SA_codetype {
+    background: url("../images/icons/metro/sa_icon_codetype.png") center center no-repeat;
+}
+/*SA → 系统设置 → 代码值*/
+.metro-sidenav li a i.icon_SA_codedefine {
+    background: url("../images/icons/metro_new/sa_icon_codedefine.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SA_codedefine, .metro-sidenav li a.bondi-blue-on i.icon_SA_codedefine {
+    background: url("../images/icons/metro/sa_icon_codedefine.png") center center no-repeat;
+}
+/*SA → 系统设置 → 系统参数*/
+.metro-sidenav li a i.icon_SA_config {
+    background: url("../images/icons/metro_new/sa_icon_config.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SA_config, .metro-sidenav li a.bondi-blue-on i.icon_SA_config {
+    background: url("../images/icons/metro/sa_icon_config.png") center center no-repeat;
+}
+
+/*三级菜单*/ 
+/*SA → AAA管理 → 计费管理 → 计费策略*/
+.metro-sidenav li a i.icon_SA_chargingpolicy {
+    background: url("../images/icons/metro_new/sa_icon_chargingpolicy.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SA_chargingpolicy, .metro-sidenav li a.bondi-blue-on i.icon_SA_chargingpolicy {
+    background: url("../images/icons/metro/sa_icon_chargingpolicy.png") center center no-repeat;
+}
+/*SA → AAA管理 → 认证管理 → 客户列表*/
+.metro-sidenav li a i.icon_SA_user {
+    background: url("../images/icons/metro_new/sa_icon_user.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SA_user, .metro-sidenav li a.bondi-blue-on i.icon_SA_user {
+    background: url("../images/icons/metro/sa_icon_user.png") center center no-repeat;
+}
+/*SA → AAA管理 → 认证管理 → 客户名规则*/
+.metro-sidenav li a i.icon_SA_localauth {
+    background: url("../images/icons/metro_new/sa_icon_localauth.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SA_localauth, .metro-sidenav li a.bondi-blue-on i.icon_SA_localauth {
+    background: url("../images/icons/metro/sa_icon_localauth.png") center center no-repeat;
+}
+/*SA → AAA管理 → 认证管理 → 客户批量创建*/ 
+.metro-sidenav li a i.icon_SA_userbatch {
+    background: url("../images/icons/metro_new/sa_icon_userbatch.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SA_userbatch, .metro-sidenav li a.bondi-blue-on i.icon_SA_userbatch {
+    background: url("../images/icons/metro/sa_icon_userbatch.png") center center no-repeat;
+}
+/*SA → AAA管理 → 认证管理 → 客户组列表*/
+.metro-sidenav li a i.icon_SA_group {
+    background: url("../images/icons/metro_new/sa_icon_group.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SA_group, .metro-sidenav li a.bondi-blue-on i.icon_SA_group {
+    background: url("../images/icons/metro/sa_icon_group.png") center center no-repeat;
+}
+/*SA → AAA管理 → 认证管理 → 远程授权规则*/
+.metro-sidenav li a i.icon_SA_remoteauth {
+    background: url("../images/icons/metro_new/sa_icon_remoteauth.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SA_remoteauth, .metro-sidenav li a.bondi-blue-on i.icon_SA_remoteauth {
+    background: url("../images/icons/metro/sa_icon_remoteauth.png") center center no-repeat;
+}
+/*SA → AAA管理 → 计费管理 → 访问控制*/
+.metro-sidenav li a i.icon_SA_access {
+    background: url("../images/icons/metro_new/sa_icon_access.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SA_access, .metro-sidenav li a.bondi-blue-on i.icon_SA_access {
+    background: url("../images/icons/metro/sa_icon_access.png") center center no-repeat;
+}
+/*SA → AAA管理 → 计费管理 → 服务水平*/
+.metro-sidenav li a i.icon_SA_servicelevel {
+    background: url("../images/icons/metro_new/sa_icon_servicelevel.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SA_servicelevel, .metro-sidenav li a.bondi-blue-on i.icon_SA_servicelevel {
+    background: url("../images/icons/metro/sa_icon_servicelevel.png") center center no-repeat;
+}
+
+
+/*SA → 账户类型*/
+.metro-sidenav li a i.icon_SA_accout_type {
+    background: url("../images/icons/metro_new/config_SA_accout.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SA_accout_type, .metro-sidenav li a.bondi-blue-on i.icon_SA_accout_type {
+    background: url("../images/icons/metro/config_SA_accout.png") center center no-repeat;
+}
+
+/*SA → 在线数据分析*/
+.metro-sidenav li a i.icon_SA_online {
+    background: url("../images/icons/metro_new/dashboard_SA_online.png") center center no-repeat;
+}
+.metro-sidenav li a.bondi-blue:hover i.icon_SA_online, .metro-sidenav li a.bondi-blue-on i.icon_SA_online {
+    background: url("../images/icons/metro/dashboard_SA_online.png") center center no-repeat;
+}
+/*实例、审核界面，设备类型和页面类型*/
+.btn_clicked_Instance {
+	background-color: #53B2EA;
+	color: white;
+}
+.btn.instance:hover, .btn.instance:focus{
+	background-color: #53B2EA;
+	color: white;
+	outline: none;
+	outline-offset: 0;
+}
+
+/*问卷报表进度条*/
+.progress .bar {
+	background-color: #53B2EA;
+}
+
+/*模板编辑界面属性栏使用*/
+.attr_wrapper .selectedProperty label {
+	color: #fff !important;
+	background-color:#53B2EA !important;
+}
+.attr_wrapper .button_template {
+		color: #fef4e9;
+    border: solid 1px #53B2EA;
+    background: #53B2EA;
+    background: -webkit-gradient(linear, left top, left bottom, from(#7498F5), to(#53B2EA));
+    background: -moz-linear-gradient(top,  #7498F5,  #53B2EA);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#7498F5', endColorstr='#157BE9');
+}
+/*项目*/
+.project-item-curr-a {
+    background-color: #53B2EA !important;
+    color: #fff;
+}

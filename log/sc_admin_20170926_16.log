@@ -1,0 +1,328 @@
+[D] 16:03:49.188(0000000000195890):master log socket server started! host=::, port=32104
+[I] 16:03:49.232(0000000000195890):master log channel started!port=32104
+[W] 16:03:50.250(0000000000195890):try restart worker 0# ...
+[I] 16:03:50.266(0000000000195890):start worker success,pid=19A2D8(0#)
+[D] 16:03:51.124(0000000000195890):worker process log socket connected!
+[D] 16:03:51.114(000000000019A2D8):worker 0# ready to connect master log socket server, port=32104
+[D] 16:03:51.125(000000000019A2D8):worker 0# log socket connected!
+[W] 16:03:51.283(0000000000195890):try restart worker 1# ...
+[I] 16:03:51.311(0000000000195890):start worker success,pid=198BA0(1#)
+[I] 16:03:52.088(000000000019A2D8):[AMQP0]created
+[I] 16:03:52.099(000000000019A2D8):[AMQP0]declare queue 'cf.rpc.3c231820a29111e7b42913e8363f02a3'
+[I] 16:03:52.100(000000000019A2D8):[RPCC:cf.rpc]create rpc client 'cf.rpc' in conn AMQP0
+[I] 16:03:52.224(000000000019A2D8):PBEncoder success load file 'E:\product\protocol\cf.proto.js'
+[I] 16:03:52.225(000000000019A2D8):[AMQP0]declare queue 'cf.wechat.rpc.3c367910a29111e7b42913e8363f02a3'
+[I] 16:03:52.226(000000000019A2D8):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP0
+[W] 16:03:52.348(0000000000195890):try restart worker 2# ...
+[I] 16:03:52.356(0000000000195890):start worker success,pid=19807C(2#)
+[I] 16:03:52.297(000000000019A2D8):PBEncoder success load file 'E:\product\protocol\cf_wechat.proto.js'
+[I] 16:03:52.297(000000000019A2D8):[AMQP0]declare exchange 'cf.wechat.notify'
+[I] 16:03:52.297(000000000019A2D8):[AMQP0]declare queue 'jiaxingwang.sc_admin.wechat.3c417590a29111e7b42913e8363f02a3'
+[I] 16:03:52.298(000000000019A2D8):[AMQP0]declare queue 'cf.app.rpc.3c419ca0a29111e7b42913e8363f02a3'
+[I] 16:03:52.298(000000000019A2D8):[RPCC:cf.app.rpc]create rpc client 'cf.app.rpc' in conn AMQP0
+[I] 16:03:52.302(000000000019A2D8):PBEncoder success load file 'E:\product\protocol\cf_app.proto.js'
+[I] 16:03:52.303(000000000019A2D8):[AMQP0]declare queue 'cf.alipay.rpc.3c425ff0a29111e7b42913e8363f02a3'
+[I] 16:03:52.303(000000000019A2D8):[RPCC:cf.alipay.rpc]create rpc client 'cf.alipay.rpc' in conn AMQP0
+[I] 16:03:52.311(000000000019A2D8):PBEncoder success load file 'E:\product\protocol\cf_alipay.proto.js'
+[I] 16:03:52.311(000000000019A2D8):[AMQP0]declare queue 'cf.ding.rpc.3c439870a29111e7b42913e8363f02a3'
+[I] 16:03:52.311(000000000019A2D8):[RPCC:cf.ding.rpc]create rpc client 'cf.ding.rpc' in conn AMQP0
+[I] 16:03:52.322(000000000019A2D8):PBEncoder success load file 'E:\product\protocol\cf_ding.proto.js'
+[I] 16:03:52.323(000000000019A2D8):[AMQP0]declare exchange 'cf.ding.notify'
+[I] 16:03:52.323(000000000019A2D8):[AMQP0]declare queue 'jiaxingwang.sc_admin.ding.3c456d30a29111e7b42913e8363f02a3'
+[I] 16:03:52.323(000000000019A2D8):[AM]init and reload account!
+[I] 16:03:52.328(000000000019A2D8):[AM]reload account success, account number is: 0
+[I] 16:03:52.331(000000000019A2D8):[AMQP0]declare queue 'sr.customer.rpc.3c46a5b0a29111e7b42913e8363f02a3'
+[I] 16:03:52.331(000000000019A2D8):[RPCC:sr.customer.rpc]create rpc client 'sr.customer.rpc' in conn AMQP0
+[I] 16:03:52.341(000000000019A2D8):PBEncoder success load file 'E:\product\protocol\sr_customer.proto.js'
+[W] 16:03:52.341(000000000019A2D8):[AMQP0]rpc client 'cf.rpc' declare repeat!
+[W] 16:03:52.342(000000000019A2D8):[AMQP0]rpc client 'cf.wechat.rpc' declare repeat!
+[W] 16:03:52.342(000000000019A2D8):[AMQP0]rpc client 'cf.app.rpc' declare repeat!
+[I] 16:03:52.564(000000000019A2D8):PBEncoder success load file 'E:\product\protocol\sc_system.proto.js'
+[E] 16:03:52.787(000000000019A2D8):Global caught exception: SyntaxError: Block-scoped declarations (let, const, function, class) not yet supported outside strict mode
+    at exports.runInThisContext (vm.js:53:16)
+    at Module._compile (module.js:387:25)
+    at Object.Module._extensions..js (module.js:422:10)
+    at Module.load (module.js:357:32)
+    at Function.Module._load (module.js:314:12)
+    at Module.require (module.js:367:17)
+    at require (internal/module.js:16:19)
+    at Object.<anonymous> (E:\product\scAdmin\js\sc\router\user.js:25:36)
+    at Module._compile (module.js:413:34)
+    at Object.Module._extensions..js (module.js:422:10)
+    at Module.load (module.js:357:32)
+    at Function.Module._load (module.js:314:12)
+    at Module.require (module.js:367:17)
+    at require (internal/module.js:16:19)
+    at loadFile (E:\product\scAdmin\js\module_manager.js:35:20)
+    at E:\product\scAdmin\js\module_manager.js:83:17
+    at Array.forEach (native)
+    at Object.readdir (E:\product\scAdmin\js\module_manager.js:71:11)
+    at Object.<anonymous> (E:\product\scAdmin\js\sc\module_main.js:8:12)
+    at Module._compile (module.js:413:34)
+    at Object.Module._extensions..js (module.js:422:10)
+    at Module.load (module.js:357:32)
+    at Function.Module._load (module.js:314:12)
+    at Module.require (module.js:367:17)
+    at require (internal/module.js:16:19)
+    at E:\product\scAdmin\js\module_manager.js:28:9
+    at Array.forEach (native)
+    at Object.exports.loadRoute (E:\product\scAdmin\js\module_manager.js:18:13)
+[I] 16:03:52.795(000000000019A2D8):[redis]redis connect
+[I] 16:03:52.807(000000000019A2D8):[redis]redis ready
+[I] 16:03:52.808(000000000019A2D8):[MP1]create connection #0
+[T] 16:03:52.809(000000000019A2D8):[MP1]getConnection success,getIndex=0
+[I] 16:03:52.810(000000000019A2D8):[MP1]create connection #1
+[T] 16:03:52.810(000000000019A2D8):[MP1]getConnection success,getIndex=1
+[T] 16:03:52.817(000000000019A2D8):[MySQL]Query success,used time:5 ms,sql="select * from cf_account where enabled=1 and function_mask like \"1%\""
+[T] 16:03:52.824(000000000019A2D8):[MySQL]Query success,used time:12 ms,sql="SELECT * FROM `sc_org`"
+[T] 16:03:52.826(000000000019A2D8):getConnection release,getIndex=0
+[T] 16:03:52.828(000000000019A2D8):getConnection release,getIndex=1
+[I] 16:03:52.828(000000000019A2D8):[AM]get account list success: [{"innerid":"HEDV35FASG-DGW423A-34TGGW53AAD66","name":"乐逛演示","org_id":"1","shop_id":null,"settlement_id":null,"method_code":1,"method_code_key":"wechat_test3_1","function_mask":"10","config":"{\"accountid\":\"gh_92368265694f\",\"fee_type\":\"CNY\",\"appid\":\"wx39bf9ff3da6fc1e7\",\"appsecret\":\"e00fc51118b318fb99cff35d217865fc\",\"mch_id\":\"1287801701\",\"sub_mch_id\":\"\",\"sign_key\":\"smartpaysmartpaysmartpaysmartpay\",\"key_file\":\"apiclient_key.pem\",\"cert_file\":\"apiclient_cert.pem\",\"pay_authorization_dir\":[\"\",\"\",\"\"],\"pay_native_callback\":\"\",\"pay_finish_notify\":\"1\",\"pay_alarm_notify\":\"\"}","enabled":1,"desc":null},{"innerid":"SE43RG3ASG-34GWW55A-34TG43HER452","name":"短信测试一","org_id":"1","shop_id":null,"settlement_id":null,"method_code":2,"method_code_key":"wechat_test1_2","function_mask":"10","config":"{\"url\" : \"http://211.147.239.62:9050/cgi-bin/sendsms\",\"username\" : \"shopperconnect@smartac\",\"password\" : \"shopCNT@smartc2016\"}","enabled":1,"desc":null},{"innerid":"SMFGSW423GWS-G43HTEHE2-HHEDR5462HS","name":"邮件测试一","org_id":"1","shop_id":null,"settlement_id":null,"method_code":3,"method_code_key":"wechat_test1_3","function_mask":"10","config":"{\"smtpserver\" : \"smtp.163.com\",\"port\": 25,\"username\" : \"zyqtest5@163.com\",\"password\" : \"zyqtest5881119\",\"SSL\":false}","enabled":1,"desc":null}]
+[I] 16:03:52.864(000000000019A2D8):[AMQP0]AMQP0 connect 'amqp://guest:guest@172.16.0.81:5672' success!
+[I] 16:03:52.878(000000000019A2D8):[AMQP0]success declare queue 'cf.rpc.3c231820a29111e7b42913e8363f02a3'
+[I] 16:03:52.883(000000000019A2D8):[AMQP0]success consume 'cf.rpc.3c231820a29111e7b42913e8363f02a3'
+[I] 16:03:52.885(000000000019A2D8):[AMQP0]success binding 'amq.direct'->'cf.rpc.3c231820a29111e7b42913e8363f02a3'(cf.rpc.3c231820a29111e7b42913e8363f02a3)
+[I] 16:03:52.889(000000000019A2D8):[AMQP0]success declare queue 'cf.wechat.rpc.3c367910a29111e7b42913e8363f02a3'
+[I] 16:03:52.891(000000000019A2D8):[AMQP0]success consume 'cf.wechat.rpc.3c367910a29111e7b42913e8363f02a3'
+[I] 16:03:52.893(000000000019A2D8):[AMQP0]success binding 'amq.direct'->'cf.wechat.rpc.3c367910a29111e7b42913e8363f02a3'(cf.wechat.rpc.3c367910a29111e7b42913e8363f02a3)
+[I] 16:03:52.895(000000000019A2D8):[AMQP0]success declare exchange 'cf.wechat.notify'
+[I] 16:03:52.899(000000000019A2D8):[AMQP0]success declare queue 'jiaxingwang.sc_admin.wechat.3c417590a29111e7b42913e8363f02a3'
+[I] 16:03:52.902(000000000019A2D8):[AMQP0]success consume 'jiaxingwang.sc_admin.wechat.3c417590a29111e7b42913e8363f02a3'
+[I] 16:03:52.905(000000000019A2D8):[AMQP0]success binding 'cf.wechat.notify'->'jiaxingwang.sc_admin.wechat.3c417590a29111e7b42913e8363f02a3'(#)
+[I] 16:03:52.908(000000000019A2D8):[AMQP0]success declare queue 'cf.app.rpc.3c419ca0a29111e7b42913e8363f02a3'
+[I] 16:03:52.910(000000000019A2D8):[AMQP0]success consume 'cf.app.rpc.3c419ca0a29111e7b42913e8363f02a3'
+[D] 16:03:52.946(0000000000195890):worker process log socket connected!
+[D] 16:03:52.648(0000000000198BA0):worker 1# ready to connect master log socket server, port=32104
+[D] 16:03:52.917(0000000000198BA0):worker 1# log socket connected!
+[I] 16:03:52.960(000000000019A2D8):[AMQP0]success binding 'amq.direct'->'cf.app.rpc.3c419ca0a29111e7b42913e8363f02a3'(cf.app.rpc.3c419ca0a29111e7b42913e8363f02a3)
+[I] 16:03:52.964(000000000019A2D8):[AMQP0]success declare queue 'cf.alipay.rpc.3c425ff0a29111e7b42913e8363f02a3'
+[I] 16:03:52.967(000000000019A2D8):[AMQP0]success consume 'cf.alipay.rpc.3c425ff0a29111e7b42913e8363f02a3'
+[I] 16:03:52.970(000000000019A2D8):[AMQP0]success binding 'amq.direct'->'cf.alipay.rpc.3c425ff0a29111e7b42913e8363f02a3'(cf.alipay.rpc.3c425ff0a29111e7b42913e8363f02a3)
+[I] 16:03:52.974(000000000019A2D8):[AMQP0]success declare queue 'cf.ding.rpc.3c439870a29111e7b42913e8363f02a3'
+[I] 16:03:52.977(000000000019A2D8):[AMQP0]success consume 'cf.ding.rpc.3c439870a29111e7b42913e8363f02a3'
+[I] 16:03:52.980(000000000019A2D8):[AMQP0]success binding 'amq.direct'->'cf.ding.rpc.3c439870a29111e7b42913e8363f02a3'(cf.ding.rpc.3c439870a29111e7b42913e8363f02a3)
+[I] 16:03:52.982(000000000019A2D8):[AMQP0]success declare exchange 'cf.ding.notify'
+[I] 16:03:52.988(000000000019A2D8):[AMQP0]success declare queue 'jiaxingwang.sc_admin.ding.3c456d30a29111e7b42913e8363f02a3'
+[I] 16:03:52.989(000000000019A2D8):[AMQP0]success consume 'jiaxingwang.sc_admin.ding.3c456d30a29111e7b42913e8363f02a3'
+[I] 16:03:52.991(000000000019A2D8):[AMQP0]success binding 'cf.ding.notify'->'jiaxingwang.sc_admin.ding.3c456d30a29111e7b42913e8363f02a3'(#)
+[I] 16:03:52.996(000000000019A2D8):[AMQP0]success declare queue 'sr.customer.rpc.3c46a5b0a29111e7b42913e8363f02a3'
+[I] 16:03:52.997(000000000019A2D8):[AMQP0]success consume 'sr.customer.rpc.3c46a5b0a29111e7b42913e8363f02a3'
+[I] 16:03:52.998(000000000019A2D8):[AMQP0]success binding 'amq.direct'->'sr.customer.rpc.3c46a5b0a29111e7b42913e8363f02a3'(sr.customer.rpc.3c46a5b0a29111e7b42913e8363f02a3)
+[I] 16:03:53.729(0000000000198BA0):[AMQP0]created
+[I] 16:03:53.740(0000000000198BA0):[AMQP0]declare queue 'cf.rpc.3d1d7db0a29111e79b5f67a0ac727e9e'
+[I] 16:03:53.741(0000000000198BA0):[RPCC:cf.rpc]create rpc client 'cf.rpc' in conn AMQP0
+[I] 16:03:53.864(0000000000198BA0):PBEncoder success load file 'E:\product\protocol\cf.proto.js'
+[I] 16:03:53.865(0000000000198BA0):[AMQP0]declare queue 'cf.wechat.rpc.3d309080a29111e79b5f67a0ac727e9e'
+[I] 16:03:53.865(0000000000198BA0):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP0
+[I] 16:03:53.942(0000000000198BA0):PBEncoder success load file 'E:\product\protocol\cf_wechat.proto.js'
+[I] 16:03:53.943(0000000000198BA0):[AMQP0]declare exchange 'cf.wechat.notify'
+[I] 16:03:53.943(0000000000198BA0):[AMQP0]declare queue 'jiaxingwang.sc_admin.wechat.3d3c9e70a29111e79b5f67a0ac727e9e'
+[I] 16:03:53.943(0000000000198BA0):[AMQP0]declare queue 'cf.app.rpc.3d3c9e71a29111e79b5f67a0ac727e9e'
+[I] 16:03:53.944(0000000000198BA0):[RPCC:cf.app.rpc]create rpc client 'cf.app.rpc' in conn AMQP0
+[I] 16:03:53.949(0000000000198BA0):PBEncoder success load file 'E:\product\protocol\cf_app.proto.js'
+[I] 16:03:53.949(0000000000198BA0):[AMQP0]declare queue 'cf.alipay.rpc.3d3d88d0a29111e79b5f67a0ac727e9e'
+[I] 16:03:53.949(0000000000198BA0):[RPCC:cf.alipay.rpc]create rpc client 'cf.alipay.rpc' in conn AMQP0
+[I] 16:03:53.965(0000000000198BA0):PBEncoder success load file 'E:\product\protocol\cf_alipay.proto.js'
+[I] 16:03:53.965(0000000000198BA0):[AMQP0]declare queue 'cf.ding.rpc.3d3ff9d0a29111e79b5f67a0ac727e9e'
+[I] 16:03:53.965(0000000000198BA0):[RPCC:cf.ding.rpc]create rpc client 'cf.ding.rpc' in conn AMQP0
+[I] 16:03:53.979(0000000000198BA0):PBEncoder success load file 'E:\product\protocol\cf_ding.proto.js'
+[I] 16:03:53.979(0000000000198BA0):[AMQP0]declare exchange 'cf.ding.notify'
+[I] 16:03:53.979(0000000000198BA0):[AMQP0]declare queue 'jiaxingwang.sc_admin.ding.3d421cb0a29111e79b5f67a0ac727e9e'
+[I] 16:03:53.979(0000000000198BA0):[AM]init and reload account!
+[I] 16:03:53.983(0000000000198BA0):[AM]reload account success, account number is: 0
+[I] 16:03:53.986(0000000000198BA0):[AMQP0]declare queue 'sr.customer.rpc.3d432e20a29111e79b5f67a0ac727e9e'
+[I] 16:03:53.987(0000000000198BA0):[RPCC:sr.customer.rpc]create rpc client 'sr.customer.rpc' in conn AMQP0
+[I] 16:03:53.996(0000000000198BA0):PBEncoder success load file 'E:\product\protocol\sr_customer.proto.js'
+[W] 16:03:53.997(0000000000198BA0):[AMQP0]rpc client 'cf.rpc' declare repeat!
+[W] 16:03:53.997(0000000000198BA0):[AMQP0]rpc client 'cf.wechat.rpc' declare repeat!
+[W] 16:03:53.997(0000000000198BA0):[AMQP0]rpc client 'cf.app.rpc' declare repeat!
+[I] 16:03:54.214(0000000000198BA0):PBEncoder success load file 'E:\product\protocol\sc_system.proto.js'
+[D] 16:03:54.301(0000000000195890):worker process log socket connected!
+[E] 16:03:54.402(0000000000198BA0):Global caught exception: SyntaxError: Block-scoped declarations (let, const, function, class) not yet supported outside strict mode
+    at exports.runInThisContext (vm.js:53:16)
+    at Module._compile (module.js:387:25)
+    at Object.Module._extensions..js (module.js:422:10)
+    at Module.load (module.js:357:32)
+    at Function.Module._load (module.js:314:12)
+    at Module.require (module.js:367:17)
+    at require (internal/module.js:16:19)
+    at Object.<anonymous> (E:\product\scAdmin\js\sc\router\user.js:25:36)
+    at Module._compile (module.js:413:34)
+    at Object.Module._extensions..js (module.js:422:10)
+    at Module.load (module.js:357:32)
+    at Function.Module._load (module.js:314:12)
+    at Module.require (module.js:367:17)
+    at require (internal/module.js:16:19)
+    at loadFile (E:\product\scAdmin\js\module_manager.js:35:20)
+    at E:\product\scAdmin\js\module_manager.js:83:17
+    at Array.forEach (native)
+    at Object.readdir (E:\product\scAdmin\js\module_manager.js:71:11)
+    at Object.<anonymous> (E:\product\scAdmin\js\sc\module_main.js:8:12)
+    at Module._compile (module.js:413:34)
+    at Object.Module._extensions..js (module.js:422:10)
+    at Module.load (module.js:357:32)
+    at Function.Module._load (module.js:314:12)
+    at Module.require (module.js:367:17)
+    at require (internal/module.js:16:19)
+    at E:\product\scAdmin\js\module_manager.js:28:9
+    at Array.forEach (native)
+    at Object.exports.loadRoute (E:\product\scAdmin\js\module_manager.js:18:13)
+[I] 16:03:54.416(0000000000198BA0):[redis]redis connect
+[D] 16:03:54.113(000000000019807C):worker 2# ready to connect master log socket server, port=32104
+[I] 16:03:54.428(0000000000198BA0):[redis]redis ready
+[D] 16:03:54.426(000000000019807C):worker 2# log socket connected!
+[I] 16:03:54.429(0000000000198BA0):[MP1]create connection #0
+[T] 16:03:54.430(0000000000198BA0):[MP1]getConnection success,getIndex=0
+[I] 16:03:54.431(0000000000198BA0):[MP1]create connection #1
+[T] 16:03:54.431(0000000000198BA0):[MP1]getConnection success,getIndex=1
+[T] 16:03:54.436(0000000000198BA0):[MySQL]Query success,used time:4 ms,sql="select * from cf_account where enabled=1 and function_mask like \"1%\""
+[T] 16:03:54.437(0000000000198BA0):getConnection release,getIndex=0
+[I] 16:03:54.438(0000000000198BA0):[AM]get account list success: [{"innerid":"HEDV35FASG-DGW423A-34TGGW53AAD66","name":"乐逛演示","org_id":"1","shop_id":null,"settlement_id":null,"method_code":1,"method_code_key":"wechat_test3_1","function_mask":"10","config":"{\"accountid\":\"gh_92368265694f\",\"fee_type\":\"CNY\",\"appid\":\"wx39bf9ff3da6fc1e7\",\"appsecret\":\"e00fc51118b318fb99cff35d217865fc\",\"mch_id\":\"1287801701\",\"sub_mch_id\":\"\",\"sign_key\":\"smartpaysmartpaysmartpaysmartpay\",\"key_file\":\"apiclient_key.pem\",\"cert_file\":\"apiclient_cert.pem\",\"pay_authorization_dir\":[\"\",\"\",\"\"],\"pay_native_callback\":\"\",\"pay_finish_notify\":\"1\",\"pay_alarm_notify\":\"\"}","enabled":1,"desc":null},{"innerid":"SE43RG3ASG-34GWW55A-34TG43HER452","name":"短信测试一","org_id":"1","shop_id":null,"settlement_id":null,"method_code":2,"method_code_key":"wechat_test1_2","function_mask":"10","config":"{\"url\" : \"http://211.147.239.62:9050/cgi-bin/sendsms\",\"username\" : \"shopperconnect@smartac\",\"password\" : \"shopCNT@smartc2016\"}","enabled":1,"desc":null},{"innerid":"SMFGSW423GWS-G43HTEHE2-HHEDR5462HS","name":"邮件测试一","org_id":"1","shop_id":null,"settlement_id":null,"method_code":3,"method_code_key":"wechat_test1_3","function_mask":"10","config":"{\"smtpserver\" : \"smtp.163.com\",\"port\": 25,\"username\" : \"zyqtest5@163.com\",\"password\" : \"zyqtest5881119\",\"SSL\":false}","enabled":1,"desc":null}]
+[T] 16:03:54.468(0000000000198BA0):[MySQL]Query success,used time:35 ms,sql="SELECT * FROM `sc_org`"
+[T] 16:03:54.468(0000000000198BA0):getConnection release,getIndex=1
+[I] 16:03:54.487(0000000000198BA0):[AMQP0]AMQP0 connect 'amqp://guest:guest@172.16.0.81:5672' success!
+[I] 16:03:54.500(0000000000198BA0):[AMQP0]success declare queue 'cf.rpc.3d1d7db0a29111e79b5f67a0ac727e9e'
+[I] 16:03:54.506(0000000000198BA0):[AMQP0]success consume 'cf.rpc.3d1d7db0a29111e79b5f67a0ac727e9e'
+[I] 16:03:54.509(0000000000198BA0):[AMQP0]success binding 'amq.direct'->'cf.rpc.3d1d7db0a29111e79b5f67a0ac727e9e'(cf.rpc.3d1d7db0a29111e79b5f67a0ac727e9e)
+[I] 16:03:54.514(0000000000198BA0):[AMQP0]success declare queue 'cf.wechat.rpc.3d309080a29111e79b5f67a0ac727e9e'
+[I] 16:03:54.516(0000000000198BA0):[AMQP0]success consume 'cf.wechat.rpc.3d309080a29111e79b5f67a0ac727e9e'
+[I] 16:03:54.520(0000000000198BA0):[AMQP0]success binding 'amq.direct'->'cf.wechat.rpc.3d309080a29111e79b5f67a0ac727e9e'(cf.wechat.rpc.3d309080a29111e79b5f67a0ac727e9e)
+[I] 16:03:54.522(0000000000198BA0):[AMQP0]success declare exchange 'cf.wechat.notify'
+[I] 16:03:54.528(0000000000198BA0):[AMQP0]success declare queue 'jiaxingwang.sc_admin.wechat.3d3c9e70a29111e79b5f67a0ac727e9e'
+[I] 16:03:54.530(0000000000198BA0):[AMQP0]success consume 'jiaxingwang.sc_admin.wechat.3d3c9e70a29111e79b5f67a0ac727e9e'
+[I] 16:03:54.534(0000000000198BA0):[AMQP0]success binding 'cf.wechat.notify'->'jiaxingwang.sc_admin.wechat.3d3c9e70a29111e79b5f67a0ac727e9e'(#)
+[I] 16:03:54.542(0000000000198BA0):[AMQP0]success declare queue 'cf.app.rpc.3d3c9e71a29111e79b5f67a0ac727e9e'
+[I] 16:03:54.545(0000000000198BA0):[AMQP0]success consume 'cf.app.rpc.3d3c9e71a29111e79b5f67a0ac727e9e'
+[I] 16:03:54.560(0000000000198BA0):[AMQP0]success binding 'amq.direct'->'cf.app.rpc.3d3c9e71a29111e79b5f67a0ac727e9e'(cf.app.rpc.3d3c9e71a29111e79b5f67a0ac727e9e)
+[I] 16:03:54.565(0000000000198BA0):[AMQP0]success declare queue 'cf.alipay.rpc.3d3d88d0a29111e79b5f67a0ac727e9e'
+[I] 16:03:54.569(0000000000198BA0):[AMQP0]success consume 'cf.alipay.rpc.3d3d88d0a29111e79b5f67a0ac727e9e'
+[I] 16:03:54.572(0000000000198BA0):[AMQP0]success binding 'amq.direct'->'cf.alipay.rpc.3d3d88d0a29111e79b5f67a0ac727e9e'(cf.alipay.rpc.3d3d88d0a29111e79b5f67a0ac727e9e)
+[I] 16:03:54.577(0000000000198BA0):[AMQP0]success declare queue 'cf.ding.rpc.3d3ff9d0a29111e79b5f67a0ac727e9e'
+[I] 16:03:54.579(0000000000198BA0):[AMQP0]success consume 'cf.ding.rpc.3d3ff9d0a29111e79b5f67a0ac727e9e'
+[I] 16:03:54.583(0000000000198BA0):[AMQP0]success binding 'amq.direct'->'cf.ding.rpc.3d3ff9d0a29111e79b5f67a0ac727e9e'(cf.ding.rpc.3d3ff9d0a29111e79b5f67a0ac727e9e)
+[I] 16:03:54.584(0000000000198BA0):[AMQP0]success declare exchange 'cf.ding.notify'
+[I] 16:03:54.587(0000000000198BA0):[AMQP0]success declare queue 'jiaxingwang.sc_admin.ding.3d421cb0a29111e79b5f67a0ac727e9e'
+[I] 16:03:54.590(0000000000198BA0):[AMQP0]success consume 'jiaxingwang.sc_admin.ding.3d421cb0a29111e79b5f67a0ac727e9e'
+[I] 16:03:54.594(0000000000198BA0):[AMQP0]success binding 'cf.ding.notify'->'jiaxingwang.sc_admin.ding.3d421cb0a29111e79b5f67a0ac727e9e'(#)
+[I] 16:03:54.597(0000000000198BA0):[AMQP0]success declare queue 'sr.customer.rpc.3d432e20a29111e79b5f67a0ac727e9e'
+[I] 16:03:54.599(0000000000198BA0):[AMQP0]success consume 'sr.customer.rpc.3d432e20a29111e79b5f67a0ac727e9e'
+[I] 16:03:54.603(0000000000198BA0):[AMQP0]success binding 'amq.direct'->'sr.customer.rpc.3d432e20a29111e79b5f67a0ac727e9e'(sr.customer.rpc.3d432e20a29111e79b5f67a0ac727e9e)
+[I] 16:03:55.448(000000000019807C):[AMQP0]created
+[I] 16:03:55.459(000000000019807C):[AMQP0]declare queue 'cf.rpc.3e23ca20a29111e78dc4b3639626f922'
+[I] 16:03:55.460(000000000019807C):[RPCC:cf.rpc]create rpc client 'cf.rpc' in conn AMQP0
+[I] 16:03:55.573(000000000019807C):PBEncoder success load file 'E:\product\protocol\cf.proto.js'
+[I] 16:03:55.574(000000000019807C):[AMQP0]declare queue 'cf.wechat.rpc.3e357d60a29111e78dc4b3639626f922'
+[I] 16:03:55.575(000000000019807C):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP0
+[I] 16:03:55.639(000000000019807C):PBEncoder success load file 'E:\product\protocol\cf_wechat.proto.js'
+[I] 16:03:55.640(000000000019807C):[AMQP0]declare exchange 'cf.wechat.notify'
+[I] 16:03:55.640(000000000019807C):[AMQP0]declare queue 'jiaxingwang.sc_admin.wechat.3e3f8f80a29111e78dc4b3639626f922'
+[I] 16:03:55.641(000000000019807C):[AMQP0]declare queue 'cf.app.rpc.3e3fb690a29111e78dc4b3639626f922'
+[I] 16:03:55.642(000000000019807C):[RPCC:cf.app.rpc]create rpc client 'cf.app.rpc' in conn AMQP0
+[I] 16:03:55.646(000000000019807C):PBEncoder success load file 'E:\product\protocol\cf_app.proto.js'
+[I] 16:03:55.647(000000000019807C):[AMQP0]declare queue 'cf.alipay.rpc.3e40a0f0a29111e78dc4b3639626f922'
+[I] 16:03:55.647(000000000019807C):[RPCC:cf.alipay.rpc]create rpc client 'cf.alipay.rpc' in conn AMQP0
+[I] 16:03:55.654(000000000019807C):PBEncoder success load file 'E:\product\protocol\cf_alipay.proto.js'
+[I] 16:03:55.655(000000000019807C):[AMQP0]declare queue 'cf.ding.rpc.3e41d970a29111e78dc4b3639626f922'
+[I] 16:03:55.655(000000000019807C):[RPCC:cf.ding.rpc]create rpc client 'cf.ding.rpc' in conn AMQP0
+[I] 16:03:55.667(000000000019807C):PBEncoder success load file 'E:\product\protocol\cf_ding.proto.js'
+[I] 16:03:55.668(000000000019807C):[AMQP0]declare exchange 'cf.ding.notify'
+[I] 16:03:55.668(000000000019807C):[AMQP0]declare queue 'jiaxingwang.sc_admin.ding.3e43d540a29111e78dc4b3639626f922'
+[I] 16:03:55.668(000000000019807C):[AM]init and reload account!
+[I] 16:03:55.673(000000000019807C):[AM]reload account success, account number is: 0
+[I] 16:03:55.677(000000000019807C):[AMQP0]declare queue 'sr.customer.rpc.3e4534d0a29111e78dc4b3639626f922'
+[I] 16:03:55.678(000000000019807C):[RPCC:sr.customer.rpc]create rpc client 'sr.customer.rpc' in conn AMQP0
+[I] 16:03:55.687(000000000019807C):PBEncoder success load file 'E:\product\protocol\sr_customer.proto.js'
+[W] 16:03:55.687(000000000019807C):[AMQP0]rpc client 'cf.rpc' declare repeat!
+[W] 16:03:55.688(000000000019807C):[AMQP0]rpc client 'cf.wechat.rpc' declare repeat!
+[W] 16:03:55.688(000000000019807C):[AMQP0]rpc client 'cf.app.rpc' declare repeat!
+[I] 16:03:55.930(000000000019807C):PBEncoder success load file 'E:\product\protocol\sc_system.proto.js'
+[E] 16:03:56.231(000000000019807C):Global caught exception: SyntaxError: Block-scoped declarations (let, const, function, class) not yet supported outside strict mode
+    at exports.runInThisContext (vm.js:53:16)
+    at Module._compile (module.js:387:25)
+    at Object.Module._extensions..js (module.js:422:10)
+    at Module.load (module.js:357:32)
+    at Function.Module._load (module.js:314:12)
+    at Module.require (module.js:367:17)
+    at require (internal/module.js:16:19)
+    at Object.<anonymous> (E:\product\scAdmin\js\sc\router\user.js:25:36)
+    at Module._compile (module.js:413:34)
+    at Object.Module._extensions..js (module.js:422:10)
+    at Module.load (module.js:357:32)
+    at Function.Module._load (module.js:314:12)
+    at Module.require (module.js:367:17)
+    at require (internal/module.js:16:19)
+    at loadFile (E:\product\scAdmin\js\module_manager.js:35:20)
+    at E:\product\scAdmin\js\module_manager.js:83:17
+    at Array.forEach (native)
+    at Object.readdir (E:\product\scAdmin\js\module_manager.js:71:11)
+    at Object.<anonymous> (E:\product\scAdmin\js\sc\module_main.js:8:12)
+    at Module._compile (module.js:413:34)
+    at Object.Module._extensions..js (module.js:422:10)
+    at Module.load (module.js:357:32)
+    at Function.Module._load (module.js:314:12)
+    at Module.require (module.js:367:17)
+    at require (internal/module.js:16:19)
+    at E:\product\scAdmin\js\module_manager.js:28:9
+    at Array.forEach (native)
+    at Object.exports.loadRoute (E:\product\scAdmin\js\module_manager.js:18:13)
+[I] 16:03:56.246(000000000019807C):[redis]redis connect
+[I] 16:03:56.257(000000000019807C):[redis]redis ready
+[I] 16:03:56.259(000000000019807C):[MP1]create connection #0
+[T] 16:03:56.259(000000000019807C):[MP1]getConnection success,getIndex=0
+[I] 16:03:56.260(000000000019807C):[MP1]create connection #1
+[T] 16:03:56.260(000000000019807C):[MP1]getConnection success,getIndex=1
+[T] 16:03:56.266(000000000019807C):[MySQL]Query success,used time:5 ms,sql="select * from cf_account where enabled=1 and function_mask like \"1%\""
+[T] 16:03:56.274(000000000019807C):[MySQL]Query success,used time:12 ms,sql="SELECT * FROM `sc_org`"
+[T] 16:03:56.275(000000000019807C):getConnection release,getIndex=0
+[T] 16:03:56.278(000000000019807C):getConnection release,getIndex=1
+[I] 16:03:56.279(000000000019807C):[AM]get account list success: [{"innerid":"HEDV35FASG-DGW423A-34TGGW53AAD66","name":"乐逛演示","org_id":"1","shop_id":null,"settlement_id":null,"method_code":1,"method_code_key":"wechat_test3_1","function_mask":"10","config":"{\"accountid\":\"gh_92368265694f\",\"fee_type\":\"CNY\",\"appid\":\"wx39bf9ff3da6fc1e7\",\"appsecret\":\"e00fc51118b318fb99cff35d217865fc\",\"mch_id\":\"1287801701\",\"sub_mch_id\":\"\",\"sign_key\":\"smartpaysmartpaysmartpaysmartpay\",\"key_file\":\"apiclient_key.pem\",\"cert_file\":\"apiclient_cert.pem\",\"pay_authorization_dir\":[\"\",\"\",\"\"],\"pay_native_callback\":\"\",\"pay_finish_notify\":\"1\",\"pay_alarm_notify\":\"\"}","enabled":1,"desc":null},{"innerid":"SE43RG3ASG-34GWW55A-34TG43HER452","name":"短信测试一","org_id":"1","shop_id":null,"settlement_id":null,"method_code":2,"method_code_key":"wechat_test1_2","function_mask":"10","config":"{\"url\" : \"http://211.147.239.62:9050/cgi-bin/sendsms\",\"username\" : \"shopperconnect@smartac\",\"password\" : \"shopCNT@smartc2016\"}","enabled":1,"desc":null},{"innerid":"SMFGSW423GWS-G43HTEHE2-HHEDR5462HS","name":"邮件测试一","org_id":"1","shop_id":null,"settlement_id":null,"method_code":3,"method_code_key":"wechat_test1_3","function_mask":"10","config":"{\"smtpserver\" : \"smtp.163.com\",\"port\": 25,\"username\" : \"zyqtest5@163.com\",\"password\" : \"zyqtest5881119\",\"SSL\":false}","enabled":1,"desc":null}]
+[I] 16:03:56.314(000000000019807C):[AMQP0]AMQP0 connect 'amqp://guest:guest@172.16.0.81:5672' success!
+[I] 16:03:56.337(000000000019807C):[AMQP0]success declare queue 'cf.rpc.3e23ca20a29111e78dc4b3639626f922'
+[I] 16:03:56.340(000000000019807C):[AMQP0]success consume 'cf.rpc.3e23ca20a29111e78dc4b3639626f922'
+[I] 16:03:56.343(000000000019807C):[AMQP0]success binding 'amq.direct'->'cf.rpc.3e23ca20a29111e78dc4b3639626f922'(cf.rpc.3e23ca20a29111e78dc4b3639626f922)
+[I] 16:03:56.387(000000000019807C):[AMQP0]success declare queue 'cf.wechat.rpc.3e357d60a29111e78dc4b3639626f922'
+[I] 16:03:56.486(000000000019807C):[AMQP0]success consume 'cf.wechat.rpc.3e357d60a29111e78dc4b3639626f922'
+[I] 16:03:56.585(000000000019807C):[AMQP0]success binding 'amq.direct'->'cf.wechat.rpc.3e357d60a29111e78dc4b3639626f922'(cf.wechat.rpc.3e357d60a29111e78dc4b3639626f922)
+[I] 16:03:56.590(000000000019807C):[AMQP0]success declare exchange 'cf.wechat.notify'
+[I] 16:03:56.608(000000000019807C):[AMQP0]success declare queue 'jiaxingwang.sc_admin.wechat.3e3f8f80a29111e78dc4b3639626f922'
+[I] 16:03:56.618(000000000019807C):[AMQP0]success consume 'jiaxingwang.sc_admin.wechat.3e3f8f80a29111e78dc4b3639626f922'
+[I] 16:03:56.630(000000000019807C):[AMQP0]success binding 'cf.wechat.notify'->'jiaxingwang.sc_admin.wechat.3e3f8f80a29111e78dc4b3639626f922'(#)
+[I] 16:03:56.636(000000000019807C):[AMQP0]success declare queue 'cf.app.rpc.3e3fb690a29111e78dc4b3639626f922'
+[I] 16:03:56.639(000000000019807C):[AMQP0]success consume 'cf.app.rpc.3e3fb690a29111e78dc4b3639626f922'
+[I] 16:03:56.642(000000000019807C):[AMQP0]success binding 'amq.direct'->'cf.app.rpc.3e3fb690a29111e78dc4b3639626f922'(cf.app.rpc.3e3fb690a29111e78dc4b3639626f922)
+[I] 16:03:56.651(000000000019807C):[AMQP0]success declare queue 'cf.alipay.rpc.3e40a0f0a29111e78dc4b3639626f922'
+[I] 16:03:56.660(000000000019807C):[AMQP0]success consume 'cf.alipay.rpc.3e40a0f0a29111e78dc4b3639626f922'
+[I] 16:03:56.663(000000000019807C):[AMQP0]success binding 'amq.direct'->'cf.alipay.rpc.3e40a0f0a29111e78dc4b3639626f922'(cf.alipay.rpc.3e40a0f0a29111e78dc4b3639626f922)
+[I] 16:03:56.676(000000000019807C):[AMQP0]success declare queue 'cf.ding.rpc.3e41d970a29111e78dc4b3639626f922'
+[I] 16:03:56.678(000000000019807C):[AMQP0]success consume 'cf.ding.rpc.3e41d970a29111e78dc4b3639626f922'
+[I] 16:03:56.685(000000000019807C):[AMQP0]success binding 'amq.direct'->'cf.ding.rpc.3e41d970a29111e78dc4b3639626f922'(cf.ding.rpc.3e41d970a29111e78dc4b3639626f922)
+[I] 16:03:56.687(000000000019807C):[AMQP0]success declare exchange 'cf.ding.notify'
+[I] 16:03:56.707(000000000019807C):[AMQP0]success declare queue 'jiaxingwang.sc_admin.ding.3e43d540a29111e78dc4b3639626f922'
+[I] 16:03:56.709(000000000019807C):[AMQP0]success consume 'jiaxingwang.sc_admin.ding.3e43d540a29111e78dc4b3639626f922'
+[I] 16:03:56.712(000000000019807C):[AMQP0]success binding 'cf.ding.notify'->'jiaxingwang.sc_admin.ding.3e43d540a29111e78dc4b3639626f922'(#)
+[I] 16:03:56.716(000000000019807C):[AMQP0]success declare queue 'sr.customer.rpc.3e4534d0a29111e78dc4b3639626f922'
+[I] 16:03:56.725(000000000019807C):[AMQP0]success consume 'sr.customer.rpc.3e4534d0a29111e78dc4b3639626f922'
+[I] 16:03:56.728(000000000019807C):[AMQP0]success binding 'amq.direct'->'sr.customer.rpc.3e4534d0a29111e78dc4b3639626f922'(sr.customer.rpc.3e4534d0a29111e78dc4b3639626f922)
+[W] 16:04:25.766(0000000000195890):recv 'Ctrl+C' break sign!next exit!
+[D] 16:04:25.772(0000000000195890):worker process log socket error!err=Error: read ECONNRESET
+    at exports._errnoException (util.js:890:11)
+    at TCP.onread (net.js:550:26)
+[D] 16:04:25.773(0000000000195890):worker process log socket close!
+[D] 16:04:25.774(0000000000195890):worker process log socket error!err=Error: read ECONNRESET
+    at exports._errnoException (util.js:890:11)
+    at TCP.onread (net.js:550:26)
+[D] 16:04:25.774(0000000000195890):worker process log socket close!
+[W] 16:04:25.779(0000000000195890):worker 198BA0(1#) died.
+[W] 16:04:25.780(0000000000195890):worker 19807C(2#) died.
+[D] 16:04:25.780(0000000000195890):worker process log socket error!err=Error: read ECONNRESET
+    at exports._errnoException (util.js:890:11)
+    at TCP.onread (net.js:550:26)
+[D] 16:04:25.780(0000000000195890):worker process log socket close!
+[W] 16:04:25.786(0000000000195890):worker 19A2D8(0#) died.
+[W] 16:04:25.802(0000000000195890):try restart worker 0# ...
+[I] 16:04:25.823(0000000000195890):start worker success,pid=19EC78(0#)
+[D] 16:04:26.688(0000000000195890):worker process log socket connected!
+[D] 16:04:26.672(000000000019EC78):worker 0# ready to connect master log socket server, port=32104
+[D] 16:04:26.691(000000000019EC78):worker 0# log socket connected!
+[W] 16:04:26.844(0000000000195890):try restart worker 1# ...
+[I] 16:04:26.868(0000000000195890):start worker success,pid=19EB3C(1#)

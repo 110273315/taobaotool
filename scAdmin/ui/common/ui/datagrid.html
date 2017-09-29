@@ -1,0 +1,82 @@
+<div>
+  <table class="table table-striped table-bordered table-center table-hover">
+    <thead>
+      <tr>
+        <th class="w60">{{ languageBase.Base.TableNum }}</th>
+        <th ng-repeat="col in config.cols">{{col.label.ch}}</th>
+        <th ng-show="config.opers && config.opers.length > 0 " class="wop">{{ languageBase.Base.TableBtns}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="item in list">
+        <td>{{config.pager.startCount + $index}}</td>
+        <td ng-repeat="col in config.cols">
+          <!--自定义内容-->
+          <div ng-show="col.html">
+            {{col.html(item[col.name], item)}}
+          </div>
+          <div ng-show="!col.html">
+            {{item[col.name]}}
+          </div>
+        </td>
+        <td ng-show="config.opers && config.opers.length > 0 ">
+          <!-- 操作按钮是图标 -->
+          <a class="btn_ins" ng-repeat="oper in config.opers" ng-show="oper.html && oper.html.indexOf && oper.html.indexOf('icon') == 0" ng-click="operClick(oper, item)">
+            <i class="{{oper.html}}"></i>
+          </a>
+          <!-- 操作按钮是文字 -->
+          <a ng-repeat="oper in config.opers" ng-show="oper.html && oper.html.bind" ng-click="operClick(oper, item)">
+            {{oper.html.bind && oper.html(item)}}
+          </a>
+        </td>
+      </tr>
+      <tr class="noData" ng-show="!isLoading && config.pager.totalCount == 0">
+        <td colspan="12">{{languageBase.Base.NoData}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- 分页 -->
+  <div class="pager-wrap row-fluid" ng-show="config.pager.total > 1">
+    <div class="dataTables_info span3">
+      <!-- 当前显示 到 条, 共条数据 -->
+      {{languageBase.Base.Page_now}}{{config.pager.startCount}}{{languageBase.Base.Page_to}}{{config.pager.endCount}}{{languageBase.Base.Item}}{{ languageBase.Base.Page_allprev}}{{config.pager.totalCount}}{{languageBase.Base.Page_allnext }}
+    </div>
+    <div class="dataTables_paginate pagination span9">
+      <ul>
+        <li class="prev {{p.class}}">
+          <button class="pagebtn" type="button" ng-click="pageTo(1)" ng-disabled="{{config.pager.current == 1}}">
+            <span>{{languageBase.Base.Page_first}}</span>
+          </button>
+        </li>
+        <li class="prev {{p.class}}">
+          <button class="pagebtn" type="button" ng-click="pageTo(config.pager.current - 1)" ng-disabled="{{config.pager.current == 1}}">
+            <span>{{languageBase.Base.Page_prev}}</span>
+          </button>
+        </li>
+        <li ng-repeat="p in config.pager.shouldDisplayPages" class="prev {{p == config.pager.current && 'active' }}">
+          <button class="pagebtn" type="button" ng-click="pageTo(p)" ng-disabled="p==config.pager.current">
+            <span>{{p}}</span>
+          </button>
+        </li>
+        <li class="prev {{p.class}}">
+          <button class="pagebtn" type="button" ng-click="pageTo(config.pager.current + 1)" ng-disabled="{{config.pager.total==config.pager.current}}">
+            <span>{{languageBase.Base.Page_next}}</span>
+          </button>
+        </li>
+        <li class="prev {{p.class}}">
+          <button class="pagebtn" type="button" ng-click="pageTo(config.pager.total)" ng-disabled="{{config.pager.total==config.pager.current}}">
+            <span>{{languageBase.Base.Page_last}}</span>
+          </button>
+        </li>
+      </ul>
+      <div class="input-append page-search">
+        <form name='pageForm'>
+          <input class="pagetext" type="number" min="1" max="{{paging['coupon'].pageNum}}" name="newPage1" ng-model="newPage1" required />
+          <button class="pagebtn" type="button" ng-disabled="pageForm.$invalid" ng-click="pageTo(newPage1)">
+            {{languageBase.Base.Page_search}}
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,52 @@
+{
+  "sexcode": {
+    "checked": true,
+    "name": "性别"
+  },
+  "channelcode": {
+    "checked": true,
+    "name": "来源渠道"
+  },
+  "shop": {
+    "checked": true,
+    "name": "门店名称"
+  },
+  "point": {
+    "checked": true,
+    "name": "可用积分"
+  },
+  "tradeinfo": {
+    "checked": true,
+    "name": "交易总金额"
+  },
+  "tradetime": {
+    "checked": true,
+    "name": "交易次数"
+  },
+  "lasttrade": {
+    "checked": true,
+    "name": "最后一次交易时间"
+  },
+  "idnum": {
+    "checked": true,
+    "name": "客户证件"
+  },
+  "birthday": {
+    "checked": true,
+    "name": "生日"
+  },
+  "email": {
+    "checked": true,
+    "name": "邮箱"
+  },
+  "address": {
+    "checked": true,
+    "name": "地址"
+  },
+  "createdon": {
+    "checked": true,
+    "name": "创建时间"
+  }
+}
+
+

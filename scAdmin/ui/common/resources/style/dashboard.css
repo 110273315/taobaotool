@@ -1,0 +1,153 @@
+.card{
+  position: relative;
+  padding: 25px 30px 25px 25px;
+  background-color: #fff;
+}
+
+.card__num{
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.card__title{
+  color: #000;
+  margin-bottom: 22px;
+  font-weight: bold;
+}
+
+.card__icon{
+  position: absolute;
+  right: 30px;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+
+
+.card--customer .card__num{
+  color: #00c391;
+}
+
+.card--customer .card__icon{
+  top: 27px;
+  width: 42px;
+  height: 44px;
+  background-image: url(../../resources/images/dashboard/customer-icon.png);
+}
+
+.card--coupon .card__num{
+  color: #00a7f6;
+}
+
+.card--coupon .card__icon{
+  top: 31px;
+  width: 62px;
+  height: 37px;
+  background-image: url(../../resources/images/dashboard/coupon-icon.png);
+}
+
+.card--income .card__num{
+  color: #fd9674;
+}
+
+.card--income .card__icon{
+  top: 28px;
+  width: 54px;
+  height: 41px;
+  background-image: url(../../resources/images/dashboard/income-icon.png);
+}
+
+.tab--chart{
+  margin:15px 0;
+  padding: 30px;
+  background-color: #fff;
+}
+.tab__header{
+  border-bottom: 1px solid #eeeeee;
+  font-weight: bold;
+}
+.tab__header-item{
+  padding-top: 40px;
+  padding-bottom: 15px;
+  text-align: center;
+  color: #000;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.tab__header-item--active{
+  position: relative;
+  color: #e98062;
+}
+.tab__header-item--active:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -11px;
+  width: 100%;
+  height: 11px;
+  background: url(../../resources/images/dashboard/down.png) center 0 no-repeat;
+}
+.tab__header-item:nth-child(1){
+  background-image: url(../../resources/images/dashboard/tab-1.png);
+}
+.tab__header-item:nth-child(2){
+  background-image: url(../../resources/images/dashboard/tab-2.png);
+}
+.tab__header-item:nth-child(3){
+  background-image: url(../../resources/images/dashboard/tab-3.png);
+}
+
+.tab__body{
+  height: 437px;
+}
+.tab__body-item{
+  display: none;
+  height: 100%;
+  padding-top: 25px;
+}
+.tab__body-item--active{
+  display: block;
+}
+
+.weather{
+  display: flex;
+  justify-content: space-between;
+  padding-left:8%;
+  padding-right: 6%;
+}
+
+.weather__item{
+  height: 26px;
+  line-height: 26px;
+}
+
+.weather__icon{
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+.weather__icon--sun{
+  background-image: url(../../resources/images/weather/sun.png);
+}
+.weather__icon--cloud{
+  background-image: url(../../resources/images/weather/cloud.png);
+}
+.weather__icon--snow{
+  background-image: url(../../resources/images/weather/snow.png);
+}
+.weather__icon--rain{
+  background-image: url(../../resources/images/weather/rain.png);
+}
+.card--chart{
+  height: 280px;
+}
+
+.card--chart .card__title{
+  margin-bottom: 10px;
+}
+

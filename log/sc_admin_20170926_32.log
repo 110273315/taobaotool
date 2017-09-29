@@ -1,0 +1,1540 @@
+[D] 17:46:56.995(000000000014EA24):master log socket server started! host=::, port=50490
+[I] 17:46:57.005(000000000014EA24):master log channel started!port=50490
+[W] 17:46:58.006(000000000014EA24):try restart worker 0# ...
+[I] 17:46:58.017(000000000014EA24):start worker success,pid=14ED4C(0#)
+[D] 17:46:58.778(000000000014EA24):worker process log socket connected!
+[D] 17:46:58.769(000000000014ED4C):worker 0# ready to connect master log socket server, port=50490
+[D] 17:46:58.778(000000000014ED4C):worker 0# log socket connected!
+[W] 17:46:59.027(000000000014EA24):try restart worker 1# ...
+[I] 17:46:59.033(000000000014EA24):start worker success,pid=14EBE0(1#)
+[I] 17:46:59.474(000000000014ED4C):[AMQP0]created
+[I] 17:46:59.484(000000000014ED4C):[AMQP0]declare queue 'cf.rpc.a41b1eb0a29f11e78929390828f74048'
+[I] 17:46:59.485(000000000014ED4C):[RPCC:cf.rpc]create rpc client 'cf.rpc' in conn AMQP0
+[I] 17:46:59.600(000000000014ED4C):PBEncoder success load file 'E:\product\protocol\cf.proto.js'
+[I] 17:46:59.601(000000000014ED4C):[AMQP0]declare queue 'cf.wechat.rpc.a42d2010a29f11e78929390828f74048'
+[I] 17:46:59.601(000000000014ED4C):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP0
+[I] 17:46:59.653(000000000014ED4C):PBEncoder success load file 'E:\product\protocol\cf_wechat.proto.js'
+[I] 17:46:59.654(000000000014ED4C):[AMQP0]declare exchange 'cf.wechat.notify'
+[I] 17:46:59.655(000000000014ED4C):[AMQP0]declare queue 'jiaxingwang.sc_admin.wechat.a4355d70a29f11e78929390828f74048'
+[I] 17:46:59.656(000000000014ED4C):[AMQP0]declare queue 'cf.app.rpc.a4358480a29f11e78929390828f74048'
+[I] 17:46:59.656(000000000014ED4C):[RPCC:cf.app.rpc]create rpc client 'cf.app.rpc' in conn AMQP0
+[I] 17:46:59.662(000000000014ED4C):PBEncoder success load file 'E:\product\protocol\cf_app.proto.js'
+[I] 17:46:59.662(000000000014ED4C):[AMQP0]declare queue 'cf.alipay.rpc.a4366ee0a29f11e78929390828f74048'
+[I] 17:46:59.663(000000000014ED4C):[RPCC:cf.alipay.rpc]create rpc client 'cf.alipay.rpc' in conn AMQP0
+[I] 17:46:59.686(000000000014ED4C):PBEncoder success load file 'E:\product\protocol\cf_alipay.proto.js'
+[I] 17:46:59.687(000000000014ED4C):[AMQP0]declare queue 'cf.ding.rpc.a43a3f70a29f11e78929390828f74048'
+[I] 17:46:59.687(000000000014ED4C):[RPCC:cf.ding.rpc]create rpc client 'cf.ding.rpc' in conn AMQP0
+[I] 17:46:59.700(000000000014ED4C):PBEncoder success load file 'E:\product\protocol\cf_ding.proto.js'
+[I] 17:46:59.700(000000000014ED4C):[AMQP0]declare exchange 'cf.ding.notify'
+[I] 17:46:59.701(000000000014ED4C):[AMQP0]declare queue 'jiaxingwang.sc_admin.ding.a43c6250a29f11e78929390828f74048'
+[I] 17:46:59.701(000000000014ED4C):[AM]init and reload account!
+[I] 17:46:59.705(000000000014ED4C):[AM]reload account success, account number is: 0
+[I] 17:46:59.708(000000000014ED4C):[AMQP0]declare queue 'sr.customer.rpc.a43d73c0a29f11e78929390828f74048'
+[I] 17:46:59.709(000000000014ED4C):[RPCC:sr.customer.rpc]create rpc client 'sr.customer.rpc' in conn AMQP0
+[I] 17:46:59.717(000000000014ED4C):PBEncoder success load file 'E:\product\protocol\sr_customer.proto.js'
+[W] 17:46:59.717(000000000014ED4C):[AMQP0]rpc client 'cf.rpc' declare repeat!
+[W] 17:46:59.718(000000000014ED4C):[AMQP0]rpc client 'cf.wechat.rpc' declare repeat!
+[W] 17:46:59.718(000000000014ED4C):[AMQP0]rpc client 'cf.app.rpc' declare repeat!
+[D] 17:46:59.859(000000000014EA24):worker process log socket connected!
+[D] 17:46:59.852(000000000014EBE0):worker 1# ready to connect master log socket server, port=50490
+[D] 17:46:59.861(000000000014EBE0):worker 1# log socket connected!
+[I] 17:46:59.886(000000000014ED4C):PBEncoder success load file 'E:\product\protocol\sc_system.proto.js'
+[I] 17:46:59.975(000000000014ED4C):[AMQP1]created
+[I] 17:46:59.976(000000000014ED4C):[AMQP1]declare exchange 'amq.direct'
+[I] 17:46:59.976(000000000014ED4C):[AMQP1]declare queue 'cf.wechat.rpc.a4665880a29f11e78929390828f74048'
+[I] 17:46:59.976(000000000014ED4C):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP1
+[I] 17:46:59.978(000000000014ED4C):[AMQP2]created
+[I] 17:46:59.983(000000000014ED4C):[AMQP0]declare exchange 'amq.direct'
+[I] 17:46:59.983(000000000014ED4C):[AMQP0]declare queue 'sc.task.rpc.a46769f0a29f11e78929390828f74048'
+[I] 17:46:59.984(000000000014ED4C):[RPCC:sc.task.rpc]create rpc client 'sc.task.rpc' in conn AMQP0
+[I] 17:46:59.990(000000000014ED4C):PBEncoder success load file 'E:\product\protocol\sc_task.proto.js'
+[W] 17:47:00.039(000000000014EA24):try restart worker 2# ...
+[I] 17:47:00.076(000000000014EA24):start worker success,pid=14F3E4(2#)
+[I] 17:47:00.056(000000000014ED4C):[AMQP0]declare queue 'sr.customer.tag.rpc.a4728d80a29f11e78929390828f74048'
+[I] 17:47:00.057(000000000014ED4C):[RPCC:sr.customer.tag.rpc]create rpc client 'sr.customer.tag.rpc' in conn AMQP0
+[I] 17:47:00.057(000000000014ED4C):[AMQP0]declare queue 'sr.customer.point.rpc.a472b490a29f11e78929390828f74048'
+[I] 17:47:00.057(000000000014ED4C):[RPCC:sr.customer.point.rpc]create rpc client 'sr.customer.point.rpc' in conn AMQP0
+[I] 17:47:00.071(000000000014ED4C):PBEncoder success load file 'E:\product\protocol\sr_customer_point.proto.js'
+[I] 17:47:00.079(000000000014ED4C):PBEncoder success load file 'E:\product\protocol\sr_customer_tag.proto.js'
+[W] 17:47:00.146(000000000014ED4C):[AMQP0]rpc client 'cf.wechat.rpc' declare repeat!
+[I] 17:47:00.146(000000000014ED4C):[AMQP0]declare queue 'sr.customer.coupon_class.rpc.a4804920a29f11e78929390828f74048'
+[I] 17:47:00.146(000000000014ED4C):[RPCC:sr.customer.coupon_class.rpc]create rpc client 'sr.customer.coupon_class.rpc' in conn AMQP0
+[I] 17:47:00.147(000000000014ED4C):[AMQP0]declare queue 'sr.customer.coupon.rpc.a4807030a29f11e78929390828f74048'
+[I] 17:47:00.148(000000000014ED4C):[RPCC:sr.customer.coupon.rpc]create rpc client 'sr.customer.coupon.rpc' in conn AMQP0
+[I] 17:47:00.164(000000000014ED4C):PBEncoder success load file 'E:\product\protocol\sr_customer_coupon.proto.js'
+[W] 17:47:00.165(000000000014ED4C):[AMQP0]rpc client 'cf.wechat.rpc' declare repeat!
+[I] 17:47:00.165(000000000014ED4C):[AMQP0]declare queue 'cf.wxpay.rpc.a4832f50a29f11e78929390828f74048'
+[I] 17:47:00.165(000000000014ED4C):[RPCC:cf.wxpay.rpc]create rpc client 'cf.wxpay.rpc' in conn AMQP0
+[I] 17:47:00.179(000000000014ED4C):PBEncoder success load file 'E:\product\protocol\cf_wxpay.proto.js'
+[W] 17:47:00.179(000000000014ED4C):[AMQP0]rpc client 'sr.customer.point.rpc' declare repeat!
+[W] 17:47:00.222(000000000014ED4C):[AMQP0]exchange amq.direct already declare!!
+[W] 17:47:00.222(000000000014ED4C):[AMQP0]rpc client 'sr.customer.rpc' declare repeat!
+[W] 17:47:00.222(000000000014ED4C):[AMQP0]rpc client 'sr.customer.coupon.rpc' declare repeat!
+[W] 17:47:00.223(000000000014ED4C):[AMQP0]rpc client 'cf.wechat.rpc' declare repeat!
+[W] 17:47:00.225(000000000014ED4C):[AMQP0]exchange amq.direct already declare!!
+[I] 17:47:00.225(000000000014ED4C):[AMQP0]declare queue 'cf.baidu.rpc.a48c5710a29f11e78929390828f74048'
+[I] 17:47:00.225(000000000014ED4C):[RPCC:cf.baidu.rpc]create rpc client 'cf.baidu.rpc' in conn AMQP0
+[I] 17:47:00.229(000000000014ED4C):PBEncoder success load file 'E:\product\protocol\cf_baidu.proto.js'
+[I] 17:47:00.236(000000000014ED4C):[AMQP3]created
+[I] 17:47:00.246(000000000014ED4C):[AMQP4]created
+[I] 17:47:00.246(000000000014ED4C):[AMQP4]declare exchange 'amq.direct'
+[I] 17:47:00.246(000000000014ED4C):[AMQP4]declare queue 'cf.app.rpc.a48f8b60a29f11e78929390828f74048'
+[I] 17:47:00.247(000000000014ED4C):[RPCC:cf.app.rpc]create rpc client 'cf.app.rpc' in conn AMQP4
+[I] 17:47:00.248(000000000014ED4C):[AMQP4]declare queue 'cf.wechat.rpc.a48fb270a29f11e78929390828f74048'
+[I] 17:47:00.248(000000000014ED4C):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP4
+[I] 17:47:00.248(000000000014ED4C):[AMQP4]declare queue 'cf.rpc.a48fd980a29f11e78929390828f74048'
+[I] 17:47:00.248(000000000014ED4C):[RPCC:cf.rpc]create rpc client 'cf.rpc' in conn AMQP4
+[I] 17:47:00.249(000000000014ED4C):[AMQP4]declare queue 'sc.task.rpc.a4900090a29f11e78929390828f74048'
+[I] 17:47:00.249(000000000014ED4C):[RPCC:sc.task.rpc]create rpc client 'sc.task.rpc' in conn AMQP4
+[I] 17:47:00.252(000000000014ED4C):[AMQP5]created
+[I] 17:47:00.253(000000000014ED4C):[AMQP5]declare exchange 'amq.direct'
+[I] 17:47:00.253(000000000014ED4C):[AMQP5]declare queue 'cf.wechat.rpc.a4909cd0a29f11e78929390828f74048'
+[I] 17:47:00.253(000000000014ED4C):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP5
+[W] 17:47:00.256(000000000014ED4C):[AMQP0]rpc client 'sr.customer.point.rpc' declare repeat!
+[I] 17:47:00.258(000000000014ED4C):[AMQP6]created
+[I] 17:47:00.259(000000000014ED4C):[AMQP6]declare exchange 'amq.direct'
+[I] 17:47:00.259(000000000014ED4C):[AMQP6]declare queue 'cf.wechat.rpc.a4918730a29f11e78929390828f74048'
+[I] 17:47:00.260(000000000014ED4C):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP6
+[I] 17:47:00.265(000000000014ED4C):[AMQP7]created
+[I] 17:47:00.266(000000000014ED4C):[AMQP7]declare exchange 'amq.direct'
+[I] 17:47:00.267(000000000014ED4C):[AMQP7]declare queue 'sc.task.rpc.a492bfb0a29f11e78929390828f74048'
+[I] 17:47:00.267(000000000014ED4C):[RPCC:sc.task.rpc]create rpc client 'sc.task.rpc' in conn AMQP7
+[I] 17:47:00.267(000000000014ED4C):[AMQP7]declare queue 'sr.customer.rewardfail.a492bfb1a29f11e78929390828f74048'
+[I] 17:47:00.267(000000000014ED4C):[RPCC:sr.customer.rewardfail]create rpc client 'sr.customer.rewardfail' in conn AMQP7
+[W] 17:47:00.271(000000000014ED4C):[AMQP0]exchange amq.direct already declare!!
+[W] 17:47:00.271(000000000014ED4C):[AMQP0]rpc client 'sr.customer.tag.rpc' declare repeat!
+[W] 17:47:00.271(000000000014ED4C):[AMQP0]rpc client 'sc.task.rpc' declare repeat!
+[W] 17:47:00.275(000000000014ED4C):[AMQP0]exchange amq.direct already declare!!
+[I] 17:47:00.275(000000000014ED4C):[AMQP0]declare queue 'sr.trade.rpc.a493f830a29f11e78929390828f74048'
+[I] 17:47:00.275(000000000014ED4C):[RPCC:sr.trade.rpc]create rpc client 'sr.trade.rpc' in conn AMQP0
+[I] 17:47:00.278(000000000014ED4C):PBEncoder success load file 'E:\product\protocol\sr_trade.proto.js'
+[I] 17:47:00.283(000000000014ED4C):[AMQP8]created
+[I] 17:47:00.284(000000000014ED4C):[AMQP8]declare exchange 'amq.direct'
+[I] 17:47:00.284(000000000014ED4C):[AMQP8]declare queue 'cf.wechat.rpc.a49557c0a29f11e78929390828f74048'
+[I] 17:47:00.284(000000000014ED4C):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP8
+[I] 17:47:00.310(000000000014ED4C):[redis]redis connect
+[T] 17:47:00.313(000000000014ED4C):Http is running,port is 18910
+[I] 17:47:00.327(000000000014ED4C):[redis]redis ready
+[I] 17:47:00.328(000000000014ED4C):[MP1]create connection #0
+[T] 17:47:00.329(000000000014ED4C):[MP1]getConnection success,getIndex=0
+[I] 17:47:00.329(000000000014ED4C):[MP1]create connection #1
+[T] 17:47:00.330(000000000014ED4C):[MP1]getConnection success,getIndex=1
+[T] 17:47:00.339(000000000014ED4C):[MySQL]Query success,used time:7 ms,sql="select * from cf_account where enabled=1 and function_mask like \"1%\""
+[T] 17:47:00.347(000000000014ED4C):[MySQL]Query success,used time:13 ms,sql="SELECT * FROM `sc_org`"
+[T] 17:47:00.348(000000000014ED4C):getConnection release,getIndex=0
+[T] 17:47:00.348(000000000014ED4C):getConnection release,getIndex=1
+[I] 17:47:00.349(000000000014ED4C):[AM]get account list success: [{"innerid":"HEDV35FASG-DGW423A-34TGGW53AAD66","name":"乐逛演示","org_id":"1","shop_id":null,"settlement_id":null,"method_code":1,"method_code_key":"wechat_test3_1","function_mask":"10","config":"{\"accountid\":\"gh_92368265694f\",\"fee_type\":\"CNY\",\"appid\":\"wx39bf9ff3da6fc1e7\",\"appsecret\":\"e00fc51118b318fb99cff35d217865fc\",\"mch_id\":\"1287801701\",\"sub_mch_id\":\"\",\"sign_key\":\"smartpaysmartpaysmartpaysmartpay\",\"key_file\":\"apiclient_key.pem\",\"cert_file\":\"apiclient_cert.pem\",\"pay_authorization_dir\":[\"\",\"\",\"\"],\"pay_native_callback\":\"\",\"pay_finish_notify\":\"1\",\"pay_alarm_notify\":\"\"}","enabled":1,"desc":null},{"innerid":"SE43RG3ASG-34GWW55A-34TG43HER452","name":"短信测试一","org_id":"1","shop_id":null,"settlement_id":null,"method_code":2,"method_code_key":"wechat_test1_2","function_mask":"10","config":"{\"url\" : \"http://211.147.239.62:9050/cgi-bin/sendsms\",\"username\" : \"shopperconnect@smartac\",\"password\" : \"shopCNT@smartc2016\"}","enabled":1,"desc":null},{"innerid":"SMFGSW423GWS-G43HTEHE2-HHEDR5462HS","name":"邮件测试一","org_id":"1","shop_id":null,"settlement_id":null,"method_code":3,"method_code_key":"wechat_test1_3","function_mask":"10","config":"{\"smtpserver\" : \"smtp.163.com\",\"port\": 25,\"username\" : \"zyqtest5@163.com\",\"password\" : \"zyqtest5881119\",\"SSL\":false}","enabled":1,"desc":null}]
+[I] 17:47:00.377(000000000014ED4C):[AMQP0]AMQP0 connect 'amqp://guest:guest@172.16.0.81:5672' success!
+[I] 17:47:00.381(000000000014ED4C):[AMQP1]AMQP1 connect 'amqp://guest:guest@172.16.0.81:5672' success!
+[I] 17:47:00.382(000000000014ED4C):[AMQP8]AMQP8 connect 'amqp://guest:guest@172.16.0.81:5672' success!
+[I] 17:47:00.383(000000000014ED4C):[AMQP7]AMQP7 connect 'amqp://guest:guest@172.16.0.81:5672' success!
+[I] 17:47:00.384(000000000014ED4C):[AMQP4]AMQP4 connect 'amqp://guest:guest@172.16.0.81:5672' success!
+[I] 17:47:00.386(000000000014ED4C):[AMQP5]AMQP5 connect 'amqp://guest:guest@172.16.0.81:5672' success!
+[I] 17:47:00.387(000000000014ED4C):[AMQP6]AMQP6 connect 'amqp://guest:guest@172.16.0.81:5672' success!
+[I] 17:47:00.400(000000000014ED4C):[AMQP0]success declare queue 'cf.rpc.a41b1eb0a29f11e78929390828f74048'
+[I] 17:47:00.402(000000000014ED4C):[AMQP8]success declare exchange 'amq.direct'
+[I] 17:47:00.402(000000000014ED4C):[AMQP4]success declare exchange 'amq.direct'
+[I] 17:47:00.403(000000000014ED4C):[AMQP6]success declare exchange 'amq.direct'
+[I] 17:47:00.405(000000000014ED4C):[AMQP5]success declare exchange 'amq.direct'
+[I] 17:47:00.405(000000000014ED4C):[AMQP1]success declare exchange 'amq.direct'
+[I] 17:47:00.405(000000000014ED4C):[AMQP7]success declare exchange 'amq.direct'
+[I] 17:47:00.407(000000000014ED4C):[AMQP0]success consume 'cf.rpc.a41b1eb0a29f11e78929390828f74048'
+[I] 17:47:00.410(000000000014ED4C):[AMQP8]success declare queue 'cf.wechat.rpc.a49557c0a29f11e78929390828f74048'
+[I] 17:47:00.411(000000000014ED4C):[AMQP6]success declare queue 'cf.wechat.rpc.a4918730a29f11e78929390828f74048'
+[I] 17:47:00.412(000000000014ED4C):[AMQP4]success declare queue 'cf.app.rpc.a48f8b60a29f11e78929390828f74048'
+[I] 17:47:00.414(000000000014ED4C):[AMQP5]success declare queue 'cf.wechat.rpc.a4909cd0a29f11e78929390828f74048'
+[I] 17:47:00.416(000000000014ED4C):[AMQP0]success binding 'amq.direct'->'cf.rpc.a41b1eb0a29f11e78929390828f74048'(cf.rpc.a41b1eb0a29f11e78929390828f74048)
+[I] 17:47:00.416(000000000014ED4C):[AMQP7]success declare queue 'sc.task.rpc.a492bfb0a29f11e78929390828f74048'
+[I] 17:47:00.417(000000000014ED4C):[AMQP1]success declare queue 'cf.wechat.rpc.a4665880a29f11e78929390828f74048'
+[I] 17:47:00.417(000000000014ED4C):[AMQP8]success consume 'cf.wechat.rpc.a49557c0a29f11e78929390828f74048'
+[I] 17:47:00.417(000000000014ED4C):[AMQP6]success consume 'cf.wechat.rpc.a4918730a29f11e78929390828f74048'
+[I] 17:47:00.418(000000000014ED4C):[AMQP4]success consume 'cf.app.rpc.a48f8b60a29f11e78929390828f74048'
+[I] 17:47:00.418(000000000014ED4C):[AMQP5]success consume 'cf.wechat.rpc.a4909cd0a29f11e78929390828f74048'
+[I] 17:47:00.419(000000000014ED4C):[AMQP7]success consume 'sc.task.rpc.a492bfb0a29f11e78929390828f74048'
+[I] 17:47:00.419(000000000014ED4C):[AMQP1]success consume 'cf.wechat.rpc.a4665880a29f11e78929390828f74048'
+[I] 17:47:00.420(000000000014ED4C):[AMQP8]success binding 'amq.direct'->'cf.wechat.rpc.a49557c0a29f11e78929390828f74048'(cf.wechat.rpc.a49557c0a29f11e78929390828f74048)
+[I] 17:47:00.421(000000000014ED4C):[AMQP6]success binding 'amq.direct'->'cf.wechat.rpc.a4918730a29f11e78929390828f74048'(cf.wechat.rpc.a4918730a29f11e78929390828f74048)
+[I] 17:47:00.422(000000000014ED4C):[AMQP4]success binding 'amq.direct'->'cf.app.rpc.a48f8b60a29f11e78929390828f74048'(cf.app.rpc.a48f8b60a29f11e78929390828f74048)
+[I] 17:47:00.422(000000000014ED4C):[AMQP7]success binding 'amq.direct'->'sc.task.rpc.a492bfb0a29f11e78929390828f74048'(sc.task.rpc.a492bfb0a29f11e78929390828f74048)
+[I] 17:47:00.424(000000000014ED4C):[AMQP5]success binding 'amq.direct'->'cf.wechat.rpc.a4909cd0a29f11e78929390828f74048'(cf.wechat.rpc.a4909cd0a29f11e78929390828f74048)
+[I] 17:47:00.424(000000000014ED4C):[AMQP1]success binding 'amq.direct'->'cf.wechat.rpc.a4665880a29f11e78929390828f74048'(cf.wechat.rpc.a4665880a29f11e78929390828f74048)
+[I] 17:47:00.425(000000000014ED4C):[AMQP0]success declare queue 'cf.wechat.rpc.a42d2010a29f11e78929390828f74048'
+[I] 17:47:00.426(000000000014ED4C):[AMQP4]success declare queue 'cf.wechat.rpc.a48fb270a29f11e78929390828f74048'
+[I] 17:47:00.427(000000000014ED4C):[AMQP7]success declare queue 'sr.customer.rewardfail.a492bfb1a29f11e78929390828f74048'
+[I] 17:47:00.427(000000000014ED4C):[AMQP0]success consume 'cf.wechat.rpc.a42d2010a29f11e78929390828f74048'
+[I] 17:47:00.429(000000000014ED4C):[AMQP4]success consume 'cf.wechat.rpc.a48fb270a29f11e78929390828f74048'
+[I] 17:47:00.429(000000000014ED4C):[AMQP7]success consume 'sr.customer.rewardfail.a492bfb1a29f11e78929390828f74048'
+[I] 17:47:00.431(000000000014ED4C):[AMQP0]success binding 'amq.direct'->'cf.wechat.rpc.a42d2010a29f11e78929390828f74048'(cf.wechat.rpc.a42d2010a29f11e78929390828f74048)
+[I] 17:47:00.431(000000000014ED4C):[AMQP4]success binding 'amq.direct'->'cf.wechat.rpc.a48fb270a29f11e78929390828f74048'(cf.wechat.rpc.a48fb270a29f11e78929390828f74048)
+[I] 17:47:00.432(000000000014ED4C):[AMQP7]success binding 'amq.direct'->'sr.customer.rewardfail.a492bfb1a29f11e78929390828f74048'(sr.customer.rewardfail.a492bfb1a29f11e78929390828f74048)
+[I] 17:47:00.432(000000000014ED4C):[AMQP0]success declare exchange 'cf.wechat.notify'
+[I] 17:47:00.434(000000000014ED4C):[AMQP4]success declare queue 'cf.rpc.a48fd980a29f11e78929390828f74048'
+[I] 17:47:00.436(000000000014ED4C):[AMQP0]success declare queue 'jiaxingwang.sc_admin.wechat.a4355d70a29f11e78929390828f74048'
+[I] 17:47:00.437(000000000014ED4C):[AMQP4]success consume 'cf.rpc.a48fd980a29f11e78929390828f74048'
+[I] 17:47:00.438(000000000014ED4C):[AMQP0]success consume 'jiaxingwang.sc_admin.wechat.a4355d70a29f11e78929390828f74048'
+[I] 17:47:00.439(000000000014ED4C):[AMQP4]success binding 'amq.direct'->'cf.rpc.a48fd980a29f11e78929390828f74048'(cf.rpc.a48fd980a29f11e78929390828f74048)
+[I] 17:47:00.441(000000000014ED4C):[AMQP0]success binding 'cf.wechat.notify'->'jiaxingwang.sc_admin.wechat.a4355d70a29f11e78929390828f74048'(#)
+[I] 17:47:00.443(000000000014ED4C):[AMQP4]success declare queue 'sc.task.rpc.a4900090a29f11e78929390828f74048'
+[I] 17:47:00.445(000000000014ED4C):[AMQP4]success consume 'sc.task.rpc.a4900090a29f11e78929390828f74048'
+[I] 17:47:00.446(000000000014ED4C):[AMQP0]success declare queue 'cf.app.rpc.a4358480a29f11e78929390828f74048'
+[I] 17:47:00.449(000000000014ED4C):[AMQP4]success binding 'amq.direct'->'sc.task.rpc.a4900090a29f11e78929390828f74048'(sc.task.rpc.a4900090a29f11e78929390828f74048)
+[I] 17:47:00.449(000000000014ED4C):[AMQP0]success consume 'cf.app.rpc.a4358480a29f11e78929390828f74048'
+[I] 17:47:00.452(000000000014ED4C):[AMQP0]success binding 'amq.direct'->'cf.app.rpc.a4358480a29f11e78929390828f74048'(cf.app.rpc.a4358480a29f11e78929390828f74048)
+[I] 17:47:00.456(000000000014ED4C):[AMQP0]success declare queue 'cf.alipay.rpc.a4366ee0a29f11e78929390828f74048'
+[I] 17:47:00.457(000000000014ED4C):[AMQP0]success consume 'cf.alipay.rpc.a4366ee0a29f11e78929390828f74048'
+[I] 17:47:00.459(000000000014ED4C):[AMQP0]success binding 'amq.direct'->'cf.alipay.rpc.a4366ee0a29f11e78929390828f74048'(cf.alipay.rpc.a4366ee0a29f11e78929390828f74048)
+[I] 17:47:00.463(000000000014ED4C):[AMQP0]success declare queue 'cf.ding.rpc.a43a3f70a29f11e78929390828f74048'
+[I] 17:47:00.466(000000000014ED4C):[AMQP0]success consume 'cf.ding.rpc.a43a3f70a29f11e78929390828f74048'
+[I] 17:47:00.469(000000000014ED4C):[AMQP0]success binding 'amq.direct'->'cf.ding.rpc.a43a3f70a29f11e78929390828f74048'(cf.ding.rpc.a43a3f70a29f11e78929390828f74048)
+[I] 17:47:00.471(000000000014ED4C):[AMQP0]success declare exchange 'cf.ding.notify'
+[I] 17:47:00.475(000000000014ED4C):[AMQP0]success declare queue 'jiaxingwang.sc_admin.ding.a43c6250a29f11e78929390828f74048'
+[I] 17:47:00.478(000000000014ED4C):[AMQP0]success consume 'jiaxingwang.sc_admin.ding.a43c6250a29f11e78929390828f74048'
+[I] 17:47:00.481(000000000014ED4C):[AMQP0]success binding 'cf.ding.notify'->'jiaxingwang.sc_admin.ding.a43c6250a29f11e78929390828f74048'(#)
+[I] 17:47:00.484(000000000014ED4C):[AMQP0]success declare queue 'sr.customer.rpc.a43d73c0a29f11e78929390828f74048'
+[I] 17:47:00.486(000000000014ED4C):[AMQP0]success consume 'sr.customer.rpc.a43d73c0a29f11e78929390828f74048'
+[I] 17:47:00.488(000000000014ED4C):[AMQP0]success binding 'amq.direct'->'sr.customer.rpc.a43d73c0a29f11e78929390828f74048'(sr.customer.rpc.a43d73c0a29f11e78929390828f74048)
+[I] 17:47:00.489(000000000014ED4C):[AMQP0]success declare exchange 'amq.direct'
+[I] 17:47:00.492(000000000014ED4C):[AMQP0]success declare queue 'sc.task.rpc.a46769f0a29f11e78929390828f74048'
+[I] 17:47:00.494(000000000014ED4C):[AMQP0]success consume 'sc.task.rpc.a46769f0a29f11e78929390828f74048'
+[I] 17:47:00.496(000000000014ED4C):[AMQP0]success binding 'amq.direct'->'sc.task.rpc.a46769f0a29f11e78929390828f74048'(sc.task.rpc.a46769f0a29f11e78929390828f74048)
+[I] 17:47:00.499(000000000014ED4C):[AMQP0]success declare queue 'sr.customer.tag.rpc.a4728d80a29f11e78929390828f74048'
+[I] 17:47:00.501(000000000014ED4C):[AMQP0]success consume 'sr.customer.tag.rpc.a4728d80a29f11e78929390828f74048'
+[I] 17:47:00.503(000000000014ED4C):[AMQP0]success binding 'amq.direct'->'sr.customer.tag.rpc.a4728d80a29f11e78929390828f74048'(sr.customer.tag.rpc.a4728d80a29f11e78929390828f74048)
+[I] 17:47:00.507(000000000014ED4C):[AMQP0]success declare queue 'sr.customer.point.rpc.a472b490a29f11e78929390828f74048'
+[I] 17:47:00.509(000000000014ED4C):[AMQP0]success consume 'sr.customer.point.rpc.a472b490a29f11e78929390828f74048'
+[I] 17:47:00.511(000000000014ED4C):[AMQP0]success binding 'amq.direct'->'sr.customer.point.rpc.a472b490a29f11e78929390828f74048'(sr.customer.point.rpc.a472b490a29f11e78929390828f74048)
+[I] 17:47:00.515(000000000014ED4C):[AMQP0]success declare queue 'sr.customer.coupon_class.rpc.a4804920a29f11e78929390828f74048'
+[I] 17:47:00.522(000000000014ED4C):[AMQP0]success consume 'sr.customer.coupon_class.rpc.a4804920a29f11e78929390828f74048'
+[I] 17:47:00.524(000000000014ED4C):[AMQP0]success binding 'amq.direct'->'sr.customer.coupon_class.rpc.a4804920a29f11e78929390828f74048'(sr.customer.coupon_class.rpc.a4804920a29f11e78929390828f74048)
+[I] 17:47:00.527(000000000014ED4C):[AMQP0]success declare queue 'sr.customer.coupon.rpc.a4807030a29f11e78929390828f74048'
+[I] 17:47:00.529(000000000014ED4C):[AMQP0]success consume 'sr.customer.coupon.rpc.a4807030a29f11e78929390828f74048'
+[I] 17:47:00.532(000000000014ED4C):[AMQP0]success binding 'amq.direct'->'sr.customer.coupon.rpc.a4807030a29f11e78929390828f74048'(sr.customer.coupon.rpc.a4807030a29f11e78929390828f74048)
+[I] 17:47:00.536(000000000014ED4C):[AMQP0]success declare queue 'cf.wxpay.rpc.a4832f50a29f11e78929390828f74048'
+[I] 17:47:00.537(000000000014ED4C):[AMQP0]success consume 'cf.wxpay.rpc.a4832f50a29f11e78929390828f74048'
+[I] 17:47:00.539(000000000014ED4C):[AMQP0]success binding 'amq.direct'->'cf.wxpay.rpc.a4832f50a29f11e78929390828f74048'(cf.wxpay.rpc.a4832f50a29f11e78929390828f74048)
+[I] 17:47:00.542(000000000014ED4C):[AMQP0]success declare queue 'cf.baidu.rpc.a48c5710a29f11e78929390828f74048'
+[I] 17:47:00.543(000000000014ED4C):[AMQP0]success consume 'cf.baidu.rpc.a48c5710a29f11e78929390828f74048'
+[I] 17:47:00.545(000000000014ED4C):[AMQP0]success binding 'amq.direct'->'cf.baidu.rpc.a48c5710a29f11e78929390828f74048'(cf.baidu.rpc.a48c5710a29f11e78929390828f74048)
+[I] 17:47:00.549(000000000014ED4C):[AMQP0]success declare queue 'sr.trade.rpc.a493f830a29f11e78929390828f74048'
+[I] 17:47:00.550(000000000014ED4C):[AMQP0]success consume 'sr.trade.rpc.a493f830a29f11e78929390828f74048'
+[I] 17:47:00.552(000000000014ED4C):[AMQP0]success binding 'amq.direct'->'sr.trade.rpc.a493f830a29f11e78929390828f74048'(sr.trade.rpc.a493f830a29f11e78929390828f74048)
+[I] 17:47:00.608(000000000014EBE0):[AMQP0]created
+[I] 17:47:00.619(000000000014EBE0):[AMQP0]declare queue 'cf.rpc.a4c875b0a29f11e788fffd3b50a7b77c'
+[I] 17:47:00.620(000000000014EBE0):[RPCC:cf.rpc]create rpc client 'cf.rpc' in conn AMQP0
+[I] 17:47:00.749(000000000014EBE0):PBEncoder success load file 'E:\product\protocol\cf.proto.js'
+[I] 17:47:00.750(000000000014EBE0):[AMQP0]declare queue 'cf.wechat.rpc.a4dc4bd0a29f11e788fffd3b50a7b77c'
+[I] 17:47:00.750(000000000014EBE0):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP0
+[I] 17:47:00.844(000000000014EBE0):PBEncoder success load file 'E:\product\protocol\cf_wechat.proto.js'
+[I] 17:47:00.845(000000000014EBE0):[AMQP0]declare exchange 'cf.wechat.notify'
+[I] 17:47:00.845(000000000014EBE0):[AMQP0]declare queue 'jiaxingwang.sc_admin.wechat.a4eaf1d0a29f11e788fffd3b50a7b77c'
+[I] 17:47:00.846(000000000014EBE0):[AMQP0]declare queue 'cf.app.rpc.a4eaf1d1a29f11e788fffd3b50a7b77c'
+[I] 17:47:00.846(000000000014EBE0):[RPCC:cf.app.rpc]create rpc client 'cf.app.rpc' in conn AMQP0
+[I] 17:47:00.852(000000000014EBE0):PBEncoder success load file 'E:\product\protocol\cf_app.proto.js'
+[I] 17:47:00.852(000000000014EBE0):[AMQP0]declare queue 'cf.alipay.rpc.a4ec0340a29f11e788fffd3b50a7b77c'
+[I] 17:47:00.852(000000000014EBE0):[RPCC:cf.alipay.rpc]create rpc client 'cf.alipay.rpc' in conn AMQP0
+[I] 17:47:00.862(000000000014EBE0):PBEncoder success load file 'E:\product\protocol\cf_alipay.proto.js'
+[I] 17:47:00.862(000000000014EBE0):[AMQP0]declare queue 'cf.ding.rpc.a4ed89e0a29f11e788fffd3b50a7b77c'
+[I] 17:47:00.862(000000000014EBE0):[RPCC:cf.ding.rpc]create rpc client 'cf.ding.rpc' in conn AMQP0
+[I] 17:47:00.874(000000000014EBE0):PBEncoder success load file 'E:\product\protocol\cf_ding.proto.js'
+[I] 17:47:00.875(000000000014EBE0):[AMQP0]declare exchange 'cf.ding.notify'
+[I] 17:47:00.875(000000000014EBE0):[AMQP0]declare queue 'jiaxingwang.sc_admin.ding.a4ef85b0a29f11e788fffd3b50a7b77c'
+[I] 17:47:00.875(000000000014EBE0):[AM]init and reload account!
+[I] 17:47:00.879(000000000014EBE0):[AM]reload account success, account number is: 0
+[I] 17:47:00.884(000000000014EBE0):[AMQP0]declare queue 'sr.customer.rpc.a4f0e540a29f11e788fffd3b50a7b77c'
+[I] 17:47:00.885(000000000014EBE0):[RPCC:sr.customer.rpc]create rpc client 'sr.customer.rpc' in conn AMQP0
+[I] 17:47:00.894(000000000014EBE0):PBEncoder success load file 'E:\product\protocol\sr_customer.proto.js'
+[W] 17:47:00.895(000000000014EBE0):[AMQP0]rpc client 'cf.rpc' declare repeat!
+[W] 17:47:00.895(000000000014EBE0):[AMQP0]rpc client 'cf.wechat.rpc' declare repeat!
+[W] 17:47:00.895(000000000014EBE0):[AMQP0]rpc client 'cf.app.rpc' declare repeat!
+[D] 17:47:01.043(000000000014EA24):worker process log socket connected!
+[D] 17:47:01.035(000000000014F3E4):worker 2# ready to connect master log socket server, port=50490
+[D] 17:47:01.046(000000000014F3E4):worker 2# log socket connected!
+[I] 17:47:01.057(000000000014EBE0):PBEncoder success load file 'E:\product\protocol\sc_system.proto.js'
+[I] 17:47:01.105(000000000014EBE0):[AMQP1]created
+[I] 17:47:01.106(000000000014EBE0):[AMQP1]declare exchange 'amq.direct'
+[I] 17:47:01.107(000000000014EBE0):[AMQP1]declare queue 'cf.wechat.rpc.a512ec30a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.107(000000000014EBE0):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP1
+[I] 17:47:01.108(000000000014EBE0):[AMQP2]created
+[I] 17:47:01.112(000000000014EBE0):[AMQP0]declare exchange 'amq.direct'
+[I] 17:47:01.112(000000000014EBE0):[AMQP0]declare queue 'sc.task.rpc.a513af80a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.113(000000000014EBE0):[RPCC:sc.task.rpc]create rpc client 'sc.task.rpc' in conn AMQP0
+[I] 17:47:01.119(000000000014EBE0):PBEncoder success load file 'E:\product\protocol\sc_task.proto.js'
+[I] 17:47:01.163(000000000014EBE0):[AMQP0]declare queue 'sr.customer.tag.rpc.a51b50a0a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.163(000000000014EBE0):[RPCC:sr.customer.tag.rpc]create rpc client 'sr.customer.tag.rpc' in conn AMQP0
+[I] 17:47:01.163(000000000014EBE0):[AMQP0]declare queue 'sr.customer.point.rpc.a51b77b0a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.163(000000000014EBE0):[RPCC:sr.customer.point.rpc]create rpc client 'sr.customer.point.rpc' in conn AMQP0
+[I] 17:47:01.173(000000000014EBE0):PBEncoder success load file 'E:\product\protocol\sr_customer_point.proto.js'
+[I] 17:47:01.180(000000000014EBE0):PBEncoder success load file 'E:\product\protocol\sr_customer_tag.proto.js'
+[W] 17:47:01.190(000000000014EBE0):[AMQP0]rpc client 'cf.wechat.rpc' declare repeat!
+[I] 17:47:01.191(000000000014EBE0):[AMQP0]declare queue 'sr.customer.coupon_class.rpc.a51f9660a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.191(000000000014EBE0):[RPCC:sr.customer.coupon_class.rpc]create rpc client 'sr.customer.coupon_class.rpc' in conn AMQP0
+[I] 17:47:01.191(000000000014EBE0):[AMQP0]declare queue 'sr.customer.coupon.rpc.a51fbd70a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.192(000000000014EBE0):[RPCC:sr.customer.coupon.rpc]create rpc client 'sr.customer.coupon.rpc' in conn AMQP0
+[I] 17:47:01.206(000000000014EBE0):PBEncoder success load file 'E:\product\protocol\sr_customer_coupon.proto.js'
+[W] 17:47:01.206(000000000014EBE0):[AMQP0]rpc client 'cf.wechat.rpc' declare repeat!
+[I] 17:47:01.207(000000000014EBE0):[AMQP0]declare queue 'cf.wxpay.rpc.a5222e70a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.207(000000000014EBE0):[RPCC:cf.wxpay.rpc]create rpc client 'cf.wxpay.rpc' in conn AMQP0
+[I] 17:47:01.222(000000000014EBE0):PBEncoder success load file 'E:\product\protocol\cf_wxpay.proto.js'
+[W] 17:47:01.223(000000000014EBE0):[AMQP0]rpc client 'sr.customer.point.rpc' declare repeat!
+[W] 17:47:01.230(000000000014EBE0):[AMQP0]exchange amq.direct already declare!!
+[W] 17:47:01.230(000000000014EBE0):[AMQP0]rpc client 'sr.customer.rpc' declare repeat!
+[W] 17:47:01.230(000000000014EBE0):[AMQP0]rpc client 'sr.customer.coupon.rpc' declare repeat!
+[W] 17:47:01.230(000000000014EBE0):[AMQP0]rpc client 'cf.wechat.rpc' declare repeat!
+[W] 17:47:01.232(000000000014EBE0):[AMQP0]exchange amq.direct already declare!!
+[I] 17:47:01.233(000000000014EBE0):[AMQP0]declare queue 'cf.baidu.rpc.a5262610a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.233(000000000014EBE0):[RPCC:cf.baidu.rpc]create rpc client 'cf.baidu.rpc' in conn AMQP0
+[I] 17:47:01.247(000000000014EBE0):PBEncoder success load file 'E:\product\protocol\cf_baidu.proto.js'
+[I] 17:47:01.253(000000000014EBE0):[AMQP3]created
+[I] 17:47:01.264(000000000014EBE0):[AMQP4]created
+[I] 17:47:01.266(000000000014EBE0):[AMQP4]declare exchange 'amq.direct'
+[I] 17:47:01.266(000000000014EBE0):[AMQP4]declare queue 'cf.app.rpc.a52b2f20a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.266(000000000014EBE0):[RPCC:cf.app.rpc]create rpc client 'cf.app.rpc' in conn AMQP4
+[I] 17:47:01.266(000000000014EBE0):[AMQP4]declare queue 'cf.wechat.rpc.a52b2f21a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.267(000000000014EBE0):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP4
+[I] 17:47:01.267(000000000014EBE0):[AMQP4]declare queue 'cf.rpc.a52b5630a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.267(000000000014EBE0):[RPCC:cf.rpc]create rpc client 'cf.rpc' in conn AMQP4
+[I] 17:47:01.267(000000000014EBE0):[AMQP4]declare queue 'sc.task.rpc.a52b5631a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.268(000000000014EBE0):[RPCC:sc.task.rpc]create rpc client 'sc.task.rpc' in conn AMQP4
+[I] 17:47:01.270(000000000014EBE0):[AMQP5]created
+[I] 17:47:01.271(000000000014EBE0):[AMQP5]declare exchange 'amq.direct'
+[I] 17:47:01.271(000000000014EBE0):[AMQP5]declare queue 'cf.wechat.rpc.a52bf270a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.271(000000000014EBE0):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP5
+[W] 17:47:01.273(000000000014EBE0):[AMQP0]rpc client 'sr.customer.point.rpc' declare repeat!
+[I] 17:47:01.276(000000000014EBE0):[AMQP6]created
+[I] 17:47:01.276(000000000014EBE0):[AMQP6]declare exchange 'amq.direct'
+[I] 17:47:01.277(000000000014EBE0):[AMQP6]declare queue 'cf.wechat.rpc.a52cb5c0a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.277(000000000014EBE0):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP6
+[I] 17:47:01.282(000000000014EBE0):[AMQP7]created
+[I] 17:47:01.283(000000000014EBE0):[AMQP7]declare exchange 'amq.direct'
+[I] 17:47:01.283(000000000014EBE0):[AMQP7]declare queue 'sc.task.rpc.a52dc730a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.283(000000000014EBE0):[RPCC:sc.task.rpc]create rpc client 'sc.task.rpc' in conn AMQP7
+[I] 17:47:01.284(000000000014EBE0):[AMQP7]declare queue 'sr.customer.rewardfail.a52dee40a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.284(000000000014EBE0):[RPCC:sr.customer.rewardfail]create rpc client 'sr.customer.rewardfail' in conn AMQP7
+[W] 17:47:01.288(000000000014EBE0):[AMQP0]exchange amq.direct already declare!!
+[W] 17:47:01.288(000000000014EBE0):[AMQP0]rpc client 'sr.customer.tag.rpc' declare repeat!
+[W] 17:47:01.288(000000000014EBE0):[AMQP0]rpc client 'sc.task.rpc' declare repeat!
+[W] 17:47:01.291(000000000014EBE0):[AMQP0]exchange amq.direct already declare!!
+[I] 17:47:01.291(000000000014EBE0):[AMQP0]declare queue 'sr.trade.rpc.a52effb0a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.291(000000000014EBE0):[RPCC:sr.trade.rpc]create rpc client 'sr.trade.rpc' in conn AMQP0
+[I] 17:47:01.294(000000000014EBE0):PBEncoder success load file 'E:\product\protocol\sr_trade.proto.js'
+[I] 17:47:01.298(000000000014EBE0):[AMQP8]created
+[I] 17:47:01.298(000000000014EBE0):[AMQP8]declare exchange 'amq.direct'
+[I] 17:47:01.299(000000000014EBE0):[AMQP8]declare queue 'cf.wechat.rpc.a5301120a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.299(000000000014EBE0):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP8
+[T] 17:47:01.318(000000000014EBE0):Http is running,port is 18910
+[I] 17:47:01.322(000000000014EBE0):[redis]redis connect
+[I] 17:47:01.336(000000000014EBE0):[redis]redis ready
+[I] 17:47:01.338(000000000014EBE0):[MP1]create connection #0
+[T] 17:47:01.338(000000000014EBE0):[MP1]getConnection success,getIndex=0
+[I] 17:47:01.339(000000000014EBE0):[MP1]create connection #1
+[T] 17:47:01.339(000000000014EBE0):[MP1]getConnection success,getIndex=1
+[T] 17:47:01.347(000000000014EBE0):[MySQL]Query success,used time:6 ms,sql="select * from cf_account where enabled=1 and function_mask like \"1%\""
+[T] 17:47:01.355(000000000014EBE0):[MySQL]Query success,used time:13 ms,sql="SELECT * FROM `sc_org`"
+[T] 17:47:01.356(000000000014EBE0):getConnection release,getIndex=0
+[T] 17:47:01.356(000000000014EBE0):getConnection release,getIndex=1
+[I] 17:47:01.356(000000000014EBE0):[AM]get account list success: [{"innerid":"HEDV35FASG-DGW423A-34TGGW53AAD66","name":"乐逛演示","org_id":"1","shop_id":null,"settlement_id":null,"method_code":1,"method_code_key":"wechat_test3_1","function_mask":"10","config":"{\"accountid\":\"gh_92368265694f\",\"fee_type\":\"CNY\",\"appid\":\"wx39bf9ff3da6fc1e7\",\"appsecret\":\"e00fc51118b318fb99cff35d217865fc\",\"mch_id\":\"1287801701\",\"sub_mch_id\":\"\",\"sign_key\":\"smartpaysmartpaysmartpaysmartpay\",\"key_file\":\"apiclient_key.pem\",\"cert_file\":\"apiclient_cert.pem\",\"pay_authorization_dir\":[\"\",\"\",\"\"],\"pay_native_callback\":\"\",\"pay_finish_notify\":\"1\",\"pay_alarm_notify\":\"\"}","enabled":1,"desc":null},{"innerid":"SE43RG3ASG-34GWW55A-34TG43HER452","name":"短信测试一","org_id":"1","shop_id":null,"settlement_id":null,"method_code":2,"method_code_key":"wechat_test1_2","function_mask":"10","config":"{\"url\" : \"http://211.147.239.62:9050/cgi-bin/sendsms\",\"username\" : \"shopperconnect@smartac\",\"password\" : \"shopCNT@smartc2016\"}","enabled":1,"desc":null},{"innerid":"SMFGSW423GWS-G43HTEHE2-HHEDR5462HS","name":"邮件测试一","org_id":"1","shop_id":null,"settlement_id":null,"method_code":3,"method_code_key":"wechat_test1_3","function_mask":"10","config":"{\"smtpserver\" : \"smtp.163.com\",\"port\": 25,\"username\" : \"zyqtest5@163.com\",\"password\" : \"zyqtest5881119\",\"SSL\":false}","enabled":1,"desc":null}]
+[I] 17:47:01.386(000000000014EBE0):[AMQP0]AMQP0 connect 'amqp://guest:guest@172.16.0.81:5672' success!
+[I] 17:47:01.390(000000000014EBE0):[AMQP4]AMQP4 connect 'amqp://guest:guest@172.16.0.81:5672' success!
+[I] 17:47:01.391(000000000014EBE0):[AMQP1]AMQP1 connect 'amqp://guest:guest@172.16.0.81:5672' success!
+[I] 17:47:01.391(000000000014EBE0):[AMQP5]AMQP5 connect 'amqp://guest:guest@172.16.0.81:5672' success!
+[I] 17:47:01.392(000000000014EBE0):[AMQP6]AMQP6 connect 'amqp://guest:guest@172.16.0.81:5672' success!
+[I] 17:47:01.393(000000000014EBE0):[AMQP7]AMQP7 connect 'amqp://guest:guest@172.16.0.81:5672' success!
+[I] 17:47:01.394(000000000014EBE0):[AMQP8]AMQP8 connect 'amqp://guest:guest@172.16.0.81:5672' success!
+[I] 17:47:01.406(000000000014EBE0):[AMQP4]success declare exchange 'amq.direct'
+[I] 17:47:01.406(000000000014EBE0):[AMQP0]success declare queue 'cf.rpc.a4c875b0a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.407(000000000014EBE0):[AMQP5]success declare exchange 'amq.direct'
+[I] 17:47:01.409(000000000014EBE0):[AMQP7]success declare exchange 'amq.direct'
+[I] 17:47:01.409(000000000014EBE0):[AMQP1]success declare exchange 'amq.direct'
+[I] 17:47:01.410(000000000014EBE0):[AMQP6]success declare exchange 'amq.direct'
+[I] 17:47:01.411(000000000014EBE0):[AMQP8]success declare exchange 'amq.direct'
+[I] 17:47:01.411(000000000014EBE0):[AMQP4]success declare queue 'cf.app.rpc.a52b2f20a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.412(000000000014EBE0):[AMQP0]success consume 'cf.rpc.a4c875b0a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.413(000000000014EBE0):[AMQP4]success consume 'cf.app.rpc.a52b2f20a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.413(000000000014EBE0):[AMQP7]success declare queue 'sc.task.rpc.a52dc730a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.415(000000000014EBE0):[AMQP5]success declare queue 'cf.wechat.rpc.a52bf270a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.415(000000000014EBE0):[AMQP0]success binding 'amq.direct'->'cf.rpc.a4c875b0a29f11e788fffd3b50a7b77c'(cf.rpc.a4c875b0a29f11e788fffd3b50a7b77c)
+[I] 17:47:01.416(000000000014EBE0):[AMQP6]success declare queue 'cf.wechat.rpc.a52cb5c0a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.416(000000000014EBE0):[AMQP1]success declare queue 'cf.wechat.rpc.a512ec30a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.417(000000000014EBE0):[AMQP8]success declare queue 'cf.wechat.rpc.a5301120a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.417(000000000014EBE0):[AMQP5]success consume 'cf.wechat.rpc.a52bf270a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.418(000000000014EBE0):[AMQP4]success binding 'amq.direct'->'cf.app.rpc.a52b2f20a29f11e788fffd3b50a7b77c'(cf.app.rpc.a52b2f20a29f11e788fffd3b50a7b77c)
+[I] 17:47:01.418(000000000014EBE0):[AMQP7]success consume 'sc.task.rpc.a52dc730a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.418(000000000014EBE0):[AMQP6]success consume 'cf.wechat.rpc.a52cb5c0a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.419(000000000014EBE0):[AMQP0]success declare queue 'cf.wechat.rpc.a4dc4bd0a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.419(000000000014EBE0):[AMQP1]success consume 'cf.wechat.rpc.a512ec30a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.420(000000000014EBE0):[AMQP8]success consume 'cf.wechat.rpc.a5301120a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.421(000000000014EBE0):[AMQP0]success consume 'cf.wechat.rpc.a4dc4bd0a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.421(000000000014EBE0):[AMQP5]success binding 'amq.direct'->'cf.wechat.rpc.a52bf270a29f11e788fffd3b50a7b77c'(cf.wechat.rpc.a52bf270a29f11e788fffd3b50a7b77c)
+[I] 17:47:01.423(000000000014EBE0):[AMQP7]success binding 'amq.direct'->'sc.task.rpc.a52dc730a29f11e788fffd3b50a7b77c'(sc.task.rpc.a52dc730a29f11e788fffd3b50a7b77c)
+[I] 17:47:01.424(000000000014EBE0):[AMQP6]success binding 'amq.direct'->'cf.wechat.rpc.a52cb5c0a29f11e788fffd3b50a7b77c'(cf.wechat.rpc.a52cb5c0a29f11e788fffd3b50a7b77c)
+[I] 17:47:01.424(000000000014EBE0):[AMQP4]success declare queue 'cf.wechat.rpc.a52b2f21a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.424(000000000014EBE0):[AMQP1]success binding 'amq.direct'->'cf.wechat.rpc.a512ec30a29f11e788fffd3b50a7b77c'(cf.wechat.rpc.a512ec30a29f11e788fffd3b50a7b77c)
+[I] 17:47:01.426(000000000014EBE0):[AMQP8]success binding 'amq.direct'->'cf.wechat.rpc.a5301120a29f11e788fffd3b50a7b77c'(cf.wechat.rpc.a5301120a29f11e788fffd3b50a7b77c)
+[I] 17:47:01.426(000000000014EBE0):[AMQP0]success binding 'amq.direct'->'cf.wechat.rpc.a4dc4bd0a29f11e788fffd3b50a7b77c'(cf.wechat.rpc.a4dc4bd0a29f11e788fffd3b50a7b77c)
+[I] 17:47:01.427(000000000014EBE0):[AMQP4]success consume 'cf.wechat.rpc.a52b2f21a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.428(000000000014EBE0):[AMQP0]success declare exchange 'cf.wechat.notify'
+[I] 17:47:01.429(000000000014EBE0):[AMQP7]success declare queue 'sr.customer.rewardfail.a52dee40a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.430(000000000014EBE0):[AMQP4]success binding 'amq.direct'->'cf.wechat.rpc.a52b2f21a29f11e788fffd3b50a7b77c'(cf.wechat.rpc.a52b2f21a29f11e788fffd3b50a7b77c)
+[I] 17:47:01.430(000000000014EBE0):[AMQP7]success consume 'sr.customer.rewardfail.a52dee40a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.433(000000000014EBE0):[AMQP0]success declare queue 'jiaxingwang.sc_admin.wechat.a4eaf1d0a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.433(000000000014EBE0):[AMQP7]success binding 'amq.direct'->'sr.customer.rewardfail.a52dee40a29f11e788fffd3b50a7b77c'(sr.customer.rewardfail.a52dee40a29f11e788fffd3b50a7b77c)
+[I] 17:47:01.434(000000000014EBE0):[AMQP4]success declare queue 'cf.rpc.a52b5630a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.435(000000000014EBE0):[AMQP0]success consume 'jiaxingwang.sc_admin.wechat.a4eaf1d0a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.436(000000000014EBE0):[AMQP4]success consume 'cf.rpc.a52b5630a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.438(000000000014EBE0):[AMQP0]success binding 'cf.wechat.notify'->'jiaxingwang.sc_admin.wechat.a4eaf1d0a29f11e788fffd3b50a7b77c'(#)
+[I] 17:47:01.439(000000000014EBE0):[AMQP4]success binding 'amq.direct'->'cf.rpc.a52b5630a29f11e788fffd3b50a7b77c'(cf.rpc.a52b5630a29f11e788fffd3b50a7b77c)
+[I] 17:47:01.441(000000000014EBE0):[AMQP0]success declare queue 'cf.app.rpc.a4eaf1d1a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.442(000000000014EBE0):[AMQP0]success consume 'cf.app.rpc.a4eaf1d1a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.444(000000000014EBE0):[AMQP4]success declare queue 'sc.task.rpc.a52b5631a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.445(000000000014EBE0):[AMQP0]success binding 'amq.direct'->'cf.app.rpc.a4eaf1d1a29f11e788fffd3b50a7b77c'(cf.app.rpc.a4eaf1d1a29f11e788fffd3b50a7b77c)
+[I] 17:47:01.445(000000000014EBE0):[AMQP4]success consume 'sc.task.rpc.a52b5631a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.447(000000000014EBE0):[AMQP4]success binding 'amq.direct'->'sc.task.rpc.a52b5631a29f11e788fffd3b50a7b77c'(sc.task.rpc.a52b5631a29f11e788fffd3b50a7b77c)
+[I] 17:47:01.449(000000000014EBE0):[AMQP0]success declare queue 'cf.alipay.rpc.a4ec0340a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.451(000000000014EBE0):[AMQP0]success consume 'cf.alipay.rpc.a4ec0340a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.453(000000000014EBE0):[AMQP0]success binding 'amq.direct'->'cf.alipay.rpc.a4ec0340a29f11e788fffd3b50a7b77c'(cf.alipay.rpc.a4ec0340a29f11e788fffd3b50a7b77c)
+[I] 17:47:01.458(000000000014EBE0):[AMQP0]success declare queue 'cf.ding.rpc.a4ed89e0a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.459(000000000014EBE0):[AMQP0]success consume 'cf.ding.rpc.a4ed89e0a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.461(000000000014EBE0):[AMQP0]success binding 'amq.direct'->'cf.ding.rpc.a4ed89e0a29f11e788fffd3b50a7b77c'(cf.ding.rpc.a4ed89e0a29f11e788fffd3b50a7b77c)
+[I] 17:47:01.462(000000000014EBE0):[AMQP0]success declare exchange 'cf.ding.notify'
+[I] 17:47:01.465(000000000014EBE0):[AMQP0]success declare queue 'jiaxingwang.sc_admin.ding.a4ef85b0a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.467(000000000014EBE0):[AMQP0]success consume 'jiaxingwang.sc_admin.ding.a4ef85b0a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.469(000000000014EBE0):[AMQP0]success binding 'cf.ding.notify'->'jiaxingwang.sc_admin.ding.a4ef85b0a29f11e788fffd3b50a7b77c'(#)
+[I] 17:47:01.473(000000000014EBE0):[AMQP0]success declare queue 'sr.customer.rpc.a4f0e540a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.477(000000000014EBE0):[AMQP0]success consume 'sr.customer.rpc.a4f0e540a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.479(000000000014EBE0):[AMQP0]success binding 'amq.direct'->'sr.customer.rpc.a4f0e540a29f11e788fffd3b50a7b77c'(sr.customer.rpc.a4f0e540a29f11e788fffd3b50a7b77c)
+[I] 17:47:01.480(000000000014EBE0):[AMQP0]success declare exchange 'amq.direct'
+[I] 17:47:01.483(000000000014EBE0):[AMQP0]success declare queue 'sc.task.rpc.a513af80a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.485(000000000014EBE0):[AMQP0]success consume 'sc.task.rpc.a513af80a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.487(000000000014EBE0):[AMQP0]success binding 'amq.direct'->'sc.task.rpc.a513af80a29f11e788fffd3b50a7b77c'(sc.task.rpc.a513af80a29f11e788fffd3b50a7b77c)
+[I] 17:47:01.492(000000000014EBE0):[AMQP0]success declare queue 'sr.customer.tag.rpc.a51b50a0a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.493(000000000014EBE0):[AMQP0]success consume 'sr.customer.tag.rpc.a51b50a0a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.496(000000000014EBE0):[AMQP0]success binding 'amq.direct'->'sr.customer.tag.rpc.a51b50a0a29f11e788fffd3b50a7b77c'(sr.customer.tag.rpc.a51b50a0a29f11e788fffd3b50a7b77c)
+[I] 17:47:01.501(000000000014EBE0):[AMQP0]success declare queue 'sr.customer.point.rpc.a51b77b0a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.503(000000000014EBE0):[AMQP0]success consume 'sr.customer.point.rpc.a51b77b0a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.506(000000000014EBE0):[AMQP0]success binding 'amq.direct'->'sr.customer.point.rpc.a51b77b0a29f11e788fffd3b50a7b77c'(sr.customer.point.rpc.a51b77b0a29f11e788fffd3b50a7b77c)
+[I] 17:47:01.509(000000000014EBE0):[AMQP0]success declare queue 'sr.customer.coupon_class.rpc.a51f9660a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.510(000000000014EBE0):[AMQP0]success consume 'sr.customer.coupon_class.rpc.a51f9660a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.513(000000000014EBE0):[AMQP0]success binding 'amq.direct'->'sr.customer.coupon_class.rpc.a51f9660a29f11e788fffd3b50a7b77c'(sr.customer.coupon_class.rpc.a51f9660a29f11e788fffd3b50a7b77c)
+[I] 17:47:01.516(000000000014EBE0):[AMQP0]success declare queue 'sr.customer.coupon.rpc.a51fbd70a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.517(000000000014EBE0):[AMQP0]success consume 'sr.customer.coupon.rpc.a51fbd70a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.519(000000000014EBE0):[AMQP0]success binding 'amq.direct'->'sr.customer.coupon.rpc.a51fbd70a29f11e788fffd3b50a7b77c'(sr.customer.coupon.rpc.a51fbd70a29f11e788fffd3b50a7b77c)
+[I] 17:47:01.530(000000000014EBE0):[AMQP0]success declare queue 'cf.wxpay.rpc.a5222e70a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.537(000000000014EBE0):[AMQP0]success consume 'cf.wxpay.rpc.a5222e70a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.553(000000000014EBE0):[AMQP0]success binding 'amq.direct'->'cf.wxpay.rpc.a5222e70a29f11e788fffd3b50a7b77c'(cf.wxpay.rpc.a5222e70a29f11e788fffd3b50a7b77c)
+[I] 17:47:01.563(000000000014EBE0):[AMQP0]success declare queue 'cf.baidu.rpc.a5262610a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.570(000000000014EBE0):[AMQP0]success consume 'cf.baidu.rpc.a5262610a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.573(000000000014EBE0):[AMQP0]success binding 'amq.direct'->'cf.baidu.rpc.a5262610a29f11e788fffd3b50a7b77c'(cf.baidu.rpc.a5262610a29f11e788fffd3b50a7b77c)
+[I] 17:47:01.589(000000000014F3E4):[AMQP0]created
+[I] 17:47:01.596(000000000014EBE0):[AMQP0]success declare queue 'sr.trade.rpc.a52effb0a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.599(000000000014F3E4):[AMQP0]declare queue 'cf.rpc.a55db0d0a29f11e7bd4653064e9952f8'
+[I] 17:47:01.600(000000000014F3E4):[RPCC:cf.rpc]create rpc client 'cf.rpc' in conn AMQP0
+[I] 17:47:01.599(000000000014EBE0):[AMQP0]success consume 'sr.trade.rpc.a52effb0a29f11e788fffd3b50a7b77c'
+[I] 17:47:01.607(000000000014EBE0):[AMQP0]success binding 'amq.direct'->'sr.trade.rpc.a52effb0a29f11e788fffd3b50a7b77c'(sr.trade.rpc.a52effb0a29f11e788fffd3b50a7b77c)
+[I] 17:47:01.707(000000000014F3E4):PBEncoder success load file 'E:\product\protocol\cf.proto.js'
+[I] 17:47:01.708(000000000014F3E4):[AMQP0]declare queue 'cf.wechat.rpc.a56e79b0a29f11e7bd4653064e9952f8'
+[I] 17:47:01.708(000000000014F3E4):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP0
+[I] 17:47:01.761(000000000014F3E4):PBEncoder success load file 'E:\product\protocol\cf_wechat.proto.js'
+[I] 17:47:01.761(000000000014F3E4):[AMQP0]declare exchange 'cf.wechat.notify'
+[I] 17:47:01.762(000000000014F3E4):[AMQP0]declare queue 'jiaxingwang.sc_admin.wechat.a576de20a29f11e7bd4653064e9952f8'
+[I] 17:47:01.762(000000000014F3E4):[AMQP0]declare queue 'cf.app.rpc.a576de21a29f11e7bd4653064e9952f8'
+[I] 17:47:01.762(000000000014F3E4):[RPCC:cf.app.rpc]create rpc client 'cf.app.rpc' in conn AMQP0
+[I] 17:47:01.768(000000000014F3E4):PBEncoder success load file 'E:\product\protocol\cf_app.proto.js'
+[I] 17:47:01.769(000000000014F3E4):[AMQP0]declare queue 'cf.alipay.rpc.a577ef90a29f11e7bd4653064e9952f8'
+[I] 17:47:01.769(000000000014F3E4):[RPCC:cf.alipay.rpc]create rpc client 'cf.alipay.rpc' in conn AMQP0
+[I] 17:47:01.787(000000000014F3E4):PBEncoder success load file 'E:\product\protocol\cf_alipay.proto.js'
+[I] 17:47:01.788(000000000014F3E4):[AMQP0]declare queue 'cf.ding.rpc.a57ad5c0a29f11e7bd4653064e9952f8'
+[I] 17:47:01.788(000000000014F3E4):[RPCC:cf.ding.rpc]create rpc client 'cf.ding.rpc' in conn AMQP0
+[I] 17:47:01.799(000000000014F3E4):PBEncoder success load file 'E:\product\protocol\cf_ding.proto.js'
+[I] 17:47:01.799(000000000014F3E4):[AMQP0]declare exchange 'cf.ding.notify'
+[I] 17:47:01.800(000000000014F3E4):[AMQP0]declare queue 'jiaxingwang.sc_admin.ding.a57c8370a29f11e7bd4653064e9952f8'
+[I] 17:47:01.800(000000000014F3E4):[AM]init and reload account!
+[I] 17:47:01.803(000000000014F3E4):[AM]reload account success, account number is: 0
+[I] 17:47:01.807(000000000014F3E4):[AMQP0]declare queue 'sr.customer.rpc.a57dbbf0a29f11e7bd4653064e9952f8'
+[I] 17:47:01.807(000000000014F3E4):[RPCC:sr.customer.rpc]create rpc client 'sr.customer.rpc' in conn AMQP0
+[I] 17:47:01.815(000000000014F3E4):PBEncoder success load file 'E:\product\protocol\sr_customer.proto.js'
+[W] 17:47:01.816(000000000014F3E4):[AMQP0]rpc client 'cf.rpc' declare repeat!
+[W] 17:47:01.816(000000000014F3E4):[AMQP0]rpc client 'cf.wechat.rpc' declare repeat!
+[W] 17:47:01.816(000000000014F3E4):[AMQP0]rpc client 'cf.app.rpc' declare repeat!
+[I] 17:47:01.982(000000000014F3E4):PBEncoder success load file 'E:\product\protocol\sc_system.proto.js'
+[I] 17:47:02.026(000000000014F3E4):[AMQP1]created
+[I] 17:47:02.027(000000000014F3E4):[AMQP1]declare exchange 'amq.direct'
+[I] 17:47:02.027(000000000014F3E4):[AMQP1]declare queue 'cf.wechat.rpc.a59f4db0a29f11e7bd4653064e9952f8'
+[I] 17:47:02.027(000000000014F3E4):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP1
+[I] 17:47:02.029(000000000014F3E4):[AMQP2]created
+[I] 17:47:02.033(000000000014F3E4):[AMQP0]declare exchange 'amq.direct'
+[I] 17:47:02.034(000000000014F3E4):[AMQP0]declare queue 'sc.task.rpc.a5a05f20a29f11e7bd4653064e9952f8'
+[I] 17:47:02.034(000000000014F3E4):[RPCC:sc.task.rpc]create rpc client 'sc.task.rpc' in conn AMQP0
+[I] 17:47:02.042(000000000014F3E4):PBEncoder success load file 'E:\product\protocol\sc_task.proto.js'
+[I] 17:47:02.064(000000000014F3E4):[AMQP0]declare queue 'sr.customer.tag.rpc.a5a4cbf0a29f11e7bd4653064e9952f8'
+[I] 17:47:02.064(000000000014F3E4):[RPCC:sr.customer.tag.rpc]create rpc client 'sr.customer.tag.rpc' in conn AMQP0
+[I] 17:47:02.064(000000000014F3E4):[AMQP0]declare queue 'sr.customer.point.rpc.a5a4f300a29f11e7bd4653064e9952f8'
+[I] 17:47:02.065(000000000014F3E4):[RPCC:sr.customer.point.rpc]create rpc client 'sr.customer.point.rpc' in conn AMQP0
+[I] 17:47:02.079(000000000014F3E4):PBEncoder success load file 'E:\product\protocol\sr_customer_point.proto.js'
+[I] 17:47:02.086(000000000014F3E4):PBEncoder success load file 'E:\product\protocol\sr_customer_tag.proto.js'
+[W] 17:47:02.095(000000000014F3E4):[AMQP0]rpc client 'cf.wechat.rpc' declare repeat!
+[I] 17:47:02.096(000000000014F3E4):[AMQP0]declare queue 'sr.customer.coupon_class.rpc.a5a9d500a29f11e7bd4653064e9952f8'
+[I] 17:47:02.096(000000000014F3E4):[RPCC:sr.customer.coupon_class.rpc]create rpc client 'sr.customer.coupon_class.rpc' in conn AMQP0
+[I] 17:47:02.096(000000000014F3E4):[AMQP0]declare queue 'sr.customer.coupon.rpc.a5a9d501a29f11e7bd4653064e9952f8'
+[I] 17:47:02.097(000000000014F3E4):[RPCC:sr.customer.coupon.rpc]create rpc client 'sr.customer.coupon.rpc' in conn AMQP0
+[I] 17:47:02.108(000000000014F3E4):PBEncoder success load file 'E:\product\protocol\sr_customer_coupon.proto.js'
+[W] 17:47:02.109(000000000014F3E4):[AMQP0]rpc client 'cf.wechat.rpc' declare repeat!
+[I] 17:47:02.109(000000000014F3E4):[AMQP0]declare queue 'cf.wxpay.rpc.a5abd0d0a29f11e7bd4653064e9952f8'
+[I] 17:47:02.109(000000000014F3E4):[RPCC:cf.wxpay.rpc]create rpc client 'cf.wxpay.rpc' in conn AMQP0
+[I] 17:47:02.121(000000000014F3E4):PBEncoder success load file 'E:\product\protocol\cf_wxpay.proto.js'
+[W] 17:47:02.121(000000000014F3E4):[AMQP0]rpc client 'sr.customer.point.rpc' declare repeat!
+[W] 17:47:02.128(000000000014F3E4):[AMQP0]exchange amq.direct already declare!!
+[W] 17:47:02.128(000000000014F3E4):[AMQP0]rpc client 'sr.customer.rpc' declare repeat!
+[W] 17:47:02.128(000000000014F3E4):[AMQP0]rpc client 'sr.customer.coupon.rpc' declare repeat!
+[W] 17:47:02.129(000000000014F3E4):[AMQP0]rpc client 'cf.wechat.rpc' declare repeat!
+[W] 17:47:02.131(000000000014F3E4):[AMQP0]exchange amq.direct already declare!!
+[I] 17:47:02.131(000000000014F3E4):[AMQP0]declare queue 'cf.baidu.rpc.a5af2c30a29f11e7bd4653064e9952f8'
+[I] 17:47:02.131(000000000014F3E4):[RPCC:cf.baidu.rpc]create rpc client 'cf.baidu.rpc' in conn AMQP0
+[I] 17:47:02.134(000000000014F3E4):PBEncoder success load file 'E:\product\protocol\cf_baidu.proto.js'
+[I] 17:47:02.139(000000000014F3E4):[AMQP3]created
+[I] 17:47:02.147(000000000014F3E4):[AMQP4]created
+[I] 17:47:02.148(000000000014F3E4):[AMQP4]declare exchange 'amq.direct'
+[I] 17:47:02.148(000000000014F3E4):[AMQP4]declare queue 'cf.app.rpc.a5b1c440a29f11e7bd4653064e9952f8'
+[I] 17:47:02.148(000000000014F3E4):[RPCC:cf.app.rpc]create rpc client 'cf.app.rpc' in conn AMQP4
+[I] 17:47:02.149(000000000014F3E4):[AMQP4]declare queue 'cf.wechat.rpc.a5b1eb50a29f11e7bd4653064e9952f8'
+[I] 17:47:02.149(000000000014F3E4):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP4
+[I] 17:47:02.149(000000000014F3E4):[AMQP4]declare queue 'cf.rpc.a5b1eb51a29f11e7bd4653064e9952f8'
+[I] 17:47:02.149(000000000014F3E4):[RPCC:cf.rpc]create rpc client 'cf.rpc' in conn AMQP4
+[I] 17:47:02.149(000000000014F3E4):[AMQP4]declare queue 'sc.task.rpc.a5b1eb52a29f11e7bd4653064e9952f8'
+[I] 17:47:02.150(000000000014F3E4):[RPCC:sc.task.rpc]create rpc client 'sc.task.rpc' in conn AMQP4
+[I] 17:47:02.152(000000000014F3E4):[AMQP5]created
+[I] 17:47:02.153(000000000014F3E4):[AMQP5]declare exchange 'amq.direct'
+[I] 17:47:02.153(000000000014F3E4):[AMQP5]declare queue 'cf.wechat.rpc.a5b28790a29f11e7bd4653064e9952f8'
+[I] 17:47:02.153(000000000014F3E4):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP5
+[W] 17:47:02.155(000000000014F3E4):[AMQP0]rpc client 'sr.customer.point.rpc' declare repeat!
+[I] 17:47:02.157(000000000014F3E4):[AMQP6]created
+[I] 17:47:02.157(000000000014F3E4):[AMQP6]declare exchange 'amq.direct'
+[I] 17:47:02.158(000000000014F3E4):[AMQP6]declare queue 'cf.wechat.rpc.a5b34ae0a29f11e7bd4653064e9952f8'
+[I] 17:47:02.158(000000000014F3E4):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP6
+[I] 17:47:02.162(000000000014F3E4):[AMQP7]created
+[I] 17:47:02.163(000000000014F3E4):[AMQP7]declare exchange 'amq.direct'
+[I] 17:47:02.163(000000000014F3E4):[AMQP7]declare queue 'sc.task.rpc.a5b40e30a29f11e7bd4653064e9952f8'
+[I] 17:47:02.163(000000000014F3E4):[RPCC:sc.task.rpc]create rpc client 'sc.task.rpc' in conn AMQP7
+[I] 17:47:02.163(000000000014F3E4):[AMQP7]declare queue 'sr.customer.rewardfail.a5b40e31a29f11e7bd4653064e9952f8'
+[I] 17:47:02.164(000000000014F3E4):[RPCC:sr.customer.rewardfail]create rpc client 'sr.customer.rewardfail' in conn AMQP7
+[W] 17:47:02.167(000000000014F3E4):[AMQP0]exchange amq.direct already declare!!
+[W] 17:47:02.167(000000000014F3E4):[AMQP0]rpc client 'sr.customer.tag.rpc' declare repeat!
+[W] 17:47:02.167(000000000014F3E4):[AMQP0]rpc client 'sc.task.rpc' declare repeat!
+[W] 17:47:02.169(000000000014F3E4):[AMQP0]exchange amq.direct already declare!!
+[I] 17:47:02.170(000000000014F3E4):[AMQP0]declare queue 'sr.trade.rpc.a5b51fa0a29f11e7bd4653064e9952f8'
+[I] 17:47:02.170(000000000014F3E4):[RPCC:sr.trade.rpc]create rpc client 'sr.trade.rpc' in conn AMQP0
+[I] 17:47:02.173(000000000014F3E4):PBEncoder success load file 'E:\product\protocol\sr_trade.proto.js'
+[I] 17:47:02.176(000000000014F3E4):[AMQP8]created
+[I] 17:47:02.177(000000000014F3E4):[AMQP8]declare exchange 'amq.direct'
+[I] 17:47:02.177(000000000014F3E4):[AMQP8]declare queue 'cf.wechat.rpc.a5b63110a29f11e7bd4653064e9952f8'
+[I] 17:47:02.177(000000000014F3E4):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP8
+[T] 17:47:02.197(000000000014F3E4):Http is running,port is 18910
+[I] 17:47:02.201(000000000014F3E4):[redis]redis connect
+[I] 17:47:02.214(000000000014F3E4):[redis]redis ready
+[I] 17:47:02.216(000000000014F3E4):[MP1]create connection #0
+[T] 17:47:02.216(000000000014F3E4):[MP1]getConnection success,getIndex=0
+[I] 17:47:02.217(000000000014F3E4):[MP1]create connection #1
+[T] 17:47:02.217(000000000014F3E4):[MP1]getConnection success,getIndex=1
+[T] 17:47:02.226(000000000014F3E4):[MySQL]Query success,used time:6 ms,sql="select * from cf_account where enabled=1 and function_mask like \"1%\""
+[T] 17:47:02.233(000000000014F3E4):[MySQL]Query success,used time:11 ms,sql="SELECT * FROM `sc_org`"
+[T] 17:47:02.234(000000000014F3E4):getConnection release,getIndex=0
+[T] 17:47:02.234(000000000014F3E4):getConnection release,getIndex=1
+[I] 17:47:02.234(000000000014F3E4):[AM]get account list success: [{"innerid":"HEDV35FASG-DGW423A-34TGGW53AAD66","name":"乐逛演示","org_id":"1","shop_id":null,"settlement_id":null,"method_code":1,"method_code_key":"wechat_test3_1","function_mask":"10","config":"{\"accountid\":\"gh_92368265694f\",\"fee_type\":\"CNY\",\"appid\":\"wx39bf9ff3da6fc1e7\",\"appsecret\":\"e00fc51118b318fb99cff35d217865fc\",\"mch_id\":\"1287801701\",\"sub_mch_id\":\"\",\"sign_key\":\"smartpaysmartpaysmartpaysmartpay\",\"key_file\":\"apiclient_key.pem\",\"cert_file\":\"apiclient_cert.pem\",\"pay_authorization_dir\":[\"\",\"\",\"\"],\"pay_native_callback\":\"\",\"pay_finish_notify\":\"1\",\"pay_alarm_notify\":\"\"}","enabled":1,"desc":null},{"innerid":"SE43RG3ASG-34GWW55A-34TG43HER452","name":"短信测试一","org_id":"1","shop_id":null,"settlement_id":null,"method_code":2,"method_code_key":"wechat_test1_2","function_mask":"10","config":"{\"url\" : \"http://211.147.239.62:9050/cgi-bin/sendsms\",\"username\" : \"shopperconnect@smartac\",\"password\" : \"shopCNT@smartc2016\"}","enabled":1,"desc":null},{"innerid":"SMFGSW423GWS-G43HTEHE2-HHEDR5462HS","name":"邮件测试一","org_id":"1","shop_id":null,"settlement_id":null,"method_code":3,"method_code_key":"wechat_test1_3","function_mask":"10","config":"{\"smtpserver\" : \"smtp.163.com\",\"port\": 25,\"username\" : \"zyqtest5@163.com\",\"password\" : \"zyqtest5881119\",\"SSL\":false}","enabled":1,"desc":null}]
+[I] 17:47:02.266(000000000014F3E4):[AMQP0]AMQP0 connect 'amqp://guest:guest@172.16.0.81:5672' success!
+[I] 17:47:02.270(000000000014F3E4):[AMQP1]AMQP1 connect 'amqp://guest:guest@172.16.0.81:5672' success!
+[I] 17:47:02.270(000000000014F3E4):[AMQP6]AMQP6 connect 'amqp://guest:guest@172.16.0.81:5672' success!
+[I] 17:47:02.271(000000000014F3E4):[AMQP5]AMQP5 connect 'amqp://guest:guest@172.16.0.81:5672' success!
+[I] 17:47:02.273(000000000014F3E4):[AMQP8]AMQP8 connect 'amqp://guest:guest@172.16.0.81:5672' success!
+[I] 17:47:02.273(000000000014F3E4):[AMQP4]AMQP4 connect 'amqp://guest:guest@172.16.0.81:5672' success!
+[I] 17:47:02.274(000000000014F3E4):[AMQP7]AMQP7 connect 'amqp://guest:guest@172.16.0.81:5672' success!
+[I] 17:47:02.286(000000000014F3E4):[AMQP0]success declare queue 'cf.rpc.a55db0d0a29f11e7bd4653064e9952f8'
+[I] 17:47:02.287(000000000014F3E4):[AMQP8]success declare exchange 'amq.direct'
+[I] 17:47:02.288(000000000014F3E4):[AMQP5]success declare exchange 'amq.direct'
+[I] 17:47:02.289(000000000014F3E4):[AMQP7]success declare exchange 'amq.direct'
+[I] 17:47:02.290(000000000014F3E4):[AMQP4]success declare exchange 'amq.direct'
+[I] 17:47:02.291(000000000014F3E4):[AMQP1]success declare exchange 'amq.direct'
+[I] 17:47:02.291(000000000014F3E4):[AMQP6]success declare exchange 'amq.direct'
+[I] 17:47:02.293(000000000014F3E4):[AMQP0]success consume 'cf.rpc.a55db0d0a29f11e7bd4653064e9952f8'
+[I] 17:47:02.296(000000000014F3E4):[AMQP8]success declare queue 'cf.wechat.rpc.a5b63110a29f11e7bd4653064e9952f8'
+[I] 17:47:02.297(000000000014F3E4):[AMQP5]success declare queue 'cf.wechat.rpc.a5b28790a29f11e7bd4653064e9952f8'
+[I] 17:47:02.298(000000000014F3E4):[AMQP4]success declare queue 'cf.app.rpc.a5b1c440a29f11e7bd4653064e9952f8'
+[I] 17:47:02.299(000000000014F3E4):[AMQP7]success declare queue 'sc.task.rpc.a5b40e30a29f11e7bd4653064e9952f8'
+[I] 17:47:02.300(000000000014F3E4):[AMQP0]success binding 'amq.direct'->'cf.rpc.a55db0d0a29f11e7bd4653064e9952f8'(cf.rpc.a55db0d0a29f11e7bd4653064e9952f8)
+[I] 17:47:02.301(000000000014F3E4):[AMQP6]success declare queue 'cf.wechat.rpc.a5b34ae0a29f11e7bd4653064e9952f8'
+[I] 17:47:02.302(000000000014F3E4):[AMQP8]success consume 'cf.wechat.rpc.a5b63110a29f11e7bd4653064e9952f8'
+[I] 17:47:02.302(000000000014F3E4):[AMQP1]success declare queue 'cf.wechat.rpc.a59f4db0a29f11e7bd4653064e9952f8'
+[I] 17:47:02.302(000000000014F3E4):[AMQP5]success consume 'cf.wechat.rpc.a5b28790a29f11e7bd4653064e9952f8'
+[I] 17:47:02.303(000000000014F3E4):[AMQP4]success consume 'cf.app.rpc.a5b1c440a29f11e7bd4653064e9952f8'
+[I] 17:47:02.303(000000000014F3E4):[AMQP7]success consume 'sc.task.rpc.a5b40e30a29f11e7bd4653064e9952f8'
+[I] 17:47:02.304(000000000014F3E4):[AMQP6]success consume 'cf.wechat.rpc.a5b34ae0a29f11e7bd4653064e9952f8'
+[I] 17:47:02.305(000000000014F3E4):[AMQP1]success consume 'cf.wechat.rpc.a59f4db0a29f11e7bd4653064e9952f8'
+[I] 17:47:02.305(000000000014F3E4):[AMQP8]success binding 'amq.direct'->'cf.wechat.rpc.a5b63110a29f11e7bd4653064e9952f8'(cf.wechat.rpc.a5b63110a29f11e7bd4653064e9952f8)
+[I] 17:47:02.307(000000000014F3E4):[AMQP5]success binding 'amq.direct'->'cf.wechat.rpc.a5b28790a29f11e7bd4653064e9952f8'(cf.wechat.rpc.a5b28790a29f11e7bd4653064e9952f8)
+[I] 17:47:02.308(000000000014F3E4):[AMQP4]success binding 'amq.direct'->'cf.app.rpc.a5b1c440a29f11e7bd4653064e9952f8'(cf.app.rpc.a5b1c440a29f11e7bd4653064e9952f8)
+[I] 17:47:02.309(000000000014F3E4):[AMQP0]success declare queue 'cf.wechat.rpc.a56e79b0a29f11e7bd4653064e9952f8'
+[I] 17:47:02.310(000000000014F3E4):[AMQP6]success binding 'amq.direct'->'cf.wechat.rpc.a5b34ae0a29f11e7bd4653064e9952f8'(cf.wechat.rpc.a5b34ae0a29f11e7bd4653064e9952f8)
+[I] 17:47:02.311(000000000014F3E4):[AMQP7]success binding 'amq.direct'->'sc.task.rpc.a5b40e30a29f11e7bd4653064e9952f8'(sc.task.rpc.a5b40e30a29f11e7bd4653064e9952f8)
+[I] 17:47:02.311(000000000014F3E4):[AMQP1]success binding 'amq.direct'->'cf.wechat.rpc.a59f4db0a29f11e7bd4653064e9952f8'(cf.wechat.rpc.a59f4db0a29f11e7bd4653064e9952f8)
+[I] 17:47:02.313(000000000014F3E4):[AMQP4]success declare queue 'cf.wechat.rpc.a5b1eb50a29f11e7bd4653064e9952f8'
+[I] 17:47:02.314(000000000014F3E4):[AMQP0]success consume 'cf.wechat.rpc.a56e79b0a29f11e7bd4653064e9952f8'
+[I] 17:47:02.315(000000000014F3E4):[AMQP4]success consume 'cf.wechat.rpc.a5b1eb50a29f11e7bd4653064e9952f8'
+[I] 17:47:02.316(000000000014F3E4):[AMQP7]success declare queue 'sr.customer.rewardfail.a5b40e31a29f11e7bd4653064e9952f8'
+[I] 17:47:02.317(000000000014F3E4):[AMQP0]success binding 'amq.direct'->'cf.wechat.rpc.a56e79b0a29f11e7bd4653064e9952f8'(cf.wechat.rpc.a56e79b0a29f11e7bd4653064e9952f8)
+[I] 17:47:02.318(000000000014F3E4):[AMQP4]success binding 'amq.direct'->'cf.wechat.rpc.a5b1eb50a29f11e7bd4653064e9952f8'(cf.wechat.rpc.a5b1eb50a29f11e7bd4653064e9952f8)
+[I] 17:47:02.318(000000000014F3E4):[AMQP7]success consume 'sr.customer.rewardfail.a5b40e31a29f11e7bd4653064e9952f8'
+[I] 17:47:02.319(000000000014F3E4):[AMQP0]success declare exchange 'cf.wechat.notify'
+[I] 17:47:02.320(000000000014F3E4):[AMQP7]success binding 'amq.direct'->'sr.customer.rewardfail.a5b40e31a29f11e7bd4653064e9952f8'(sr.customer.rewardfail.a5b40e31a29f11e7bd4653064e9952f8)
+[I] 17:47:02.321(000000000014F3E4):[AMQP4]success declare queue 'cf.rpc.a5b1eb51a29f11e7bd4653064e9952f8'
+[I] 17:47:02.323(000000000014F3E4):[AMQP4]success consume 'cf.rpc.a5b1eb51a29f11e7bd4653064e9952f8'
+[I] 17:47:02.324(000000000014F3E4):[AMQP0]success declare queue 'jiaxingwang.sc_admin.wechat.a576de20a29f11e7bd4653064e9952f8'
+[I] 17:47:02.325(000000000014F3E4):[AMQP0]success consume 'jiaxingwang.sc_admin.wechat.a576de20a29f11e7bd4653064e9952f8'
+[I] 17:47:02.325(000000000014F3E4):[AMQP4]success binding 'amq.direct'->'cf.rpc.a5b1eb51a29f11e7bd4653064e9952f8'(cf.rpc.a5b1eb51a29f11e7bd4653064e9952f8)
+[I] 17:47:02.328(000000000014F3E4):[AMQP0]success binding 'cf.wechat.notify'->'jiaxingwang.sc_admin.wechat.a576de20a29f11e7bd4653064e9952f8'(#)
+[I] 17:47:02.329(000000000014F3E4):[AMQP4]success declare queue 'sc.task.rpc.a5b1eb52a29f11e7bd4653064e9952f8'
+[I] 17:47:02.330(000000000014F3E4):[AMQP4]success consume 'sc.task.rpc.a5b1eb52a29f11e7bd4653064e9952f8'
+[I] 17:47:02.333(000000000014F3E4):[AMQP0]success declare queue 'cf.app.rpc.a576de21a29f11e7bd4653064e9952f8'
+[I] 17:47:02.334(000000000014F3E4):[AMQP4]success binding 'amq.direct'->'sc.task.rpc.a5b1eb52a29f11e7bd4653064e9952f8'(sc.task.rpc.a5b1eb52a29f11e7bd4653064e9952f8)
+[I] 17:47:02.335(000000000014F3E4):[AMQP0]success consume 'cf.app.rpc.a576de21a29f11e7bd4653064e9952f8'
+[I] 17:47:02.338(000000000014F3E4):[AMQP0]success binding 'amq.direct'->'cf.app.rpc.a576de21a29f11e7bd4653064e9952f8'(cf.app.rpc.a576de21a29f11e7bd4653064e9952f8)
+[I] 17:47:02.343(000000000014F3E4):[AMQP0]success declare queue 'cf.alipay.rpc.a577ef90a29f11e7bd4653064e9952f8'
+[I] 17:47:02.344(000000000014F3E4):[AMQP0]success consume 'cf.alipay.rpc.a577ef90a29f11e7bd4653064e9952f8'
+[I] 17:47:02.347(000000000014F3E4):[AMQP0]success binding 'amq.direct'->'cf.alipay.rpc.a577ef90a29f11e7bd4653064e9952f8'(cf.alipay.rpc.a577ef90a29f11e7bd4653064e9952f8)
+[I] 17:47:02.352(000000000014F3E4):[AMQP0]success declare queue 'cf.ding.rpc.a57ad5c0a29f11e7bd4653064e9952f8'
+[I] 17:47:02.353(000000000014F3E4):[AMQP0]success consume 'cf.ding.rpc.a57ad5c0a29f11e7bd4653064e9952f8'
+[I] 17:47:02.356(000000000014F3E4):[AMQP0]success binding 'amq.direct'->'cf.ding.rpc.a57ad5c0a29f11e7bd4653064e9952f8'(cf.ding.rpc.a57ad5c0a29f11e7bd4653064e9952f8)
+[I] 17:47:02.357(000000000014F3E4):[AMQP0]success declare exchange 'cf.ding.notify'
+[I] 17:47:02.361(000000000014F3E4):[AMQP0]success declare queue 'jiaxingwang.sc_admin.ding.a57c8370a29f11e7bd4653064e9952f8'
+[I] 17:47:02.362(000000000014F3E4):[AMQP0]success consume 'jiaxingwang.sc_admin.ding.a57c8370a29f11e7bd4653064e9952f8'
+[I] 17:47:02.365(000000000014F3E4):[AMQP0]success binding 'cf.ding.notify'->'jiaxingwang.sc_admin.ding.a57c8370a29f11e7bd4653064e9952f8'(#)
+[I] 17:47:02.369(000000000014F3E4):[AMQP0]success declare queue 'sr.customer.rpc.a57dbbf0a29f11e7bd4653064e9952f8'
+[I] 17:47:02.372(000000000014F3E4):[AMQP0]success consume 'sr.customer.rpc.a57dbbf0a29f11e7bd4653064e9952f8'
+[I] 17:47:02.375(000000000014F3E4):[AMQP0]success binding 'amq.direct'->'sr.customer.rpc.a57dbbf0a29f11e7bd4653064e9952f8'(sr.customer.rpc.a57dbbf0a29f11e7bd4653064e9952f8)
+[I] 17:47:02.376(000000000014F3E4):[AMQP0]success declare exchange 'amq.direct'
+[I] 17:47:02.379(000000000014F3E4):[AMQP0]success declare queue 'sc.task.rpc.a5a05f20a29f11e7bd4653064e9952f8'
+[I] 17:47:02.381(000000000014F3E4):[AMQP0]success consume 'sc.task.rpc.a5a05f20a29f11e7bd4653064e9952f8'
+[I] 17:47:02.384(000000000014F3E4):[AMQP0]success binding 'amq.direct'->'sc.task.rpc.a5a05f20a29f11e7bd4653064e9952f8'(sc.task.rpc.a5a05f20a29f11e7bd4653064e9952f8)
+[I] 17:47:02.387(000000000014F3E4):[AMQP0]success declare queue 'sr.customer.tag.rpc.a5a4cbf0a29f11e7bd4653064e9952f8'
+[I] 17:47:02.389(000000000014F3E4):[AMQP0]success consume 'sr.customer.tag.rpc.a5a4cbf0a29f11e7bd4653064e9952f8'
+[I] 17:47:02.391(000000000014F3E4):[AMQP0]success binding 'amq.direct'->'sr.customer.tag.rpc.a5a4cbf0a29f11e7bd4653064e9952f8'(sr.customer.tag.rpc.a5a4cbf0a29f11e7bd4653064e9952f8)
+[I] 17:47:02.395(000000000014F3E4):[AMQP0]success declare queue 'sr.customer.point.rpc.a5a4f300a29f11e7bd4653064e9952f8'
+[I] 17:47:02.397(000000000014F3E4):[AMQP0]success consume 'sr.customer.point.rpc.a5a4f300a29f11e7bd4653064e9952f8'
+[I] 17:47:02.399(000000000014F3E4):[AMQP0]success binding 'amq.direct'->'sr.customer.point.rpc.a5a4f300a29f11e7bd4653064e9952f8'(sr.customer.point.rpc.a5a4f300a29f11e7bd4653064e9952f8)
+[I] 17:47:02.404(000000000014F3E4):[AMQP0]success declare queue 'sr.customer.coupon_class.rpc.a5a9d500a29f11e7bd4653064e9952f8'
+[I] 17:47:02.406(000000000014F3E4):[AMQP0]success consume 'sr.customer.coupon_class.rpc.a5a9d500a29f11e7bd4653064e9952f8'
+[I] 17:47:02.408(000000000014F3E4):[AMQP0]success binding 'amq.direct'->'sr.customer.coupon_class.rpc.a5a9d500a29f11e7bd4653064e9952f8'(sr.customer.coupon_class.rpc.a5a9d500a29f11e7bd4653064e9952f8)
+[I] 17:47:02.411(000000000014F3E4):[AMQP0]success declare queue 'sr.customer.coupon.rpc.a5a9d501a29f11e7bd4653064e9952f8'
+[I] 17:47:02.413(000000000014F3E4):[AMQP0]success consume 'sr.customer.coupon.rpc.a5a9d501a29f11e7bd4653064e9952f8'
+[I] 17:47:02.415(000000000014F3E4):[AMQP0]success binding 'amq.direct'->'sr.customer.coupon.rpc.a5a9d501a29f11e7bd4653064e9952f8'(sr.customer.coupon.rpc.a5a9d501a29f11e7bd4653064e9952f8)
+[I] 17:47:02.418(000000000014F3E4):[AMQP0]success declare queue 'cf.wxpay.rpc.a5abd0d0a29f11e7bd4653064e9952f8'
+[I] 17:47:02.420(000000000014F3E4):[AMQP0]success consume 'cf.wxpay.rpc.a5abd0d0a29f11e7bd4653064e9952f8'
+[I] 17:47:02.427(000000000014F3E4):[AMQP0]success binding 'amq.direct'->'cf.wxpay.rpc.a5abd0d0a29f11e7bd4653064e9952f8'(cf.wxpay.rpc.a5abd0d0a29f11e7bd4653064e9952f8)
+[I] 17:47:02.430(000000000014F3E4):[AMQP0]success declare queue 'cf.baidu.rpc.a5af2c30a29f11e7bd4653064e9952f8'
+[I] 17:47:02.432(000000000014F3E4):[AMQP0]success consume 'cf.baidu.rpc.a5af2c30a29f11e7bd4653064e9952f8'
+[I] 17:47:02.435(000000000014F3E4):[AMQP0]success binding 'amq.direct'->'cf.baidu.rpc.a5af2c30a29f11e7bd4653064e9952f8'(cf.baidu.rpc.a5af2c30a29f11e7bd4653064e9952f8)
+[I] 17:47:02.439(000000000014F3E4):[AMQP0]success declare queue 'sr.trade.rpc.a5b51fa0a29f11e7bd4653064e9952f8'
+[I] 17:47:02.441(000000000014F3E4):[AMQP0]success consume 'sr.trade.rpc.a5b51fa0a29f11e7bd4653064e9952f8'
+[I] 17:47:02.444(000000000014F3E4):[AMQP0]success binding 'amq.direct'->'sr.trade.rpc.a5b51fa0a29f11e7bd4653064e9952f8'(sr.trade.rpc.a5b51fa0a29f11e7bd4653064e9952f8)
+[I] 17:47:03.701(000000000014F3E4):login param :{"name":"admin","password":"e10adc3949ba59abbe56e057f20f883e"}
+[T] 17:47:03.703(000000000014F3E4):[MP1]getConnection success,getIndex=2
+[T] 17:47:03.706(000000000014F3E4):[MySQL]Query success,used time:2 ms,sql="SELECT `innerid`,`type`,`bindid`,`role_id`,`userid`,`name`,`language`,`profile_photo`,`birthday`,`position`,`mobile`,`gender`,`email`,`qq`,`weibo`,`wechat`,         `facebook`,`remark` FROM sc_user WHERE isdeleted = '0' AND userid = 'admin' AND `password` = 'e10adc3949ba59abbe56e057f20f883e';"
+[T] 17:47:03.706(000000000014F3E4):getConnection release,getIndex=2
+[T] 17:47:03.708(000000000014F3E4):[MP1]getConnection success,getIndex=3
+[T] 17:47:03.710(000000000014F3E4):[MySQL]Query success,used time:1 ms,sql="SELECT menu.innerid,menu.menukey,module.modulekey,role.permission         FROM sc_role_define role LEFT JOIN sc_menu menu ON role.menu_key = menu.menukey         LEFT JOIN sc_module module ON menu.moduleid = module.innerid         WHERE role.role_id = (SELECT role_id FROM sc_user WHERE userid = 'admin' AND PASSWORD = 'e10adc3949ba59abbe56e057f20f883e' AND isdeleted = 0 LIMIT 1)         AND menu.isdisplay = 1 ORDER BY permission DESC"
+[T] 17:47:03.710(000000000014F3E4):getConnection release,getIndex=3
+[I] 17:47:03.711(000000000014F3E4):userinfo:{"innerid":"4ceea494-6ec7-5401-59a9-af7451ce5f8a","type":1,"bindid":"1","role_id":"a9eae0c5-a7a1-11e5-9d85-005056bbd22e","userid":"admin","name":"admin","language":0,"profile_photo":"","birthday":"1899-12-31T16:00:00.000Z","position":"超级管理员","mobile":"","gender":1,"email":"","qq":"","weibo":"","wechat":"","facebook":"","remark":"","User_int_TenantID":"1","user_id":"admin","staff_id":"4ceea494-6ec7-5401-59a9-af7451ce5f8a"}
+[I] 17:52:00.956(000000000014ED4C):[redis]redis close
+[T] 17:52:00.956(000000000014ED4C):[redis]redis reconnecting
+[I] 17:52:00.981(000000000014ED4C):[redis]redis connect
+[I] 17:52:00.983(000000000014ED4C):[redis]redis ready
+[I] 17:52:01.955(000000000014EBE0):[redis]redis close
+[T] 17:52:01.955(000000000014EBE0):[redis]redis reconnecting
+[I] 17:52:01.958(000000000014EBE0):[redis]redis connect
+[I] 17:52:01.960(000000000014EBE0):[redis]redis ready
+[I] 17:52:04.956(000000000014F3E4):[redis]redis close
+[T] 17:52:04.956(000000000014F3E4):[redis]redis reconnecting
+[I] 17:52:04.961(000000000014F3E4):[redis]redis connect
+[I] 17:52:04.962(000000000014F3E4):[redis]redis ready
+[I] 17:57:02.008(000000000014ED4C):[redis]redis close
+[T] 17:57:02.009(000000000014ED4C):[redis]redis reconnecting
+[I] 17:57:02.012(000000000014ED4C):[redis]redis connect
+[I] 17:57:02.013(000000000014ED4C):[redis]redis ready
+[I] 17:57:03.008(000000000014EBE0):[redis]redis close
+[T] 17:57:03.009(000000000014EBE0):[redis]redis reconnecting
+[I] 17:57:03.013(000000000014EBE0):[redis]redis connect
+[I] 17:57:03.015(000000000014EBE0):[redis]redis ready
+[I] 17:57:06.013(000000000014F3E4):[redis]redis close
+[T] 17:57:06.013(000000000014F3E4):[redis]redis reconnecting
+[I] 17:57:06.017(000000000014F3E4):[redis]redis connect
+[I] 17:57:06.018(000000000014F3E4):[redis]redis ready
+[I] 17:57:16.334(000000000014F3E4):login param :{"name":"admin","password":"e10adc3949ba59abbe56e057f20f883e"}
+[I] 17:57:16.337(000000000014F3E4):[MP1]create connection #2
+[T] 17:57:16.338(000000000014F3E4):[MP1]getConnection success,getIndex=4
+[T] 17:57:16.340(000000000014F3E4):[MySQL]Query success,used time:2 ms,sql="SELECT `innerid`,`type`,`bindid`,`role_id`,`userid`,`name`,`language`,`profile_photo`,`birthday`,`position`,`mobile`,`gender`,`email`,`qq`,`weibo`,`wechat`,         `facebook`,`remark` FROM sc_user WHERE isdeleted = '0' AND userid = 'admin' AND `password` = 'e10adc3949ba59abbe56e057f20f883e';"
+[T] 17:57:16.340(000000000014F3E4):getConnection release,getIndex=4
+[T] 17:57:16.341(000000000014F3E4):[MP1]getConnection success,getIndex=5
+[T] 17:57:16.344(000000000014F3E4):[MySQL]Query success,used time:2 ms,sql="SELECT menu.innerid,menu.menukey,module.modulekey,role.permission         FROM sc_role_define role LEFT JOIN sc_menu menu ON role.menu_key = menu.menukey         LEFT JOIN sc_module module ON menu.moduleid = module.innerid         WHERE role.role_id = (SELECT role_id FROM sc_user WHERE userid = 'admin' AND PASSWORD = 'e10adc3949ba59abbe56e057f20f883e' AND isdeleted = 0 LIMIT 1)         AND menu.isdisplay = 1 ORDER BY permission DESC"
+[T] 17:57:16.344(000000000014F3E4):getConnection release,getIndex=5
+[I] 17:57:16.345(000000000014F3E4):userinfo:{"innerid":"4ceea494-6ec7-5401-59a9-af7451ce5f8a","type":1,"bindid":"1","role_id":"a9eae0c5-a7a1-11e5-9d85-005056bbd22e","userid":"admin","name":"admin","language":0,"profile_photo":"","birthday":"1899-12-31T16:00:00.000Z","position":"超级管理员","mobile":"","gender":1,"email":"","qq":"","weibo":"","wechat":"","facebook":"","remark":"","User_int_TenantID":"1","user_id":"admin","staff_id":"4ceea494-6ec7-5401-59a9-af7451ce5f8a"}
+[I] 18:02:02.373(000000000014ED4C):[redis]redis close
+[T] 18:02:02.374(000000000014ED4C):[redis]redis reconnecting
+[I] 18:02:02.377(000000000014ED4C):[redis]redis connect
+[I] 18:02:02.380(000000000014ED4C):[redis]redis ready
+[I] 18:02:03.373(000000000014EBE0):[redis]redis close
+[T] 18:02:03.373(000000000014EBE0):[redis]redis reconnecting
+[I] 18:02:03.378(000000000014EBE0):[redis]redis connect
+[I] 18:02:03.379(000000000014EBE0):[redis]redis ready
+[I] 18:02:16.482(000000000014F3E4):[redis]redis close
+[T] 18:02:16.482(000000000014F3E4):[redis]redis reconnecting
+[I] 18:02:16.486(000000000014F3E4):[redis]redis connect
+[I] 18:02:16.487(000000000014F3E4):[redis]redis ready
+[I] 18:07:03.338(000000000014ED4C):[redis]redis close
+[T] 18:07:03.338(000000000014ED4C):[redis]redis reconnecting
+[I] 18:07:03.341(000000000014ED4C):[redis]redis connect
+[I] 18:07:03.342(000000000014ED4C):[redis]redis ready
+[I] 18:07:04.339(000000000014EBE0):[redis]redis close
+[T] 18:07:04.339(000000000014EBE0):[redis]redis reconnecting
+[I] 18:07:04.344(000000000014EBE0):[redis]redis connect
+[I] 18:07:04.345(000000000014EBE0):[redis]redis ready
+[I] 18:07:17.554(000000000014F3E4):[redis]redis close
+[T] 18:07:17.554(000000000014F3E4):[redis]redis reconnecting
+[I] 18:07:17.557(000000000014F3E4):[redis]redis connect
+[I] 18:07:17.559(000000000014F3E4):[redis]redis ready
+[I] 18:12:04.303(000000000014ED4C):[redis]redis close
+[T] 18:12:04.303(000000000014ED4C):[redis]redis reconnecting
+[I] 18:12:04.307(000000000014ED4C):[redis]redis connect
+[I] 18:12:04.309(000000000014ED4C):[redis]redis ready
+[I] 18:12:06.305(000000000014EBE0):[redis]redis close
+[T] 18:12:06.306(000000000014EBE0):[redis]redis reconnecting
+[I] 18:12:06.310(000000000014EBE0):[redis]redis connect
+[I] 18:12:06.312(000000000014EBE0):[redis]redis ready
+[I] 18:12:19.217(000000000014F3E4):[redis]redis close
+[T] 18:12:19.218(000000000014F3E4):[redis]redis reconnecting
+[I] 18:12:19.221(000000000014F3E4):[redis]redis connect
+[I] 18:12:19.222(000000000014F3E4):[redis]redis ready
+[I] 18:17:04.998(000000000014ED4C):[redis]redis close
+[T] 18:17:04.999(000000000014ED4C):[redis]redis reconnecting
+[I] 18:17:05.001(000000000014ED4C):[redis]redis connect
+[I] 18:17:05.002(000000000014ED4C):[redis]redis ready
+[I] 18:17:07.003(000000000014EBE0):[redis]redis close
+[T] 18:17:07.004(000000000014EBE0):[redis]redis reconnecting
+[I] 18:17:07.007(000000000014EBE0):[redis]redis connect
+[I] 18:17:07.009(000000000014EBE0):[redis]redis ready
+[I] 18:17:20.008(000000000014F3E4):[redis]redis close
+[T] 18:17:20.009(000000000014F3E4):[redis]redis reconnecting
+[I] 18:17:20.011(000000000014F3E4):[redis]redis connect
+[I] 18:17:20.013(000000000014F3E4):[redis]redis ready
+[I] 18:22:05.781(000000000014ED4C):[redis]redis close
+[T] 18:22:05.782(000000000014ED4C):[redis]redis reconnecting
+[I] 18:22:05.785(000000000014ED4C):[redis]redis connect
+[I] 18:22:05.788(000000000014ED4C):[redis]redis ready
+[I] 18:22:07.782(000000000014EBE0):[redis]redis close
+[T] 18:22:07.782(000000000014EBE0):[redis]redis reconnecting
+[I] 18:22:07.786(000000000014EBE0):[redis]redis connect
+[I] 18:22:07.787(000000000014EBE0):[redis]redis ready
+[I] 18:22:20.792(000000000014F3E4):[redis]redis close
+[T] 18:22:20.793(000000000014F3E4):[redis]redis reconnecting
+[I] 18:22:20.796(000000000014F3E4):[redis]redis connect
+[I] 18:22:20.798(000000000014F3E4):[redis]redis ready
+[I] 18:27:07.342(000000000014ED4C):[redis]redis close
+[T] 18:27:07.343(000000000014ED4C):[redis]redis reconnecting
+[I] 18:27:07.346(000000000014ED4C):[redis]redis connect
+[I] 18:27:07.347(000000000014ED4C):[redis]redis ready
+[I] 18:27:09.343(000000000014EBE0):[redis]redis close
+[T] 18:27:09.344(000000000014EBE0):[redis]redis reconnecting
+[I] 18:27:09.346(000000000014EBE0):[redis]redis connect
+[I] 18:27:09.348(000000000014EBE0):[redis]redis ready
+[I] 18:27:22.252(000000000014F3E4):[redis]redis close
+[T] 18:27:22.253(000000000014F3E4):[redis]redis reconnecting
+[I] 18:27:22.256(000000000014F3E4):[redis]redis connect
+[I] 18:27:22.257(000000000014F3E4):[redis]redis ready
+[I] 18:32:07.822(000000000014ED4C):[redis]redis close
+[T] 18:32:07.823(000000000014ED4C):[redis]redis reconnecting
+[I] 18:32:07.826(000000000014ED4C):[redis]redis connect
+[I] 18:32:07.827(000000000014ED4C):[redis]redis ready
+[I] 18:32:09.826(000000000014EBE0):[redis]redis close
+[T] 18:32:09.827(000000000014EBE0):[redis]redis reconnecting
+[I] 18:32:09.829(000000000014EBE0):[redis]redis connect
+[I] 18:32:09.831(000000000014EBE0):[redis]redis ready
+[I] 18:32:22.931(000000000014F3E4):[redis]redis close
+[T] 18:32:22.932(000000000014F3E4):[redis]redis reconnecting
+[I] 18:32:22.935(000000000014F3E4):[redis]redis connect
+[I] 18:32:22.937(000000000014F3E4):[redis]redis ready
+[I] 18:37:09.099(000000000014ED4C):[redis]redis close
+[T] 18:37:09.100(000000000014ED4C):[redis]redis reconnecting
+[I] 18:37:09.104(000000000014ED4C):[redis]redis connect
+[I] 18:37:09.105(000000000014ED4C):[redis]redis ready
+[I] 18:37:11.201(000000000014EBE0):[redis]redis close
+[T] 18:37:11.202(000000000014EBE0):[redis]redis reconnecting
+[I] 18:37:11.205(000000000014EBE0):[redis]redis connect
+[I] 18:37:11.206(000000000014EBE0):[redis]redis ready
+[I] 18:37:24.110(000000000014F3E4):[redis]redis close
+[T] 18:37:24.111(000000000014F3E4):[redis]redis reconnecting
+[I] 18:37:24.116(000000000014F3E4):[redis]redis connect
+[I] 18:37:24.117(000000000014F3E4):[redis]redis ready
+[I] 18:42:09.745(000000000014ED4C):[redis]redis close
+[T] 18:42:09.746(000000000014ED4C):[redis]redis reconnecting
+[I] 18:42:09.749(000000000014ED4C):[redis]redis connect
+[I] 18:42:09.752(000000000014ED4C):[redis]redis ready
+[I] 18:42:11.750(000000000014EBE0):[redis]redis close
+[T] 18:42:11.750(000000000014EBE0):[redis]redis reconnecting
+[I] 18:42:11.754(000000000014EBE0):[redis]redis connect
+[I] 18:42:11.756(000000000014EBE0):[redis]redis ready
+[I] 18:42:24.660(000000000014F3E4):[redis]redis close
+[T] 18:42:24.660(000000000014F3E4):[redis]redis reconnecting
+[I] 18:42:24.663(000000000014F3E4):[redis]redis connect
+[I] 18:42:24.665(000000000014F3E4):[redis]redis ready
+[I] 18:47:10.520(000000000014ED4C):[redis]redis close
+[T] 18:47:10.520(000000000014ED4C):[redis]redis reconnecting
+[I] 18:47:10.526(000000000014ED4C):[redis]redis connect
+[I] 18:47:10.528(000000000014ED4C):[redis]redis ready
+[I] 18:47:12.627(000000000014EBE0):[redis]redis close
+[T] 18:47:12.627(000000000014EBE0):[redis]redis reconnecting
+[I] 18:47:12.631(000000000014EBE0):[redis]redis connect
+[I] 18:47:12.632(000000000014EBE0):[redis]redis ready
+[I] 18:47:25.539(000000000014F3E4):[redis]redis close
+[T] 18:47:25.539(000000000014F3E4):[redis]redis reconnecting
+[I] 18:47:25.542(000000000014F3E4):[redis]redis connect
+[I] 18:47:25.543(000000000014F3E4):[redis]redis ready
+[I] 18:52:11.614(000000000014ED4C):[redis]redis close
+[T] 18:52:11.615(000000000014ED4C):[redis]redis reconnecting
+[I] 18:52:11.621(000000000014ED4C):[redis]redis connect
+[I] 18:52:11.622(000000000014ED4C):[redis]redis ready
+[I] 18:52:13.614(000000000014EBE0):[redis]redis close
+[T] 18:52:13.615(000000000014EBE0):[redis]redis reconnecting
+[I] 18:52:13.620(000000000014EBE0):[redis]redis connect
+[I] 18:52:13.622(000000000014EBE0):[redis]redis ready
+[I] 18:52:26.623(000000000014F3E4):[redis]redis close
+[T] 18:52:26.623(000000000014F3E4):[redis]redis reconnecting
+[I] 18:52:26.627(000000000014F3E4):[redis]redis connect
+[I] 18:52:26.629(000000000014F3E4):[redis]redis ready
+[I] 18:57:12.458(000000000014ED4C):[redis]redis close
+[T] 18:57:12.459(000000000014ED4C):[redis]redis reconnecting
+[I] 18:57:12.463(000000000014ED4C):[redis]redis connect
+[I] 18:57:12.464(000000000014ED4C):[redis]redis ready
+[I] 18:57:14.461(000000000014EBE0):[redis]redis close
+[T] 18:57:14.462(000000000014EBE0):[redis]redis reconnecting
+[I] 18:57:14.465(000000000014EBE0):[redis]redis connect
+[I] 18:57:14.467(000000000014EBE0):[redis]redis ready
+[I] 18:57:27.569(000000000014F3E4):[redis]redis close
+[T] 18:57:27.569(000000000014F3E4):[redis]redis reconnecting
+[I] 18:57:27.571(000000000014F3E4):[redis]redis connect
+[I] 18:57:27.573(000000000014F3E4):[redis]redis ready
+[I] 19:02:14.120(000000000014ED4C):[redis]redis close
+[T] 19:02:14.120(000000000014ED4C):[redis]redis reconnecting
+[I] 19:02:14.125(000000000014ED4C):[redis]redis connect
+[I] 19:02:14.126(000000000014ED4C):[redis]redis ready
+[I] 19:02:16.122(000000000014EBE0):[redis]redis close
+[T] 19:02:16.122(000000000014EBE0):[redis]redis reconnecting
+[I] 19:02:16.127(000000000014EBE0):[redis]redis connect
+[I] 19:02:16.128(000000000014EBE0):[redis]redis ready
+[I] 19:02:29.029(000000000014F3E4):[redis]redis close
+[T] 19:02:29.030(000000000014F3E4):[redis]redis reconnecting
+[I] 19:02:29.033(000000000014F3E4):[redis]redis connect
+[I] 19:02:29.036(000000000014F3E4):[redis]redis ready
+[I] 19:07:14.950(000000000014ED4C):[redis]redis close
+[T] 19:07:14.951(000000000014ED4C):[redis]redis reconnecting
+[I] 19:07:14.954(000000000014ED4C):[redis]redis connect
+[I] 19:07:14.956(000000000014ED4C):[redis]redis ready
+[I] 19:07:16.950(000000000014EBE0):[redis]redis close
+[T] 19:07:16.950(000000000014EBE0):[redis]redis reconnecting
+[I] 19:07:16.954(000000000014EBE0):[redis]redis connect
+[I] 19:07:16.956(000000000014EBE0):[redis]redis ready
+[I] 19:07:29.863(000000000014F3E4):[redis]redis close
+[T] 19:07:29.864(000000000014F3E4):[redis]redis reconnecting
+[I] 19:07:29.867(000000000014F3E4):[redis]redis connect
+[I] 19:07:29.868(000000000014F3E4):[redis]redis ready
+[I] 19:12:16.074(000000000014ED4C):[redis]redis close
+[T] 19:12:16.074(000000000014ED4C):[redis]redis reconnecting
+[I] 19:12:16.076(000000000014ED4C):[redis]redis connect
+[I] 19:12:16.078(000000000014ED4C):[redis]redis ready
+[I] 19:12:18.075(000000000014EBE0):[redis]redis close
+[T] 19:12:18.075(000000000014EBE0):[redis]redis reconnecting
+[I] 19:12:18.078(000000000014EBE0):[redis]redis connect
+[I] 19:12:18.080(000000000014EBE0):[redis]redis ready
+[I] 19:12:31.187(000000000014F3E4):[redis]redis close
+[T] 19:12:31.188(000000000014F3E4):[redis]redis reconnecting
+[I] 19:12:31.191(000000000014F3E4):[redis]redis connect
+[I] 19:12:31.192(000000000014F3E4):[redis]redis ready
+[I] 19:17:16.522(000000000014ED4C):[redis]redis close
+[T] 19:17:16.522(000000000014ED4C):[redis]redis reconnecting
+[I] 19:17:16.526(000000000014ED4C):[redis]redis connect
+[I] 19:17:16.527(000000000014ED4C):[redis]redis ready
+[I] 19:17:18.523(000000000014EBE0):[redis]redis close
+[T] 19:17:18.524(000000000014EBE0):[redis]redis reconnecting
+[I] 19:17:18.527(000000000014EBE0):[redis]redis connect
+[I] 19:17:18.529(000000000014EBE0):[redis]redis ready
+[I] 19:17:31.538(000000000014F3E4):[redis]redis close
+[T] 19:17:31.538(000000000014F3E4):[redis]redis reconnecting
+[I] 19:17:31.541(000000000014F3E4):[redis]redis connect
+[I] 19:17:31.542(000000000014F3E4):[redis]redis ready
+[I] 19:22:17.477(000000000014ED4C):[redis]redis close
+[T] 19:22:17.478(000000000014ED4C):[redis]redis reconnecting
+[I] 19:22:17.483(000000000014ED4C):[redis]redis connect
+[I] 19:22:17.484(000000000014ED4C):[redis]redis ready
+[I] 19:22:19.479(000000000014EBE0):[redis]redis close
+[T] 19:22:19.480(000000000014EBE0):[redis]redis reconnecting
+[I] 19:22:19.484(000000000014EBE0):[redis]redis connect
+[I] 19:22:19.486(000000000014EBE0):[redis]redis ready
+[I] 19:22:33.483(000000000014F3E4):[redis]redis close
+[T] 19:22:33.484(000000000014F3E4):[redis]redis reconnecting
+[I] 19:22:33.487(000000000014F3E4):[redis]redis connect
+[I] 19:22:33.489(000000000014F3E4):[redis]redis ready
+[I] 19:27:18.815(000000000014ED4C):[redis]redis close
+[T] 19:27:18.816(000000000014ED4C):[redis]redis reconnecting
+[I] 19:27:18.818(000000000014ED4C):[redis]redis connect
+[I] 19:27:18.819(000000000014ED4C):[redis]redis ready
+[I] 19:27:20.817(000000000014EBE0):[redis]redis close
+[T] 19:27:20.817(000000000014EBE0):[redis]redis reconnecting
+[I] 19:27:20.821(000000000014EBE0):[redis]redis connect
+[I] 19:27:20.822(000000000014EBE0):[redis]redis ready
+[I] 19:27:34.725(000000000014F3E4):[redis]redis close
+[T] 19:27:34.726(000000000014F3E4):[redis]redis reconnecting
+[I] 19:27:34.730(000000000014F3E4):[redis]redis connect
+[I] 19:27:34.731(000000000014F3E4):[redis]redis ready
+[I] 19:32:19.897(000000000014ED4C):[redis]redis close
+[T] 19:32:19.897(000000000014ED4C):[redis]redis reconnecting
+[I] 19:32:19.900(000000000014ED4C):[redis]redis connect
+[I] 19:32:19.901(000000000014ED4C):[redis]redis ready
+[I] 19:32:21.997(000000000014EBE0):[redis]redis close
+[T] 19:32:21.998(000000000014EBE0):[redis]redis reconnecting
+[I] 19:32:22.002(000000000014EBE0):[redis]redis connect
+[I] 19:32:22.004(000000000014EBE0):[redis]redis ready
+[I] 19:32:36.004(000000000014F3E4):[redis]redis close
+[T] 19:32:36.004(000000000014F3E4):[redis]redis reconnecting
+[I] 19:32:36.007(000000000014F3E4):[redis]redis connect
+[I] 19:32:36.009(000000000014F3E4):[redis]redis ready
+[I] 19:37:20.738(000000000014ED4C):[redis]redis close
+[T] 19:37:20.738(000000000014ED4C):[redis]redis reconnecting
+[I] 19:37:20.740(000000000014ED4C):[redis]redis connect
+[I] 19:37:20.741(000000000014ED4C):[redis]redis ready
+[I] 19:37:22.839(000000000014EBE0):[redis]redis close
+[T] 19:37:22.840(000000000014EBE0):[redis]redis reconnecting
+[I] 19:37:22.842(000000000014EBE0):[redis]redis connect
+[I] 19:37:22.844(000000000014EBE0):[redis]redis ready
+[I] 19:37:36.652(000000000014F3E4):[redis]redis close
+[T] 19:37:36.653(000000000014F3E4):[redis]redis reconnecting
+[I] 19:37:36.656(000000000014F3E4):[redis]redis connect
+[I] 19:37:36.658(000000000014F3E4):[redis]redis ready
+[I] 19:42:22.480(000000000014ED4C):[redis]redis close
+[T] 19:42:22.480(000000000014ED4C):[redis]redis reconnecting
+[I] 19:42:22.484(000000000014ED4C):[redis]redis connect
+[I] 19:42:22.486(000000000014ED4C):[redis]redis ready
+[I] 19:42:23.580(000000000014EBE0):[redis]redis close
+[T] 19:42:23.581(000000000014EBE0):[redis]redis reconnecting
+[I] 19:42:23.584(000000000014EBE0):[redis]redis connect
+[I] 19:42:23.586(000000000014EBE0):[redis]redis ready
+[I] 19:42:37.491(000000000014F3E4):[redis]redis close
+[T] 19:42:37.491(000000000014F3E4):[redis]redis reconnecting
+[I] 19:42:37.494(000000000014F3E4):[redis]redis connect
+[I] 19:42:37.496(000000000014F3E4):[redis]redis ready
+[I] 19:47:22.739(000000000014ED4C):[redis]redis close
+[T] 19:47:22.740(000000000014ED4C):[redis]redis reconnecting
+[I] 19:47:22.743(000000000014ED4C):[redis]redis connect
+[I] 19:47:22.745(000000000014ED4C):[redis]redis ready
+[I] 19:47:24.943(000000000014EBE0):[redis]redis close
+[T] 19:47:24.943(000000000014EBE0):[redis]redis reconnecting
+[I] 19:47:24.946(000000000014EBE0):[redis]redis connect
+[I] 19:47:24.948(000000000014EBE0):[redis]redis ready
+[I] 19:47:38.956(000000000014F3E4):[redis]redis close
+[T] 19:47:38.957(000000000014F3E4):[redis]redis reconnecting
+[I] 19:47:38.959(000000000014F3E4):[redis]redis connect
+[I] 19:47:38.962(000000000014F3E4):[redis]redis ready
+[I] 19:52:24.099(000000000014ED4C):[redis]redis close
+[T] 19:52:24.100(000000000014ED4C):[redis]redis reconnecting
+[I] 19:52:24.103(000000000014ED4C):[redis]redis connect
+[I] 19:52:24.104(000000000014ED4C):[redis]redis ready
+[I] 19:52:26.299(000000000014EBE0):[redis]redis close
+[T] 19:52:26.300(000000000014EBE0):[redis]redis reconnecting
+[I] 19:52:26.305(000000000014EBE0):[redis]redis connect
+[I] 19:52:26.306(000000000014EBE0):[redis]redis ready
+[I] 19:52:40.309(000000000014F3E4):[redis]redis close
+[T] 19:52:40.310(000000000014F3E4):[redis]redis reconnecting
+[I] 19:52:40.313(000000000014F3E4):[redis]redis connect
+[I] 19:52:40.314(000000000014F3E4):[redis]redis ready
+[I] 19:57:25.173(000000000014ED4C):[redis]redis close
+[T] 19:57:25.173(000000000014ED4C):[redis]redis reconnecting
+[I] 19:57:25.176(000000000014ED4C):[redis]redis connect
+[I] 19:57:25.178(000000000014ED4C):[redis]redis ready
+[I] 19:57:27.273(000000000014EBE0):[redis]redis close
+[T] 19:57:27.274(000000000014EBE0):[redis]redis reconnecting
+[I] 19:57:27.277(000000000014EBE0):[redis]redis connect
+[I] 19:57:27.280(000000000014EBE0):[redis]redis ready
+[I] 19:57:41.280(000000000014F3E4):[redis]redis close
+[T] 19:57:41.280(000000000014F3E4):[redis]redis reconnecting
+[I] 19:57:41.284(000000000014F3E4):[redis]redis connect
+[I] 19:57:41.286(000000000014F3E4):[redis]redis ready
+[I] 20:02:25.535(000000000014ED4C):[redis]redis close
+[T] 20:02:25.535(000000000014ED4C):[redis]redis reconnecting
+[I] 20:02:25.538(000000000014ED4C):[redis]redis connect
+[I] 20:02:25.540(000000000014ED4C):[redis]redis ready
+[I] 20:02:27.638(000000000014EBE0):[redis]redis close
+[T] 20:02:27.639(000000000014EBE0):[redis]redis reconnecting
+[I] 20:02:27.641(000000000014EBE0):[redis]redis connect
+[I] 20:02:27.645(000000000014EBE0):[redis]redis ready
+[I] 20:02:41.555(000000000014F3E4):[redis]redis close
+[T] 20:02:41.556(000000000014F3E4):[redis]redis reconnecting
+[I] 20:02:41.560(000000000014F3E4):[redis]redis connect
+[I] 20:02:41.562(000000000014F3E4):[redis]redis ready
+[I] 20:07:27.108(000000000014ED4C):[redis]redis close
+[T] 20:07:27.108(000000000014ED4C):[redis]redis reconnecting
+[I] 20:07:27.112(000000000014ED4C):[redis]redis connect
+[I] 20:07:27.114(000000000014ED4C):[redis]redis ready
+[I] 20:07:29.210(000000000014EBE0):[redis]redis close
+[T] 20:07:29.211(000000000014EBE0):[redis]redis reconnecting
+[I] 20:07:29.214(000000000014EBE0):[redis]redis connect
+[I] 20:07:29.216(000000000014EBE0):[redis]redis ready
+[I] 20:07:43.218(000000000014F3E4):[redis]redis close
+[T] 20:07:43.219(000000000014F3E4):[redis]redis reconnecting
+[I] 20:07:43.221(000000000014F3E4):[redis]redis connect
+[I] 20:07:43.223(000000000014F3E4):[redis]redis ready
+[I] 20:12:28.066(000000000014ED4C):[redis]redis close
+[T] 20:12:28.067(000000000014ED4C):[redis]redis reconnecting
+[I] 20:12:28.071(000000000014ED4C):[redis]redis connect
+[I] 20:12:28.072(000000000014ED4C):[redis]redis ready
+[I] 20:12:30.168(000000000014EBE0):[redis]redis close
+[T] 20:12:30.168(000000000014EBE0):[redis]redis reconnecting
+[I] 20:12:30.171(000000000014EBE0):[redis]redis connect
+[I] 20:12:30.173(000000000014EBE0):[redis]redis ready
+[I] 20:12:44.183(000000000014F3E4):[redis]redis close
+[T] 20:12:44.183(000000000014F3E4):[redis]redis reconnecting
+[I] 20:12:44.187(000000000014F3E4):[redis]redis connect
+[I] 20:12:44.188(000000000014F3E4):[redis]redis ready
+[I] 20:17:28.853(000000000014ED4C):[redis]redis close
+[T] 20:17:28.853(000000000014ED4C):[redis]redis reconnecting
+[I] 20:17:28.858(000000000014ED4C):[redis]redis connect
+[I] 20:17:28.860(000000000014ED4C):[redis]redis ready
+[I] 20:17:30.954(000000000014EBE0):[redis]redis close
+[T] 20:17:30.954(000000000014EBE0):[redis]redis reconnecting
+[I] 20:17:30.959(000000000014EBE0):[redis]redis connect
+[I] 20:17:30.960(000000000014EBE0):[redis]redis ready
+[I] 20:17:44.764(000000000014F3E4):[redis]redis close
+[T] 20:17:44.765(000000000014F3E4):[redis]redis reconnecting
+[I] 20:17:44.768(000000000014F3E4):[redis]redis connect
+[I] 20:17:44.770(000000000014F3E4):[redis]redis ready
+[I] 20:22:29.829(000000000014ED4C):[redis]redis close
+[T] 20:22:29.830(000000000014ED4C):[redis]redis reconnecting
+[I] 20:22:29.833(000000000014ED4C):[redis]redis connect
+[I] 20:22:29.835(000000000014ED4C):[redis]redis ready
+[I] 20:22:31.933(000000000014EBE0):[redis]redis close
+[T] 20:22:31.933(000000000014EBE0):[redis]redis reconnecting
+[I] 20:22:31.937(000000000014EBE0):[redis]redis connect
+[I] 20:22:31.939(000000000014EBE0):[redis]redis ready
+[I] 20:22:45.849(000000000014F3E4):[redis]redis close
+[T] 20:22:45.850(000000000014F3E4):[redis]redis reconnecting
+[I] 20:22:45.854(000000000014F3E4):[redis]redis connect
+[I] 20:22:45.856(000000000014F3E4):[redis]redis ready
+[I] 20:27:31.000(000000000014ED4C):[redis]redis close
+[T] 20:27:31.000(000000000014ED4C):[redis]redis reconnecting
+[I] 20:27:31.003(000000000014ED4C):[redis]redis connect
+[I] 20:27:31.004(000000000014ED4C):[redis]redis ready
+[I] 20:27:33.203(000000000014EBE0):[redis]redis close
+[T] 20:27:33.203(000000000014EBE0):[redis]redis reconnecting
+[I] 20:27:33.208(000000000014EBE0):[redis]redis connect
+[I] 20:27:33.210(000000000014EBE0):[redis]redis ready
+[I] 20:27:47.216(000000000014F3E4):[redis]redis close
+[T] 20:27:47.217(000000000014F3E4):[redis]redis reconnecting
+[I] 20:27:47.221(000000000014F3E4):[redis]redis connect
+[I] 20:27:47.226(000000000014F3E4):[redis]redis ready
+[I] 20:32:31.962(000000000014ED4C):[redis]redis close
+[T] 20:32:31.963(000000000014ED4C):[redis]redis reconnecting
+[I] 20:32:31.967(000000000014ED4C):[redis]redis connect
+[I] 20:32:31.971(000000000014ED4C):[redis]redis ready
+[I] 20:32:34.064(000000000014EBE0):[redis]redis close
+[T] 20:32:34.064(000000000014EBE0):[redis]redis reconnecting
+[I] 20:32:34.068(000000000014EBE0):[redis]redis connect
+[I] 20:32:34.071(000000000014EBE0):[redis]redis ready
+[I] 20:32:47.878(000000000014F3E4):[redis]redis close
+[T] 20:32:47.878(000000000014F3E4):[redis]redis reconnecting
+[I] 20:32:47.881(000000000014F3E4):[redis]redis connect
+[I] 20:32:47.883(000000000014F3E4):[redis]redis ready
+[I] 20:37:33.421(000000000014ED4C):[redis]redis close
+[T] 20:37:33.421(000000000014ED4C):[redis]redis reconnecting
+[I] 20:37:33.425(000000000014ED4C):[redis]redis connect
+[I] 20:37:33.427(000000000014ED4C):[redis]redis ready
+[I] 20:37:35.623(000000000014EBE0):[redis]redis close
+[T] 20:37:35.624(000000000014EBE0):[redis]redis reconnecting
+[I] 20:37:35.627(000000000014EBE0):[redis]redis connect
+[I] 20:37:35.629(000000000014EBE0):[redis]redis ready
+[I] 20:37:49.433(000000000014F3E4):[redis]redis close
+[T] 20:37:49.434(000000000014F3E4):[redis]redis reconnecting
+[I] 20:37:49.436(000000000014F3E4):[redis]redis connect
+[I] 20:37:49.437(000000000014F3E4):[redis]redis ready
+[I] 20:42:33.982(000000000014ED4C):[redis]redis close
+[T] 20:42:33.983(000000000014ED4C):[redis]redis reconnecting
+[I] 20:42:33.986(000000000014ED4C):[redis]redis connect
+[I] 20:42:33.987(000000000014ED4C):[redis]redis ready
+[I] 20:42:37.184(000000000014EBE0):[redis]redis close
+[T] 20:42:37.185(000000000014EBE0):[redis]redis reconnecting
+[I] 20:42:37.188(000000000014EBE0):[redis]redis connect
+[I] 20:42:37.190(000000000014EBE0):[redis]redis ready
+[I] 20:42:49.897(000000000014F3E4):[redis]redis close
+[T] 20:42:49.897(000000000014F3E4):[redis]redis reconnecting
+[I] 20:42:49.899(000000000014F3E4):[redis]redis connect
+[I] 20:42:49.901(000000000014F3E4):[redis]redis ready
+[I] 20:47:35.248(000000000014ED4C):[redis]redis close
+[T] 20:47:35.249(000000000014ED4C):[redis]redis reconnecting
+[I] 20:47:35.251(000000000014ED4C):[redis]redis connect
+[I] 20:47:35.252(000000000014ED4C):[redis]redis ready
+[I] 20:47:38.550(000000000014EBE0):[redis]redis close
+[T] 20:47:38.550(000000000014EBE0):[redis]redis reconnecting
+[I] 20:47:38.554(000000000014EBE0):[redis]redis connect
+[I] 20:47:38.556(000000000014EBE0):[redis]redis ready
+[I] 20:47:51.360(000000000014F3E4):[redis]redis close
+[T] 20:47:51.360(000000000014F3E4):[redis]redis reconnecting
+[I] 20:47:51.362(000000000014F3E4):[redis]redis connect
+[I] 20:47:51.364(000000000014F3E4):[redis]redis ready
+[I] 20:52:35.917(000000000014ED4C):[redis]redis close
+[T] 20:52:35.918(000000000014ED4C):[redis]redis reconnecting
+[I] 20:52:35.920(000000000014ED4C):[redis]redis connect
+[I] 20:52:35.921(000000000014ED4C):[redis]redis ready
+[I] 20:52:39.124(000000000014EBE0):[redis]redis close
+[T] 20:52:39.125(000000000014EBE0):[redis]redis reconnecting
+[I] 20:52:39.128(000000000014EBE0):[redis]redis connect
+[I] 20:52:39.130(000000000014EBE0):[redis]redis ready
+[I] 20:52:51.732(000000000014F3E4):[redis]redis close
+[T] 20:52:51.733(000000000014F3E4):[redis]redis reconnecting
+[I] 20:52:51.737(000000000014F3E4):[redis]redis connect
+[I] 20:52:51.739(000000000014F3E4):[redis]redis ready
+[I] 20:57:37.274(000000000014ED4C):[redis]redis close
+[T] 20:57:37.274(000000000014ED4C):[redis]redis reconnecting
+[I] 20:57:37.278(000000000014ED4C):[redis]redis connect
+[I] 20:57:37.279(000000000014ED4C):[redis]redis ready
+[I] 20:57:40.477(000000000014EBE0):[redis]redis close
+[T] 20:57:40.477(000000000014EBE0):[redis]redis reconnecting
+[I] 20:57:40.480(000000000014EBE0):[redis]redis connect
+[I] 20:57:40.482(000000000014EBE0):[redis]redis ready
+[I] 20:57:53.095(000000000014F3E4):[redis]redis close
+[T] 20:57:53.095(000000000014F3E4):[redis]redis reconnecting
+[I] 20:57:53.099(000000000014F3E4):[redis]redis connect
+[I] 20:57:53.101(000000000014F3E4):[redis]redis ready
+[I] 21:02:38.464(000000000014ED4C):[redis]redis close
+[T] 21:02:38.464(000000000014ED4C):[redis]redis reconnecting
+[I] 21:02:38.466(000000000014ED4C):[redis]redis connect
+[I] 21:02:38.468(000000000014ED4C):[redis]redis ready
+[I] 21:02:40.765(000000000014EBE0):[redis]redis close
+[T] 21:02:40.766(000000000014EBE0):[redis]redis reconnecting
+[I] 21:02:40.768(000000000014EBE0):[redis]redis connect
+[I] 21:02:40.769(000000000014EBE0):[redis]redis ready
+[I] 21:02:54.481(000000000014F3E4):[redis]redis close
+[T] 21:02:54.481(000000000014F3E4):[redis]redis reconnecting
+[I] 21:02:54.483(000000000014F3E4):[redis]redis connect
+[I] 21:02:54.485(000000000014F3E4):[redis]redis ready
+[I] 21:07:39.432(000000000014ED4C):[redis]redis close
+[T] 21:07:39.432(000000000014ED4C):[redis]redis reconnecting
+[I] 21:07:39.435(000000000014ED4C):[redis]redis connect
+[I] 21:07:39.436(000000000014ED4C):[redis]redis ready
+[I] 21:07:41.633(000000000014EBE0):[redis]redis close
+[T] 21:07:41.634(000000000014EBE0):[redis]redis reconnecting
+[I] 21:07:41.637(000000000014EBE0):[redis]redis connect
+[I] 21:07:41.639(000000000014EBE0):[redis]redis ready
+[I] 21:07:55.349(000000000014F3E4):[redis]redis close
+[T] 21:07:55.350(000000000014F3E4):[redis]redis reconnecting
+[I] 21:07:55.353(000000000014F3E4):[redis]redis connect
+[I] 21:07:55.355(000000000014F3E4):[redis]redis ready
+[I] 21:12:40.191(000000000014ED4C):[redis]redis close
+[T] 21:12:40.191(000000000014ED4C):[redis]redis reconnecting
+[I] 21:12:40.195(000000000014ED4C):[redis]redis connect
+[I] 21:12:40.197(000000000014ED4C):[redis]redis ready
+[I] 21:12:43.394(000000000014EBE0):[redis]redis close
+[T] 21:12:43.394(000000000014EBE0):[redis]redis reconnecting
+[I] 21:12:43.398(000000000014EBE0):[redis]redis connect
+[I] 21:12:43.400(000000000014EBE0):[redis]redis ready
+[I] 21:12:56.106(000000000014F3E4):[redis]redis close
+[T] 21:12:56.107(000000000014F3E4):[redis]redis reconnecting
+[I] 21:12:56.110(000000000014F3E4):[redis]redis connect
+[I] 21:12:56.112(000000000014F3E4):[redis]redis ready
+[I] 21:17:41.589(000000000014ED4C):[redis]redis close
+[T] 21:17:41.590(000000000014ED4C):[redis]redis reconnecting
+[I] 21:17:41.593(000000000014ED4C):[redis]redis connect
+[I] 21:17:41.594(000000000014ED4C):[redis]redis ready
+[I] 21:17:43.791(000000000014EBE0):[redis]redis close
+[T] 21:17:43.791(000000000014EBE0):[redis]redis reconnecting
+[I] 21:17:43.795(000000000014EBE0):[redis]redis connect
+[I] 21:17:43.797(000000000014EBE0):[redis]redis ready
+[I] 21:17:57.497(000000000014F3E4):[redis]redis close
+[T] 21:17:57.497(000000000014F3E4):[redis]redis reconnecting
+[I] 21:17:57.502(000000000014F3E4):[redis]redis connect
+[I] 21:17:57.504(000000000014F3E4):[redis]redis ready
+[I] 21:22:42.064(000000000014ED4C):[redis]redis close
+[T] 21:22:42.064(000000000014ED4C):[redis]redis reconnecting
+[I] 21:22:42.070(000000000014ED4C):[redis]redis connect
+[I] 21:22:42.071(000000000014ED4C):[redis]redis ready
+[I] 21:22:45.267(000000000014EBE0):[redis]redis close
+[T] 21:22:45.267(000000000014EBE0):[redis]redis reconnecting
+[I] 21:22:45.272(000000000014EBE0):[redis]redis connect
+[I] 21:22:45.274(000000000014EBE0):[redis]redis ready
+[I] 21:22:57.976(000000000014F3E4):[redis]redis close
+[T] 21:22:57.977(000000000014F3E4):[redis]redis reconnecting
+[I] 21:22:57.980(000000000014F3E4):[redis]redis connect
+[I] 21:22:57.981(000000000014F3E4):[redis]redis ready
+[I] 21:27:43.351(000000000014ED4C):[redis]redis close
+[T] 21:27:43.351(000000000014ED4C):[redis]redis reconnecting
+[I] 21:27:43.356(000000000014ED4C):[redis]redis connect
+[I] 21:27:43.359(000000000014ED4C):[redis]redis ready
+[I] 21:27:46.553(000000000014EBE0):[redis]redis close
+[T] 21:27:46.553(000000000014EBE0):[redis]redis reconnecting
+[I] 21:27:46.556(000000000014EBE0):[redis]redis connect
+[I] 21:27:46.557(000000000014EBE0):[redis]redis ready
+[I] 21:27:59.264(000000000014F3E4):[redis]redis close
+[T] 21:27:59.264(000000000014F3E4):[redis]redis reconnecting
+[I] 21:27:59.268(000000000014F3E4):[redis]redis connect
+[I] 21:27:59.271(000000000014F3E4):[redis]redis ready
+[I] 21:32:44.331(000000000014ED4C):[redis]redis close
+[T] 21:32:44.331(000000000014ED4C):[redis]redis reconnecting
+[I] 21:32:44.333(000000000014ED4C):[redis]redis connect
+[I] 21:32:44.335(000000000014ED4C):[redis]redis ready
+[I] 21:32:47.534(000000000014EBE0):[redis]redis close
+[T] 21:32:47.534(000000000014EBE0):[redis]redis reconnecting
+[I] 21:32:47.537(000000000014EBE0):[redis]redis connect
+[I] 21:32:47.538(000000000014EBE0):[redis]redis ready
+[I] 21:33:00.148(000000000014F3E4):[redis]redis close
+[T] 21:33:00.148(000000000014F3E4):[redis]redis reconnecting
+[I] 21:33:00.151(000000000014F3E4):[redis]redis connect
+[I] 21:33:00.152(000000000014F3E4):[redis]redis ready
+[I] 21:37:44.858(000000000014ED4C):[redis]redis close
+[T] 21:37:44.859(000000000014ED4C):[redis]redis reconnecting
+[I] 21:37:44.862(000000000014ED4C):[redis]redis connect
+[I] 21:37:44.863(000000000014ED4C):[redis]redis ready
+[I] 21:37:48.058(000000000014EBE0):[redis]redis close
+[T] 21:37:48.059(000000000014EBE0):[redis]redis reconnecting
+[I] 21:37:48.061(000000000014EBE0):[redis]redis connect
+[I] 21:37:48.063(000000000014EBE0):[redis]redis ready
+[I] 21:38:00.673(000000000014F3E4):[redis]redis close
+[T] 21:38:00.673(000000000014F3E4):[redis]redis reconnecting
+[I] 21:38:00.678(000000000014F3E4):[redis]redis connect
+[I] 21:38:00.680(000000000014F3E4):[redis]redis ready
+[I] 21:42:46.213(000000000014ED4C):[redis]redis close
+[T] 21:42:46.214(000000000014ED4C):[redis]redis reconnecting
+[I] 21:42:46.218(000000000014ED4C):[redis]redis connect
+[I] 21:42:46.223(000000000014ED4C):[redis]redis ready
+[I] 21:42:49.617(000000000014EBE0):[redis]redis close
+[T] 21:42:49.617(000000000014EBE0):[redis]redis reconnecting
+[I] 21:42:49.621(000000000014EBE0):[redis]redis connect
+[I] 21:42:49.622(000000000014EBE0):[redis]redis ready
+[I] 21:43:02.328(000000000014F3E4):[redis]redis close
+[T] 21:43:02.328(000000000014F3E4):[redis]redis reconnecting
+[I] 21:43:02.331(000000000014F3E4):[redis]redis connect
+[I] 21:43:02.337(000000000014F3E4):[redis]redis ready
+[I] 21:47:46.853(000000000014ED4C):[redis]redis close
+[T] 21:47:46.853(000000000014ED4C):[redis]redis reconnecting
+[I] 21:47:46.857(000000000014ED4C):[redis]redis connect
+[I] 21:47:46.859(000000000014ED4C):[redis]redis ready
+[I] 21:47:50.159(000000000014EBE0):[redis]redis close
+[T] 21:47:50.160(000000000014EBE0):[redis]redis reconnecting
+[I] 21:47:50.164(000000000014EBE0):[redis]redis connect
+[I] 21:47:50.165(000000000014EBE0):[redis]redis ready
+[I] 21:48:02.769(000000000014F3E4):[redis]redis close
+[T] 21:48:02.770(000000000014F3E4):[redis]redis reconnecting
+[I] 21:48:02.773(000000000014F3E4):[redis]redis connect
+[I] 21:48:02.774(000000000014F3E4):[redis]redis ready
+[I] 21:52:48.708(000000000014ED4C):[redis]redis close
+[T] 21:52:48.708(000000000014ED4C):[redis]redis reconnecting
+[I] 21:52:48.713(000000000014ED4C):[redis]redis connect
+[I] 21:52:48.714(000000000014ED4C):[redis]redis ready
+[I] 21:52:50.910(000000000014EBE0):[redis]redis close
+[T] 21:52:50.911(000000000014EBE0):[redis]redis reconnecting
+[I] 21:52:50.914(000000000014EBE0):[redis]redis connect
+[I] 21:52:50.916(000000000014EBE0):[redis]redis ready
+[I] 21:53:04.520(000000000014F3E4):[redis]redis close
+[T] 21:53:04.520(000000000014F3E4):[redis]redis reconnecting
+[I] 21:53:04.523(000000000014F3E4):[redis]redis connect
+[I] 21:53:04.524(000000000014F3E4):[redis]redis ready
+[I] 21:57:49.872(000000000014ED4C):[redis]redis close
+[T] 21:57:49.873(000000000014ED4C):[redis]redis reconnecting
+[I] 21:57:49.876(000000000014ED4C):[redis]redis connect
+[I] 21:57:49.877(000000000014ED4C):[redis]redis ready
+[I] 21:57:52.074(000000000014EBE0):[redis]redis close
+[T] 21:57:52.075(000000000014EBE0):[redis]redis reconnecting
+[I] 21:57:52.078(000000000014EBE0):[redis]redis connect
+[I] 21:57:52.080(000000000014EBE0):[redis]redis ready
+[I] 21:58:05.691(000000000014F3E4):[redis]redis close
+[T] 21:58:05.692(000000000014F3E4):[redis]redis reconnecting
+[I] 21:58:05.695(000000000014F3E4):[redis]redis connect
+[I] 21:58:05.696(000000000014F3E4):[redis]redis ready
+[I] 22:02:51.614(000000000014ED4C):[redis]redis close
+[T] 22:02:51.615(000000000014ED4C):[redis]redis reconnecting
+[I] 22:02:51.618(000000000014ED4C):[redis]redis connect
+[I] 22:02:51.619(000000000014ED4C):[redis]redis ready
+[I] 22:02:52.814(000000000014EBE0):[redis]redis close
+[T] 22:02:52.814(000000000014EBE0):[redis]redis reconnecting
+[I] 22:02:52.816(000000000014EBE0):[redis]redis connect
+[I] 22:02:52.818(000000000014EBE0):[redis]redis ready
+[I] 22:03:06.419(000000000014F3E4):[redis]redis close
+[T] 22:03:06.419(000000000014F3E4):[redis]redis reconnecting
+[I] 22:03:06.423(000000000014F3E4):[redis]redis connect
+[I] 22:03:06.425(000000000014F3E4):[redis]redis ready
+[I] 22:07:52.477(000000000014ED4C):[redis]redis close
+[T] 22:07:52.477(000000000014ED4C):[redis]redis reconnecting
+[I] 22:07:52.482(000000000014ED4C):[redis]redis connect
+[I] 22:07:52.483(000000000014ED4C):[redis]redis ready
+[I] 22:07:54.577(000000000014EBE0):[redis]redis close
+[T] 22:07:54.578(000000000014EBE0):[redis]redis reconnecting
+[I] 22:07:54.581(000000000014EBE0):[redis]redis connect
+[I] 22:07:54.583(000000000014EBE0):[redis]redis ready
+[I] 22:08:07.284(000000000014F3E4):[redis]redis close
+[T] 22:08:07.284(000000000014F3E4):[redis]redis reconnecting
+[I] 22:08:07.289(000000000014F3E4):[redis]redis connect
+[I] 22:08:07.291(000000000014F3E4):[redis]redis ready
+[I] 22:12:53.616(000000000014ED4C):[redis]redis close
+[T] 22:12:53.617(000000000014ED4C):[redis]redis reconnecting
+[I] 22:12:53.620(000000000014ED4C):[redis]redis connect
+[I] 22:12:53.622(000000000014ED4C):[redis]redis ready
+[I] 22:12:55.618(000000000014EBE0):[redis]redis close
+[T] 22:12:55.618(000000000014EBE0):[redis]redis reconnecting
+[I] 22:12:55.624(000000000014EBE0):[redis]redis connect
+[I] 22:12:55.626(000000000014EBE0):[redis]redis ready
+[I] 22:13:08.325(000000000014F3E4):[redis]redis close
+[T] 22:13:08.325(000000000014F3E4):[redis]redis reconnecting
+[I] 22:13:08.327(000000000014F3E4):[redis]redis connect
+[I] 22:13:08.328(000000000014F3E4):[redis]redis ready
+[I] 22:17:54.306(000000000014ED4C):[redis]redis close
+[T] 22:17:54.306(000000000014ED4C):[redis]redis reconnecting
+[I] 22:17:54.309(000000000014ED4C):[redis]redis connect
+[I] 22:17:54.310(000000000014ED4C):[redis]redis ready
+[I] 22:17:56.308(000000000014EBE0):[redis]redis close
+[T] 22:17:56.309(000000000014EBE0):[redis]redis reconnecting
+[I] 22:17:56.312(000000000014EBE0):[redis]redis connect
+[I] 22:17:56.313(000000000014EBE0):[redis]redis ready
+[I] 22:18:09.016(000000000014F3E4):[redis]redis close
+[T] 22:18:09.016(000000000014F3E4):[redis]redis reconnecting
+[I] 22:18:09.020(000000000014F3E4):[redis]redis connect
+[I] 22:18:09.022(000000000014F3E4):[redis]redis ready
+[I] 22:22:55.358(000000000014ED4C):[redis]redis close
+[T] 22:22:55.358(000000000014ED4C):[redis]redis reconnecting
+[I] 22:22:55.361(000000000014ED4C):[redis]redis connect
+[I] 22:22:55.363(000000000014ED4C):[redis]redis ready
+[I] 22:22:57.358(000000000014EBE0):[redis]redis close
+[T] 22:22:57.358(000000000014EBE0):[redis]redis reconnecting
+[I] 22:22:57.360(000000000014EBE0):[redis]redis connect
+[I] 22:22:57.362(000000000014EBE0):[redis]redis ready
+[I] 22:23:10.161(000000000014F3E4):[redis]redis close
+[T] 22:23:10.161(000000000014F3E4):[redis]redis reconnecting
+[I] 22:23:10.164(000000000014F3E4):[redis]redis connect
+[I] 22:23:10.166(000000000014F3E4):[redis]redis ready
+[I] 22:27:56.720(000000000014ED4C):[redis]redis close
+[T] 22:27:56.720(000000000014ED4C):[redis]redis reconnecting
+[I] 22:27:56.725(000000000014ED4C):[redis]redis connect
+[I] 22:27:56.726(000000000014ED4C):[redis]redis ready
+[I] 22:27:58.723(000000000014EBE0):[redis]redis close
+[T] 22:27:58.723(000000000014EBE0):[redis]redis reconnecting
+[I] 22:27:58.726(000000000014EBE0):[redis]redis connect
+[I] 22:27:58.728(000000000014EBE0):[redis]redis ready
+[I] 22:28:11.430(000000000014F3E4):[redis]redis close
+[T] 22:28:11.431(000000000014F3E4):[redis]redis reconnecting
+[I] 22:28:11.434(000000000014F3E4):[redis]redis connect
+[I] 22:28:11.435(000000000014F3E4):[redis]redis ready
+[I] 22:32:57.207(000000000014ED4C):[redis]redis close
+[T] 22:32:57.208(000000000014ED4C):[redis]redis reconnecting
+[I] 22:32:57.210(000000000014ED4C):[redis]redis connect
+[I] 22:32:57.212(000000000014ED4C):[redis]redis ready
+[I] 22:32:59.209(000000000014EBE0):[redis]redis close
+[T] 22:32:59.209(000000000014EBE0):[redis]redis reconnecting
+[I] 22:32:59.212(000000000014EBE0):[redis]redis connect
+[I] 22:32:59.213(000000000014EBE0):[redis]redis ready
+[I] 22:33:12.013(000000000014F3E4):[redis]redis close
+[T] 22:33:12.013(000000000014F3E4):[redis]redis reconnecting
+[I] 22:33:12.016(000000000014F3E4):[redis]redis connect
+[I] 22:33:12.017(000000000014F3E4):[redis]redis ready
+[I] 22:37:57.834(000000000014ED4C):[redis]redis close
+[T] 22:37:57.834(000000000014ED4C):[redis]redis reconnecting
+[I] 22:37:57.836(000000000014ED4C):[redis]redis connect
+[I] 22:37:57.838(000000000014ED4C):[redis]redis ready
+[I] 22:37:59.841(000000000014EBE0):[redis]redis close
+[T] 22:37:59.842(000000000014EBE0):[redis]redis reconnecting
+[I] 22:37:59.846(000000000014EBE0):[redis]redis connect
+[I] 22:37:59.847(000000000014EBE0):[redis]redis ready
+[I] 22:38:13.551(000000000014F3E4):[redis]redis close
+[T] 22:38:13.551(000000000014F3E4):[redis]redis reconnecting
+[I] 22:38:13.554(000000000014F3E4):[redis]redis connect
+[I] 22:38:13.555(000000000014F3E4):[redis]redis ready
+[I] 22:42:58.891(000000000014ED4C):[redis]redis close
+[T] 22:42:58.891(000000000014ED4C):[redis]redis reconnecting
+[I] 22:42:58.895(000000000014ED4C):[redis]redis connect
+[I] 22:42:58.896(000000000014ED4C):[redis]redis ready
+[I] 22:43:00.893(000000000014EBE0):[redis]redis close
+[T] 22:43:00.893(000000000014EBE0):[redis]redis reconnecting
+[I] 22:43:00.896(000000000014EBE0):[redis]redis connect
+[I] 22:43:00.898(000000000014EBE0):[redis]redis ready
+[I] 22:43:14.605(000000000014F3E4):[redis]redis close
+[T] 22:43:14.605(000000000014F3E4):[redis]redis reconnecting
+[I] 22:43:14.610(000000000014F3E4):[redis]redis connect
+[I] 22:43:14.611(000000000014F3E4):[redis]redis ready
+[I] 22:48:00.635(000000000014ED4C):[redis]redis close
+[T] 22:48:00.636(000000000014ED4C):[redis]redis reconnecting
+[I] 22:48:00.639(000000000014ED4C):[redis]redis connect
+[I] 22:48:00.641(000000000014ED4C):[redis]redis ready
+[I] 22:48:02.635(000000000014EBE0):[redis]redis close
+[T] 22:48:02.635(000000000014EBE0):[redis]redis reconnecting
+[I] 22:48:02.637(000000000014EBE0):[redis]redis connect
+[I] 22:48:02.639(000000000014EBE0):[redis]redis ready
+[I] 22:48:15.549(000000000014F3E4):[redis]redis close
+[T] 22:48:15.549(000000000014F3E4):[redis]redis reconnecting
+[I] 22:48:15.551(000000000014F3E4):[redis]redis connect
+[I] 22:48:15.552(000000000014F3E4):[redis]redis ready
+[I] 22:53:01.519(000000000014ED4C):[redis]redis close
+[T] 22:53:01.520(000000000014ED4C):[redis]redis reconnecting
+[I] 22:53:01.524(000000000014ED4C):[redis]redis connect
+[I] 22:53:01.525(000000000014ED4C):[redis]redis ready
+[I] 22:53:03.420(000000000014EBE0):[redis]redis close
+[T] 22:53:03.420(000000000014EBE0):[redis]redis reconnecting
+[I] 22:53:03.422(000000000014EBE0):[redis]redis connect
+[I] 22:53:03.423(000000000014EBE0):[redis]redis ready
+[I] 22:53:16.131(000000000014F3E4):[redis]redis close
+[T] 22:53:16.131(000000000014F3E4):[redis]redis reconnecting
+[I] 22:53:16.134(000000000014F3E4):[redis]redis connect
+[I] 22:53:16.136(000000000014F3E4):[redis]redis ready
+[I] 22:58:02.566(000000000014ED4C):[redis]redis close
+[T] 22:58:02.566(000000000014ED4C):[redis]redis reconnecting
+[I] 22:58:02.570(000000000014ED4C):[redis]redis connect
+[I] 22:58:02.572(000000000014ED4C):[redis]redis ready
+[I] 22:58:04.567(000000000014EBE0):[redis]redis close
+[T] 22:58:04.568(000000000014EBE0):[redis]redis reconnecting
+[I] 22:58:04.570(000000000014EBE0):[redis]redis connect
+[I] 22:58:04.571(000000000014EBE0):[redis]redis ready
+[I] 22:58:17.174(000000000014F3E4):[redis]redis close
+[T] 22:58:17.174(000000000014F3E4):[redis]redis reconnecting
+[I] 22:58:17.176(000000000014F3E4):[redis]redis connect
+[I] 22:58:17.178(000000000014F3E4):[redis]redis ready
+[I] 23:03:02.924(000000000014ED4C):[redis]redis close
+[T] 23:03:02.924(000000000014ED4C):[redis]redis reconnecting
+[I] 23:03:02.928(000000000014ED4C):[redis]redis connect
+[I] 23:03:02.929(000000000014ED4C):[redis]redis ready
+[I] 23:03:04.926(000000000014EBE0):[redis]redis close
+[T] 23:03:04.927(000000000014EBE0):[redis]redis reconnecting
+[I] 23:03:04.930(000000000014EBE0):[redis]redis connect
+[I] 23:03:04.931(000000000014EBE0):[redis]redis ready
+[I] 23:03:18.432(000000000014F3E4):[redis]redis close
+[T] 23:03:18.432(000000000014F3E4):[redis]redis reconnecting
+[I] 23:03:18.435(000000000014F3E4):[redis]redis connect
+[I] 23:03:18.437(000000000014F3E4):[redis]redis ready
+[I] 23:08:04.775(000000000014ED4C):[redis]redis close
+[T] 23:08:04.775(000000000014ED4C):[redis]redis reconnecting
+[I] 23:08:04.777(000000000014ED4C):[redis]redis connect
+[I] 23:08:04.779(000000000014ED4C):[redis]redis ready
+[I] 23:08:06.777(000000000014EBE0):[redis]redis close
+[T] 23:08:06.777(000000000014EBE0):[redis]redis reconnecting
+[I] 23:08:06.781(000000000014EBE0):[redis]redis connect
+[I] 23:08:06.783(000000000014EBE0):[redis]redis ready
+[I] 23:08:19.384(000000000014F3E4):[redis]redis close
+[T] 23:08:19.384(000000000014F3E4):[redis]redis reconnecting
+[I] 23:08:19.387(000000000014F3E4):[redis]redis connect
+[I] 23:08:19.389(000000000014F3E4):[redis]redis ready
+[I] 23:13:05.105(000000000014ED4C):[redis]redis close
+[T] 23:13:05.105(000000000014ED4C):[redis]redis reconnecting
+[I] 23:13:05.111(000000000014ED4C):[redis]redis connect
+[I] 23:13:05.112(000000000014ED4C):[redis]redis ready
+[I] 23:13:07.106(000000000014EBE0):[redis]redis close
+[T] 23:13:07.106(000000000014EBE0):[redis]redis reconnecting
+[I] 23:13:07.113(000000000014EBE0):[redis]redis connect
+[I] 23:13:07.115(000000000014EBE0):[redis]redis ready
+[I] 23:13:19.821(000000000014F3E4):[redis]redis close
+[T] 23:13:19.821(000000000014F3E4):[redis]redis reconnecting
+[I] 23:13:19.825(000000000014F3E4):[redis]redis connect
+[I] 23:13:19.827(000000000014F3E4):[redis]redis ready
+[I] 23:18:06.361(000000000014ED4C):[redis]redis close
+[T] 23:18:06.362(000000000014ED4C):[redis]redis reconnecting
+[I] 23:18:06.365(000000000014ED4C):[redis]redis connect
+[I] 23:18:06.366(000000000014ED4C):[redis]redis ready
+[I] 23:18:08.361(000000000014EBE0):[redis]redis close
+[T] 23:18:08.361(000000000014EBE0):[redis]redis reconnecting
+[I] 23:18:08.366(000000000014EBE0):[redis]redis connect
+[I] 23:18:08.367(000000000014EBE0):[redis]redis ready
+[I] 23:18:20.972(000000000014F3E4):[redis]redis close
+[T] 23:18:20.972(000000000014F3E4):[redis]redis reconnecting
+[I] 23:18:20.976(000000000014F3E4):[redis]redis connect
+[I] 23:18:20.977(000000000014F3E4):[redis]redis ready
+[I] 23:23:07.564(000000000014ED4C):[redis]redis close
+[T] 23:23:07.564(000000000014ED4C):[redis]redis reconnecting
+[I] 23:23:07.568(000000000014ED4C):[redis]redis connect
+[I] 23:23:07.569(000000000014ED4C):[redis]redis ready
+[I] 23:23:09.564(000000000014EBE0):[redis]redis close
+[T] 23:23:09.564(000000000014EBE0):[redis]redis reconnecting
+[I] 23:23:09.566(000000000014EBE0):[redis]redis connect
+[I] 23:23:09.568(000000000014EBE0):[redis]redis ready
+[I] 23:23:22.078(000000000014F3E4):[redis]redis close
+[T] 23:23:22.078(000000000014F3E4):[redis]redis reconnecting
+[I] 23:23:22.082(000000000014F3E4):[redis]redis connect
+[I] 23:23:22.083(000000000014F3E4):[redis]redis ready
+[I] 23:28:08.461(000000000014ED4C):[redis]redis close
+[T] 23:28:08.462(000000000014ED4C):[redis]redis reconnecting
+[I] 23:28:08.466(000000000014ED4C):[redis]redis connect
+[I] 23:28:08.468(000000000014ED4C):[redis]redis ready
+[I] 23:28:10.461(000000000014EBE0):[redis]redis close
+[T] 23:28:10.461(000000000014EBE0):[redis]redis reconnecting
+[I] 23:28:10.465(000000000014EBE0):[redis]redis connect
+[I] 23:28:10.467(000000000014EBE0):[redis]redis ready
+[I] 23:28:23.071(000000000014F3E4):[redis]redis close
+[T] 23:28:23.071(000000000014F3E4):[redis]redis reconnecting
+[I] 23:28:23.074(000000000014F3E4):[redis]redis connect
+[I] 23:28:23.075(000000000014F3E4):[redis]redis ready
+[I] 23:33:09.109(000000000014ED4C):[redis]redis close
+[T] 23:33:09.109(000000000014ED4C):[redis]redis reconnecting
+[I] 23:33:09.112(000000000014ED4C):[redis]redis connect
+[I] 23:33:09.113(000000000014ED4C):[redis]redis ready
+[I] 23:33:11.109(000000000014EBE0):[redis]redis close
+[T] 23:33:11.109(000000000014EBE0):[redis]redis reconnecting
+[I] 23:33:11.112(000000000014EBE0):[redis]redis connect
+[I] 23:33:11.114(000000000014EBE0):[redis]redis ready
+[I] 23:33:24.618(000000000014F3E4):[redis]redis close
+[T] 23:33:24.618(000000000014F3E4):[redis]redis reconnecting
+[I] 23:33:24.622(000000000014F3E4):[redis]redis connect
+[I] 23:33:24.623(000000000014F3E4):[redis]redis ready
+[I] 23:38:10.153(000000000014ED4C):[redis]redis close
+[T] 23:38:10.154(000000000014ED4C):[redis]redis reconnecting
+[I] 23:38:10.157(000000000014ED4C):[redis]redis connect
+[I] 23:38:10.159(000000000014ED4C):[redis]redis ready
+[I] 23:38:12.152(000000000014EBE0):[redis]redis close
+[T] 23:38:12.153(000000000014EBE0):[redis]redis reconnecting
+[I] 23:38:12.156(000000000014EBE0):[redis]redis connect
+[I] 23:38:12.157(000000000014EBE0):[redis]redis ready
+[I] 23:38:25.565(000000000014F3E4):[redis]redis close
+[T] 23:38:25.566(000000000014F3E4):[redis]redis reconnecting
+[I] 23:38:25.569(000000000014F3E4):[redis]redis connect
+[I] 23:38:25.570(000000000014F3E4):[redis]redis ready
+[I] 23:43:11.005(000000000014ED4C):[redis]redis close
+[T] 23:43:11.005(000000000014ED4C):[redis]redis reconnecting
+[I] 23:43:11.007(000000000014ED4C):[redis]redis connect
+[I] 23:43:11.008(000000000014ED4C):[redis]redis ready
+[I] 23:43:13.107(000000000014EBE0):[redis]redis close
+[T] 23:43:13.107(000000000014EBE0):[redis]redis reconnecting
+[I] 23:43:13.109(000000000014EBE0):[redis]redis connect
+[I] 23:43:13.110(000000000014EBE0):[redis]redis ready
+[I] 23:43:26.519(000000000014F3E4):[redis]redis close
+[T] 23:43:26.519(000000000014F3E4):[redis]redis reconnecting
+[I] 23:43:26.521(000000000014F3E4):[redis]redis connect
+[I] 23:43:26.523(000000000014F3E4):[redis]redis ready
+[I] 23:48:12.577(000000000014ED4C):[redis]redis close
+[T] 23:48:12.578(000000000014ED4C):[redis]redis reconnecting
+[I] 23:48:12.582(000000000014ED4C):[redis]redis connect
+[I] 23:48:12.584(000000000014ED4C):[redis]redis ready
+[I] 23:48:14.678(000000000014EBE0):[redis]redis close
+[T] 23:48:14.678(000000000014EBE0):[redis]redis reconnecting
+[I] 23:48:14.680(000000000014EBE0):[redis]redis connect
+[I] 23:48:14.683(000000000014EBE0):[redis]redis ready
+[I] 23:48:27.190(000000000014F3E4):[redis]redis close
+[T] 23:48:27.191(000000000014F3E4):[redis]redis reconnecting
+[I] 23:48:27.194(000000000014F3E4):[redis]redis connect
+[I] 23:48:27.196(000000000014F3E4):[redis]redis ready
+[I] 23:53:13.734(000000000014ED4C):[redis]redis close
+[T] 23:53:13.735(000000000014ED4C):[redis]redis reconnecting
+[I] 23:53:13.737(000000000014ED4C):[redis]redis connect
+[I] 23:53:13.739(000000000014ED4C):[redis]redis ready
+[I] 23:53:15.836(000000000014EBE0):[redis]redis close
+[T] 23:53:15.836(000000000014EBE0):[redis]redis reconnecting
+[I] 23:53:15.839(000000000014EBE0):[redis]redis connect
+[I] 23:53:15.840(000000000014EBE0):[redis]redis ready
+[I] 23:53:28.448(000000000014F3E4):[redis]redis close
+[T] 23:53:28.448(000000000014F3E4):[redis]redis reconnecting
+[I] 23:53:28.452(000000000014F3E4):[redis]redis connect
+[I] 23:53:28.454(000000000014F3E4):[redis]redis ready
+[I] 23:58:13.894(000000000014ED4C):[redis]redis close
+[T] 23:58:13.895(000000000014ED4C):[redis]redis reconnecting
+[I] 23:58:13.898(000000000014ED4C):[redis]redis connect
+[I] 23:58:13.899(000000000014ED4C):[redis]redis ready
+[I] 23:58:15.896(000000000014EBE0):[redis]redis close
+[T] 23:58:15.897(000000000014EBE0):[redis]redis reconnecting
+[I] 23:58:15.900(000000000014EBE0):[redis]redis connect
+[I] 23:58:15.901(000000000014EBE0):[redis]redis ready
+[I] 23:58:29.408(000000000014F3E4):[redis]redis close
+[T] 23:58:29.409(000000000014F3E4):[redis]redis reconnecting
+[I] 23:58:29.411(000000000014F3E4):[redis]redis connect
+[I] 23:58:29.412(000000000014F3E4):[redis]redis ready

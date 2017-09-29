@@ -1,0 +1,166 @@
+[D] 13:17:58.229(000000000015056C):master log socket server started! host=::, port=3160
+[I] 13:17:58.238(000000000015056C):master log channel started!port=3160
+[I] 13:17:58.308(000000000015056C):[AMQP0]created
+[I] 13:17:58.314(000000000015056C):[AMQP0]declare exchange 'sc.system'
+[I] 13:17:58.315(000000000015056C):[AMQP0]declare queue 'jiaxingwang.sc_admin.system.0f3830a0a27a11e7a74ea3f0bbc39c23'
+[I] 13:17:58.416(000000000015056C):PBEncoder success load file 'E:\product\protocol\sc_system.proto.js'
+[W] 13:17:59.238(000000000015056C):try restart worker 0# ...
+[I] 13:17:59.248(000000000015056C):start worker success,pid=14EB44(0#)
+[D] 13:17:59.927(000000000015056C):worker process log socket connected!
+[D] 13:17:59.919(000000000014EB44):worker 0# ready to connect master log socket server, port=3160
+[D] 13:17:59.927(000000000014EB44):worker 0# log socket connected!
+[W] 13:18:00.257(000000000015056C):try restart worker 1# ...
+[I] 13:18:00.262(000000000015056C):start worker success,pid=152774(1#)
+[I] 13:18:00.484(000000000014EB44):[AMQP0]created
+[I] 13:18:00.494(000000000014EB44):[AMQP0]declare queue 'cf.rpc.1084add0a27a11e78f5801c62c9cbc5c'
+[I] 13:18:00.496(000000000014EB44):[RPCC:cf.rpc]create rpc client 'cf.rpc' in conn AMQP0
+[I] 13:18:00.731(000000000014EB44):PBEncoder success load file 'E:\product\protocol\cf.proto.js'
+[I] 13:18:00.732(000000000014EB44):[AMQP0]declare queue 'cf.wechat.rpc.10a925c0a27a11e78f5801c62c9cbc5c'
+[I] 13:18:00.732(000000000014EB44):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP0
+[I] 13:18:00.807(000000000014EB44):PBEncoder success load file 'E:\product\protocol\cf_wechat.proto.js'
+[I] 13:18:00.807(000000000014EB44):[AMQP0]declare exchange 'cf.wechat.notify'
+[I] 13:18:00.808(000000000014EB44):[AMQP0]declare queue 'jiaxingwang.sc_admin.wechat.10b4be80a27a11e78f5801c62c9cbc5c'
+[I] 13:18:00.808(000000000014EB44):[AMQP0]declare queue 'cf.app.rpc.10b4be81a27a11e78f5801c62c9cbc5c'
+[I] 13:18:00.809(000000000014EB44):[RPCC:cf.app.rpc]create rpc client 'cf.app.rpc' in conn AMQP0
+[I] 13:18:00.813(000000000014EB44):PBEncoder success load file 'E:\product\protocol\cf_app.proto.js'
+[I] 13:18:00.813(000000000014EB44):[AMQP0]declare queue 'cf.alipay.rpc.10b581d0a27a11e78f5801c62c9cbc5c'
+[I] 13:18:00.814(000000000014EB44):[RPCC:cf.alipay.rpc]create rpc client 'cf.alipay.rpc' in conn AMQP0
+[I] 13:18:00.822(000000000014EB44):PBEncoder success load file 'E:\product\protocol\cf_alipay.proto.js'
+[I] 13:18:00.822(000000000014EB44):[AMQP0]declare queue 'cf.ding.rpc.10b6e160a27a11e78f5801c62c9cbc5c'
+[I] 13:18:00.823(000000000014EB44):[RPCC:cf.ding.rpc]create rpc client 'cf.ding.rpc' in conn AMQP0
+[I] 13:18:00.834(000000000014EB44):PBEncoder success load file 'E:\product\protocol\cf_ding.proto.js'
+[I] 13:18:00.835(000000000014EB44):[AMQP0]declare exchange 'cf.ding.notify'
+[I] 13:18:00.835(000000000014EB44):[AMQP0]declare queue 'jiaxingwang.sc_admin.ding.10b8dd30a27a11e78f5801c62c9cbc5c'
+[I] 13:18:00.835(000000000014EB44):[AM]init and reload account!
+[I] 13:18:00.839(000000000014EB44):[AM]reload account success, account number is: 0
+[I] 13:18:00.842(000000000014EB44):[AMQP0]declare queue 'sr.customer.rpc.10b9eea0a27a11e78f5801c62c9cbc5c'
+[I] 13:18:00.842(000000000014EB44):[RPCC:sr.customer.rpc]create rpc client 'sr.customer.rpc' in conn AMQP0
+[I] 13:18:00.852(000000000014EB44):PBEncoder success load file 'E:\product\protocol\sr_customer.proto.js'
+[W] 13:18:00.853(000000000014EB44):[AMQP0]rpc client 'cf.rpc' declare repeat!
+[W] 13:18:00.853(000000000014EB44):[AMQP0]rpc client 'cf.wechat.rpc' declare repeat!
+[W] 13:18:00.853(000000000014EB44):[AMQP0]rpc client 'cf.app.rpc' declare repeat!
+[I] 13:18:00.860(000000000014EB44):[AMQP0]declare exchange 'sc.system'
+[I] 13:18:00.860(000000000014EB44):[AMQP0]declare queue 'jiaxingwang.sc_admin.system.10bcadc0a27a11e78f5801c62c9cbc5c'
+[I] 13:18:00.865(000000000014EB44):PBEncoder success load file 'E:\product\protocol\sc_system.proto.js'
+[D] 13:18:01.214(000000000015056C):worker process log socket connected!
+[D] 13:18:01.092(0000000000152774):worker 1# ready to connect master log socket server, port=3160
+[D] 13:18:01.216(0000000000152774):worker 1# log socket connected!
+[W] 13:18:01.225(000000000014EB44):[AMQP0]rpc client 'cf.wechat.rpc' declare repeat!
+[W] 13:18:01.272(000000000015056C):try restart worker 2# ...
+[I] 13:18:01.362(000000000015056C):start worker success,pid=1EA370(2#)
+[E] 13:18:01.413(000000000014EB44):Global caught exception: SyntaxError: Block-scoped declarations (let, const, function, class) not yet supported outside strict mode
+    at exports.runInThisContext (vm.js:53:16)
+    at Module._compile (module.js:387:25)
+    at Object.Module._extensions..js (module.js:422:10)
+    at Module.load (module.js:357:32)
+    at Function.Module._load (module.js:314:12)
+    at Module.require (module.js:367:17)
+    at require (internal/module.js:16:19)
+    at Object.<anonymous> (E:\product\scAdmin\js\sc\router\user.js:26:36)
+    at Module._compile (module.js:413:34)
+    at Object.Module._extensions..js (module.js:422:10)
+    at Module.load (module.js:357:32)
+    at Function.Module._load (module.js:314:12)
+    at Module.require (module.js:367:17)
+    at require (internal/module.js:16:19)
+    at loadFile (E:\product\scAdmin\js\module_manager.js:35:20)
+    at E:\product\scAdmin\js\module_manager.js:83:17
+    at Array.forEach (native)
+    at Object.readdir (E:\product\scAdmin\js\module_manager.js:71:11)
+    at Object.<anonymous> (E:\product\scAdmin\js\sc\module_main.js:8:12)
+    at Module._compile (module.js:413:34)
+    at Object.Module._extensions..js (module.js:422:10)
+    at Module.load (module.js:357:32)
+    at Function.Module._load (module.js:314:12)
+    at Module.require (module.js:367:17)
+    at require (internal/module.js:16:19)
+    at E:\product\scAdmin\js\module_manager.js:28:9
+    at Array.forEach (native)
+    at Object.exports.loadRoute (E:\product\scAdmin\js\module_manager.js:18:13)
+[I] 13:18:01.773(0000000000152774):[AMQP0]created
+[I] 13:18:01.783(0000000000152774):[AMQP0]declare queue 'cf.rpc.11495d60a27a11e7bddb91801bbb96e8'
+[I] 13:18:01.784(0000000000152774):[RPCC:cf.rpc]create rpc client 'cf.rpc' in conn AMQP0
+[I] 13:18:01.894(0000000000152774):PBEncoder success load file 'E:\product\protocol\cf.proto.js'
+[I] 13:18:01.895(0000000000152774):[AMQP0]declare queue 'cf.wechat.rpc.115a7460a27a11e7bddb91801bbb96e8'
+[I] 13:18:01.895(0000000000152774):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP0
+[I] 13:18:01.954(0000000000152774):PBEncoder success load file 'E:\product\protocol\cf_wechat.proto.js'
+[I] 13:18:01.955(0000000000152774):[AMQP0]declare exchange 'cf.wechat.notify'
+[I] 13:18:01.955(0000000000152774):[AMQP0]declare queue 'jiaxingwang.sc_admin.wechat.1163c330a27a11e7bddb91801bbb96e8'
+[I] 13:18:01.956(0000000000152774):[AMQP0]declare queue 'cf.app.rpc.1163ea40a27a11e7bddb91801bbb96e8'
+[I] 13:18:01.956(0000000000152774):[RPCC:cf.app.rpc]create rpc client 'cf.app.rpc' in conn AMQP0
+[I] 13:18:01.961(0000000000152774):PBEncoder success load file 'E:\product\protocol\cf_app.proto.js'
+[I] 13:18:01.962(0000000000152774):[AMQP0]declare queue 'cf.alipay.rpc.1164d4a0a27a11e7bddb91801bbb96e8'
+[I] 13:18:01.962(0000000000152774):[RPCC:cf.alipay.rpc]create rpc client 'cf.alipay.rpc' in conn AMQP0
+[I] 13:18:01.969(0000000000152774):PBEncoder success load file 'E:\product\protocol\cf_alipay.proto.js'
+[I] 13:18:01.970(0000000000152774):[AMQP0]declare queue 'cf.ding.rpc.11660d20a27a11e7bddb91801bbb96e8'
+[I] 13:18:01.970(0000000000152774):[RPCC:cf.ding.rpc]create rpc client 'cf.ding.rpc' in conn AMQP0
+[I] 13:18:01.982(0000000000152774):PBEncoder success load file 'E:\product\protocol\cf_ding.proto.js'
+[I] 13:18:01.982(0000000000152774):[AMQP0]declare exchange 'cf.ding.notify'
+[I] 13:18:01.982(0000000000152774):[AMQP0]declare queue 'jiaxingwang.sc_admin.ding.1167e1e0a27a11e7bddb91801bbb96e8'
+[I] 13:18:01.983(0000000000152774):[AM]init and reload account!
+[I] 13:18:01.988(0000000000152774):[AM]reload account success, account number is: 0
+[I] 13:18:01.991(0000000000152774):[AMQP0]declare queue 'sr.customer.rpc.11694170a27a11e7bddb91801bbb96e8'
+[I] 13:18:01.992(0000000000152774):[RPCC:sr.customer.rpc]create rpc client 'sr.customer.rpc' in conn AMQP0
+[I] 13:18:02.000(0000000000152774):PBEncoder success load file 'E:\product\protocol\sr_customer.proto.js'
+[W] 13:18:02.000(0000000000152774):[AMQP0]rpc client 'cf.rpc' declare repeat!
+[W] 13:18:02.000(0000000000152774):[AMQP0]rpc client 'cf.wechat.rpc' declare repeat!
+[W] 13:18:02.001(0000000000152774):[AMQP0]rpc client 'cf.app.rpc' declare repeat!
+[I] 13:18:02.005(0000000000152774):[AMQP0]declare exchange 'sc.system'
+[I] 13:18:02.005(0000000000152774):[AMQP0]declare queue 'jiaxingwang.sc_admin.system.116b6450a27a11e7bddb91801bbb96e8'
+[I] 13:18:02.010(0000000000152774):PBEncoder success load file 'E:\product\protocol\sc_system.proto.js'
+[D] 13:18:02.218(000000000015056C):worker process log socket connected!
+[W] 13:18:02.224(0000000000152774):[AMQP0]rpc client 'cf.wechat.rpc' declare repeat!
+[D] 13:18:02.204(00000000001EA370):worker 2# ready to connect master log socket server, port=3160
+[D] 13:18:02.257(00000000001EA370):worker 2# log socket connected!
+[E] 13:18:02.357(0000000000152774):Global caught exception: SyntaxError: Block-scoped declarations (let, const, function, class) not yet supported outside strict mode
+    at exports.runInThisContext (vm.js:53:16)
+    at Module._compile (module.js:387:25)
+    at Object.Module._extensions..js (module.js:422:10)
+    at Module.load (module.js:357:32)
+    at Function.Module._load (module.js:314:12)
+    at Module.require (module.js:367:17)
+    at require (internal/module.js:16:19)
+    at Object.<anonymous> (E:\product\scAdmin\js\sc\router\user.js:26:36)
+    at Module._compile (module.js:413:34)
+    at Object.Module._extensions..js (module.js:422:10)
+    at Module.load (module.js:357:32)
+    at Function.Module._load (module.js:314:12)
+    at Module.require (module.js:367:17)
+    at require (internal/module.js:16:19)
+    at loadFile (E:\product\scAdmin\js\module_manager.js:35:20)
+    at E:\product\scAdmin\js\module_manager.js:83:17
+    at Array.forEach (native)
+    at Object.readdir (E:\product\scAdmin\js\module_manager.js:71:11)
+    at Object.<anonymous> (E:\product\scAdmin\js\sc\module_main.js:8:12)
+    at Module._compile (module.js:413:34)
+    at Object.Module._extensions..js (module.js:422:10)
+    at Module.load (module.js:357:32)
+    at Function.Module._load (module.js:314:12)
+    at Module.require (module.js:367:17)
+    at require (internal/module.js:16:19)
+    at E:\product\scAdmin\js\module_manager.js:28:9
+    at Array.forEach (native)
+    at Object.exports.loadRoute (E:\product\scAdmin\js\module_manager.js:18:13)
+[I] 13:18:02.847(00000000001EA370):[AMQP0]created
+[I] 13:18:02.866(00000000001EA370):[AMQP0]declare queue 'cf.rpc.11ee9e10a27a11e79387ff13e2361743'
+[I] 13:18:02.867(00000000001EA370):[RPCC:cf.rpc]create rpc client 'cf.rpc' in conn AMQP0
+[W] 13:18:02.972(000000000015056C):recv 'Ctrl+C' break sign!next exit!
+[D] 13:18:02.978(000000000015056C):worker process log socket error!err=Error: read ECONNRESET
+    at exports._errnoException (util.js:890:11)
+    at TCP.onread (net.js:550:26)
+[D] 13:18:02.978(000000000015056C):worker process log socket close!
+[D] 13:18:02.984(000000000015056C):worker process log socket error!err=Error: read ECONNRESET
+    at exports._errnoException (util.js:890:11)
+    at TCP.onread (net.js:550:26)
+[D] 13:18:02.984(000000000015056C):worker process log socket close!
+[W] 13:18:03.001(000000000015056C):worker 152774(1#) died.
+[W] 13:18:03.002(000000000015056C):worker 14EB44(0#) died.
+[D] 13:18:03.005(000000000015056C):worker process log socket error!err=Error: read ECONNRESET
+    at exports._errnoException (util.js:890:11)
+    at TCP.onread (net.js:550:26)
+[D] 13:18:03.005(000000000015056C):worker process log socket close!
+[W] 13:18:03.016(000000000015056C):worker 1EA370(2#) died.
+[W] 13:18:03.456(000000000015056C):try restart worker 0# ...
+[I] 13:18:03.501(000000000015056C):start worker success,pid=14CBD8(0#)
+[W] 13:18:04.550(000000000015056C):try restart worker 1# ...
+[I] 13:18:04.558(000000000015056C):start worker success,pid=154FA8(1#)

@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>ShopperConnect</title>
+  <!--网页的图标-->
+  <link href="./common/resources/images/favicon.ico" type="image/x-icon" rel="icon">
+  <!--项目主要的CSS文件，开发用【href="./common/resources/main.css"】，发布用【href="./common/resources/built.css"】-->
+  <link href="./common/resources/main.css" rel="stylesheet" />
+  <!--主题皮肤-->
+  <link id="theme" href="" rel="stylesheet" type="text/css" />
+</head>
+
+<body ng-controller="indexController">
+  <div class="layout" id="layout">
+    <div class="navbar navbar-inverse top-nav">
+      <div class="navbar-inner">
+        <div class="container">
+          <div class="pull-left header-logo">
+          </div>
+          <div class="pull-right notification-nav">
+            <dl class="pull-left tool_wrapper">
+              <dt><a class="btn_ext btn--add" title="">{{languageBase.Operate.Add}}</a></dt>
+              <dd class="duration-common">
+                <ul class="list">
+                  <li ng-click="directTo('/sr/customer/customerEdit/-1', false, '/sr/customer/list')">{{languageBase.ShortCut.AddCustomer}}</li>
+                  <li ng-click="directTo('/sr/coupon/couponadd/0/1/0', false, '/sr/coupon/couponList')">{{languageBase.ShortCut.AddCoupon}}</li>
+                  <li ng-click="directTo('/sr/campaign/message/edit/', false, '/sr/campaign/message/list')">{{languageBase.ShortCut.MsgList}}</li>
+                  <li ng-click="directTo('/sr/campaign/reward/edit/', false, '/sr/campaign/reward/list/')">{{languageBase.ShortCut.RewardList}}</li>
+                </ul>
+              </dd>
+            </dl>
+            <!--多语言-->
+            <dl class="pull-left tool_wrapper lan-tool_wrapper">
+              <dt><a class="btn_ext btn--language" ng-cloak>{{languageText()}}</a></dt>
+              <dd class="duration-common">
+                <ul class="list lan_list">
+                  <li ng-click="changeLanguage('Ch')">中文</li>
+                  <li ng-click="changeLanguage('En')">英文</li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+          <div class="search_box pull-right">
+            <input type="text" placeholder="请输入搜索条件" name="search-key" class="search_input" />
+            <a class="search_btn" href="javascript:void(0)"><i></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="leftbarApp" class="leftbar leftbar-close clearfix">
+      <div id="left-nav" class="left-nav clearfix">
+        <!--登录用户信息-->
+        <div class="login-info">
+          <div class="login-info__summary clearfix">
+            <div class="login-info__avater">
+              <img ng-src="{{adminImage || ''}}" ng-show="!!adminImage"/>
+              <i style="font-size:50px" class="icon-user" ng-show="!adminImage"></i>
+            </div>
+            <div class="pull-left">
+                <div class="login-info__name" title="{{adminName |cutStringFilter : 14}}">{{adminName |cutStringFilter : 14}}</div>
+                <div class="login-info__role-name">{{ruleName}}</div>
+            </div>
+          </div>
+          <ul class="login-info__oper">
+            <li class="login-info__oper-item login-info__oper-item--edit" ng-click="edit()" title="{{languageBase.Base.EditProfile}}">{{languageBase.Base.EditProfile}}</li>
+            <li class="login-info__oper-item login-info__oper-item--logout" ng-click="logout()" title="{{languageBase.Base.Logout}}">{{languageBase.Base.Logout}}</li>
+         </ul>
+        </div>
+        <div class="nav-split">主菜单</div>
+        <div class="left-secondary-nav module-wrap">
+          <div class="page__item" data-jump-url="/dashboard" ng-click="changeBreadcrumb({name:'dashboard', href:'/dashboard'})" style="display: block;position: relative;padding-left: 59px;">
+            <i class="icon_pic page-item-icon"></i>
+            Dashboard
+          </div>
+          <div class="module" ng-repeat="menulist in topmenus.menu"id="{{menulist.name}}">
+            <h3 class="module__name"><i class="{{menulist.class}}"></i>{{menulist | menui18nName}}</h3>
+            <ul class="page">
+                <li class="page__item" ng-repeat="page in menulist.children" ng-click="changeBreadcrumb(page)" data-jump-url="{{page.href}}" data-menu-key="{{page.name}}">{{page  | menui18nName}}</li>
+            </ul>
+              <!--************************************* 拥有三级菜单的菜单，在此处加载 *******************************************************-->
+                  <!--三级菜单--Start-->
+                  <ul class="accordion-nav square-sidenav" ng-show="menu.pattern!='1'" show="{{menu.pattern!='1'}}">
+                    <li ng-repeat="menu_3 in menu.children ">
+                      <a href="javascript:;" ng-click="changeBreadcrumb(module, menu, menu_3)" attr-route="{{menu_3.href}}" class="duration-common" data-menu-key="{{menu.name}}">
+                        <i class="{{(menu_3.class&&menu_3.class!='')&&menu_3.class||'icon-list-alt'}}" style="float:left;"></i>{{languageBase.Menu[menu_3.name] || menu_3.name}}
+                      </a>
+                    </li>
+                  </ul>
+                  <ul ng-show="menu.pattern=='1'" class="accordion-nav metro-sidenav clearfix" show="{{menu.pattern=='1'}}">
+                    <li ng-repeat="menu_3 in menu.children ">
+                      <a href="javascript:;" ng-click="changeBreadcrumb(module, menu, menu_3)" class="bondi-blue duration-common aBindBack{{$index%5}}" attr-route="{{menu_3.href}}" title="{{languageBase.Menu[menu_3.name] || menu_3.name}}" data-menu-key="{{menu.name}}">
+                        <i class="{{(menu_3.class&&menu_3.class!='')&&menu_3.class||'icon-list-alt'}}" style="margin-right:0;"></i><span>{{languageBase.Menu[menu_3.name] || menu_3.name}}</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <!--三级菜单--End-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-wrapper" class="main-wrapper">
+      <a href="javascript:void(0)" id="bar_show_btn" class="bar_show_btn"><i></i></a>
+      <a href="javascript:void(0)" id="bar_hide_btn" class="bar_hide_btn"><i></i></a>
+      <div class="container-fluid " ng-view id="mainView" style="position:relative;padding-left:15px;">
+      </div>
+    </div>
+    <div id="copyright" class="copyright">
+      <p>&copy; 2015 Smartac v4.0.1</p>
+    </div>
+    <div id="checkCss3" rel="Detect"></div>
+    <div class="scroll-top" style="display:block;">
+      <a href="javascript:void(0)" class="tip-top" title="Go top"><i class="icon-double-angle-up"></i></a>
+    </div>
+  </div>
+  <div class="alert" style="display: none;"></div>
+  <div id="myConfirm" class="modal hide fade static"></div>
+  <script src="./setting.js" type="text/javascript"></script>
+  <!--项目主要的JS文件，开发用【data-main="common/resources/main"】，发布用【data-main="common/resources/built"】-->
+  <script data-main="./common/resources/main" src="./common/resources/plugin/require/require.js"></script>
+  <!--遮罩层-->
+  <div id="divMask" class="mask"></div>
+  <div id="imgLoading" class="imgLoading">
+    <div class="loader-rect">
+      <i class="rect1"></i><i class="rect2"></i><i class="rect3"></i><i class="rect4"></i>
+    </div>
+  </div>
+  <!--<img id="imgLoading" class="imgLoading" src="./common/resources/images/loading.gif" />-->
+  <div id="divall" class="mask"></div>
+</body>
+
+</html>

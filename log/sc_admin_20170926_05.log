@@ -1,0 +1,365 @@
+[D] 13:19:42.632(000000000015A454):master log socket server started! host=::, port=3379
+[I] 13:19:42.641(000000000015A454):master log channel started!port=3379
+[I] 13:19:42.711(000000000015A454):[AMQP0]created
+[I] 13:19:42.718(000000000015A454):[AMQP0]declare exchange 'sc.system'
+[I] 13:19:42.719(000000000015A454):[AMQP0]declare queue 'jiaxingwang.sc_admin.system.4d72f9e0a27a11e78ff6a3f596e116ec'
+[I] 13:19:42.823(000000000015A454):PBEncoder success load file 'E:\product\protocol\sc_system.proto.js'
+[W] 13:19:43.641(000000000015A454):try restart worker 0# ...
+[I] 13:19:43.651(000000000015A454):start worker success,pid=150B34(0#)
+[D] 13:19:44.531(000000000015A454):worker process log socket connected!
+[D] 13:19:44.523(0000000000150B34):worker 0# ready to connect master log socket server, port=3379
+[D] 13:19:44.532(0000000000150B34):worker 0# log socket connected!
+[W] 13:19:44.662(000000000015A454):try restart worker 1# ...
+[I] 13:19:44.667(000000000015A454):start worker success,pid=157C14(1#)
+[I] 13:19:45.131(0000000000150B34):[AMQP0]created
+[I] 13:19:45.140(0000000000150B34):[AMQP0]declare queue 'cf.rpc.4ee46430a27a11e798eb03827ea1c10f'
+[I] 13:19:45.141(0000000000150B34):[RPCC:cf.rpc]create rpc client 'cf.rpc' in conn AMQP0
+[I] 13:19:45.269(0000000000150B34):PBEncoder success load file 'E:\product\protocol\cf.proto.js'
+[I] 13:19:45.270(0000000000150B34):[AMQP0]declare queue 'cf.wechat.rpc.4ef86160a27a11e798eb03827ea1c10f'
+[I] 13:19:45.271(0000000000150B34):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP0
+[I] 13:19:45.355(0000000000150B34):PBEncoder success load file 'E:\product\protocol\cf_wechat.proto.js'
+[I] 13:19:45.356(0000000000150B34):[AMQP0]declare exchange 'cf.wechat.notify'
+[I] 13:19:45.356(0000000000150B34):[AMQP0]declare queue 'jiaxingwang.sc_admin.wechat.4f0580c0a27a11e798eb03827ea1c10f'
+[I] 13:19:45.356(0000000000150B34):[AMQP0]declare queue 'cf.app.rpc.4f0580c1a27a11e798eb03827ea1c10f'
+[I] 13:19:45.357(0000000000150B34):[RPCC:cf.app.rpc]create rpc client 'cf.app.rpc' in conn AMQP0
+[I] 13:19:45.361(0000000000150B34):PBEncoder success load file 'E:\product\protocol\cf_app.proto.js'
+[I] 13:19:45.362(0000000000150B34):[AMQP0]declare queue 'cf.alipay.rpc.4f066b20a27a11e798eb03827ea1c10f'
+[I] 13:19:45.362(0000000000150B34):[RPCC:cf.alipay.rpc]create rpc client 'cf.alipay.rpc' in conn AMQP0
+[I] 13:19:45.370(0000000000150B34):PBEncoder success load file 'E:\product\protocol\cf_alipay.proto.js'
+[I] 13:19:45.371(0000000000150B34):[AMQP0]declare queue 'cf.ding.rpc.4f07cab0a27a11e798eb03827ea1c10f'
+[I] 13:19:45.371(0000000000150B34):[RPCC:cf.ding.rpc]create rpc client 'cf.ding.rpc' in conn AMQP0
+[I] 13:19:45.382(0000000000150B34):PBEncoder success load file 'E:\product\protocol\cf_ding.proto.js'
+[I] 13:19:45.383(0000000000150B34):[AMQP0]declare exchange 'cf.ding.notify'
+[I] 13:19:45.383(0000000000150B34):[AMQP0]declare queue 'jiaxingwang.sc_admin.ding.4f099f70a27a11e798eb03827ea1c10f'
+[I] 13:19:45.383(0000000000150B34):[AM]init and reload account!
+[I] 13:19:45.387(0000000000150B34):[AM]reload account success, account number is: 0
+[I] 13:19:45.391(0000000000150B34):[AMQP0]declare queue 'sr.customer.rpc.4f0ad7f0a27a11e798eb03827ea1c10f'
+[I] 13:19:45.391(0000000000150B34):[RPCC:sr.customer.rpc]create rpc client 'sr.customer.rpc' in conn AMQP0
+[I] 13:19:45.399(0000000000150B34):PBEncoder success load file 'E:\product\protocol\sr_customer.proto.js'
+[W] 13:19:45.400(0000000000150B34):[AMQP0]rpc client 'cf.rpc' declare repeat!
+[W] 13:19:45.400(0000000000150B34):[AMQP0]rpc client 'cf.wechat.rpc' declare repeat!
+[W] 13:19:45.401(0000000000150B34):[AMQP0]rpc client 'cf.app.rpc' declare repeat!
+[I] 13:19:45.405(0000000000150B34):[AMQP0]declare exchange 'sc.system'
+[I] 13:19:45.405(0000000000150B34):[AMQP0]declare queue 'jiaxingwang.sc_admin.system.4f0cfad0a27a11e798eb03827ea1c10f'
+[I] 13:19:45.410(0000000000150B34):PBEncoder success load file 'E:\product\protocol\sc_system.proto.js'
+[D] 13:19:45.618(000000000015A454):worker process log socket connected!
+[D] 13:19:45.610(0000000000157C14):worker 1# ready to connect master log socket server, port=3379
+[D] 13:19:45.619(0000000000157C14):worker 1# log socket connected!
+[I] 13:19:45.638(0000000000150B34):[AMQP1]created
+[I] 13:19:45.639(0000000000150B34):[AMQP1]declare exchange 'amq.direct'
+[I] 13:19:45.640(0000000000150B34):[AMQP1]declare queue 'cf.wechat.rpc.4f30d680a27a11e798eb03827ea1c10f'
+[I] 13:19:45.642(0000000000150B34):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP1
+[I] 13:19:45.644(0000000000150B34):[AMQP2]created
+[I] 13:19:45.648(0000000000150B34):[AMQP0]declare exchange 'amq.direct'
+[I] 13:19:45.649(0000000000150B34):[AMQP0]declare queue 'sc.task.rpc.4f323610a27a11e798eb03827ea1c10f'
+[I] 13:19:45.650(0000000000150B34):[RPCC:sc.task.rpc]create rpc client 'sc.task.rpc' in conn AMQP0
+[I] 13:19:45.658(0000000000150B34):PBEncoder success load file 'E:\product\protocol\sc_task.proto.js'
+[W] 13:19:45.673(000000000015A454):try restart worker 2# ...
+[I] 13:19:45.701(000000000015A454):start worker success,pid=14EF0C(2#)
+[I] 13:19:45.684(0000000000150B34):[AMQP0]declare queue 'sr.customer.tag.rpc.4f378d40a27a11e798eb03827ea1c10f'
+[I] 13:19:45.684(0000000000150B34):[RPCC:sr.customer.tag.rpc]create rpc client 'sr.customer.tag.rpc' in conn AMQP0
+[I] 13:19:45.687(0000000000150B34):[AMQP0]declare queue 'sr.customer.point.rpc.4f380270a27a11e798eb03827ea1c10f'
+[I] 13:19:45.688(0000000000150B34):[RPCC:sr.customer.point.rpc]create rpc client 'sr.customer.point.rpc' in conn AMQP0
+[I] 13:19:45.694(0000000000150B34):PBEncoder success load file 'E:\product\protocol\sr_customer_point.proto.js'
+[I] 13:19:45.704(0000000000150B34):PBEncoder success load file 'E:\product\protocol\sr_customer_tag.proto.js'
+[W] 13:19:45.714(0000000000150B34):[AMQP0]rpc client 'cf.wechat.rpc' declare repeat!
+[I] 13:19:45.715(0000000000150B34):[AMQP0]declare queue 'sr.customer.coupon_class.rpc.4f3c4830a27a11e798eb03827ea1c10f'
+[I] 13:19:45.716(0000000000150B34):[RPCC:sr.customer.coupon_class.rpc]create rpc client 'sr.customer.coupon_class.rpc' in conn AMQP0
+[I] 13:19:45.716(0000000000150B34):[AMQP0]declare queue 'sr.customer.coupon.rpc.4f3c6f40a27a11e798eb03827ea1c10f'
+[I] 13:19:45.717(0000000000150B34):[RPCC:sr.customer.coupon.rpc]create rpc client 'sr.customer.coupon.rpc' in conn AMQP0
+[I] 13:19:45.728(0000000000150B34):PBEncoder success load file 'E:\product\protocol\sr_customer_coupon.proto.js'
+[W] 13:19:45.729(0000000000150B34):[AMQP0]rpc client 'cf.wechat.rpc' declare repeat!
+[I] 13:19:45.729(0000000000150B34):[AMQP0]declare queue 'cf.wxpay.rpc.4f3e6b10a27a11e798eb03827ea1c10f'
+[I] 13:19:45.730(0000000000150B34):[RPCC:cf.wxpay.rpc]create rpc client 'cf.wxpay.rpc' in conn AMQP0
+[I] 13:19:45.745(0000000000150B34):PBEncoder success load file 'E:\product\protocol\cf_wxpay.proto.js'
+[W] 13:19:45.746(0000000000150B34):[AMQP0]rpc client 'sr.customer.point.rpc' declare repeat!
+[W] 13:19:45.753(0000000000150B34):[AMQP0]exchange amq.direct already declare!!
+[W] 13:19:45.754(0000000000150B34):[AMQP0]rpc client 'sr.customer.rpc' declare repeat!
+[W] 13:19:45.754(0000000000150B34):[AMQP0]rpc client 'sr.customer.coupon.rpc' declare repeat!
+[W] 13:19:45.755(0000000000150B34):[AMQP0]rpc client 'cf.wechat.rpc' declare repeat!
+[W] 13:19:45.757(0000000000150B34):[AMQP0]exchange amq.direct already declare!!
+[I] 13:19:45.760(0000000000150B34):[AMQP0]declare queue 'cf.baidu.rpc.4f432600a27a11e798eb03827ea1c10f'
+[I] 13:19:45.761(0000000000150B34):[RPCC:cf.baidu.rpc]create rpc client 'cf.baidu.rpc' in conn AMQP0
+[I] 13:19:45.834(0000000000150B34):PBEncoder success load file 'E:\product\protocol\cf_baidu.proto.js'
+[I] 13:19:45.839(0000000000150B34):[AMQP3]created
+[I] 13:19:45.879(0000000000150B34):[AMQP4]created
+[I] 13:19:45.880(0000000000150B34):[AMQP4]declare exchange 'amq.direct'
+[I] 13:19:45.880(0000000000150B34):[AMQP4]declare queue 'cf.app.rpc.4f557580a27a11e798eb03827ea1c10f'
+[I] 13:19:45.881(0000000000150B34):[RPCC:cf.app.rpc]create rpc client 'cf.app.rpc' in conn AMQP4
+[I] 13:19:45.881(0000000000150B34):[AMQP4]declare queue 'cf.wechat.rpc.4f559c90a27a11e798eb03827ea1c10f'
+[I] 13:19:45.882(0000000000150B34):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP4
+[I] 13:19:45.883(0000000000150B34):[AMQP4]declare queue 'cf.rpc.4f55eab0a27a11e798eb03827ea1c10f'
+[I] 13:19:45.883(0000000000150B34):[RPCC:cf.rpc]create rpc client 'cf.rpc' in conn AMQP4
+[I] 13:19:45.885(0000000000150B34):[AMQP4]declare queue 'sc.task.rpc.4f5638d0a27a11e798eb03827ea1c10f'
+[I] 13:19:45.885(0000000000150B34):[RPCC:sc.task.rpc]create rpc client 'sc.task.rpc' in conn AMQP4
+[I] 13:19:45.888(0000000000150B34):[AMQP5]created
+[I] 13:19:45.889(0000000000150B34):[AMQP5]declare exchange 'amq.direct'
+[I] 13:19:45.890(0000000000150B34):[AMQP5]declare queue 'cf.wechat.rpc.4f56fc20a27a11e798eb03827ea1c10f'
+[I] 13:19:45.891(0000000000150B34):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP5
+[W] 13:19:45.893(0000000000150B34):[AMQP0]rpc client 'sr.customer.point.rpc' declare repeat!
+[I] 13:19:45.895(0000000000150B34):[AMQP6]created
+[I] 13:19:45.896(0000000000150B34):[AMQP6]declare exchange 'amq.direct'
+[I] 13:19:45.897(0000000000150B34):[AMQP6]declare queue 'cf.wechat.rpc.4f580d90a27a11e798eb03827ea1c10f'
+[I] 13:19:45.897(0000000000150B34):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP6
+[I] 13:19:45.902(0000000000150B34):[AMQP7]created
+[I] 13:19:45.903(0000000000150B34):[AMQP7]declare exchange 'amq.direct'
+[I] 13:19:45.903(0000000000150B34):[AMQP7]declare queue 'sc.task.rpc.4f58f7f0a27a11e798eb03827ea1c10f'
+[I] 13:19:45.904(0000000000150B34):[RPCC:sc.task.rpc]create rpc client 'sc.task.rpc' in conn AMQP7
+[I] 13:19:45.904(0000000000150B34):[AMQP7]declare queue 'sr.customer.rewardfail.4f591f00a27a11e798eb03827ea1c10f'
+[I] 13:19:45.905(0000000000150B34):[RPCC:sr.customer.rewardfail]create rpc client 'sr.customer.rewardfail' in conn AMQP7
+[W] 13:19:45.908(0000000000150B34):[AMQP0]exchange amq.direct already declare!!
+[W] 13:19:45.910(0000000000150B34):[AMQP0]rpc client 'sr.customer.tag.rpc' declare repeat!
+[W] 13:19:45.910(0000000000150B34):[AMQP0]rpc client 'sc.task.rpc' declare repeat!
+[W] 13:19:45.913(0000000000150B34):[AMQP0]exchange amq.direct already declare!!
+[I] 13:19:45.947(0000000000150B34):[AMQP0]declare queue 'sr.trade.rpc.4f5faeb0a27a11e798eb03827ea1c10f'
+[I] 13:19:45.947(0000000000150B34):[RPCC:sr.trade.rpc]create rpc client 'sr.trade.rpc' in conn AMQP0
+[I] 13:19:45.951(0000000000150B34):PBEncoder success load file 'E:\product\protocol\sr_trade.proto.js'
+[I] 13:19:45.955(0000000000150B34):[AMQP8]created
+[I] 13:19:45.956(0000000000150B34):[AMQP8]declare exchange 'amq.direct'
+[I] 13:19:45.957(0000000000150B34):[AMQP8]declare queue 'cf.wechat.rpc.4f610e40a27a11e798eb03827ea1c10f'
+[I] 13:19:45.958(0000000000150B34):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP8
+[T] 13:19:45.978(0000000000150B34):Http is running,port is 18910
+[I] 13:19:46.412(0000000000157C14):[AMQP0]created
+[I] 13:19:46.422(0000000000157C14):[AMQP0]declare queue 'cf.rpc.4fa80250a27a11e79fbf9fb5613332b8'
+[I] 13:19:46.423(0000000000157C14):[RPCC:cf.rpc]create rpc client 'cf.rpc' in conn AMQP0
+[I] 13:19:46.537(0000000000157C14):PBEncoder success load file 'E:\product\protocol\cf.proto.js'
+[I] 13:19:46.538(0000000000157C14):[AMQP0]declare queue 'cf.wechat.rpc.4fb9dca0a27a11e79fbf9fb5613332b8'
+[I] 13:19:46.538(0000000000157C14):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP0
+[D] 13:19:46.563(000000000015A454):worker process log socket connected!
+[D] 13:19:46.516(000000000014EF0C):worker 2# ready to connect master log socket server, port=3379
+[D] 13:19:46.564(000000000014EF0C):worker 2# log socket connected!
+[I] 13:19:46.604(0000000000157C14):PBEncoder success load file 'E:\product\protocol\cf_wechat.proto.js'
+[I] 13:19:46.605(0000000000157C14):[AMQP0]declare exchange 'cf.wechat.notify'
+[I] 13:19:46.605(0000000000157C14):[AMQP0]declare queue 'jiaxingwang.sc_admin.wechat.4fc415d0a27a11e79fbf9fb5613332b8'
+[I] 13:19:46.605(0000000000157C14):[AMQP0]declare queue 'cf.app.rpc.4fc415d1a27a11e79fbf9fb5613332b8'
+[I] 13:19:46.605(0000000000157C14):[RPCC:cf.app.rpc]create rpc client 'cf.app.rpc' in conn AMQP0
+[I] 13:19:46.611(0000000000157C14):PBEncoder success load file 'E:\product\protocol\cf_app.proto.js'
+[I] 13:19:46.611(0000000000157C14):[AMQP0]declare queue 'cf.alipay.rpc.4fc50030a27a11e79fbf9fb5613332b8'
+[I] 13:19:46.611(0000000000157C14):[RPCC:cf.alipay.rpc]create rpc client 'cf.alipay.rpc' in conn AMQP0
+[I] 13:19:46.620(0000000000157C14):PBEncoder success load file 'E:\product\protocol\cf_alipay.proto.js'
+[I] 13:19:46.621(0000000000157C14):[AMQP0]declare queue 'cf.ding.rpc.4fc686d0a27a11e79fbf9fb5613332b8'
+[I] 13:19:46.621(0000000000157C14):[RPCC:cf.ding.rpc]create rpc client 'cf.ding.rpc' in conn AMQP0
+[I] 13:19:46.632(0000000000157C14):PBEncoder success load file 'E:\product\protocol\cf_ding.proto.js'
+[I] 13:19:46.632(0000000000157C14):[AMQP0]declare exchange 'cf.ding.notify'
+[I] 13:19:46.633(0000000000157C14):[AMQP0]declare queue 'jiaxingwang.sc_admin.ding.4fc85b90a27a11e79fbf9fb5613332b8'
+[I] 13:19:46.633(0000000000157C14):[AM]init and reload account!
+[I] 13:19:46.637(0000000000157C14):[AM]reload account success, account number is: 0
+[I] 13:19:46.641(0000000000157C14):[AMQP0]declare queue 'sr.customer.rpc.4fc99410a27a11e79fbf9fb5613332b8'
+[I] 13:19:46.641(0000000000157C14):[RPCC:sr.customer.rpc]create rpc client 'sr.customer.rpc' in conn AMQP0
+[I] 13:19:46.649(0000000000157C14):PBEncoder success load file 'E:\product\protocol\sr_customer.proto.js'
+[W] 13:19:46.650(0000000000157C14):[AMQP0]rpc client 'cf.rpc' declare repeat!
+[W] 13:19:46.650(0000000000157C14):[AMQP0]rpc client 'cf.wechat.rpc' declare repeat!
+[W] 13:19:46.651(0000000000157C14):[AMQP0]rpc client 'cf.app.rpc' declare repeat!
+[I] 13:19:46.655(0000000000157C14):[AMQP0]declare exchange 'sc.system'
+[I] 13:19:46.655(0000000000157C14):[AMQP0]declare queue 'jiaxingwang.sc_admin.system.4fcbb6f0a27a11e79fbf9fb5613332b8'
+[I] 13:19:46.660(0000000000157C14):PBEncoder success load file 'E:\product\protocol\sc_system.proto.js'
+[I] 13:19:46.875(0000000000157C14):[AMQP1]created
+[I] 13:19:46.876(0000000000157C14):[AMQP1]declare exchange 'amq.direct'
+[I] 13:19:46.877(0000000000157C14):[AMQP1]declare queue 'cf.wechat.rpc.4fed6fc0a27a11e79fbf9fb5613332b8'
+[I] 13:19:46.877(0000000000157C14):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP1
+[I] 13:19:46.878(0000000000157C14):[AMQP2]created
+[I] 13:19:46.882(0000000000157C14):[AMQP0]declare exchange 'amq.direct'
+[I] 13:19:46.883(0000000000157C14):[AMQP0]declare queue 'sc.task.rpc.4fee8130a27a11e79fbf9fb5613332b8'
+[I] 13:19:46.883(0000000000157C14):[RPCC:sc.task.rpc]create rpc client 'sc.task.rpc' in conn AMQP0
+[I] 13:19:46.891(0000000000157C14):PBEncoder success load file 'E:\product\protocol\sc_task.proto.js'
+[I] 13:19:46.915(0000000000157C14):[AMQP0]declare queue 'sr.customer.tag.rpc.4ff36330a27a11e79fbf9fb5613332b8'
+[I] 13:19:46.915(0000000000157C14):[RPCC:sr.customer.tag.rpc]create rpc client 'sr.customer.tag.rpc' in conn AMQP0
+[I] 13:19:46.918(0000000000157C14):[AMQP0]declare queue 'sr.customer.point.rpc.4ff3d860a27a11e79fbf9fb5613332b8'
+[I] 13:19:46.918(0000000000157C14):[RPCC:sr.customer.point.rpc]create rpc client 'sr.customer.point.rpc' in conn AMQP0
+[I] 13:19:46.925(0000000000157C14):PBEncoder success load file 'E:\product\protocol\sr_customer_point.proto.js'
+[I] 13:19:46.931(0000000000157C14):PBEncoder success load file 'E:\product\protocol\sr_customer_tag.proto.js'
+[W] 13:19:46.940(0000000000157C14):[AMQP0]rpc client 'cf.wechat.rpc' declare repeat!
+[I] 13:19:46.941(0000000000157C14):[AMQP0]declare queue 'sr.customer.coupon_class.rpc.4ff75ad0a27a11e79fbf9fb5613332b8'
+[I] 13:19:46.941(0000000000157C14):[RPCC:sr.customer.coupon_class.rpc]create rpc client 'sr.customer.coupon_class.rpc' in conn AMQP0
+[I] 13:19:46.942(0000000000157C14):[AMQP0]declare queue 'sr.customer.coupon.rpc.4ff75ad1a27a11e79fbf9fb5613332b8'
+[I] 13:19:46.942(0000000000157C14):[RPCC:sr.customer.coupon.rpc]create rpc client 'sr.customer.coupon.rpc' in conn AMQP0
+[I] 13:19:46.954(0000000000157C14):PBEncoder success load file 'E:\product\protocol\sr_customer_coupon.proto.js'
+[W] 13:19:46.954(0000000000157C14):[AMQP0]rpc client 'cf.wechat.rpc' declare repeat!
+[I] 13:19:46.954(0000000000157C14):[AMQP0]declare queue 'cf.wxpay.rpc.4ff956a0a27a11e79fbf9fb5613332b8'
+[I] 13:19:46.955(0000000000157C14):[RPCC:cf.wxpay.rpc]create rpc client 'cf.wxpay.rpc' in conn AMQP0
+[I] 13:19:46.969(0000000000157C14):PBEncoder success load file 'E:\product\protocol\cf_wxpay.proto.js'
+[W] 13:19:46.969(0000000000157C14):[AMQP0]rpc client 'sr.customer.point.rpc' declare repeat!
+[W] 13:19:46.977(0000000000157C14):[AMQP0]exchange amq.direct already declare!!
+[W] 13:19:46.977(0000000000157C14):[AMQP0]rpc client 'sr.customer.rpc' declare repeat!
+[W] 13:19:46.977(0000000000157C14):[AMQP0]rpc client 'sr.customer.coupon.rpc' declare repeat!
+[W] 13:19:46.978(0000000000157C14):[AMQP0]rpc client 'cf.wechat.rpc' declare repeat!
+[W] 13:19:46.981(0000000000157C14):[AMQP0]exchange amq.direct already declare!!
+[I] 13:19:46.981(0000000000157C14):[AMQP0]declare queue 'cf.baidu.rpc.4ffd7550a27a11e79fbf9fb5613332b8'
+[I] 13:19:46.981(0000000000157C14):[RPCC:cf.baidu.rpc]create rpc client 'cf.baidu.rpc' in conn AMQP0
+[I] 13:19:46.995(0000000000157C14):PBEncoder success load file 'E:\product\protocol\cf_baidu.proto.js'
+[I] 13:19:47.000(0000000000157C14):[AMQP3]created
+[I] 13:19:47.007(0000000000157C14):[AMQP4]created
+[I] 13:19:47.008(0000000000157C14):[AMQP4]declare exchange 'amq.direct'
+[I] 13:19:47.008(0000000000157C14):[AMQP4]declare queue 'cf.app.rpc.50019400a27a11e79fbf9fb5613332b8'
+[I] 13:19:47.008(0000000000157C14):[RPCC:cf.app.rpc]create rpc client 'cf.app.rpc' in conn AMQP4
+[I] 13:19:47.009(0000000000157C14):[AMQP4]declare queue 'cf.wechat.rpc.50019401a27a11e79fbf9fb5613332b8'
+[I] 13:19:47.009(0000000000157C14):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP4
+[I] 13:19:47.009(0000000000157C14):[AMQP4]declare queue 'cf.rpc.5001bb10a27a11e79fbf9fb5613332b8'
+[I] 13:19:47.009(0000000000157C14):[RPCC:cf.rpc]create rpc client 'cf.rpc' in conn AMQP4
+[I] 13:19:47.009(0000000000157C14):[AMQP4]declare queue 'sc.task.rpc.5001bb11a27a11e79fbf9fb5613332b8'
+[I] 13:19:47.010(0000000000157C14):[RPCC:sc.task.rpc]create rpc client 'sc.task.rpc' in conn AMQP4
+[I] 13:19:47.012(0000000000157C14):[AMQP5]created
+[I] 13:19:47.013(0000000000157C14):[AMQP5]declare exchange 'amq.direct'
+[I] 13:19:47.013(0000000000157C14):[AMQP5]declare queue 'cf.wechat.rpc.50025750a27a11e79fbf9fb5613332b8'
+[I] 13:19:47.013(0000000000157C14):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP5
+[W] 13:19:47.015(0000000000157C14):[AMQP0]rpc client 'sr.customer.point.rpc' declare repeat!
+[I] 13:19:47.017(0000000000157C14):[AMQP6]created
+[I] 13:19:47.018(0000000000157C14):[AMQP6]declare exchange 'amq.direct'
+[I] 13:19:47.018(0000000000157C14):[AMQP6]declare queue 'cf.wechat.rpc.50031aa0a27a11e79fbf9fb5613332b8'
+[I] 13:19:47.019(0000000000157C14):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP6
+[I] 13:19:47.024(0000000000157C14):[AMQP7]created
+[I] 13:19:47.025(0000000000157C14):[AMQP7]declare exchange 'amq.direct'
+[I] 13:19:47.025(0000000000157C14):[AMQP7]declare queue 'sc.task.rpc.50042c10a27a11e79fbf9fb5613332b8'
+[I] 13:19:47.025(0000000000157C14):[RPCC:sc.task.rpc]create rpc client 'sc.task.rpc' in conn AMQP7
+[I] 13:19:47.026(0000000000157C14):[AMQP7]declare queue 'sr.customer.rewardfail.50045320a27a11e79fbf9fb5613332b8'
+[I] 13:19:47.026(0000000000157C14):[RPCC:sr.customer.rewardfail]create rpc client 'sr.customer.rewardfail' in conn AMQP7
+[W] 13:19:47.029(0000000000157C14):[AMQP0]exchange amq.direct already declare!!
+[W] 13:19:47.029(0000000000157C14):[AMQP0]rpc client 'sr.customer.tag.rpc' declare repeat!
+[W] 13:19:47.029(0000000000157C14):[AMQP0]rpc client 'sc.task.rpc' declare repeat!
+[W] 13:19:47.032(0000000000157C14):[AMQP0]exchange amq.direct already declare!!
+[I] 13:19:47.032(0000000000157C14):[AMQP0]declare queue 'sr.trade.rpc.50053d80a27a11e79fbf9fb5613332b8'
+[I] 13:19:47.032(0000000000157C14):[RPCC:sr.trade.rpc]create rpc client 'sr.trade.rpc' in conn AMQP0
+[I] 13:19:47.036(0000000000157C14):PBEncoder success load file 'E:\product\protocol\sr_trade.proto.js'
+[I] 13:19:47.039(0000000000157C14):[AMQP8]created
+[I] 13:19:47.040(0000000000157C14):[AMQP8]declare exchange 'amq.direct'
+[I] 13:19:47.040(0000000000157C14):[AMQP8]declare queue 'cf.wechat.rpc.50067600a27a11e79fbf9fb5613332b8'
+[I] 13:19:47.040(0000000000157C14):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP8
+[T] 13:19:47.057(0000000000157C14):Http is running,port is 18910
+[I] 13:19:47.344(000000000014EF0C):[AMQP0]created
+[I] 13:19:47.354(000000000014EF0C):[AMQP0]declare queue 'cf.rpc.50363890a27a11e7a43943fb0961f113'
+[I] 13:19:47.355(000000000014EF0C):[RPCC:cf.rpc]create rpc client 'cf.rpc' in conn AMQP0
+[I] 13:19:47.501(000000000014EF0C):PBEncoder success load file 'E:\product\protocol\cf.proto.js'
+[I] 13:19:47.501(000000000014EF0C):[AMQP0]declare queue 'cf.wechat.rpc.504ccdd0a27a11e7a43943fb0961f113'
+[I] 13:19:47.502(000000000014EF0C):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP0
+[I] 13:19:47.565(000000000014EF0C):PBEncoder success load file 'E:\product\protocol\cf_wechat.proto.js'
+[I] 13:19:47.566(000000000014EF0C):[AMQP0]declare exchange 'cf.wechat.notify'
+[I] 13:19:47.566(000000000014EF0C):[AMQP0]declare queue 'jiaxingwang.sc_admin.wechat.5056b8e0a27a11e7a43943fb0961f113'
+[I] 13:19:47.566(000000000014EF0C):[AMQP0]declare queue 'cf.app.rpc.5056b8e1a27a11e7a43943fb0961f113'
+[I] 13:19:47.567(000000000014EF0C):[RPCC:cf.app.rpc]create rpc client 'cf.app.rpc' in conn AMQP0
+[I] 13:19:47.587(000000000014EF0C):PBEncoder success load file 'E:\product\protocol\cf_app.proto.js'
+[I] 13:19:47.588(000000000014EF0C):[AMQP0]declare queue 'cf.alipay.rpc.505a1440a27a11e7a43943fb0961f113'
+[I] 13:19:47.589(000000000014EF0C):[RPCC:cf.alipay.rpc]create rpc client 'cf.alipay.rpc' in conn AMQP0
+[I] 13:19:47.597(000000000014EF0C):PBEncoder success load file 'E:\product\protocol\cf_alipay.proto.js'
+[I] 13:19:47.597(000000000014EF0C):[AMQP0]declare queue 'cf.ding.rpc.505b73d0a27a11e7a43943fb0961f113'
+[I] 13:19:47.597(000000000014EF0C):[RPCC:cf.ding.rpc]create rpc client 'cf.ding.rpc' in conn AMQP0
+[I] 13:19:47.608(000000000014EF0C):PBEncoder success load file 'E:\product\protocol\cf_ding.proto.js'
+[I] 13:19:47.608(000000000014EF0C):[AMQP0]declare exchange 'cf.ding.notify'
+[I] 13:19:47.609(000000000014EF0C):[AMQP0]declare queue 'jiaxingwang.sc_admin.ding.505d4890a27a11e7a43943fb0961f113'
+[I] 13:19:47.609(000000000014EF0C):[AM]init and reload account!
+[I] 13:19:47.613(000000000014EF0C):[AM]reload account success, account number is: 0
+[I] 13:19:47.616(000000000014EF0C):[AMQP0]declare queue 'sr.customer.rpc.505e5a00a27a11e7a43943fb0961f113'
+[I] 13:19:47.617(000000000014EF0C):[RPCC:sr.customer.rpc]create rpc client 'sr.customer.rpc' in conn AMQP0
+[I] 13:19:47.625(000000000014EF0C):PBEncoder success load file 'E:\product\protocol\sr_customer.proto.js'
+[W] 13:19:47.626(000000000014EF0C):[AMQP0]rpc client 'cf.rpc' declare repeat!
+[W] 13:19:47.627(000000000014EF0C):[AMQP0]rpc client 'cf.wechat.rpc' declare repeat!
+[W] 13:19:47.627(000000000014EF0C):[AMQP0]rpc client 'cf.app.rpc' declare repeat!
+[I] 13:19:47.632(000000000014EF0C):[AMQP0]declare exchange 'sc.system'
+[I] 13:19:47.633(000000000014EF0C):[AMQP0]declare queue 'jiaxingwang.sc_admin.system.5060f210a27a11e7a43943fb0961f113'
+[I] 13:19:47.637(000000000014EF0C):PBEncoder success load file 'E:\product\protocol\sc_system.proto.js'
+[I] 13:19:47.859(000000000014EF0C):[AMQP1]created
+[I] 13:19:47.860(000000000014EF0C):[AMQP1]declare exchange 'amq.direct'
+[I] 13:19:47.860(000000000014EF0C):[AMQP1]declare queue 'cf.wechat.rpc.50839540a27a11e7a43943fb0961f113'
+[I] 13:19:47.861(000000000014EF0C):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP1
+[I] 13:19:47.863(000000000014EF0C):[AMQP2]created
+[I] 13:19:47.866(000000000014EF0C):[AMQP0]declare exchange 'amq.direct'
+[I] 13:19:47.867(000000000014EF0C):[AMQP0]declare queue 'sc.task.rpc.5084a6b0a27a11e7a43943fb0961f113'
+[I] 13:19:47.867(000000000014EF0C):[RPCC:sc.task.rpc]create rpc client 'sc.task.rpc' in conn AMQP0
+[I] 13:19:47.874(000000000014EF0C):PBEncoder success load file 'E:\product\protocol\sc_task.proto.js'
+[I] 13:19:47.897(000000000014EF0C):[AMQP0]declare queue 'sr.customer.tag.rpc.50893a90a27a11e7a43943fb0961f113'
+[I] 13:19:47.897(000000000014EF0C):[RPCC:sr.customer.tag.rpc]create rpc client 'sr.customer.tag.rpc' in conn AMQP0
+[I] 13:19:47.900(000000000014EF0C):[AMQP0]declare queue 'sr.customer.point.rpc.5089afc0a27a11e7a43943fb0961f113'
+[I] 13:19:47.901(000000000014EF0C):[RPCC:sr.customer.point.rpc]create rpc client 'sr.customer.point.rpc' in conn AMQP0
+[I] 13:19:47.913(000000000014EF0C):PBEncoder success load file 'E:\product\protocol\sr_customer_point.proto.js'
+[I] 13:19:47.928(000000000014EF0C):PBEncoder success load file 'E:\product\protocol\sr_customer_tag.proto.js'
+[W] 13:19:47.937(000000000014EF0C):[AMQP0]rpc client 'cf.wechat.rpc' declare repeat!
+[I] 13:19:47.938(000000000014EF0C):[AMQP0]declare queue 'sr.customer.coupon_class.rpc.508f7c20a27a11e7a43943fb0961f113'
+[I] 13:19:47.939(000000000014EF0C):[RPCC:sr.customer.coupon_class.rpc]create rpc client 'sr.customer.coupon_class.rpc' in conn AMQP0
+[I] 13:19:47.939(000000000014EF0C):[AMQP0]declare queue 'sr.customer.coupon.rpc.508fa330a27a11e7a43943fb0961f113'
+[I] 13:19:47.939(000000000014EF0C):[RPCC:sr.customer.coupon.rpc]create rpc client 'sr.customer.coupon.rpc' in conn AMQP0
+[I] 13:19:47.959(000000000014EF0C):PBEncoder success load file 'E:\product\protocol\sr_customer_coupon.proto.js'
+[W] 13:19:47.959(000000000014EF0C):[AMQP0]rpc client 'cf.wechat.rpc' declare repeat!
+[I] 13:19:47.959(000000000014EF0C):[AMQP0]declare queue 'cf.wxpay.rpc.5092b070a27a11e7a43943fb0961f113'
+[I] 13:19:47.960(000000000014EF0C):[RPCC:cf.wxpay.rpc]create rpc client 'cf.wxpay.rpc' in conn AMQP0
+[I] 13:19:47.972(000000000014EF0C):PBEncoder success load file 'E:\product\protocol\cf_wxpay.proto.js'
+[W] 13:19:47.972(000000000014EF0C):[AMQP0]rpc client 'sr.customer.point.rpc' declare repeat!
+[W] 13:19:47.979(000000000014EF0C):[AMQP0]exchange amq.direct already declare!!
+[W] 13:19:47.980(000000000014EF0C):[AMQP0]rpc client 'sr.customer.rpc' declare repeat!
+[W] 13:19:47.980(000000000014EF0C):[AMQP0]rpc client 'sr.customer.coupon.rpc' declare repeat!
+[W] 13:19:47.980(000000000014EF0C):[AMQP0]rpc client 'cf.wechat.rpc' declare repeat!
+[W] 13:19:47.982(000000000014EF0C):[AMQP0]exchange amq.direct already declare!!
+[I] 13:19:47.983(000000000014EF0C):[AMQP0]declare queue 'cf.baidu.rpc.509659f0a27a11e7a43943fb0961f113'
+[I] 13:19:47.983(000000000014EF0C):[RPCC:cf.baidu.rpc]create rpc client 'cf.baidu.rpc' in conn AMQP0
+[I] 13:19:47.988(000000000014EF0C):PBEncoder success load file 'E:\product\protocol\cf_baidu.proto.js'
+[I] 13:19:47.993(000000000014EF0C):[AMQP3]created
+[I] 13:19:48.000(000000000014EF0C):[AMQP4]created
+[I] 13:19:48.000(000000000014EF0C):[AMQP4]declare exchange 'amq.direct'
+[I] 13:19:48.000(000000000014EF0C):[AMQP4]declare queue 'cf.app.rpc.5098f200a27a11e7a43943fb0961f113'
+[I] 13:19:48.001(000000000014EF0C):[RPCC:cf.app.rpc]create rpc client 'cf.app.rpc' in conn AMQP4
+[I] 13:19:48.001(000000000014EF0C):[AMQP4]declare queue 'cf.wechat.rpc.50991910a27a11e7a43943fb0961f113'
+[I] 13:19:48.001(000000000014EF0C):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP4
+[I] 13:19:48.001(000000000014EF0C):[AMQP4]declare queue 'cf.rpc.50991911a27a11e7a43943fb0961f113'
+[I] 13:19:48.001(000000000014EF0C):[RPCC:cf.rpc]create rpc client 'cf.rpc' in conn AMQP4
+[I] 13:19:48.002(000000000014EF0C):[AMQP4]declare queue 'sc.task.rpc.50994020a27a11e7a43943fb0961f113'
+[I] 13:19:48.002(000000000014EF0C):[RPCC:sc.task.rpc]create rpc client 'sc.task.rpc' in conn AMQP4
+[I] 13:19:48.004(000000000014EF0C):[AMQP5]created
+[I] 13:19:48.005(000000000014EF0C):[AMQP5]declare exchange 'amq.direct'
+[I] 13:19:48.005(000000000014EF0C):[AMQP5]declare queue 'cf.wechat.rpc.5099b550a27a11e7a43943fb0961f113'
+[I] 13:19:48.005(000000000014EF0C):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP5
+[W] 13:19:48.007(000000000014EF0C):[AMQP0]rpc client 'sr.customer.point.rpc' declare repeat!
+[I] 13:19:48.009(000000000014EF0C):[AMQP6]created
+[I] 13:19:48.010(000000000014EF0C):[AMQP6]declare exchange 'amq.direct'
+[I] 13:19:48.010(000000000014EF0C):[AMQP6]declare queue 'cf.wechat.rpc.509a78a0a27a11e7a43943fb0961f113'
+[I] 13:19:48.010(000000000014EF0C):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP6
+[I] 13:19:48.015(000000000014EF0C):[AMQP7]created
+[I] 13:19:48.016(000000000014EF0C):[AMQP7]declare exchange 'amq.direct'
+[I] 13:19:48.016(000000000014EF0C):[AMQP7]declare queue 'sc.task.rpc.509b6300a27a11e7a43943fb0961f113'
+[I] 13:19:48.016(000000000014EF0C):[RPCC:sc.task.rpc]create rpc client 'sc.task.rpc' in conn AMQP7
+[I] 13:19:48.017(000000000014EF0C):[AMQP7]declare queue 'sr.customer.rewardfail.509b6301a27a11e7a43943fb0961f113'
+[I] 13:19:48.017(000000000014EF0C):[RPCC:sr.customer.rewardfail]create rpc client 'sr.customer.rewardfail' in conn AMQP7
+[W] 13:19:48.020(000000000014EF0C):[AMQP0]exchange amq.direct already declare!!
+[W] 13:19:48.020(000000000014EF0C):[AMQP0]rpc client 'sr.customer.tag.rpc' declare repeat!
+[W] 13:19:48.020(000000000014EF0C):[AMQP0]rpc client 'sc.task.rpc' declare repeat!
+[W] 13:19:48.023(000000000014EF0C):[AMQP0]exchange amq.direct already declare!!
+[I] 13:19:48.023(000000000014EF0C):[AMQP0]declare queue 'sr.trade.rpc.509c7470a27a11e7a43943fb0961f113'
+[I] 13:19:48.023(000000000014EF0C):[RPCC:sr.trade.rpc]create rpc client 'sr.trade.rpc' in conn AMQP0
+[I] 13:19:48.027(000000000014EF0C):PBEncoder success load file 'E:\product\protocol\sr_trade.proto.js'
+[I] 13:19:48.030(000000000014EF0C):[AMQP8]created
+[I] 13:19:48.030(000000000014EF0C):[AMQP8]declare exchange 'amq.direct'
+[I] 13:19:48.030(000000000014EF0C):[AMQP8]declare queue 'cf.wechat.rpc.509d85e0a27a11e7a43943fb0961f113'
+[I] 13:19:48.030(000000000014EF0C):[RPCC:cf.wechat.rpc]create rpc client 'cf.wechat.rpc' in conn AMQP8
+[T] 13:19:48.046(000000000014EF0C):Http is running,port is 18910
+[I] 13:19:48.418(0000000000150B34):[redis]redis close
+[T] 13:19:48.420(0000000000150B34):[redis]redis reconnecting
+[E] 13:19:48.422(0000000000150B34):redis error:cmd={}
+[I] 13:19:49.668(0000000000157C14):[redis]redis close
+[T] 13:19:49.670(0000000000157C14):[redis]redis reconnecting
+[E] 13:19:49.672(0000000000157C14):redis error:cmd={}
+[I] 13:19:50.648(000000000014EF0C):[redis]redis close
+[T] 13:19:50.650(000000000014EF0C):[redis]redis reconnecting
+[E] 13:19:50.652(000000000014EF0C):redis error:cmd={}
+[I] 13:19:51.421(0000000000150B34):[redis]redis close
+[T] 13:19:51.422(0000000000150B34):[redis]redis reconnecting
+[I] 13:19:52.671(0000000000157C14):[redis]redis close
+[T] 13:19:52.672(0000000000157C14):[redis]redis reconnecting
+[I] 13:19:53.651(000000000014EF0C):[redis]redis close
+[T] 13:19:53.652(000000000014EF0C):[redis]redis reconnecting
+[I] 13:19:54.425(0000000000150B34):[redis]redis close
+[T] 13:19:54.425(0000000000150B34):[redis]redis reconnecting
+[W] 13:19:55.120(000000000015A454):recv 'Ctrl+C' break sign!next exit!
+[D] 13:19:55.121(000000000015A454):worker process log socket error!err=Error: read ECONNRESET
+    at exports._errnoException (util.js:890:11)
+    at TCP.onread (net.js:550:26)
+[D] 13:19:55.122(000000000015A454):worker process log socket error!err=Error: read ECONNRESET
+    at exports._errnoException (util.js:890:11)
+    at TCP.onread (net.js:550:26)
+[D] 13:19:55.123(000000000015A454):worker process log socket close!
+[D] 13:19:55.124(000000000015A454):worker process log socket close!
+[W] 13:19:55.129(000000000015A454):worker 14EF0C(2#) died.
+[W] 13:19:55.130(000000000015A454):worker 157C14(1#) died.
+[D] 13:19:55.131(000000000015A454):worker process log socket error!err=Error: read ECONNRESET
+    at exports._errnoException (util.js:890:11)
+    at TCP.onread (net.js:550:26)
+[D] 13:19:55.131(000000000015A454):worker process log socket close!
+[W] 13:19:55.138(000000000015A454):worker 150B34(0#) died.
+[W] 13:19:55.729(000000000015A454):try restart worker 0# ...
+[I] 13:19:55.755(000000000015A454):start worker success,pid=14B77C(0#)

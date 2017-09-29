@@ -1,0 +1,169 @@
+﻿/* 
+ * 橙色皮肤 
+ */
+/* 左侧区域 */
+.leftbar {
+	background: #F3EFEC;
+}
+/* 左侧菜单区 */
+.left-secondary-nav, .left-nav {
+	background: #F3EFEC;
+}
+/* 用户信息 */
+.admin-info {
+    border-bottom: 5px solid #D4D0CD;
+}
+/* 弹窗 */
+.modal-header {
+    border-bottom: 1px solid #E86A27;
+    background-color: #E86A27;
+    color: #fff;
+}
+/* 标题 */
+.bondi-blue {
+    background-color:#E86A27;
+}
+/* 标题上的按钮 */
+.widget-head .title_btn {
+	background-color:#e88a05 !important;
+}
+.widget-head .title_btn:hover {
+	background-color:#C48124 !important;
+}
+/* tab样式 */
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover {
+	background-color: #ccc;
+}
+.nav-tabs li a {
+	background: #ddd;
+}
+.nav-tabs {
+	border-bottom: 3px solid #ccc;
+}
+.tab-widget .tab-content {
+	background:#FFFFFF;
+	border: 1px solid #ccc;
+}
+/* 分页 */
+.pagination ul > li > button:hover, .pagination ul > .active > button, .pagination .pagebtn:hover {
+    background-color: #E86A27 !important;
+    color: #FFF !important;
+}
+.the-icons li:hover {
+	background-color:#E86A27 !important;
+}
+/* 一级菜单 */
+.left-primary-nav {
+	background: #E6792E;
+}
+.left-primary-nav ul li.active a, .left-primary-nav ul li a:hover {
+	background-color: #FFB06B;
+}
+/* 一级菜单标题 */
+.side-head {
+	color: #121e25;
+}
+/* 工具栏 */
+.tool_wrapper:hover .btn_tool {
+	background: #E86A27;
+}
+.tool_wrapper > dd {
+	background-color: #e88a05;
+}
+.skin_list li:hover {
+	background: #E86A27;
+}
+.lan_list li:hover {
+	background: #E86A27;
+}
+.pro_list li:hover {
+	background: #e88a05;
+}
+.shortcut-menu dd:hover > .shortcut-item {
+	background-color: #E86A27;
+}
+.shortcut-menu dd > .shortcut-item:hover, .shortcut-menu dd > .shortcut-item:focus {
+	background-color: #E86A27;
+}
+.shortcut-menu dd:hover > .shortcut-del:hover {
+	background: #e88a05;
+}
+/* 磁贴背景色 */
+.accordion-nav li .aBindBack0{
+    background-color:#E86A27;
+}
+.accordion-nav li .aBindBack1{
+    background-color:#946FCC;
+}
+.accordion-nav li .aBindBack2{
+    background-color:#e88a05;
+}
+.accordion-nav li .aBindBack3{
+    background-color:#DE58C5;
+}
+.accordion-nav li .aBindBack4{
+    background-color:#DF8757;
+}
+/* 二级菜单 */
+.accordion-nav > li > a {
+	box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+	color:#121e25;
+}
+.accordion-nav > li a:hover {
+	background:#fff;
+	color:#da3610;
+}
+.accordion-nav li li a {
+	box-shadow:0 -1px 0 rgba(255, 255, 255, 0.2) inset;
+	color:#121e25;
+}
+.accordion-nav li ul {
+	box-shadow:0 -1px 0 rgba(255, 255, 255, 0.2) inset;
+}
+.accordion-nav li img {
+	border-radius:4px;
+	background:#CCC;
+	padding:2px;
+}
+.accordion-nav li li img {
+	top:5px !important;
+}
+.metro-sidenav li a.bondi-blue:hover {
+	background:#b06700;
+}
+/*实例、审核界面，设备类型和页面类型*/
+.btn_clicked_Instance {
+	background-color: #E86A27;
+	color: white;
+}
+.btn.instance:hover, .btn.instance:focus{
+	background-color: #E86A27;
+	color: white;
+	outline: none;
+	outline-offset: 0;
+}
+
+/*问卷报表进度条*/
+.progress .bar {
+	background-color: #E86A27;
+}
+
+/*模板编辑界面属性栏使用*/
+.attr_wrapper .selectedProperty label {
+	color: #fff !important;
+	background-color:#E86A27 !important;
+}
+.attr_wrapper .button_template {
+	color: #fef4e9;
+    border: solid 1px #da7c0c;
+    background: #f78d1d;
+    background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+    background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+}
+
+/*项目*/
+.project-item-curr-a {
+    background-color: #E86A27 !important;
+    color: #fff;
+}

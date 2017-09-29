@@ -1,0 +1,12 @@
+<div class="row-fluid link_page">
+	<div class="link_logo span12">
+		<img title="ShopperConnect" src="./common/resources/images/link/logo.png" ng-click="directTo('base')"/>
+	</div>
+	<div class="span12 company_logos "></div>
+	<div class=" span8 link_items" ng-repeat="row in items">
+		<img ng-repeat="item in row" class="wid20" title="{{item.name}}" ng-src="{{item|joinOption}}" ng-click="directTo(item.route)" />
+	</div>
+	<div class="span11 link_copyright">
+		©2015 中国智能集团控股有限公司 版权所有
+	</div>
+</div>
