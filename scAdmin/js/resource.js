@@ -16,21 +16,21 @@ app.webapp = new express();
 //定义资源类
 function Resource() {
     //1.初始化redis
-    this._redisConnection = sc.Redis().createRedisConnect(app.conf.redisUrl.redis0, 'redis');
-    this._redisConnection.start();
-    app.redis = this._redisConnection;
+    // this._redisConnection = sc.Redis().createRedisConnect(app.conf.redisUrl.redis0, 'redis');
+    // this._redisConnection.start();
+    // app.redis = this._redisConnection;
 
     //2.初始化数据库
     this._PoolRead = db.createMySQLConnectionPool(app.conf.dbString);
     this._PoolWrite = db.createMySQLConnectionPool(app.conf.dbString);
 
-    //3.初始化mq链接
-    this._mqConnection = sc.RabbitMQ().createConnect(app.conf.mqUrl);
-    if (!!!this._mqConnection) {
-        return false;
-    }
-    //开启mq
-    this._mqConnection.start();
+    // //3.初始化mq链接
+    // this._mqConnection = sc.RabbitMQ().createConnect(app.conf.mqUrl);
+    // if (!!!this._mqConnection) {
+    //     return false;
+    // }
+    // //开启mq
+    // this._mqConnection.start();
 }
 
 // 获取读数据库连接
@@ -51,15 +51,15 @@ Resource.prototype.getWPoolSync = function () {
     return this._PoolWrite;
 };
 
-// 获取MQ连接
-Resource.prototype.getMQConnectionSync = function () {
-    return this._mqConnection;
-}
-
-// 获取redis连接
-Resource.prototype.getRedisConnectionSync = function () {
-    return this._redisConnection;
-}
+// // 获取MQ连接
+// Resource.prototype.getMQConnectionSync = function () {
+//     return this._mqConnection;
+// }
+//
+// // 获取redis连接
+// Resource.prototype.getRedisConnectionSync = function () {
+//     return this._redisConnection;
+// }
 
 // 导出
 var resource = new Resource();

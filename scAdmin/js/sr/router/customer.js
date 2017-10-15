@@ -13,14 +13,14 @@ var config = app.conf;
 var custDAO = require('../dao/customerDAO.js');
 var exportDAO = require('../dao/common.js')
 var fs = require('fs');
-var conn = app.res.getMQConnectionSync();
-conn.declareExchange("amq.direct", "direct");
-var rpcClient = Rabbit.createRPCClient(conn, "sr.customer.rpc");
-var rpcCouponClient = Rabbit.createRPCClient(conn, "sr.customer.coupon.rpc");
-var rpcCFClient = Rabbit.createRPCClient(conn, "cf.wechat.rpc");
-var pbEncoder = sc.createPBEncoder(path.normalize(sc.formatString("$(CurrentDirectory)../protocol/sr_customer.proto.js")), "sr.customer", "Message");
-var pbCouponEncoder = sc.createPBEncoder(path.normalize(sc.formatString("$(CurrentDirectory)../protocol/sr_customer_coupon.proto.js")), "sr.customer.coupon", "Message");
-var pbCFEncoder = sc.createPBEncoder(path.normalize(sc.formatString("$(CurrentDirectory)../protocol/cf_wechat.proto.js")), "cf.wechat", "Message");
+// var conn = app.res.getMQConnectionSync();
+// conn.declareExchange("amq.direct", "direct");
+// var rpcClient = Rabbit.createRPCClient(conn, "sr.customer.rpc");
+// var rpcCouponClient = Rabbit.createRPCClient(conn, "sr.customer.coupon.rpc");
+// var rpcCFClient = Rabbit.createRPCClient(conn, "cf.wechat.rpc");
+// var pbEncoder = sc.createPBEncoder(path.normalize(sc.formatString("$(CurrentDirectory)../protocol/sr_customer.proto.js")), "sr.customer", "Message");
+// var pbCouponEncoder = sc.createPBEncoder(path.normalize(sc.formatString("$(CurrentDirectory)../protocol/sr_customer_coupon.proto.js")), "sr.customer.coupon", "Message");
+// var pbCFEncoder = sc.createPBEncoder(path.normalize(sc.formatString("$(CurrentDirectory)../protocol/cf_wechat.proto.js")), "cf.wechat", "Message");
 let log = sc.createNamedLog('scAdmin', 'customer');
 
 exports.autoroute = {

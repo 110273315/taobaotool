@@ -12,15 +12,15 @@ function main() {
     // 载入资源
     app.res = require('./js/resource');
     // 加载cf_sdk
-    app.cf = require('./js/account_manager.js');
+    // app.cf = require('./js/account_manager.js');
     //载入模板消息
-    app.notify_helper = require('../public/notify_helper')
+    // app.notify_helper = require('../public/notify_helper')
 
-    app.notify_helper.init(app.res.getMQConnectionSync(), app.conf.dbString, app.conf.instanceName, app.programType);
+    // app.notify_helper.init(app.res.getMQConnectionSync(), app.conf.dbString, app.conf.instanceName, app.programType);
 
     //初始化组织
-    app.org = require('./js/org_manager.js');
-    app.org.init();
+    // app.org = require('./js/org_manager.js');
+    // app.org.init();
 
 }
 

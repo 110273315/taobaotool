@@ -5,25 +5,25 @@
  */
 var sc = require("smartacjs");
 // redis连接地址，online modify
-var redis = "redis://:MyRedis01Passwd@172.16.0.80:6379";
+// var redis = "redis://:@127.0.0.1:6379";
 // rabbitMQ的连接地址，amqp://user:password@172.16.0.54/vhost，online modify
-var mq = "amqp://guest:guest@172.16.0.81:5672";
+// var mq = "amqp://guest:guest@172.16.0.81:5672";
 
 module.exports=
 {
     // 通用配置
-    mqUrl: mq,
+    // mqUrl: mq,
     // 日志级别设定，分trace|debug|info|warn|error|none这些级别，online modify
     logLevel: 'trace',
     // 数据库连接串，online modify，mysql://172.16.0.131/sc_v40?user=sruser&password=srpasswd&port=3306&multipleStatements=true&insecureAuth=true&connectionLimit=20&charset=utf8mb4
-    dbString: 'mysql://172.16.0.150/scdb_v4.0_hs?user=smartac&password=smartac2016&port=3306&multipleStatements=true&insecureAuth=true&connectionLimit=20&charset=utf8mb4',
+    dbString: 'mysql://127.0.0.1/taobaotool?user=root&password=344895&port=3306&multipleStatements=true&insecureAuth=true&connectionLimit=20&charset=utf8mb4',
     // Redis地址
-    redisUrl: {
-        redis0: redis + '/0', //0库
-        redis1: redis + '/1', //1库
-        redis8: redis + '/8', //8库
-        redis9: redis + '/9' //9库
-    },
+    // redisUrl: {
+    //     redis0: redis + '/0', //0库
+    //     redis1: redis + '/1', //1库
+    //     redis8: redis + '/8', //8库
+    //     redis9: redis + '/9' //9库
+    // },
     // 会话相关，配置提到这里，scAdmin、商户平台、服务台公用session配置
     session: {
         // online modify

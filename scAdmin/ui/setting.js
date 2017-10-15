@@ -7,7 +7,7 @@ var homePageRoute = {
 }
 
 var setting = {
-	defaultPro: '/dashboard', //进入系统默认项目
+	defaultPro: '/index', //进入系统默认项目
 	isDebug: true // 是否debug，上线时候设置为false
 };
 var baseHost = "http://127.0.0.1:18910";

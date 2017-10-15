@@ -9,7 +9,7 @@ require.config({
         text: 'plugin/require/text',
         angular: 'plugin/angular/angular.min',
         common: 'jscript/common',
-        custom: 'jscript/custom',
+        common_version5: 'jscript/common_version5',
         bootstraps: 'jscript/bootstrap',
         accordion: 'jscript/accordion.nav',
         angular_check: 'plugin/angular/angular-checklist-model',
@@ -19,7 +19,7 @@ require.config({
         data1: 'plugin/datetimepick/bootstrap-datetimepicker.min',
         data2: 'plugin/datetimepick/date',
         data3: 'plugin/datetimepick/daterangepicker',
-        //fileupload: 'plugin/uploadfile/bootstrap-fileupload',
+        superSlide: 'jscript/jquery.SuperSlide.2.1.1',
         valid: 'plugin/validation/jquery.validationEngine',
         valid_En: 'plugin/validation/jquery.validationEngine-en',
         angular_bootstrap_dialog: 'plugin/angular.modal/angular-bootstrap-dialog.min',
@@ -109,7 +109,10 @@ require.config({
         'common': {
             deps: ['jquery']
         },
-        'custom': {
+        'common_version5': {
+            deps: ['jquery']
+        },
+        'superSlide': {
             deps: ['jquery']
         },
         'jstree': {
@@ -156,7 +159,7 @@ require([
     'routes',
     'filters',
     'common',
-    'custom',
+    'common_version5',
     'bootstraps',
     'accordion',
     'angular_check',
@@ -166,7 +169,7 @@ require([
     'data1',
     'data2',
     'data3',
-    //'fileupload',
+    'superSlide',
     'valid',
     'valid_En',
     'angular_bootstrap_dialog',
