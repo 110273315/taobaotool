@@ -1,271 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2053fd45-9e8f-40c7-a92a-05a886b0d71e" name="Default" comment="首页">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/Connect_logo_6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/a.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/ads/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/ads/11.jpg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/ads/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/ads/13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/ads/15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/ads/16.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/ads/17.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/ads/18.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/ads/19.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/ads/20.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/ads/21.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/ads/22.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/ads/23.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/ads/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/ads/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/ads/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/ads/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/avatar.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/banner.jpg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/bigbtn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/classification_cion.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/classification_cion2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/cover.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/demo_icon.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/dialog_btn_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/edit-hd-btn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/editor-imglib.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/emot.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/global.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/grey.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/hot.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/icon-feature.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/icon.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/icon24x24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/icon_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/icon_bg_gray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/icon_conditions.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/icon_fans.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/icon_more.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/icon_new.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/icons-help.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/icons20141021.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/logo.png.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/media-ico.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/mls_global140607.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/msgbox-sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/newicon20140910.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/oauth-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/original.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/qq-chat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/red-del.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/rl-sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/s.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/s2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/scan.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/search.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/slider_bn_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/static.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/step_ol_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/support_icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/tieicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/validmail-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/vip.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/jscript/common_version5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/jscript/jquery.SuperSlide.2.1.1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/style_version5.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170926_00.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170926_01.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170926_02.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170926_03.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170926_04.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170926_05.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170926_06.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170926_07.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170926_08.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170926_09.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170926_10.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170926_11.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170926_12.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170926_13.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170926_14.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170926_15.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170926_16.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170926_17.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170926_18.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170926_19.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170926_20.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170926_21.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170926_22.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170926_23.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170926_24.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170926_25.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170926_26.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170926_27.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170926_28.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170926_29.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170926_30.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170926_31.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170926_32.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170927_00.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170927_01.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170928_00.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170928_01.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sc_admin_20170929_00.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/js/sr/router/account.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/js/sr/router/autoreply.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/js/sr/router/base.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/js/sr/router/campaign.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/js/sr/router/coupon.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/js/sr/router/dashboard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/js/sr/router/engine.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/js/sr/router/game.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/js/sr/router/material.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/js/sr/router/message.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/js/sr/router/newsManage.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/js/sr/router/point.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/js/sr/router/qrcode.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/js/sr/router/report.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/js/sr/router/reward.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/js/sr/router/tag.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/js/sr/router/trade.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/js/sr/router/webapp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/js/sr/router/wechat.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/btn-disable.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/btn-enable.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/button-back.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/button-group-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/button-icons-ext.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/button-icons.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/button-shortcut.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/condition-more-off.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/condition-more-open.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/dashboard/coupon-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/dashboard/customer-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/dashboard/down.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/dashboard/income-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/dashboard/tab-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/dashboard/tab-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/dashboard/tab-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/fold-open.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/ico_column.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/ico_multiple.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/icon_collect.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/icon_errordownload.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/icon_exit.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/icon_refund.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/icon_settings.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/imgOffClosed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/imgOnClosed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/imgOnOpen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/iocn_set.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/jquery.minicolors.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/link/ch/dis/pic_01.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/link/ch/dis/pic_02.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/link/ch/dis/pic_03.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/link/ch/dis/pic_04.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/link/ch/dis/pic_05.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/link/ch/pic_01.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/link/ch/pic_02.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/link/ch/pic_03.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/link/ch/pic_04.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/link/ch/pic_05.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/link/en/dis/pic_01.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/link/en/dis/pic_02.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/link/en/dis/pic_03.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/link/en/dis/pic_04.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/link/en/dis/pic_05.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/link/en/pic_01.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/link/en/pic_02.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/link/en/pic_03.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/link/en/pic_04.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/link/en/pic_05.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/link/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/login/body-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/login/login_banner.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/login/login_button_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/login/login_container_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/login/login_icon_pwd.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/login/login_icon_user.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/login/login_input_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/login/reset_icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/login/reset_success.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/logo-falgun.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/not_support.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/notify-thumb.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/question.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/question.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/smartac-offline.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/smartac-online.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/udline.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/user-thumb.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/weather/cloud.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/weather/rain.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/weather/snow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/weather/sun.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/jscript/custom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/language/Ch.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/language/En.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/MenuIcon.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/button.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/common.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/dashboard.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/alert-close.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/bar_hide_icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/bar_show_icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/bg_fallback.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/dash-tab-select-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/glyphicons-halflings-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/glyphicons-halflings.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/icon_queue.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/icon_sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/icons/add-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/icons/arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/icons/circle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/icons/cn.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/icons/edit-profile.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/icons/en.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/icons/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/icons/logout.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/icons/message-icon1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/icons/message-icon2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/progress_bar.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/rptOnlineAccount.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/rptThisMonthNewAccount.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/rptTodayNewAccount.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/rptTotalAccount.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/shortcut_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/slider_handles.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/tbl-img/down.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/tbl-img/sort_asc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/tbl-img/sort_asc_disabled.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/tbl-img/sort_both.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/tbl-img/sort_desc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/tbl-img/sort_desc_disabled.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/tbl-img/up.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/ui-icons_222222_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/ui-icons_454545_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/ui-icons_ef8c08_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/images/ui-icons_ffffff_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/lib.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/login.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/newfont.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/resetPassword.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/style/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/language/common.Ch.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/language/common.En.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/language/project.Ch.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scAdmin/ui/language/project.En.json" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/close.png" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/images/close.png" />
+    <list default="true" id="2053fd45-9e8f-40c7-a92a-05a886b0d71e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/controllers/jsController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scAdmin/ui/common/ui/js.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf.js" afterPath="$PROJECT_DIR$/conf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scAdmin/app.js" afterPath="$PROJECT_DIR$/scAdmin/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scAdmin/js/resource.js" afterPath="$PROJECT_DIR$/scAdmin/js/resource.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scAdmin/js/sr/router/customer.js" afterPath="$PROJECT_DIR$/scAdmin/js/sr/router/customer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/main.js" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scAdmin/ui/common/controllers/linkController.js" afterPath="$PROJECT_DIR$/scAdmin/ui/common/controllers/linkController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scAdmin/ui/common/resources/jscript/common.js" afterPath="$PROJECT_DIR$/scAdmin/ui/common/resources/jscript/common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scAdmin/ui/common/ui/dashboard.html" afterPath="$PROJECT_DIR$/scAdmin/ui/common/ui/dashboard.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scAdmin/ui/index.html" afterPath="$PROJECT_DIR$/scAdmin/ui/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scAdmin/ui/routes.js" afterPath="$PROJECT_DIR$/scAdmin/ui/routes.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scAdmin/ui/setting.js" afterPath="$PROJECT_DIR$/scAdmin/ui/setting.js" />
     </list>
     <ignored path="product.iws" />
@@ -292,8 +37,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scAdmin/ui/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="11" column="51" lean-forward="false" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+            <state relative-caret-position="400">
+              <caret line="142" column="6" lean-forward="true" selection-start-line="142" selection-start-column="6" selection-end-line="142" selection-end-column="6" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#1;n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -302,58 +47,40 @@
                 <element signature="n#style#0;n#a#0;n#li#8;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#span#0;n#li#1;n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#8;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#13018#13024#0" expanded="true" />
-                <element signature="e#16689#16695#0" expanded="true" />
-                <element signature="e#20299#20305#0" expanded="true" />
-                <element signature="e#23892#23898#0" expanded="true" />
-                <element signature="e#27511#27517#0" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#34058#34064#0" expanded="true" />
-                <element signature="e#34088#34092#1" expanded="true" />
-                <element signature="e#36922#36928#0" expanded="true" />
-                <element signature="e#36952#36956#1" expanded="true" />
-                <element signature="e#39875#39881#0" expanded="true" />
-                <element signature="e#39905#39909#1" expanded="true" />
-                <element signature="e#41827#41833#0" expanded="true" />
-                <element signature="e#41857#41861#1" expanded="true" />
-                <element signature="e#44619#44625#0" expanded="true" />
-                <element signature="e#44649#44653#1" expanded="true" />
-                <element signature="e#47482#47488#0" expanded="true" />
-                <element signature="e#47512#47516#1" expanded="true" />
-                <element signature="e#50610#50616#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#11284#11290#0" expanded="true" />
                 <element signature="n#style#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1508075953559" expanded="true" signature="52779:53081" ph="..." />
+                <marker date="1508251333913" expanded="true" signature="13005:13307" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scAdmin/ui/routes.js">
+      <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scAdmin/ui/common/ui/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="setting.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scAdmin/ui/setting.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="indexController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scAdmin/ui/common/controllers/indexController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-625">
-              <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-              <folding />
+            <state relative-caret-position="225">
+              <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="36" />
+              <folding>
+                <element signature="e#4382#4388#0" expanded="true" />
+                <element signature="e#8053#8059#0" expanded="true" />
+                <element signature="e#11663#11669#0" expanded="true" />
+                <element signature="e#15256#15262#0" expanded="true" />
+                <element signature="e#18875#18881#0" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#25422#25428#0" expanded="true" />
+                <element signature="e#25452#25456#1" expanded="true" />
+                <element signature="e#28286#28292#0" expanded="true" />
+                <element signature="e#28316#28320#1" expanded="true" />
+                <element signature="e#31239#31245#0" expanded="true" />
+                <element signature="e#31269#31273#1" expanded="true" />
+                <element signature="e#33191#33197#0" expanded="true" />
+                <element signature="e#33221#33225#1" expanded="true" />
+                <element signature="e#35983#35989#0" expanded="true" />
+                <element signature="e#36013#36017#1" expanded="true" />
+                <element signature="e#38846#38852#0" expanded="true" />
+                <element signature="e#38876#38880#1" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -361,64 +88,76 @@
       <file leaf-file-name="dashboardController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scAdmin/ui/common/controllers/dashboardController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="200">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common_version5.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scAdmin/ui/common/resources/jscript/common_version5.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-271">
-              <caret line="27" column="67" lean-forward="false" selection-start-line="27" selection-start-column="67" selection-end-line="27" selection-end-column="67" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scAdmin/ui/common/resources/main.js">
+      <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scAdmin/ui/routes.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
-              <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+              <caret line="8" column="105" lean-forward="false" selection-start-line="8" selection-start-column="105" selection-end-line="8" selection-end-column="105" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="js.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scAdmin/ui/common/ui/js.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="1" column="3" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scAdmin/ui/common/resources/jscript/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="1512" column="52" lean-forward="false" selection-start-line="1512" selection-start-column="43" selection-end-line="1512" selection-end-column="52" />
+            <state relative-caret-position="200">
+              <caret line="1036" column="74" lean-forward="true" selection-start-line="1036" selection-start-column="74" selection-end-line="1036" selection-end-column="74" />
               <folding>
-                <marker date="1508075895836" expanded="true" signature="6110:6117" ph="×" />
-                <marker date="1508075895836" expanded="true" signature="10731:10763" ph="..." />
-                <marker date="1508075895836" expanded="true" signature="81314:81320" ph=" " />
-                <marker date="1508075895836" expanded="true" signature="81320:81326" ph=" " />
-                <marker date="1508075895836" expanded="true" signature="86620:86667" ph="..." />
+                <marker date="1508252824204" expanded="true" signature="6110:6117" ph="×" />
+                <marker date="1508252824204" expanded="true" signature="10731:10763" ph="..." />
+                <marker date="1508252824204" expanded="true" signature="81317:81323" ph=" " />
+                <marker date="1508252824204" expanded="true" signature="81323:81329" ph=" " />
+                <marker date="1508252824204" expanded="true" signature="86623:86670" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="session_manager.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scAdmin/js/session_manager.js">
+      <file leaf-file-name="setting.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scAdmin/ui/setting.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+            <state relative-caret-position="219">
+              <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="linkController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scAdmin/ui/common/controllers/linkController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="13" lean-forward="true" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sc_session.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/sc_session.js">
+      <file leaf-file-name="link.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scAdmin/ui/common/ui/link.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="199" column="19" lean-forward="false" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="19" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -439,9 +178,11 @@
       <find>http://www.sucaihuo.com/modals/0/19/small.jpg</find>
       <find>checkCss3</find>
       <find>cust</find>
-      <find>js/img</find>
       <find>getComputedStyle</find>
+      <find>js/img</find>
       <find>body</find>
+      <find>mainView</find>
+      <find>ui_location</find>
     </findStrings>
     <replaceStrings>
       <replace>Public/images/</replace>
@@ -452,6 +193,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="wjx" />
         <option value="jeson" />
         <option value="wangjiaxing" />
       </list>
@@ -470,10 +212,7 @@
         <option value="$PROJECT_DIR$/scAdmin/js/sc/dao/userDAO.js" />
         <option value="$PROJECT_DIR$/public/sc_session.js" />
         <option value="$PROJECT_DIR$/scAdmin/js/sc/router/user.js" />
-        <option value="$PROJECT_DIR$/scAdmin/ui/routes.js" />
         <option value="$PROJECT_DIR$/scAdmin/ui/common/resources/routes.js" />
-        <option value="$PROJECT_DIR$/scAdmin/ui/common/controllers/dashboardController.js" />
-        <option value="$PROJECT_DIR$/scAdmin/ui/common/ui/dashboard.html" />
         <option value="$PROJECT_DIR$/scAdmin/ui/common/controllers/indexController.js" />
         <option value="$PROJECT_DIR$/scAdmin/ui/common/resources/jscript/login.js" />
         <option value="$PROJECT_DIR$/scAdmin/js/sr/router/base.js" />
@@ -484,9 +223,14 @@
         <option value="$PROJECT_DIR$/scAdmin/ui/common/resources/style/style_version5.css" />
         <option value="$PROJECT_DIR$/scAdmin/ui/common/resources/main.js" />
         <option value="$PROJECT_DIR$/scAdmin/ui/common/resources/jscript/common_version5.js" />
-        <option value="$PROJECT_DIR$/scAdmin/ui/common/resources/jscript/common.js" />
-        <option value="$PROJECT_DIR$/scAdmin/ui/index.html" />
+        <option value="$PROJECT_DIR$/scAdmin/ui/common/controllers/linkController.js" />
         <option value="$PROJECT_DIR$/scAdmin/ui/setting.js" />
+        <option value="$PROJECT_DIR$/scAdmin/ui/index.html" />
+        <option value="$PROJECT_DIR$/scAdmin/ui/common/controllers/dashboardController.js" />
+        <option value="$PROJECT_DIR$/scAdmin/ui/common/ui/js.html" />
+        <option value="$PROJECT_DIR$/scAdmin/ui/routes.js" />
+        <option value="$PROJECT_DIR$/scAdmin/ui/common/ui/dashboard.html" />
+        <option value="$PROJECT_DIR$/scAdmin/ui/common/resources/jscript/common.js" />
       </list>
     </option>
   </component>
@@ -506,9 +250,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="11" />
-    <option name="width" value="1366" />
-    <option name="height" value="728" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -528,6 +273,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -616,6 +363,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="product" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="product" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scAdmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -650,10 +423,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="product" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="product" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scAdmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -668,14 +465,15 @@
     <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\product\scAdmin\ui\common" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\项目\product\scAdmin\ui\common\ui" />
+      <recent name="E:\项目\product\scAdmin\ui\common\controllers" />
       <recent name="E:\项目\product\scAdmin\ui\common\resources\images" />
       <recent name="E:\项目\product\scAdmin\ui\common\resources\images\ads" />
       <recent name="E:\项目\product\scAdmin\ui\common\resources\style" />
-      <recent name="E:\项目\product\scAdmin\ui\common\resources\jscript" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\product\scAdmin\ui\common" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.scadmin">
@@ -785,7 +583,9 @@
       <workItem from="1506590108690" duration="4573000" />
       <workItem from="1506786559462" duration="488000" />
       <workItem from="1507817209991" duration="1475000" />
-      <workItem from="1507977674870" duration="11942000" />
+      <workItem from="1507977674870" duration="12296000" />
+      <workItem from="1508161864794" duration="737000" />
+      <workItem from="1508249912638" duration="3135000" />
     </task>
     <task id="LOCAL-00001" summary="测试">
       <created>1506786863630</created>
@@ -798,7 +598,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65680000" />
+    <option name="totallyTimeSpent" value="69906000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -810,25 +610,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="11" y="0" width="1366" height="728" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21310242" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21056548" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45042017" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28641573" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -870,36 +670,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scAdmin/js/sc/NO_REQUIRE_">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scAdmin/js/sc/router/role.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scAdmin/js/sc/router/code.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="38" column="9" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="389" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scAdmin/js/sc/router/ueditor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="22" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="153" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scAdmin/js/sr/router/message.js" />
-    <entry file="file://$PROJECT_DIR$/scAdmin/js/sr/router/coupon.js" />
     <entry file="file://$PROJECT_DIR$/scAdmin/js/sr/router/campaign.js" />
     <entry file="file://$PROJECT_DIR$/scAdmin/js/sr/router/account.js" />
     <entry file="file://$PROJECT_DIR$/scAdmin/js/sr/router/autoreply.js" />
@@ -964,13 +734,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scAdmin/ui/sr/listMock.js" />
     <entry file="file://$PROJECT_DIR$/scAdmin/ui/sr/listController.js" />
-    <entry file="file://$PROJECT_DIR$/scAdmin/ui/common/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="3" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scAdmin/ui/base/ui/apiserver/apiserverList.html" />
     <entry file="file://$PROJECT_DIR$/scAdmin/ui/common/resources/plugin/angular/angular.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -995,19 +758,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scAdmin/js/sr/router/base.js" />
-    <entry file="file://$PROJECT_DIR$/scAdmin/ui/common/ui/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="46" lean-forward="false" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scAdmin/js/resource.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1015,7 +769,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1775">
           <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1023,15 +776,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1375">
           <caret line="55" column="39" lean-forward="false" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1225">
-          <caret line="35" column="14" lean-forward="true" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1039,7 +783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
           <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1047,7 +790,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-968">
           <caret line="218" column="22" lean-forward="false" selection-start-line="218" selection-start-column="14" selection-end-line="218" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1055,7 +797,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="82" column="49" lean-forward="true" selection-start-line="82" selection-start-column="49" selection-end-line="82" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1063,7 +804,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="199" column="19" lean-forward="false" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1071,42 +811,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="347">
           <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scAdmin/ui/common/resources/style/button.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scAdmin/ui/common/resources/style/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2507">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/scAdmin/ui/common/resources/style/button.css" />
+    <entry file="file://$PROJECT_DIR$/scAdmin/ui/common/resources/style/login.css" />
     <entry file="file://$PROJECT_DIR$/scAdmin/ui/common/resources/jscript/jquery.SuperSlide.2.1.1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scAdmin/ui/common/resources/jscript/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2392">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/scAdmin/ui/common/resources/jscript/custom.js" />
     <entry file="file://$PROJECT_DIR$/scAdmin/ui/common/resources/style/style_version5.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7562">
@@ -1115,19 +832,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scAdmin/ui/common/controllers/dashboardController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scAdmin/ui/common/controllers/indexController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-625">
           <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1135,28 +843,113 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scAdmin/ui/优化过的组件使用说明.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scAdmin/ui/common/resources/jscript/utils/route-config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1421">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scAdmin/ui/common/resources/jscript/common.js">
+    <entry file="file://$PROJECT_DIR$/conf.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="1512" column="52" lean-forward="false" selection-start-line="1512" selection-start-column="43" selection-end-line="1512" selection-end-column="52" />
+        <state relative-caret-position="875">
+          <caret line="35" column="14" lean-forward="false" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scAdmin/ui/common/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="29" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scAdmin/ui/common/resources/jscript/common_version5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1343">
+          <caret line="680" column="20" lean-forward="false" selection-start-line="680" selection-start-column="20" selection-end-line="680" selection-end-column="20" />
           <folding>
-            <marker date="1508075895836" expanded="true" signature="6110:6117" ph="×" />
-            <marker date="1508075895836" expanded="true" signature="10731:10763" ph="..." />
-            <marker date="1508075895836" expanded="true" signature="81314:81320" ph=" " />
-            <marker date="1508075895836" expanded="true" signature="81320:81326" ph=" " />
-            <marker date="1508075895836" expanded="true" signature="86620:86667" ph="..." />
+            <marker date="1508072523291" expanded="true" signature="8684:8717" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scAdmin/ui/common/ui/link.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scAdmin/ui/common/controllers/jsController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scAdmin/ui/common/ui/js.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="3" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scAdmin/ui/common/controllers/dashboardController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scAdmin/ui/common/ui/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="36" />
+          <folding>
+            <element signature="e#4382#4388#0" expanded="true" />
+            <element signature="e#8053#8059#0" expanded="true" />
+            <element signature="e#11663#11669#0" expanded="true" />
+            <element signature="e#15256#15262#0" expanded="true" />
+            <element signature="e#18875#18881#0" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#25422#25428#0" expanded="true" />
+            <element signature="e#25452#25456#1" expanded="true" />
+            <element signature="e#28286#28292#0" expanded="true" />
+            <element signature="e#28316#28320#1" expanded="true" />
+            <element signature="e#31239#31245#0" expanded="true" />
+            <element signature="e#31269#31273#1" expanded="true" />
+            <element signature="e#33191#33197#0" expanded="true" />
+            <element signature="e#33221#33225#1" expanded="true" />
+            <element signature="e#35983#35989#0" expanded="true" />
+            <element signature="e#36013#36017#1" expanded="true" />
+            <element signature="e#38846#38852#0" expanded="true" />
+            <element signature="e#38876#38880#1" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scAdmin/ui/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="11" column="51" lean-forward="false" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+        <state relative-caret-position="400">
+          <caret line="142" column="6" lean-forward="true" selection-start-line="142" selection-start-column="6" selection-end-line="142" selection-end-column="6" />
           <folding>
             <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#1;n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1165,52 +958,51 @@
             <element signature="n#style#0;n#a#0;n#li#8;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#span#0;n#li#1;n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#8;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#13018#13024#0" expanded="true" />
-            <element signature="e#16689#16695#0" expanded="true" />
-            <element signature="e#20299#20305#0" expanded="true" />
-            <element signature="e#23892#23898#0" expanded="true" />
-            <element signature="e#27511#27517#0" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#34058#34064#0" expanded="true" />
-            <element signature="e#34088#34092#1" expanded="true" />
-            <element signature="e#36922#36928#0" expanded="true" />
-            <element signature="e#36952#36956#1" expanded="true" />
-            <element signature="e#39875#39881#0" expanded="true" />
-            <element signature="e#39905#39909#1" expanded="true" />
-            <element signature="e#41827#41833#0" expanded="true" />
-            <element signature="e#41857#41861#1" expanded="true" />
-            <element signature="e#44619#44625#0" expanded="true" />
-            <element signature="e#44649#44653#1" expanded="true" />
-            <element signature="e#47482#47488#0" expanded="true" />
-            <element signature="e#47512#47516#1" expanded="true" />
-            <element signature="e#50610#50616#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#11284#11290#0" expanded="true" />
             <element signature="n#style#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1508075953559" expanded="true" signature="52779:53081" ph="..." />
+            <marker date="1508251333913" expanded="true" signature="13005:13307" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scAdmin/ui/routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="35" />
+        <state relative-caret-position="200">
+          <caret line="8" column="105" lean-forward="false" selection-start-line="8" selection-start-column="105" selection-end-line="8" selection-end-column="105" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scAdmin/ui/setting.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="219">
+          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scAdmin/ui/common/controllers/linkController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="true" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scAdmin/ui/common/resources/jscript/common_version5.js">
+    <entry file="file://$PROJECT_DIR$/scAdmin/ui/common/resources/jscript/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-271">
-          <caret line="27" column="67" lean-forward="false" selection-start-line="27" selection-start-column="67" selection-end-line="27" selection-end-column="67" />
-          <folding />
+        <state relative-caret-position="200">
+          <caret line="1036" column="74" lean-forward="true" selection-start-line="1036" selection-start-column="74" selection-end-line="1036" selection-end-column="74" />
+          <folding>
+            <marker date="1508252824204" expanded="true" signature="6110:6117" ph="×" />
+            <marker date="1508252824204" expanded="true" signature="10731:10763" ph="..." />
+            <marker date="1508252824204" expanded="true" signature="81317:81323" ph=" " />
+            <marker date="1508252824204" expanded="true" signature="81323:81329" ph=" " />
+            <marker date="1508252824204" expanded="true" signature="86623:86670" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

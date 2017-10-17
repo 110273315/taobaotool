@@ -1024,7 +1024,7 @@ var $ui = {
             setTimeout(function() {
                 //页面跳转
                 $ui.ui_location.path(newUrl).replace();
-                $ui.resizeLeftMenuHeight();
+                // $ui.resizeLeftMenuHeight();
                 $ui.scope.$apply();
             }, 100);
         }

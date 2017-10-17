@@ -100,34 +100,3 @@ var USERLIMITS = {
 var UE_EDITOR_CONFIG = {
 	serverUrl: 'http://scqa.smartac.co/sc/api/ueditorServerUrl'// ueditor服务器统一请求接口路径
 }
-/*
-* 客户端首页管理的web app的所有导航
-*/
-var WEB_APP_NAVS =  [{
-   name: '会员',
-   url: '/member',
- }, {
-   name: '商户',
-   url: '/shop',
- }, {
-   name: '活动',
-   url: '/activity',
- }, {
-   name: '积分商城',
-   url: '/integralMall',
- }, {
-   name: '免费领',
-   url: '/coupon',
- }, {
-   name: '团购',
-   url: '/sales/4',
- }, {
-   name: '特卖',
-   url: '/sales/5',
- }, {
-   name: '客服',
-   url: '/question',
- }, {
-   name: '自助积分',
-   url: '/trade',
- }]
