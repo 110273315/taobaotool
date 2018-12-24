@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>签到页面</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../../../../modals/33/3327/style.css" tppabs="http://www.sucaihuo.com/jquery/29/2954/demo/css/style.css">
+    <link rel="stylesheet" href="../../../../modals/33/3327/0-0-0-6.css" tppabs="http://www.sucaihuo.com/jquery/29/2954/demo/css/validate.css">
+</head>
+<body>
+<div class="sign_wrap">
+    <div class="logo"><img src="../../../../modals/33/3312/logo.png" tppabs="http://www.sucaihuo.com/jquery/29/2954/demo/img/logo.png" alt="中厚明德logo"></div>
+    <div class="sign_title"><img src="../../../../modals/33/3312/3053.html" tppabs="http://www.sucaihuo.com/jquery/29/2954/demo/img/title.png" alt=""></div>
+    <div class="sign_line"><img src="../../../../modals/33/3312/0-0-0-7" tppabs="http://www.sucaihuo.com/jquery/29/2954/demo/img/line.png" alt=""></div>
+    <div class="sign_text">
+    	<p>2017年9月5日-7日</p>
+    	<p>国家发改委培训中心（北京）</p>
+    </div>
+    <form class="sign_form" action="" id="signForm">
+        <div class="sign_term">
+            <label class="sign_name"></label>
+            <input type="text" placeholder="请输入姓名" name="name">
+        </div>
+        <div class="sign_term">
+            <label class="sign_phone"></label>
+            <input type="text" placeholder="请输入手机号" name="phone">
+        </div>
+        <div class="sign_button">
+            <button>签到</button>
+        </div>
+    </form>
+    <div class="sign_welcome">
+    	<i>/</i>诚<i>/</i>挚<i>/</i>欢<i>/</i>迎<i>/</i>您<i>/</i>的<i>/</i>到<i>/</i>来<i>/</i>
+    </div>
+</div>
+<!-- 遮罩背景 -->
+<div class="sign_bg"></div>
+<!-- 签到成功弹框 -->
+<div class="sign_tk" id="suc_tk">
+	<div class="sign_suc">
+		<div class="suc_title"></div>
+		<div class="sign_con">
+			<p>恭喜您</p>
+			<p>今日签到成功</p>
+		</div>
+		<div class="sign_close" id="suc_close"></div>
+	</div>
+</div>
+<!-- 签到失败弹框 -->
+<div class="sign_tk" id="unsuc_tk" style="display: none">
+	<div class="sign_suc">
+		<div class="unsuc_title">签到失败</div>
+		<div class="sign_con">
+			<p>可能网络错误</p>
+			<p>建议您再试一次</p>
+		</div>
+		<div class="sign_close" id="unsuc_close"></div>
+	</div>
+</div>
+<script src="../../../../../cdn.bootcss.com/modals/33/3300/getEmailCode2" tppabs="https://cdn.bootcss.com/jquery/1.8.3/jquery.min.js"></script>
+<!-- 信息验证 -->
+<script type="text/javascript" src="../../../../modals/33/3303/0-0-0-8" tppabs="http://www.sucaihuo.com/jquery/29/2954/demo/js/jquery.validate.js"></script>
+<script type="text/javascript" src="../../../../modals/33/3303/3052.html" tppabs="http://www.sucaihuo.com/jquery/29/2954/demo/js/validate_expand.js"></script>
+<script>
+$(document).ready(function(){
+	/*签到成功弹框关闭*/
+	$("#suc_close").click(function(){
+		$("#suc_tk,.sign_bg").fadeOut(400);
+	});
+	/*签到失败弹框关闭*/
+	$("#unsuc_close").click(function(){
+		$("#unsuc_tk,.sign_bg").fadeOut(400);
+	});
+
+    $("#signForm").validate({
+        onkeyup:false,
+        //设置验证规则
+        rules: {
+            "name": {
+                required: true,
+            },
+            "phone": {
+                required: true,
+                isMobile: true
+            }
+        },
+        //设置错误信息
+        messages: {
+            "name": {
+                required: "姓名不能为空"
+            },
+            "phone": {
+                required: "手机号码不能为空",
+                isMobile: "请输入有效的手机号码"
+            }
+        },
+        errorElement:"font",
+        errorPlacement: function(error, element){
+            error.appendTo(element.parent().find(".tipinfo"));
+        },success:"valid"
+    });
+});
+</script>
+</body>
+</html>

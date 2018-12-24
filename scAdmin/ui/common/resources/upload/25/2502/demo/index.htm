@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=utf-8"UTF-8">
+<title>jQuery拖拽时间轴插件range.js</title>
+<link type="text/css" rel="stylesheet" href="../../../../uploads/course/2017/02/20/136.html.css" tppabs="http://www.sucaihuo.com/jquery/25/2502/demo/css/bootstrap-3.3.4.css">
+<link type="text/css" rel="stylesheet" href="../../../../uploads/course/2017/02/20/134.html.css" tppabs="http://www.sucaihuo.com/jquery/25/2502/demo/css/jquery.range.css" />
+<link type="text/css" rel="stylesheet" href="../../../../uploads/course/2017/02/20/search.html-keyword=后台&mtype=1&color_id=18.css" tppabs="http://www.sucaihuo.com/jquery/25/2502/demo/css/css.css" />
+</head>
+
+<body>
+<div class="time clearfix">
+	<div class="btn-group year_group fl">
+        <button data-toggle="dropdown" class="btn dropdown-toggle" type="button">
+          	<span id="year">2017年</span><i class="caret"></i>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#">2017年</a></li>
+          <li><a href="#">2016年</a></li>
+          <li><a href="#">2015年</a></li>
+        </ul>
+    </div>
+    <div class="btn-group mon_group fl">
+        <button data-toggle="dropdown" class="btn dropdown-toggle" type="button">
+          	<span id="month">5月</span><i class="caret"></i>
+        </button>
+        <ul class="dropdown-menu">
+        	<li><a href="#">1月</a></li>
+	        <li><a href="#">2月</a></li>
+	        <li><a href="#">3月</a></li>
+	        <li><a href="#">4月</a></li>
+	        <li><a href="#">5月</a></li>
+	        <li><a href="#">6月</a></li>
+	        <li><a href="#">7月</a></li>
+	        <li><a href="#">8月</a></li>
+	        <li><a href="#">9月</a></li>
+	        <li><a href="#">10月</a></li>
+	        <li><a href="#">11月</a></li>
+	        <li><a href="#">12月</a></li>
+        </ul>
+    </div>
+	<div class="demo fl">
+		<input type="hidden" value="" class="single-slider none">
+	</div>
+</div>
+</body>
+<script src="../../../9/971/4-0-0-0-0-1" tppabs="http://www.sucaihuo.com/jquery/25/2502/demo/js/jquery-1.10.2.js"></script>
+<script src="../../../9/971/133.html" tppabs="http://www.sucaihuo.com/jquery/25/2502/demo/js/bootstrap-3.3.4.js"></script>
+<script type="text/javascript" src="../../../9/971/132.html" tppabs="http://www.sucaihuo.com/jquery/25/2502/demo/js/jquery.range.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	// 下拉选择框
+	$('.dropdown-menu li').click(function(){
+	  var txt=$(this).text();
+	  $(this).parent().prev().find('span').eq(0).text(txt);
+	})
+
+	changeY();
+	$('.dropdown-menu li').click(function(){
+		var name=$('a',this).text();
+		$(this).parents('.btn-group').find('.dropdown-toggle span').text(name);
+		changeY();
+	})
+
+	function changeY(){
+		var year=$('#year').text().replace(/[^0-9]/ig,"")
+		var month=$('#month').text().replace(/[^0-9]/ig,"")
+		var days=totalDays(year, month);
+		var dayArr=[];
+		for(var i=1;i<=days;i++)
+		{
+			dayArr.push(i+'日');
+		}
+		var last=parseInt(dayArr[dayArr.length-1]);
+		$('.demo').children().remove();
+		var div='<input type="hidden" value="" class="single-slider none">';
+		$('.demo').html(div)
+		// 
+		$('.single-slider').jRange({
+		    from:1,
+		    to:last,
+		    step: 1,
+		    scale: dayArr,
+		    format: '%s',
+		    width:850,
+		    showLabels: true,
+		    snap: true
+		});
+	}
+
+	//一个月的总天数
+	function totalDays(years,months){
+		var d = new Date(years, months, 0);
+		return d.getDate();
+	}
+})
+</script>
+</html>

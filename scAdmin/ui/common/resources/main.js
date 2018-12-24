@@ -10,6 +10,7 @@ require.config({
         angular: 'plugin/angular/angular.min',
         common: 'jscript/common',
         common_version5: 'jscript/common_version5',
+        blocksit: 'jscript/blocksit.min',
         bootstraps: 'jscript/bootstrap',
         accordion: 'jscript/accordion.nav',
         angular_check: 'plugin/angular/angular-checklist-model',
@@ -112,6 +113,9 @@ require.config({
         'common_version5': {
             deps: ['jquery']
         },
+        'blocksit':{
+            deps: ['jquery']
+        },
         'superSlide': {
             deps: ['jquery']
         },
@@ -160,6 +164,7 @@ require([
     'filters',
     'common',
     'common_version5',
+    'blocksit',
     'bootstraps',
     'accordion',
     'angular_check',

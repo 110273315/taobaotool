@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <title>演示：php+Ajax远程加载避免重复提交</title>
+        <meta name="keywords" content="ajax加载完成执行,ajax加载提示" /> 
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <style>
+            .btn_submit {
+                background-color: #e31436;
+                color: #fff;
+                cursor: pointer;
+                display: inline-block;
+                font-size: 18px;
+                height: 44px;
+                line-height: 44px;
+                text-align: center;
+                width: 200px;
+                border-radius: 2px;
+                border:none
+            }
+            .disabled{opacity: 0.5;cursor:default}
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript" src="jquery.js" tppabs="http://www.sucaihuo.com/jquery/27/2747/demo/jquery.js"></script>
+        <script>
+
+            function check_login() {
+                if ($("#btn_submit").hasClass("disabled"))return false;//避免重复提交
+                $("#btn_submit").addClass("disabled").val("正在提交");
+                $.post("http://www.sucaihuo.com/jquery/27/2747/demo/352.html", {id: 1}, function(data) {
+                    $("#btn_submit").removeClass("disabled").val("登 录");
+                    location.href="../../../../php/2747.html"/*tpa=http://www.sucaihuo.com/php/2747.html*/;
+                }, "json");
+                return false;
+            }
+        </script>
+        <form onsubmit="return check_login()" style="text-align: center;margin-top:50px">
+            <input value="登 录"   class="btn_submit" id="btn_submit" type="submit">
+        </form>
+
+    </body>
+</html>

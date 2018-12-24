@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <title>演示：mui世界国家索引弹出层选择</title>
+        <meta name="keywords" content="jQuery国家索引,jQuery国家弹出层" /> 
+        <meta name="description" content="mui的索引页面代码很简洁，但是div滚动兼容性不是很好，整个索引页面作为弹出层，会有滚动bug。因此用jQuery重新写了下索引页面，用世界国家作为演示数据，其中右侧的数字是国家区号。" /> 
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <link href="../../../../男用延时/139-0-0-0-0.css" tppabs="http://www.sucaihuo.com/jquery/24/2488/demo/mui/css/mui.min.css" rel="stylesheet" />
+        <link href="../../../../男用延时/1506034030861.jpg.css" tppabs="http://www.sucaihuo.com/jquery/24/2488/demo/mui/css/mui.indexedlist.css" rel="stylesheet" />
+        <style>
+            #code_prefix{background-color: #ccc;font-size:20px;border-radius: 5px;text-align: center;
+                         padding:10px;width:100px; height:40px;color: #FFF;display:block;margin:20px auto}
+            .code_box{color:#ccc;float:right}
+        </style>
+        <script type="text/javascript" src="jquery.js" tppabs="http://www.sucaihuo.com/jquery/24/2488/demo/jquery.js"></script>
+
+        <script type="text/javascript">
+            $(function() {
+                initCityBox();
+            })
+            function initCityBox() {
+            
+                $.post("http://www.sucaihuo.com/jquery/24/2488/demo/tag-SDK", {id: 1}, function(data) {
+                    $("#window_box").html(data)
+                  
+                })
+            }
+            function showCityBox() {
+                $("#containner").hide();
+                $("#window_box").show();
+            }
+        </script>
+    </head>
+    <body>
+        <div class="containner" id="containner">
+            <a id="code_prefix" onclick='showCityBox()'>86</a>
+
+        </div>
+
+        <div id="window_box" style="display:none"></div>
+    </body>
+</html>

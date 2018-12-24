@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>jquery拖放加入购物车</title>
+		<script src="../../../../sources/4/448/tag-文件夹.html" tppabs="http://www.sucaihuo.com/jquery/19/1947/demo/js/jquery-1.9.1.min.js"></script>
+		<style>
+			*{padding:0px;margin:0px;font-family: 'Microsoft YaHei', 'Lantinghei SC', 'Open Sans', Arial, 'Hiragino Sans GB', 'STHeiti', 'WenQuanYi Micro Hei', 'SimSun', sans-serif;}
+			table,thead{width: 100%;}
+			tr th{width:25%;height:30px;background-color: #23B7E5;font-size: 16px;padding: 2px 0px;color:#fff;}
+			tr td{text-align: center;padding: 5px 0px;background-color: #fff;font-size: 14px;}
+			tr td a{padding: 2px 5px;border:1px solid #ddd;cursor: pointer;}
+			ul li{list-style-type: none;overflow: hidden;}
+			#div1{width:350px;height:100%;border:1px solid #ddd;position:fixed;right:0px;top:0px;
+				background-color: #F5F5F5;
+			}
+			#div1 ul li p{width:50%;text-align: right;flex: 1;}
+			#div2 ul{overflow: hidden;}
+			#div2 ul li{float: left;width:75px;height:60px;border:1px solid #ddd;margin-right: 10px;}
+			#div2 ul li img{width: 100%;height: 100%;}
+			.div_panel{min-height: 200px;}
+			.allMoney{position: absolute;right: 0px;}
+		</style>
+	</head>
+	<body>
+		<h3 style="margin:10px;">拖放图片到右侧物品栏</h3>
+		<div id="div2" style="margin:10px;">
+			<ul>
+				<li>
+					<img id="img1" src="../../../../sources/4/446/2982.html" tppabs="http://www.sucaihuo.com/jquery/19/1947/demo/images/car1.jpg" draggable="true" ondragstart="drag(this)" />
+					<input type="hidden" id="inp_money" value="23"/>
+					<input type="hidden" id="inp_name" value="耐克3.0" />
+				</li>
+				<li>
+					<img id="img1" src="../../../../sources/4/446/2977.html" tppabs="http://www.sucaihuo.com/jquery/19/1947/demo/images/car2.jpg" draggable="true" ondragstart="drag(this)" />
+					<input type="hidden" id="inp_money" value="100"/>
+					<input type="hidden" id="inp_name" value="奥迪" />
+				</li>
+				<li>
+					<img id="img1" src="../../../../sources/4/446/2911.html" tppabs="http://www.sucaihuo.com/jquery/19/1947/demo/images/car3.jpg" draggable="true" ondragstart="drag(this)" />
+					<input type="hidden" id="inp_money" value="1000"/>
+					<input type="hidden" id="inp_name" value="东风特产" />
+				</li>
+			</ul>
+		</div>
+		<div id="div1" ondrop="drop()" ondragover="allowDrop(event)">
+			<div class="div_panel">
+				<table border="0" cellspacing="0" cellpadding="0">
+					<thead>
+						<tr>
+							<th>名称</th>
+							<th>单价</th>
+							<th>数量</th>
+							<th>价格</th>
+						</tr>
+					</thead>
+					<tbody id="ul_panel"></tbody>
+				</table>
+			</div>
+			<p class="allMoney">总价：<span id="totalMoney" style="margin-right:8px;color:orange;">￥0</span></p>
+		</div>
+	</body>
+	<script>
+		var money=0;
+		var name="";
+		var data=[];
+		function allowDrop(e){
+			e.preventDefault();
+		}
+		function drag(t){
+			money=$(t).siblings("#inp_money").val();
+			name=$(t).siblings("#inp_name").val();
+			/*var num=1;
+			add(name,money,num);*/
+		}
+		function addJson(name,money){
+			for(var j=0;j<data.length;j++){
+				if(data[j].name==name){
+					data[j].num++;
+					return;
+				}
+			}
+			data.push({
+				money:money,
+				name:name,
+				num:1
+			});
+		}
+		function addHtml(){
+			var text_html='';
+			var totalMoney=0;
+			$("#ul_panel").html("");
+			for(var i=0;i<data.length;i++){
+				text_html+='<tr><td>'+data[i].name+'</td><td>'+data[i].money+'</td><td><a onclick="reduce(\'\'+'+i+',this)">-</a> '+data[i].num+' ';
+				text_html+='<a onclick="addNum(\'\'+'+i+',this)">+</a></td><td>￥'+(data[i].money*data[i].num)+'</td></tr>';
+				totalMoney+=data[i].money*data[i].num;
+				$("#totalMoney").text('￥'+totalMoney);
+			}
+			$("#ul_panel").append(text_html);
+		}
+		function drop(){
+			addJson(name,money);
+			addHtml();
+		}
+		function reduce(a,t){
+			data[a].num--;
+			if(data[a].num==0){
+				data.splice(a,1);
+			}
+			if(data.length==0){
+				$("#totalMoney").text(0);
+			}
+			addHtml();
+		}
+		function addNum(a,t){
+			data[a].num++;
+			addHtml();
+		}
+		
+	</script>
+</html>

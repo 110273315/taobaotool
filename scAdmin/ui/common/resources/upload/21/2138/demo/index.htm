@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset=utf-8"utf-8">
+	<style type="text/css">
+	*{margin: 0;padding: 0}
+	#kaluo{border: 10px solid}
+		body{text-align: center;background: url("../../../../videos/1/142/4-113-0-0-0-0")/*tpa=http://www.sucaihuo.com/jquery/21/2138/demo/image/bg.jpg*/ no-repeat 0 0;}
+		.cb{clear: both;}
+		i{display: block;}
+		#demo{width: 1300px;height: 900px;margin: 0 auto;}
+		#demo div,#demo button{width: 320px;height: 190px;float: left;line-height: 100px;color: #17f;font-size: 32px;font-weight: bold;position: relative;}
+		#demo button{background: url("../../../../videos/1/142/2809.html")/*tpa=http://www.sucaihuo.com/jquery/21/2138/demo/image/kaibg.jpg*/ no-repeat 0 0;display: block;border: none;border-radius: 50%}
+		#demo>div>img{margin-top: 20px;}
+		p{width: 280px;height: 150px;background-color: red;position: absolute;top: 20px;left: 20px;}
+	
+	</style>
+</head>
+<body>
+<div id="kaluo">
+	<h1 class='tex'>欢迎来到卡罗牌</h1>
+	<div id="demo">
+		<div ite='0' vl='1元'><img src="../../../../videos/1/142/template" tppabs="http://www.sucaihuo.com/jquery/21/2138/demo/image/2.jpg"><p><img src="../../../../videos/1/142/2799.html" tppabs="http://www.sucaihuo.com/jquery/21/2138/demo/image/1111.jpg"></p></div>
+		<div ite='1' vl='2元'><img src="../../../../videos/1/142/7.jpg" tppabs="http://www.sucaihuo.com/jquery/21/2138/demo/image/7.jpg"><p><img src="../../../../videos/1/142/2799.html" tppabs="http://www.sucaihuo.com/jquery/21/2138/demo/image/1111.jpg"></p></div>
+		<div ite='2' vl='5元'><img src="../../../../videos/1/142/6.jpg" tppabs="http://www.sucaihuo.com/jquery/21/2138/demo/image/6.jpg"><p><img src="../../../../videos/1/142/2799.html" tppabs="http://www.sucaihuo.com/jquery/21/2138/demo/image/1111.jpg"></p></div>
+		<div ite='3' vl='10元'><img src="../../../../videos/1/142/5.jpg" tppabs="http://www.sucaihuo.com/jquery/21/2138/demo/image/5.jpg"><p><img src="../../../../videos/1/142/2799.html" tppabs="http://www.sucaihuo.com/jquery/21/2138/demo/image/1111.jpg"></p></div>
+		<div ite='9' vl='范冰冰'><img src="../../../../videos/1/142/2793.html" tppabs="http://www.sucaihuo.com/jquery/21/2138/demo/image/liu.jpg"><p><img src="../../../../videos/1/142/2799.html" tppabs="http://www.sucaihuo.com/jquery/21/2138/demo/image/1111.jpg"></p></div>
+
+		<button onclick="go()" disabled="disabled"><h1>Go</h1></button>
+		<button onclick="end()" disabled="disabled"><h1>End</h1></button>
+
+		<div ite='4' vl='刘亦菲'><img src="../../../../videos/1/142/13.jpg" tppabs="http://www.sucaihuo.com/jquery/21/2138/demo/image/13.jpg"><p><img src="../../../../videos/1/142/2799.html" tppabs="http://www.sucaihuo.com/jquery/21/2138/demo/image/1111.jpg"></p></div>
+		<div ite='8' vl='1000元红包'><img src="../../../../videos/1/142/2787.html" tppabs="http://www.sucaihuo.com/jquery/21/2138/demo/image/1000.jpg"><p><img src="../../../../videos/1/142/2799.html" tppabs="http://www.sucaihuo.com/jquery/21/2138/demo/image/1111.jpg"></p></div>
+		<div ite='7' vl='20元'><img src="../../../../videos/1/142/20.jpg" tppabs="http://www.sucaihuo.com/jquery/21/2138/demo/image/20.jpg"><p><img src="../../../../videos/1/142/2799.html" tppabs="http://www.sucaihuo.com/jquery/21/2138/demo/image/1111.jpg"></p></div>
+		<div ite='6' vl='100元'><img src="../../../../videos/1/142/60-0-0-0-0-0" tppabs="http://www.sucaihuo.com/jquery/21/2138/demo/image/4.jpg"><p><img src="../../../../videos/1/142/2799.html" tppabs="http://www.sucaihuo.com/jquery/21/2138/demo/image/1111.jpg"></p></div>
+		<div ite='5' vl='50元'><img src="../../../../videos/1/142/1.jpg" tppabs="http://www.sucaihuo.com/jquery/21/2138/demo/image/1.jpg"><p><img src="../../../../videos/1/142/2799.html" tppabs="http://www.sucaihuo.com/jquery/21/2138/demo/image/1111.jpg"></p></div>
+		<i class="cb"></i>
+		
+	</div>
+</div>
+	<script type="text/javascript">
+/*	排序*/
+		var a=document.getElementsByTagName('button')[0];
+		var b=document.getElementsByTagName('button')[1];
+		var node=document.getElementById('demo');
+		var d=node.getElementsByTagName('div');
+		var p=document.getElementsByTagName('p');
+		var arr=[];
+		var timer;
+		var stop;
+		var t=0;
+		var f=111111;
+		var i=0;
+		a.removeAttribute('disabled');
+		for(var i=0;i<d.length;i++){
+			for(var j=0;j<d.length;j++){
+				if(d[j].getAttribute('ite')==i){
+					arr.push(d[j])
+				}
+			}
+		}
+/*	添加css属性*/
+		arr[-1]=arr[9];
+		function run(){
+			arr[t].style.backgroundColor='red';
+			arr[t-1].style.backgroundColor='';
+			t++;
+			if(t==10) t=0;	
+		}
+/*		开始按钮*/
+		function go(){
+			for(var i=0;i<p.length;i++){
+				p[i].style.display='block';
+			}
+			if(timer==null){
+				timer=setInterval(run,50);
+			}
+			f=10000;
+			clearInterval(stop);		
+			b.removeAttribute('disabled');
+			a.setAttribute('disabled','disabled');
+					
+		}
+/*		结束按钮*/
+		function end(){			
+			b.setAttribute('disabled','disabled');
+			if(f==10000){
+				setTimeout(function(){
+					clearInterval(timer);
+					timer=null;
+					f=t-1;
+					
+					alert('恭喜迩获得'+arr[f].getAttribute('vl'))
+					arr[f].getElementsByTagName('p')[0].style.display='none';
+				},3000);
+			}		
+			if(stop==null){
+				stop=setInterval(suiji,100);
+			}
+		}
+/*		随机颜色*/
+		function changeColor(){
+			var a=Math.floor(Math.random()*256);
+			var b=Math.floor(Math.random()*256);
+			var c=Math.floor(Math.random()*256);
+
+			var colo='rgb('+a+','+b+','+c+')';
+			return colo;
+		}
+
+/*获奖动作*/
+		function suiji(){	
+			arr[f].style.backgroundColor=changeColor();
+			arr[f].style.transform=' rotateY('+i+'deg)';
+			i+=10;
+			if(i==90){
+				
+			}
+			if(i>500){
+				clearInterval(stop)
+				i=0;
+				stop=null;
+				arr[f].style.transform=' rotateY('+0+'deg)';
+				a.removeAttribute('disabled');
+			}
+		}
+/*字幕动画*/
+	var tex=document.getElementsByTagName('h1');
+	
+	setInterval(function(){
+		tex[0].style.color=changeColor();
+	},500)
+	setInterval(function(){
+		tex[1].style.color=changeColor();
+	},1000)
+	setInterval(function(){
+		tex[2].style.color=changeColor();
+	},1000)
+	setInterval(function(){
+		document.getElementById('kaluo').style.borderColor=changeColor();
+	},1000)
+	
+	</script>
+	
+</body>
+</html>

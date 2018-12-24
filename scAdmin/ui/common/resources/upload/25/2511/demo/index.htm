@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>jq实现显示隐藏切换鼠标悬浮更换样式并往右移动</title>
+
+<style type="text/css">
+*{margin:0;padding:0;list-style:none;border:0px;outline:none;}
+html{height:100%;}
+body{font-family:"微软雅黑","宋体",Arial, Helvetica, sans-serif,"黑体";font-size:14px;background:#fff;margin:0 auto;}
+a{color:#606060;text-decoration:none;}
+a:hover{text-decoration:none;}
+img{border:none 0;}
+
+.expertbox{width:840px;margin:40px auto 0 auto;}
+.it_expert{height:50px;border-left:3px solid #2b7ac6;border-bottom:1px solid #dfdfdf;position:relative;border-top:1px solid #dfdfdf;border-right:1px solid #dfdfdf;color:#686868;line-height:50px;}
+.it_expertp1{width:120px;height:50px;font-size:18px;text-indent:2em;color:#686868;line-height:50px;float:left;}
+.it_expertp2{width:200px;height:50px;float:right;text-align:center;}
+#it_awewe a{display:inline-table!important;}
+.it_expertspan1{width:30px;height:30px;border:1px solid #b4b4b4;margin-right:10px;color:#868585;display:inline-table;text-align:center;line-height:30px;}
+.it_expertspan2{width:30px;height:30px;border:1px solid #b4b4b4;color:#868585;display:inline-block;text-align:center;line-height:30px;}
+.it_expert3{border-left:1px solid #dfdfdf;border-right:1px solid #dfdfdf;}
+.it_expertxt{height:126px;border-bottom:1px solid #e4e4e4;position:relative;}
+.it_expertit{color:#434343;font-size:16px;padding-left:30px;padding-top:30px;padding-bottom:6px;position:relative;}
+.it_experconter{width:700px;padding:6px;padding-left:30px;color:#7d858c;position:relative;}
+.it_expertxt:hover{background:#2b7bc6;} 
+</style>
+
+</head>
+<body>
+
+<div class="expertbox">
+	<div class="it_expert">
+		<p class="it_expertp1">专家推荐</p>
+		<p class="it_expertp2">
+			<span id="it_awewe" class="it_awewe">
+				<a href="#" class="it_expertspan1" id="previous2"> < </a>
+				<a href="#" class="it_expertspan2" id="next2"> > </a>
+			</span>
+		</p>
+	</div>
+	<div class="it_expert3">
+		<div id="hot_ranks2">  
+			<ul class="current" style="display: block;">  
+				<li>
+					<div class="it_expertxt">
+						<p class="it_expertit">11111111[2015-06-05]</p>
+						<p class="it_experconter">招商外包，就是指企企业把招商的所有事情都可以外包给招商快车公司营好自身的核心业务，渠道建设交给招商快车，包括如下9点：渠道盈利模型、产品组合策略</p>
+					</div>
+					<div class="it_expertxt">
+						<p class="it_expertit">2222221[2015-06-05]</p>
+						<p class="it_experconter">招商外包企业把招商的所有事情都可以外包给招商快车公司，企业只需要集中力量经营好自身的核心业务，渠道建设交给招商快车，包括如下9点：渠道盈利模型、产品组合策略</p>
+					</div>
+					<div class="it_expertxt">
+						<p class="it_expertit">3333333331[2015-06-05]</p>
+						<p class="it_experconter">招商外包，就是指企业把招商的所有事企业把招商的所有事情都可以外包给招商快车公司渠道建设交给招商快车，包括如下9点：渠道盈利模型、产品组合策略</p>
+					</div>
+					<div class="it_expertxt">
+						<p class="it_expertit">444444444[2015-06-05]</p>
+						<p class="it_experconter">招商外包，就是指企业企业把招商的所有事情都可以外包给招商快车公司经营好自身的核心业务，渠道建设交给招商快车，包括如下9点：渠道盈利模型、产品组合策略</p>
+					</div>
+				</li>  
+			</ul>
+			<ul class="current" style="display: none;">  
+				<li>
+					<div class="it_expertxt">
+						<p class="it_expertit">5555555552[2015-06-05]</p>
+						<p class="it_experconter">招商外包，就是指企业把招商的所有事情都可以外包给招企业把招商的所有事情都可以外包给招商快车公司企业把招商的所有事情都可以外包给招商快车公司道盈利模型、产品组合策略</p>
+					</div>
+					<div class="it_expertxt">
+						<p class="it_expertit">66666666666[2015-06-05]</p>
+						<p class="it_experconter">招商外包，就是指企业把招商的所有事情都可以外包给招商快车公司去做，企业只需要集中力量经营好自身的核心业务，渠道建设交给招商快车，包括如下9点：渠道盈利模型、产品组合策略</p>
+					</div>
+					<div class="it_expertxt">
+						<p class="it_expertit">77777777777[2015-06-05]</p>
+						<p class="it_experconter">招商外包，就是指企业把招商的所有事情都可以外包给招商快车公司去做，企业只需要集中力量经营好自身的核心业务，渠道建设交给招商快车，包括如下9点：渠道盈利模型、产品组合策略</p>
+					</div>
+					<div class="it_expertxt">
+						<p class="it_expertit">88888888888[2015-06-05]</p>
+						<p class="it_experconter">招商外包，就是指企业把招商的所有事情都可以外包给招商快车公司去做，企业只需要集中力量经营好自身的核心业务，渠道建设交给招商快车，包括如下9点：渠道盈利模型、产品组合策略</p>
+					</div>
+				</li>  
+			</ul>
+			<ul class="current" style="display: none;">  
+				<li>
+					<div class="it_expertxt">
+						<p class="it_expertit">9999999999993[2015-06-05]</p>
+						<p class="it_experconter">招商外包，就是指企业把招商的所有事情都可以外包给招商快车公司去做，企业只需要集中力量经营好自身的核心业务，渠道建设交给招商快车，包括如下9点：渠道盈利模型、产品组合策略</p>
+					</div>
+					<div class="it_expertxt">
+						<p class="it_expertit">100000000000[2015-06-05]</p>
+						<p class="it_experconter">招商外包，就是指企业把招商的所有事情都可以外包给招商快车公司去做，企业只需要集中力量经营好自身的核心业务，渠道建设交给招商快车，包括如下9点：渠道盈利模型、产品组合策略</p>
+					</div>
+					<div class="it_expertxt">
+						<p class="it_expertit">1111111111111[2015-06-05]</p>
+						<p class="it_experconter">招商外包，就是指企业把招商的所有事情都可以外包给招商快车公司去做，企业只需要集中力量经营好自身的核心业务，渠道建设交给招商快车，包括如下9点：渠道盈利模型、产品组合策略</p>
+					</div>
+					<div class="it_expertxt">
+						<p class="it_expertit">1212121212121212121[2015-06-05]</p>
+						<p class="it_experconter">招商外包，就是指企业把招商的所有事情都可以外包给招商快车公司去做，企业只需要集中力量经营好自身的核心业务，渠道建设交给招商快车，包括如下9点：渠道盈利模型、产品组合策略</p>
+					</div>
+				</li>  
+			</ul>
+		</div>
+	</div>            
+</div>
+
+<script type="text/javascript" src="../../../20/2007/jquery.js" tppabs="http://www.sucaihuo.com/jquery/25/2511/demo/js/jquery.js"></script>
+<script type="text/javascript">
+	$(function(){    
+         abc2();
+    }); 
+	function abc2(){
+         var $obj = $('#hot_ranks2 ul');  
+         var len  = $obj.length;  
+         var i = 0;  
+         $("#next2").click(function(){  
+              i++;  
+              if(i==len){  
+                i = 0;  
+              }  
+              $obj.stop(true,true).hide().eq(i).fadeIn(600);  
+              return false;  
+         });      
+         $("#previous2").click(function(){  
+              i--;  
+              if(i==-1){  
+                i = len-1;  
+              }  
+              $obj.stop(true,true).hide().eq(i).fadeIn(600);  
+              return false;  
+         });  
+    }
+	
+	$(".it_expertxt").hover(function(){
+		$(this).find(".it_expertit").css("color","#fff");
+		$(this).find(".it_experconter").css("color","#fff");
+		var div = $(this).find(".it_expertit");
+		var div2 = $(this).find(".it_experconter")
+		div.addClass("dest").animate({left: 20}, 200);
+		div2.addClass("dest").animate({left: 20}, 200);
+	},function(){
+		var div = $(this).find(".it_expertit");
+		var div2 = $(this).find(".it_experconter")
+		$(this).find(".it_expertit").css("color","#434343");
+		$(this).find(".it_experconter").css("color","#7d858c");
+		div.addClass("dest").animate({left: 0}, 200);
+		div2.addClass("dest").animate({left: 0}, 200);
+	});
+</script>
+
+</body>
+</html>

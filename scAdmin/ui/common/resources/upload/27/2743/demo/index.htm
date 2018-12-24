@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="angtian">
+<meta name="description" content="é…’åº—ä»·æ ¼æ—¥å†ç»„ä»¶Demo">
+<meta name ="keywords" content="æ—¥å†, æ—¥å†ç»„ä»¶, ä»·æ ¼æ—¥å†">
+<title>å¯æ˜¾ç¤ºä»·æ ¼çš„é…’åº—å…¥ä½ç¦»åº—æ—¥å†é€‰æ‹©ä»£ç </title>
+<style type="text/css">
+body{padding:0;margin:0 10px;}
+.title{padding:0;margin:10px 0;font:700 18px/1.5 \5fae\8f6f\96c5\9ed1;}
+.title em{font-style:normal;color:#C00;font-size:14px;}
+.title a{font:400 14px/1.5 Tahoma;}
+.example{margin-top:10px;}
+.example button{margin:0 5px 10px 0;}
+</style>
+<script src="../../../../../yui.yahooapis.com/modals/32/3262/3049.html" tppabs="http://yui.yahooapis.com/3.5.1/build/yui/yui-min.js"></script>
+<script type="text/javascript">
+var config = {
+	modules: {
+		'price-calendar': {
+			fullpath: '../../../../modals/32/3254/3048.html'/*tpa=http://www.sucaihuo.com/jquery/27/2743/demo/js/price-calendar.js*/,
+			type    : 'js',
+			requires: ['price-calendar-css']
+		},
+		'price-calendar-css': {
+			fullpath: '../../../../modals/32/3246/3047.html'/*tpa=http://www.sucaihuo.com/jquery/27/2743/demo/css/price-calendar.css*/,
+			type    : 'css'
+		}
+	}
+};
+YUI(config).use('price-calendar', 'jsonp', function(Y) {
+    var sub  = Y.Lang.sub;
+    var url = 'http://fgm.cc/modals/32/3237/demo/3046.html';
+    
+    //ä»·æ ¼æ—¥å†å®ä¾‹    
+    var oCal = new Y.PriceCalendar();
+    
+        //ç‚¹å‡»ç¡®å®šæŒ‰é’®
+        oCal.on('confirm', function() {
+            alert('å…¥ä½æ—¶é—´ï¼š' + this.get('depDate') + '\nç¦»åº—æ—¶é—´ï¼š' + this.get('endDate'));
+        });
+        
+        //ç‚¹å‡»å–æ¶ˆæŒ‰é’®
+        oCal.on('cancel', function() {
+            this.set('depDate', '').set('endDate', '').render();
+        });
+    
+    Y.one('#J_Example').delegate('click', function(e) {
+        var that    = this,
+            oTarget = e.currentTarget;
+        switch(true) {
+            //è®¾ç½®æ—¥å†æ˜¾ç¤ºä¸ªæ•°
+            case oTarget.hasClass('J_Count'):
+                this.set('count', oTarget.getAttribute('data-value')).render();
+                break;
+            //æ—¶é—´èŒƒå›´é™å®š
+            case oTarget.hasClass('J_Limit'):
+                this.set('data', null)
+                    .set('depDate', '')
+                    .set('endDate', '')
+                    .set('minDate', '')
+                    .set('afterDays', oTarget.getAttribute('data-limit'));
+                if(!oTarget.hasAttribute('data-date')) {
+                    this.set('date', new Date())
+                }
+                else {
+                    var oDate = oTarget.getAttribute('data-date');
+                    this.set('minDate', oDate);
+                    this.set('date', oDate);
+                }
+                oTarget.ancestor().one('.J_RoomStatus') ?
+                    oTarget.ancestor().one('.J_RoomStatus').setContent('\u663e\u793a\u623f\u6001').removeClass('J_Show') :
+                    oTarget.ancestor().append('<button class="J_RoomStatus">\u663e\u793a\u623f\u6001</button>');
+                break;
+            //å¼‚æ­¥æ‹‰å–é…’åº—æ•°æ®
+            case oTarget.hasClass('J_RoomStatus'):
+                oTarget.toggleClass ('J_Show');
+                if(oTarget.hasClass('J_Show'))
+                    Y.jsonp(
+                        sub(url, {
+                            mindate:this.get('minDate'),
+                            maxdate:this.get('maxDate')
+                        }),
+                        {
+                            on: {
+                                success: function(data) {
+                                    that.set('data', data);
+                                    oTarget.setContent('\u9690\u85cf\u623f\u6001')
+                                }
+                            }
+                        }
+                    );
+                else {
+                    this.set('data', null);
+                    oTarget.setContent('\u663e\u793a\u623f\u6001');
+                }
+                break;              
+        }
+    }, 'button', oCal);
+});
+</script>
+</head>
+
+<body>
+<h1 class="title">å¯æ˜¾ç¤ºä»·æ ¼çš„é…’åº—å…¥ä½ç¦»åº—æ—¥å†é€‰æ‹©ä»£ç <em>ï¼ˆé™å®šèŒƒå›´åå¯å¼‚æ­¥åŠ è½½æˆ¿æ€ä¿¡æ¯ï¼‰</em><a href="javascript:if(confirm('http://www.sucaihuo.com/jquery/27/2743/demo/3045.html  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼ş½«±»¼ÓÈëÏÂÔØ¶ÓÁĞ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.sucaihuo.com/jquery/27/2743/demo/3045.html'" tppabs="http://www.sucaihuo.com/jquery/27/2743/demo/api.html" target="_blank">APIæ–‡æ¡£</a></h1>
+<div id="J_Example" class="example">
+    <button class="J_Count" data-value="1">å•æ—¥å†</button>
+    <button class="J_Count" data-value="2">åŒæ—¥å†</button>
+    <button class="J_Count" data-value="3">ä¸‰æ—¥å†</button>
+    <br />
+    <button class="J_Limit" data-limit="90">é™å®šèŒƒå›´ï¼ˆä»Šå¤©->90å¤©ï¼‰</button>
+    <button class="J_Limit" data-limit="60" data-date="2017-06-01">æŒ‡å®šæ—¥å†æ—¶é—´å¹¶é™å®šèŒƒå›´ï¼ˆ2012å¹´06æœˆ1å·->60å¤©ï¼‰</button>
+</div>
+</body>
+</html>

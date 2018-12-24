@@ -394,79 +394,6 @@ var $ui = {
         }
     },
     /*
-     * 获取多语言
-     * @p        {string} 项目名
-     * @l        {string} 语言类型Ch En
-     */
-    getLanjson: function(p, l) {
-        console.warn('已废弃')
-        return
-        var lan, pro, vals;
-        if (l == undefined || l == null) {
-            lan = this.readCookie("language");
-            lan = lan == "" ? this.languageid : lan;
-        } else {
-            lan = l;
-        }
-        this.writeCookie({
-            name: 'language',
-            value: lan
-        });
-        if (p == undefined || p == null) {
-            pro = this.getProjectId();
-            pro = pro == "" ? 'Base' : pro;
-        } else {
-            pro = p;
-        }
-        pro = pro.toLowerCase(); // 路径都是小写的
-        if (pro === 'sc') {
-            pro = 'base';
-        }
-        // console.info('load project lan:' + pro);
-        $.ajax({
-            type: "GET",
-            url: "./" + pro + "/resources/language/" + lan + ".json",
-            data: "",
-            async: false,
-            dataType: "json",
-            success: function(data) {
-                vals = data;
-            },
-            error: function(e, d, c) {
-                // alert(d);
-                vals = null;
-            }
-        });
-        return vals;
-    },
-    getLan: function (isCommon, lan) {
-        lan = lan || this.readCookie("language")
-        if(!lan) {
-          lan = 'Ch'
-          this.writeCookie({
-            name: 'language',
-            value: lan
-          })
-        }
-        var type = isCommon ? 'common' : 'project'
-        var url = 'language/{type}.{lan}.json'
-                    .replace('{type}', type)
-                    .replace('{lan}', lan)
-        var lanObj
-        $.ajax({
-            url: url,
-            async: false,
-            dataType: "json",
-            success: function(data) {
-                lanObj = data;
-            }
-        })
-        return lanObj
-    },
-    getCodeName: function (item) {
-        return $ui.readCookie('language') === 'En' ? item.keyvalue_en : item.keyvalue;
-    },
-    /*
      * ajax提交
      * @type        {string} 类型 init:get
      * @url         {string} 地址
@@ -992,15 +919,15 @@ var $ui = {
             }
 
             //加载语言包、改变面包屑、定位项目及菜单
-            var isRedirect = this.loadLanguageChangeBreadcrumbLocateMenu(options.menuUrl || newUrl, options.isFormMenu);
-            if(isRedirect){// 如果重向的，loadLanguageChangeBreadcrumbLocateMenu 会做重定向
-                return;
-            }
+            // var isRedirect = this.loadLanguageChangeBreadcrumbLocateMenu(options.menuUrl || newUrl, options.isFormMenu);
+            // if(isRedirect){// 如果重向的，loadLanguageChangeBreadcrumbLocateMenu 会做重定向
+            //     return;
+            // }
             //打开遮罩
             $ui.openMask();
             //隐藏视图页和copyright
-            $("#main-wrapper").hide();
-            $("#copyright").hide();
+            // $("#main-wrapper").hide();
+            // $("#copyright").hide();
 
             //上本次的路由地址记录到缓存中，供下次刷新时用（可以直接定位到菜单）
             var _tempNewUrl = newUrl.charAt(newUrl.length - 1) == "/" ? newUrl.substr(0, newUrl.length - 1) : newUrl;
@@ -1024,77 +951,9 @@ var $ui = {
             setTimeout(function() {
                 //页面跳转
                 $ui.ui_location.path(newUrl).replace();
-                // $ui.resizeLeftMenuHeight();
                 $ui.scope.$apply();
             }, 100);
         }
-    },
-    /*
-     * 加载语言包、改变面包屑、定位项目及菜单
-     * @newUrl        {string}    新的路由地址
-     * @isFormMenu    {bool}      是否来自菜单，目的区分是否需要定位菜单（true：来自菜单，false：来自快捷菜单或者其它方式）
-     */
-    loadLanguageChangeBreadcrumbLocateMenu: function(newUrl, isFormMenu) {
-        if (!newUrl || newUrl.trim() == "")
-            return;
-        var isRedirect = false;
-        // debugger;
-        newUrl = newUrl.charAt(newUrl.length - 1) == "/" ? newUrl.substr(0, newUrl.length - 1) : newUrl;
-        console.info(newUrl);
-        // var fatherModuleList = $ui.scope.urlFatherModule[newUrl.replace(/\//g, '_')];
-        // if(newUrl === '/dashboard'){
-        //     fatherModuleList = [{
-        //         name: 'sc'
-        //     }]
-        // }
-        // if(!fatherModuleList && newUrl !== '/link'){
-        //     fatherModuleList = $ui.scope.urlFatherModule[newUrl.replace(/\//g, '_') + '_'];
-        // }
-        // 对于项目首页，没有权限，跳项目下有权限的页
-        // if(!fatherModuleList){
-        //     var currPathProject = $ui.getProjectId(newUrl);
-        //     if(currPathProject == 'SC' ){
-        //         currPathProject = 'BASE';
-        //     }
-        //     if(newUrl == homePageRoute[currPathProject]){
-        //         for(var key in $ui.scope.urlFatherModule){
-        //             if($ui.scope.urlFatherModule.hasOwnProperty(key)){
-        //                 var loopModule = $ui.scope.urlFatherModule[key];
-        //                 var loopName = loopModule[0].name || 'SC';
-        //                 if(loopName == 'Base'){
-        //                     loopName = 'SC';
-        //                 }
-        //                 if(loopName === $ui.getProjectId(newUrl)){
-        //                     fatherModuleList = loopModule;
-        //                     this.directTo({
-        //                         url: loopModule[2].href
-        //                     });
-        //                     isRedirect =  true;
-        //                     break;
-        //                 }
-        //             }
-        //         }
-        //     }
-        // }
-        // fatherModuleList [一级菜单，二级菜单，三级菜单（当前页面）]
-        // if (fatherModuleList && fatherModuleList.length > 0 && fatherModuleList[0].name) {
-        //     $ui.setProjectId(fatherModuleList[0].name);
-        //     //改变面包屑
-        //     // $ui.scope.breadcrumb = angular.copy(fatherModuleList);
-        //     $('.page__item').removeClass('page__item--current');
-        //     $('.module').removeClass('module--unfold');
-        //     var $currPage = $('.page__item').filter('[data-jump-url="' + newUrl + '"]')
-        //     $currPage.addClass('page__item--current')
-        //         .closest('.module').addClass('module--unfold')
-
-        // } else {
-        //     // debugger;
-            $ui.setProjectId($ui.getProjectId());
-        //     console.warn('未在菜单中创建的路径');
-        // }
-
-        return isRedirect;
-
     },
     /*
      * 切割路由
@@ -1302,7 +1161,6 @@ var $ui = {
                         "-webkit-transform": "rotate(-90deg)",
                         "transition": "all 0.4s ease 0"
                     });
-                    $ui.resizeLeftMenuHeight();
                     //展开
                 } else {
                     $(this).removeClass("view_folded");
@@ -1311,7 +1169,6 @@ var $ui = {
                         "-webkit-transform": "rotate(0deg)",
                         "transition": "all 0.4s ease 0"
                     });
-                    $ui.resizeLeftMenuHeight();
                 }
             });
         }
@@ -1551,22 +1408,6 @@ var $ui = {
             },
             cb: callback
         });
-
-    },
-    /*
-     * 重计算左侧菜单栏的高度
-     * @mainHeight    {int}     内容页的高度（不传则采用$("#main-wrapper").height()获取）
-     */
-    resizeLeftMenuHeight: function(mainHeight) {
-        setTimeout(function() {
-            var _height = mainHeight || $("#main-wrapper").height();
-            // 重计算左侧菜单栏的高度
-            if (_height > 1059) {
-                $("#tab-nav").height(_height + 82 - 22);
-            } else {
-                $("#tab-nav").height(_height + 82 - 20);
-            }
-        }, 400);
 
     },
     /*

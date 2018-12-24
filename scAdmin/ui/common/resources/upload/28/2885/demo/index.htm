@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>基于vue的图片上传组件</title>
+<link type="text/css" rel="stylesheet" href="../../../27/2740/demo/style.css" tppabs="http://www.sucaihuo.com/jquery/28/2885/demo/css/style.css"/>
+<script type="text/javascript" src="../../../27/2740/2891.html" tppabs="http://www.sucaihuo.com/jquery/28/2885/demo/js/vue.min.js"></script>
+</head>
+
+<body>
+<div id="app">
+  <div class="hello">
+    <div class="upload">
+      <div class="upload_warp">
+        <div class="upload_warp_left" @click="fileClick">
+          <img src="../../../27/2731/demo/tag-IOS" tppabs="http://www.sucaihuo.com/jquery/28/2885/demo/images/upload.png">
+        </div>
+        <div class="upload_warp_right" @drop="drop($event)" @dragenter="dragenter($event)" @dragover="dragover($event)">
+          或者将文件拖到此处
+        </div>
+      </div>
+      <div class="upload_warp_text">
+        选中{{imgList.length}}张文件，共{{bytesToSize(this.size)}}
+      </div>
+      <input @change="fileChange($event)" type="file" id="upload_file" multiple style="display: none"/>
+      <div class="upload_warp_img" v-show="imgList.length!=0">
+        <div class="upload_warp_img_div" v-for="(item,index) of imgList">
+          <div class="upload_warp_img_div_top">
+            <div class="upload_warp_img_div_text">
+              {{item.file.name}}
+            </div>
+            <img src="../../../27/2731/demo/logout-r=www.sucaihuo.com-video-128" tppabs="http://www.sucaihuo.com/jquery/28/2885/demo/images/del.png" class="upload_warp_img_div_del" @click="fileDel(index)">
+          </div>
+          <img :src="162-0-0-0-0" tppabs="http://www.sucaihuo.com/jquery/28/2885/demo/item.file.src">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+//import up from  './src/components/Hello'
+var app = new Vue({
+  el: '#app',
+  data () {
+    return {
+      imgList: [],
+      size: 0
+    }
+  },
+  methods: {
+    fileClick(){
+      document.getElementById('upload_file').click()
+    },
+    fileChange(el){
+      if (!el.target.files[0].size) return;
+      this.fileList(el.target.files);
+      el.target.value = ''
+    },
+    fileList(files){
+      for (let i = 0; i < files.length; i++) {
+        this.fileAdd(files[i]);
+      }
+    },
+    fileAdd(file){
+      this.size = this.size + file.size;//总大小
+      let reader = new FileReader();
+      reader.vue = this;
+      reader.readAsDataURL(file);
+      reader.onload = function () {
+        file.src = this.result;
+        this.vue.imgList.push({
+          file
+        });
+      }
+    },
+    fileDel(index){
+      this.size = this.size - this.imgList[index].file.size;//总大小
+      this.imgList.splice(index, 1);
+    },
+    bytesToSize(bytes){
+      if (bytes === 0) return '0 B';
+      let k = 1000, // or 1024
+        sizes = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'],
+        i = Math.floor(Math.log(bytes) / Math.log(k));
+      return (bytes / Math.pow(k, i)).toPrecision(3) + ' ' + sizes[i];
+    },
+    dragenter(el){
+      el.stopPropagation();
+      el.preventDefault();
+    },
+    dragover(el){
+      el.stopPropagation();
+      el.preventDefault();
+    },
+    drop(el){
+      el.stopPropagation();
+      el.preventDefault();
+      this.fileList(el.dataTransfer.files);
+    }
+  }
+})
+</script>
+</body>
+</html>

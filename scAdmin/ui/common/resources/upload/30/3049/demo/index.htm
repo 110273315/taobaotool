@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>基于Vue的随机星星评分组件</title>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.min.css'>
+<link type="text/css" rel="stylesheet" href="../../../../modals/33/3316/style.css" tppabs="http://www.sucaihuo.com/jquery/30/3049/demo/css/style.css">
+</head>
+
+<body>
+<div id="app">
+  <div class="card">
+    <div class="card-content">
+      <div class="media-content">
+        <p class="title is-4">随机星星评分</p>
+        <p class="subtitle is-6">基于Vue的简易评分组件</p> 
+      </div>
+      <star-rating :max="5" :current="value"></star-rating><br>
+      <br>
+      <button class="button" @click="randomValue">点此评分 ({{value}})</button>
+    </div>
+  </div>
+</div>
+<script type="text/x-template" id="star-rating">
+  <div class="star-rating">
+    <span v-for="n in max">&star;</span>
+    <div class="star-rating__current" :style="{width: getRating + '%'}">
+      <span v-for="n in max">&starf;</span>
+    </div>
+  </div>
+</script>
+<script type="text/javascript" src="../../../../modals/30/3077/2891.html" tppabs="http://www.sucaihuo.com/jquery/30/3049/demo/js/vue.min.js"></script>
+<script type="text/javascript" src="../../../../modals/30/3077/tag-微信分销.html" tppabs="http://www.sucaihuo.com/jquery/30/3049/demo/js/index.js"></script>
+</body>
+</html>

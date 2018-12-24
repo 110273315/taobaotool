@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=no">
+    <script src="../../../../sources/4/424/tag-æ–‡å­—ç‰¹æ•ˆ" tppabs="http://www.sucaihuo.com/jquery/29/2956/demo/js/simpl-fontSize.min.js"></script>
+    <title>é’¢é•šåˆæˆä¸“åŒº</title>
+    <link rel="stylesheet" href="../../../../uploads/course/2017/09/13/2966.html.css" tppabs="http://www.sucaihuo.com/jquery/29/2956/demo/css/simpl-public.min.css">
+    <link rel="stylesheet" href="../../../../uploads/course/2017/09/13/2891.html.css" tppabs="http://www.sucaihuo.com/jquery/29/2956/demo/css/compound.min.css">
+    <script type="text/javascript" src="../../../../sources/4/424/3383.html" tppabs="http://www.sucaihuo.com/jquery/29/2956/demo/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="../../../../sources/4/424/2800.html" tppabs="http://www.sucaihuo.com/jquery/29/2956/demo/js/easing.min.js"></script>
+
+</head>
+<body>
+    <div class="com-main">
+        <div class="title"></div>
+        <ul class="coin">
+            <li class="gb">
+                <h3>2559</h3>
+            </li>
+            <li class="jd">
+                <h3>2559</h3>
+            </li>
+        </ul>
+        <div class="slots">
+            <ul class="clearfix">
+                <li class="fl active" data-type="gb">é’¢é•šåˆæˆ</li>
+                <li class="fr" data-type="jd">é‡‘è±†åˆ†è§£</li>
+            </ul>
+            <h3>50 é’¢é•š/æ¬¡</h3>
+            <dl class="clearfix">
+                <dd class="fl gb"></dd>
+                <dd class="fl gb"></dd>
+                <dd class="fl gb"></dd>
+            </dl>
+            <div class="play-btn" data-type="gb"></div>
+            <div class="yg"></div>
+            <div class="rule"></div>
+        </div>
+        <a style='display:block;font-size:2rem;color:#f74646;margin:1rem auto;width:100%;text-align:center' href="javascript:if(confirm('https://www.ruyidao.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.ruyidao.com/'" tppabs="https://www.ruyidao.com/" class='padding'>èµåŠ©ï¼šæ·±åœ³å¦‚æ„å²›</a>
+    </div>
+</body>
+</html>
+<script>
+    $(function () {
+       
+
+        //è§„åˆ™
+        $('http://www.sucaihuo.com/jquery/29/2956/demo/2768.html').click(function () {
+
+        });
+
+        //æŠ½å¥–åˆ‡æ¢
+        $('.com-main .slots ul li').each(function () {
+            $(this).click(function () {
+                if($(this).hasClass('active')){
+                    return false
+                }
+                $(this).addClass('active').siblings().removeClass('active');
+                var type=$(this).attr('data-type');
+                $(".com-main .slots dl dd").attr({'class':"fl "+type});
+                $('.com-main .slots .play-btn').attr('data-type',type);
+                if(type==='gb'){
+                   $('.com-main .slots h3').html('50 é’¢é•š/æ¬¡');
+                }else if(type==='jd'){
+                    $('.com-main .slots h3').html('1 é‡‘è±†/æ¬¡')
+                }
+            });
+        });
+
+        //æŠ½å¥–playæŒ‰é’®
+        $('.com-main .slots .play-btn').click(function () {
+            var u = 160.4; //ç›’å­çš„é«˜åº¦
+            var random='000';//ä¸­å¥–éšæœºæ•° ,åˆ†è§£é‡‘è±†è·å–é’¢é•š'000','111','222'ï¼Œ
+            var _this=$(this);
+            var type=$(this).attr('data-type');
+            if(!_this.hasClass('active')){
+                _this.addClass('active');
+                $(".com-main .slots dl dd").slots(u,random,function () {
+                    _this.removeClass('active'); //è¿˜æœ‰æŠ½å¥–æœºä¼šç§»é™¤active
+                    $.giftWarm("æ­å–œä½ ",'åˆæˆäº†<span>5</span>ä¸ªé‡‘è±†')
+                });
+            }
+        });
+    });
+</script>

@@ -1,3 +1,4 @@
+// @flow
 $(function() {
     isLogin();
     var site_url = $("#footer").attr("data-url");

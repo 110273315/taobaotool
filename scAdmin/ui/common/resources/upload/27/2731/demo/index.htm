@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>城市下拉选择</title>
+<link href="../../../../冰箱除味剂/tag-python.css" tppabs="http://www.sucaihuo.com/jquery/27/2731/demo/css/hsCheckData.css" rel="stylesheet" />
+<style>
+	#demo{
+		margin:0 auto;
+		margin-top:100px;
+		width:700px;
+	}
+</style>
+</head>
+<body>
+
+    <div id="demo">
+        <span>单选</span>
+    	<div id="cityDanXuan" style="width:300px;">
+    	</div>
+        <br />
+        <br />
+        <br />
+        <span>多选</span>
+        <div id="cityDuoXuan" style="width:300px;">
+        </div>
+        <br />
+        <br />
+        <br />
+        <span>默认值</span>
+        <div id="cityMR" style="width:300px;" data-id="11-12-1301">
+        </div>
+    </div>
+	
+	<script src="../../../../甲醛检测剂/自测盒/getEmailCode2" tppabs="http://www.sucaihuo.com/jquery/27/2731/demo/js/jquery.min.js"></script>
+	<script src="../../../../甲醛检测剂/自测盒/45337.jpg" tppabs="http://www.sucaihuo.com/jquery/27/2731/demo/js/cityData.js"></script>
+	<script src="../../../../甲醛检测剂/自测盒/19065.jpg" tppabs="http://www.sucaihuo.com/jquery/27/2731/demo/js/hsCheckData.js"></script>
+	<script>
+	$('#cityDanXuan').hsCheckData({
+		isShowCheckBox: false, //默认为false
+		data: cityData
+	});
+	$('#cityDuoXuan').hsCheckData({
+		isShowCheckBox: true, //默认为false
+		minCheck: 3,//默认为0，不限最少选择个数
+		maxCheck: 6,//默认为0，不限最多选择个数
+		data: cityData
+	});
+	$('#cityMR').hsCheckData({
+		isShowCheckBox: true,
+		data: cityData
+	});
+	</script>
+
+</body>
+</html>
+

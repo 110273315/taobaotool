@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>mui上拉和下拉加载更多数据</title>
+        <meta name="keywords" content="mui上拉刷新,mui下拉加载" />
+<meta name="description" content="mui中的pullupRefresh会阻止onclick触发事件，mui下拉加载触发a标签链接,mui下拉加载函数pullupRefresh触发click绑定事件"  />
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="stylesheet" href="../../../../避孕套/103-0-0-0-0-0.css" tppabs="http://www.sucaihuo.com/jquery/25/2520/demo/mui/css/mui.css">
+        <link rel="stylesheet" type="text/css" href="122-0-0-0-0-0.css" tppabs="http://www.sucaihuo.com/jquery/25/2520/demo/seller.css"/>
+    </head>
+    <body class="body_message body_white">
+        <div class="mui-content">
+            <div class="container">
+                <div id="pullrefresh" class="mui-content mui-scroll-wrapper" style="margin:1rem 0 0">
+                   <div class="mui-scroll">
+                        <ul class="mui-table-view mui-table-view-chevron goods_area clearfix" id="ul_lists">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="../../../../验孕测孕/114-0-0-0-0-0" tppabs="http://www.sucaihuo.com/jquery/25/2520/demo/mui/js/mui.min.js"></script>
+        <script type="text/javascript" src="104-0-0-0-0-0" tppabs="http://www.sucaihuo.com/jquery/25/2520/demo/jquery_mobile.js"></script>
+        <script type="text/javascript">
+            mui.init({
+                pullRefresh: {
+                    container: '#pullrefresh',
+                    up: {
+                        contentrefresh: '正在加载...',
+                        callback: pullupRefresh
+                    }
+                }
+            });
+            var count = 0;
+            var pagenum = 8;
+            var totalnum = 20;
+            var pagesize = Math.floor(totalnum / pagenum);
+            /**
+             * 上拉加载具体业务实现
+             */
+            function pullupRefresh() {
+                setTimeout(function() {
+                    mui('#pullrefresh').pullRefresh().endPullupToRefresh((++count > pagesize)); //参数为true代表没有更多数据了。
+                    var li = "";
+                    $.post("http://www.sucaihuo.com/jquery/25/2520/demo/1973.html", {pagenum: pagenum, count: count}, function(data) {
+                        for (var i = 0; i < data.length; i++) {
+                            li += "<li  data-url='" + data[i]['url'] + "'><div class='item'><img src='" + data[i]['logo'] + "'><div class='title'><a href='javascript:;'>" + data[i]['title'] + "</a></div><div class='price clearfix'><span class='price_real'>￥" + data[i]['id'] + "</span></div></div></li>";
+                        }
+                        $("#ul_lists").append(li);
+
+                    }, "json")
+                }, 800);
+            }
+            if (mui.os.plus) {
+                mui.plusReady(function() {
+                    setTimeout(function() {
+                        mui('#pullrefresh').pullRefresh().pullupLoading();
+                    }, 1000);
+
+                });
+            } else {
+                mui.ready(function() {
+                    mui('#pullrefresh').pullRefresh().pullupLoading();
+                });
+            }
+            $(function() {
+                //mui触屏点击
+                $("#pullrefresh").on('tap', 'li', function(event) {
+                    var url = $(this).attr("data-url");
+                    location.href = url;
+                });
+            })
+
+        </script>
+    </body>
+</html>

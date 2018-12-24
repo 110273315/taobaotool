@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>无标题文档</title>
+    <link href="tag-前端.css" tppabs="http://www.sucaihuo.com/jquery/26/2618/demo/WebPageGuide.css" rel="stylesheet" />
+
+	<script type="text/javascript" src="search.html-keyword=手机&mtype=1&cat_id=9" tppabs="http://www.sucaihuo.com/jquery/26/2618/demo/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="tag-面试" tppabs="http://www.sucaihuo.com/jquery/26/2618/demo/WebPageGuide.js"></script>
+<script type="text/javascript">
+$(function(){
+	var steplist = $.WebPageGuide({showCloseButton:true});
+	steplist.newGuidStep("#target","这是标题1啊这是标题1啊这是标题1啊这是标题1啊","更嫩诶诶额更嫩诶诶额更嫩诶诶额更嫩诶诶额嫩诶诶额更嫩诶诶额更嫩诶诶额嫩诶诶额更嫩诶诶额更嫩诶诶额嫩诶诶额更嫩诶诶额更嫩诶诶额更嫩诶诶额");
+	steplist.newGuidStep("#target2","这是标题2啊","更嫩诶诶额");
+	steplist.newGuidStep("#target3","这是标题3啊","更嫩诶诶额");
+    steplist.newGuidStep("#target4","这是标题4啊","更嫩诶诶额");
+    steplist.newGuidStep("#target5","这是标题5啊","更嫩诶诶额");
+    steplist.newGuidStep("#target6","这是标题6啊","更嫩诶诶额");
+	steplist.startGuide();
+});
+</script>
+</head>
+
+<body style="height:2500px;">
+		<div style="width:200px;height:200px;background-color:blue;margin:0px 0px 0px 200px;" id="target"></div>
+	   <div style="width:200px;height:200px;background-color:red;position:absolute;left:20px;top:500px" id="target2"></div>
+       <div style="width:200px;height:200px;background-color:yellow;position:absolute;left:20px;top:1700px" id="target3"></div>
+       <div style="width:200px;height:200px;background-color:green;position:absolute;right:20px;top:700px" id="target4"></div>
+       <div style="width:200px;height:200px;background-color:brown;position:absolute;right:20px;top:300px" id="target5"></div>
+       <div style="width:200px;height:200px;background-color:pink;position:absolute;right:20px;top:20px" id="target6"></div>
+</body>
+</html>

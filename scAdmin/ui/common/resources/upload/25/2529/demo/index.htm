@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=utf-8"UTF-8">
+<title>一个简单的jQuery日历插件Calendar.js</title>
+<link type="text/css" rel="stylesheet" href="../../../16/1681/demo/logout-r=www.sucaihuo.com-video.css" tppabs="http://www.sucaihuo.com/jquery/25/2529/demo/css/calendar.css">
+<script type="text/javascript" src="../../../../../libs.baidu.com/jquery/16/1681/getEmailCode2" tppabs="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript"src="../../../16/1643/demo/tag-医生.html" tppabs="http://www.sucaihuo.com/jquery/25/2529/demo/js/calendar.js"></script>
+</head>
+
+<body>
+<h3>Calendar.js--一个简单的日历插件</h3>
+<ul>
+	<li>体积很小</li>
+	<li>使用方便</li>
+	<li>便于我们使用到不同场景</li>
+	<li>只需修改CSS就可适用PC端和移动端</li>
+</ul>
+<hr>
+点击查看效果
+<div style='width:300px;height:30px;line-height:30px;padding-left: 6px;background:#efefef;' id='date'></div>
+<h3 class='info'></h3>
+</body>
+<script>
+$('#date').on('click',function(){
+	new Calendar({id:'#date',callback:function(y,m,d){
+		if(arguments.length>1){
+			$('#date').html(y+'-'+m+'-'+d);
+			$('.info').html('选定的时间是：'+y+'年'+m+'月'+d+'日');
+		}else{
+			$('.info').html('您为什么选择：'+y);
+		}
+	}
+	})
+})
+</script>
+</html>

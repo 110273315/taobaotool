@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no;" name="viewport" />
+<meta content="yes" name="apple-mobile-web-app-capable" /> 
+<meta content="black" name="apple-mobile-web-app-status-bar-style" /> 
+<meta content="telephone=no" name="format-detection" />
+<head>
+<title>jQuery时间范围选择插件dateRange.js</title>
+<link type="text/css" rel="stylesheet" href="../../../../2/246/tag-游戏.html.css" tppabs="http://www.sucaihuo.com/jquery/30/3077/demo/css/dateRange.css"/>
+<script type="text/javascript" src="../../../../ueditor/php/upload/image/20170830/getEmailCode2" tppabs="http://www.sucaihuo.com/jquery/30/3077/demo/js/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../ueditor/php/upload/image/20170830/tag-蔬菜.html" tppabs="http://www.sucaihuo.com/jquery/30/3077/demo/js/dateRange.js"></script>
+</head>
+
+<body>
+<div>
+	<br><br>
+	<div class="ta_date" id="div_date1">
+		<span class="date_title" id="date1"></span>
+	</div>
+</div>
+</body>
+
+<script type="text/javascript">
+//var date=new Date('2017-9-15').getTime();
+var date=new Date().getTime();
+console.log(date)
+//var STATS_START_TIME = '4329148800';
+var dateRange1 = new pickerDateRange('date1', {
+	aRecent90Days : 'aRecent90Days', //最近90天
+//	isTodayValid : true,
+	isTodayValid : true,
+	startDate: '2017-9-16',
+	endDate: '2017-09-19',
+	magicSelect : false,
+	needCompare : false,
+	defaultText : '离开',
+	autoSubmit : false,
+	//stopToday : false,
+	//autoSubmit : true, 
+	inputTrigger : 'input_trigger1',
+	success : function(obj) {
+		console.log(obj)
+	},
+	theme : 'ta'
+});
+</script>
+</html>

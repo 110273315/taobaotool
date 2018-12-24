@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head> 
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+        <title>jQuery全选、反选与获取选中值</title>
+        <meta name="keywords" content="jQuery全选,jQuery反选" />
+        <meta name="description" content="今天给大家分享一段基于jQuery的全选、反选与获取选中值。文章结合demo，代码简洁，基本覆盖选项选择操作的方方面面，希望可以帮到有喜欢前端的朋友们。" />
+        <link rel="stylesheet" type="text/css" href="../../../../蜂蜜/mls_global140607.png.css" tppabs="http://www.sucaihuo.com/jquery/css/common.css" />
+        <style type="text/css">
+            ul li{line-height:30px; padding:4px 0; font-size:14px}
+        </style>
+    </head>
+    <body>
+        <div class="head">
+            <div class="head_inner">
+                <a class="logo" href="../../../../index.htm" tppabs="http://www.sucaihuo.com/">
+                    <img alt="素材火logo" src="../../../../Public/images/0-0-0-0-17-0" tppabs="http://www.sucaihuo.com/Public/images/logo.jpg"/>
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="title"><a href="../../../../js/10.html" tppabs="http://www.sucaihuo.com/js/10.html">jQuery全选、反选与获取选中值</a></h2>
+            <div class="demo">
+                <ul id="list">   
+                    <li><label><input type="checkbox" value="1"> 1.老男孩</label></li> 
+                    <li><label><input type="checkbox" value="2"> 2.我最亲爱的</label></li> 
+                    <li><label><input type="checkbox" value="3"> 3.邂逅</label></li> 
+                    <li><label><input type="checkbox" value="4"> 4.心痛2013</label></li> 
+                    <li><label><input type="checkbox" value="5"> 5.要爱爱</label></li> 
+                    <li><label><input type="checkbox" value="6"> 6.怎么说我不爱你</label></li> 
+                </ul> 
+                <input type="checkbox" id="all"/> 
+                <input type="button" value="全选" class="btn" id="selectAll"/>   
+                <input type="button" value="全不选" class="btn" id="unSelect"/>   
+                <input type="button" value="反选" class="btn" id="reverse"/>   
+                <input type="button" value="获得选中值" class="btn" id="getValue"/> 
+            </div>  
+        </div>
+        <div class="foot">
+            Powered by sucaihuo.com  本站皆为作者原创，转载请注明原文链接：<a href="../../../../index.htm" tppabs="http://www.sucaihuo.com/" target="_blank">www.sucaihuo.com</a>
+        </div>
+        <script type="text/javascript" src="../../../../Public/js/other/jquery.js" tppabs="http://www.sucaihuo.com/Public/js/other/jquery.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                //全选或全不选
+                $("#all").click(function() {
+                    if (this.checked) {
+                        $("#list :checkbox").attr("checked", true);
+                    } else {
+                        $("#list :checkbox").attr("checked", false);
+                    }
+                });
+                //全选  
+                $("#selectAll").click(function() {
+                    $("#list :checkbox,#all").attr("checked", true);
+                });
+                //全不选
+                $("#unSelect").click(function() {
+                    $("#list :checkbox,#all").attr("checked", false);
+                });
+                //反选 
+                $("#reverse").click(function() {
+                    $("#list :checkbox").each(function() {
+                        $(this).attr("checked", !$(this).attr("checked"));
+                    });
+                    allCheck();
+                });
+
+                //设置全选复选框
+                $("#list :checkbox").click(function() {
+                    allCheck();
+                });
+
+                //获取选中选项的值
+                $("#getValue").click(function() {
+                    var valArr = new Array;
+                    $("#list :checkbox[checked]").each(function(i) {
+                        valArr[i] = $(this).val();
+                    });
+                    var vals = valArr.join(',');
+                    alert(vals);
+                });
+            });
+            function allCheck() {
+                var num_all = $("#list :checkbox").size(); //选项总个数
+                var num_checked = $("#list :checkbox:checked").size(); //选中个数
+                if (num_all == num_checked) { //若选项总个数等于选中个数 
+                    $("#all").attr("checked", true); //全选选中
+                } else {
+                    $("#all").attr("checked", false);
+                }
+            }
+        </script> 
+
+    </body>
+</html>
+
+<!-- 以下是统计及其他信息，与演示无关，不必理会 -->
+<div style="width:728px;margin:0 auto">
+    <script type="text/javascript">
+        /*700*90 创建于 2015-06-27*/
+        var cpro_id = "u2176575";
+    </script>
+    <script src="../../../../../cpro.baidustatic.com/70067454/tag-商务.html" tppabs="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+</div>
+

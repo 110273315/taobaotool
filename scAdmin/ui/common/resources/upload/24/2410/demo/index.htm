@@ -1,0 +1,188 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>原生js抽奖</title>
+<style>
+	*{
+		width:1000px;
+		margin:30px auto 0;
+	}
+	#div1{
+		width:800px;
+		height:300px;
+		/*
+		background:green;
+		*/
+		float:left;
+	}
+	#div2{
+		width:100px;
+		height:600px;
+		/*
+		background:red;
+		*/
+		float:left;
+	}
+	
+	#div2 ul{
+		list-style:none;
+		width:200px;
+		height:300px;
+		float:left;
+		/*
+		background:green;
+		*/
+		margin:100px 0 0 0;
+	}
+	#div2 ul li{
+		width:200px;
+		height:30px;
+		font-size:20px;
+		color:#FFF;
+		/*margin-left:-40px;
+		background:green;
+		*/
+	}
+	#div2 ul li input{
+		width:15px;
+		height:15px;
+	}
+	img{
+		width:100px;
+		height:100px;
+		margin:130px 0 0 70px;
+	}
+	#div3 input{
+		width:100px;
+		height:30px;
+		margin:0 0 0 105px;
+	}
+</style>
+<script type="text/javascript">
+	//一等奖内定抽奖系统
+	window.onload=function(){
+		var oDiv=document.getElementById('div1');
+		var aImag=oDiv.getElementsByTagName('img');
+		var oInput=document.getElementsByTagName('input');
+		var timer1=null;
+		var timer2=null;
+		var timer3=null;
+		var timer4=null;
+		var num=0;
+		//	图片随随机数变化
+		function haha1(){
+				aImag[0].src='images/'+parseInt((Math.random()*10)%6)+'.png';
+		}
+		function haha2(){
+				aImag[1].src='images/'+parseInt((Math.random()*10))+'.png';
+		}
+		function haha3(){
+				aImag[2].src='images/'+parseInt((Math.random()*10))+'.png';
+		}
+		function haha4(){
+				aImag[3].src='images/'+parseInt((Math.random()*10))+'.png';
+		}
+		
+		oInput[3].onclick=function(){
+			clearInterval(timer1);
+			clearInterval(timer2);
+			clearInterval(timer3);
+			clearInterval(timer4);
+			timer1=setInterval(haha1,50);
+			timer2=setInterval(haha2,50);
+			timer3=setInterval(haha3,50);
+			timer4=setInterval(haha4,50);
+			//return false;
+		}
+
+		oInput[4].onclick=function(){
+			num++;
+			if(num%4==1){
+				
+				if(timer1!=null){
+					clearInterval(timer1);
+						if(oInput[0].checked){
+							aImag[0].src='../../../../videos/0/90/291.html'/*tpa=http://www.sucaihuo.com/jquery/24/2410/demo/images/1.png*/;//内定的第一位数
+							timer1=null;
+						}else{
+							timer1=null;
+						}
+					
+				}else{
+					num=0;
+				}
+			}else if(num%4==2){
+				
+				if(timer2!=null){
+					clearInterval(timer2);
+					if(oInput[0].checked){
+							aImag[1].src='../../../../videos/0/90/3551'/*tpa=http://www.sucaihuo.com/jquery/24/2410/demo/images/3.png*/;//内定的第二位
+							timer2=null;
+						}else{
+							timer2=null;
+						}
+				}else{
+					num=0;
+				}
+			}else if(num%4==3){
+				
+				if(timer3!=null){
+					clearInterval(timer3);
+					if(oInput[0].checked){
+							aImag[2].src='../../../../videos/0/90/291.html'/*tpa=http://www.sucaihuo.com/jquery/24/2410/demo/images/1.png*/;//内定的第三位
+							timer3=null;
+						}else{
+							timer3=null;
+						}
+				}else{
+					num=0;
+				}
+			}else{
+				
+				if(timer4!=null){
+					clearInterval(timer4);
+					if(oInput[0].checked){
+							aImag[3].src='../../../../videos/0/90/2793.html'/*tpa=http://www.sucaihuo.com/jquery/24/2410/demo/images/4.png*/;//内定的第四位
+							timer4=null;
+						}else{
+							timer4=null;
+						}
+				}else{
+					num=0;
+				}
+				num=0;
+			}
+		}
+		oInput[5].onclick=function(){
+			clearInterval(timer1);
+			clearInterval(timer2);
+			clearInterval(timer3);
+			clearInterval(timer4);
+			for(var i=0; i<aImag.length; i++){
+				aImag[i].src='../../../../videos/0/90/2399.html'/*tpa=http://www.sucaihuo.com/jquery/24/2410/demo/images/0.png*/;
+			}
+		}
+	}
+</script>
+</head>
+
+<body style="background-color: #232323;">
+<div id="div2">
+	<ul>
+        <li><input type="radio" name="v"> 一等奖</li>
+        <li><input type="radio" name="v"> 二等奖</li>
+        <li><input type="radio" name="v"> 三等奖</li>
+    </ul>
+</div>
+<div id="div1">
+	<img src="../../../../videos/0/90/2399.html" tppabs="http://www.sucaihuo.com/jquery/24/2410/demo/images/0.png"/>
+	<img src="../../../../videos/0/90/2399.html" tppabs="http://www.sucaihuo.com/jquery/24/2410/demo/images/0.png"/>
+	<img src="../../../../videos/0/90/2399.html" tppabs="http://www.sucaihuo.com/jquery/24/2410/demo/images/0.png"/>
+	<img src="../../../../videos/0/90/2399.html" tppabs="http://www.sucaihuo.com/jquery/24/2410/demo/images/0.png"/>
+</div>
+<div id="div3">
+<input type="button" value="开始"/>&nbsp;<input type="button" value="停止"/>&nbsp;<input type="button" value="重置"/>
+</div>
+</body>
+</html>

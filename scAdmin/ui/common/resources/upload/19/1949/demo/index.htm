@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Jquery单图片压缩上传插件pictureHandle.js</title>
+   
+   <link type="text/css" rel="stylesheet" href="../../../../sources/4/452/3289.html.css" tppabs="http://www.sucaihuo.com/jquery/19/1949/demo/css/uploadSingleImg.css">
+   <link type="text/css" rel="stylesheet" href="../../../../sources/4/452/0-20-108-1-96-0.css" tppabs="http://www.sucaihuo.com/jquery/19/1949/demo/css/bootstrap.css">
+   <link type="text/css" rel="stylesheet" href="../../../../sources/4/452/style.css" tppabs="http://www.sucaihuo.com/jquery/19/1949/demo/css/style.css"><!--自行修改input样式-->
+
+   <script type="text/javascript" src="../../../../sources/4/449/tag-文件夹.html" tppabs="http://www.sucaihuo.com/jquery/19/1949/demo/js/jquery-1.9.1.min.js"></script>
+   <script type="text/javascript" src="../../../../sources/4/449/3247.html" tppabs="http://www.sucaihuo.com/jquery/19/1949/demo/js/tools.js"></script>
+   <script type="text/javascript" src="../../../../sources/4/449/3146.html" tppabs="http://www.sucaihuo.com/jquery/19/1949/demo/js/pictureHandle.js"></script>
+   
+</head>
+<body>
+
+<form>
+
+    <!--文件选择input-->
+    <h3>文件选择：</h3>
+    <input class="btn btn-default" type="file" id="upFile" />
+
+    <!--文件选择input中已选择文件重置(采用form表单的reset重置按钮重置)-->
+    <h3>重置文件选择：</h3>
+    <input class="btn btn-default" type="reset" id="reBtn" value="清空" />
+
+    <!--提交压缩后的base64文件数据给后台-->
+    <h3>传给后台</h3>
+    <input class="btn btn-default" type="button" id="upTo" value="提交"/>
+
+    <!--后台所要获取的文件base64-->
+    <h3>后台获取base64文件数据：(一个隐藏域)</h3>
+    <input id="imgOne" name="imgOne" type="hidden"/>
+
+    <!--所选文件压缩前预览-->
+    <h3>压缩前预览：</h3>
+    <img src="" id="preview"/>
+
+    <!--所选文件压缩后预览-->
+    <h3>压缩后预览：</h3>
+    <img src="" id="nextview"/>
+
+</form>
+
+</body>
+</html>

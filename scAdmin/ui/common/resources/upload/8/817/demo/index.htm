@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery仿途牛首页定时幻灯片轮播效果</title>
+        <style type="text/css">
+            body{background:url("../../../30/3009/4-113-0-0-0-0")/*tpa=http://www.sucaihuo.com/jquery/8/817/demo/images/bg.jpg*/;}
+            *{margin:0px;padding:0px;}
+            #box{
+                width:735px;height:350px;
+                margin:50px auto;position:relative;
+                background:#fff;
+            }
+            .con{
+                width:735px;height:350px;overflow:hidden;
+            }
+            .con ul li{list-style-type:none;}
+            .prev{
+                width:45px;height:100px;
+                position:absolute;left:0px;top:50%;margin-top:-50px;
+                background:url("../../../30/3009/94-0-0-0-0-0")/*tpa=http://www.sucaihuo.com/jquery/8/817/demo/images/button.png*/;cursor:pointer;
+                display:none;opacity:0.5;
+            }
+            .next{
+                width:45px;height:100px;
+                position:absolute;right:0px;top:50%;margin-top:-50px;
+                background:url("../../../30/3009/94-0-0-0-0-0")/*tpa=http://www.sucaihuo.com/jquery/8/817/demo/images/button.png*/;
+                background-position:-55px 0px;cursor:pointer;
+                display:none;opacity:0.5;
+            }
+            .nav{
+                width:720px;height:30px;
+                position:absolute;left:50%;margin-left:-360px;
+                bottom:10px;
+            }
+            .nav ul li{
+                width:119px;height:30px;background:rgba(255,255,255,0.6);
+                list-style-type:none;float:left;
+                margin-right:1px;text-align:center;
+                line-height:30px;font-size:12px;color:#333;cursor:pointer;
+            }
+            .nav ul .bg{background:rgba(0,0,0,0.6);color:#fff;}
+            .nav ul .bg a{color:#fff;}
+            a{text-decoration: none;color:#333}
+        </style>
+    </head>
+    <body>
+        <div id="box">
+            <div class="con">
+                <ul>
+                    <li><a href="../../../../js/2903.html" tppabs="http://www.sucaihuo.com/js/748.html" target='_blank'> <img src="../../../30/3009/1.jpg" tppabs="http://www.sucaihuo.com/jquery/8/817/demo/images/1.jpg" alt='elastiStack拖拽堆叠在一起的图片' /> </a></li>
+                    <li><a href="../../../../js/2561.html" tppabs="http://www.sucaihuo.com/js/749.html" target='_blank'> <img src="../../../30/3009/template" tppabs="http://www.sucaihuo.com/jquery/8/817/demo/images/2.jpg" alt='jQuery以波浪形式展现图片' /> </a></li>
+                    <li><a href="../../../../js/2019.html" tppabs="http://www.sucaihuo.com/js/750.html" target='_blank'> <img src="../../../30/3009/3.jpg" tppabs="http://www.sucaihuo.com/jquery/8/817/demo/images/3.jpg" alt='simpleBtChecks美化复选框checkbox' /> </a></li>
+                    <li><a href="../../../../js/tag-博客.html" tppabs="http://www.sucaihuo.com/js/751.html" target='_blank'> <img src="../../../30/3009/60-0-0-0-0-0" tppabs="http://www.sucaihuo.com/jquery/8/817/demo/images/4.jpg" alt='css3演示4种不同的全屏幻灯片滑动效果' /> </a></li>
+                    <li><a href="../../../../js/222-0-0-0.htm" tppabs="http://www.sucaihuo.com/js/752.html" target='_blank'> <img src="../../../30/3009/5.jpg" tppabs="http://www.sucaihuo.com/jquery/8/817/demo/images/5.jpg" alt='lightbox制作个性化弹出层' /> </a></li>
+                    <li><a href="../../../../js/300.html" tppabs="http://www.sucaihuo.com/js/753.html" target='_blank'> <img src="../../../30/3009/6.jpg" tppabs="http://www.sucaihuo.com/jquery/8/817/demo/images/6.jpg" alt='classicAccordion演示三种经典的手风琴效果' /> </a></li>
+                </ul>
+            </div>
+            <div class="prev"></div>
+            <div class="next"></div>
+            <div class="nav">
+                <ul>
+                    <li class="bg"><a href="../../../../js/7-0-0-6-0-0.htm" tppabs="http://www.sucaihuo.com/js/476.html" target='_blank'>位置插件 </a></li>
+                    <li><a href="../../../../js/grid.html" tppabs="http://www.sucaihuo.com/js/477.html" target='_blank'>瀑布流</a></li>
+                    <li><a href="../../../../php/2644.html" tppabs="http://www.sucaihuo.com/js/478.html" target='_blank'>幻灯片</a></li>
+                    <li><a href="../../../../js/3431.htm" tppabs="http://www.sucaihuo.com/js/479.html" target='_blank'>日期时分秒</a></li>
+                    <li><a href="../../../../js/480.html" tppabs="http://www.sucaihuo.com/js/480.html" target='_blank'>裁剪图片</a></li>
+                    <li><a href="../../../../js/23-12-0-0-0-0.htm" tppabs="http://www.sucaihuo.com/js/481.html" target='_blank'>星级插件 </a></li>
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript" src="../../../29/2934/jquery.js" tppabs="http://www.sucaihuo.com/jquery/8/817/demo/js/jquery.js"></script>
+        <script type="text/javascript">
+            var i = 0;
+            var time = 0;
+            $("#box").hover(function() {
+                $(".prev").fadeIn(300);
+            }, function() {
+                $(".prev").fadeOut(300);
+            })
+            $("#box").hover(function() {
+                $(".next").fadeIn(300);
+            }, function() {
+                $(".next").fadeOut(300);
+            })
+            $(".nav ul li").hover(function() {
+                i = $(this).index();
+                $(".con ul li").eq(i).fadeIn(100).siblings().fadeOut(100);
+                $(this).addClass("bg").siblings().removeClass("bg");
+                clearInterval(time);
+            }, function() {
+                time = setInterval("junmper()", 3000);
+            })
+            $(".prev").click(function() {
+                i--;
+                if (i < 0)
+                    i = 5;
+                $(".con ul li").eq(i).fadeIn(100).siblings().fadeOut(100);
+                $(".nav ul li").eq(i).addClass("bg").siblings().removeClass("bg");
+            })
+            $(".next").click(function() {
+                i++;
+                if (i > 5)
+                    i = 0;
+                $(".con ul li").eq(i).fadeIn(100).siblings().fadeOut(100);
+                $(".nav ul li").eq(i).addClass("bg").siblings().removeClass("bg");
+            })
+            $(".prev").hover(function() {
+                clearInterval(time);
+            }, function() {
+                time = setInterval("junmper()", 3000);
+            })
+            $(".next").hover(function() {
+                clearInterval(time);
+            }, function() {
+                time = setInterval("junmper()", 3000);
+            })
+            function junmper() {
+                i++;
+                if (i > 5)
+                    i = 0;
+                $(".con ul li").eq(i).fadeIn(100).siblings().fadeOut(100);
+                $(".nav ul li").eq(i).addClass("bg").siblings().removeClass("bg");
+            }
+            time = setInterval("junmper()", 3000);
+        </script>
+    </body>
+</html>
+
+<!-- 以下是统计及其他信息，与演示无关，不必理会 -->
+
+<p class="vad">
+    <a href="../../../../index.htm" tppabs="http://www.sucaihuo.com/" target="_blank">sucaihuo.com</a>
+    <a href="../../../../js/817.html" tppabs="http://www.sucaihuo.com/js/817.html" target="_blank">说 明</a>
+    <a href="../../../../js/817.html" tppabs="http://www.sucaihuo.com/js/817.html" target="_blank">下 载</a>
+</p>
+<style type="text/css">
+    .vad { margin: 120px 0 5px; font-family: Consolas,arial,宋体,sans-serif; text-align:center;}
+    .vad a { display: inline-block; height: 36px; line-height: 36px; margin: 0 5px; padding: 0 50px; font-size: 14px; text-align:center; color:#eee; text-decoration: none; background-color: #222;}
+    .vad a:hover { color: #fff; background-color: #000;}
+    .thead { width: 728px; height: 90px; margin: 0 auto; border-bottom: 40px solid #fff;}
+</style>
+<div style="width:728px;margin:0 auto">
+    <script type="text/javascript">
+        /*700*90 创建于 2015-06-27*/
+        var cpro_id = "u2176575";
+    </script>
+    <script src="../../../../../cpro.baidustatic.com/70067454/tag-商务.html" tppabs="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+</div>

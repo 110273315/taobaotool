@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>代码片段选项卡切换特效</title>
+<link href="../../../../../fonts.googleapis.com/2964.html.css" tppabs="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css'>
+<link type="text/css" rel="stylesheet" href="../../../../modals/3/391/style.css" tppabs="http://www.sucaihuo.com/jquery/30/3056/demo/css/style.css">
+</head>
+
+<body>
+<div class="Container">
+  <nav>
+    <div class="current"></div>
+    <a href="#one" class="active">Ruby</a>
+    <a href="#two">Python</a>
+    <a href="#three">Node</a>
+    <a href="#four">Go</a>
+  </nav>
+  <div class="Contents">
+    <div class="Content" id="one">
+    <pre><code>require "stripe"
+Stripe.api_key = "..."
+
+Stripe::Charge.create(
+  :amount => 2000,
+  :currency => "eur",
+  :source => "tok_mastercard", # obtained with Stripe.js
+  :description => "Charge for hello@thomascullen.io"
+)</code></pre>
+  </div>
+  <div class="Content" id="two">
+    <pre class="python"><code>import stripe
+stripe.api_key = "..."
+
+stripe.Charge.create(
+  amount=2000,
+  currency="eur",
+  source="tok_amex", # obtained with Stripe.js
+  description="Charge for madison.wilson@example.com"
+)</pre></code>
+  </div>
+  <div class="Content" id="three">
+    <pre><code>var stripe = require("stripe")(
+  "..."
+);
+
+stripe.charges.create({
+  amount: 2000,
+  currency: "eur",
+  source: "tok_visa", // obtained with Stripe.js
+  description: "Charge for jayden.martinez@example.com"
+}, function(err, charge) {
+  // asynchronously called
+});</code></pre>
+  </div>
+  <div class="Content" id="four">
+    <pre><code>stripe.Key = "..."
+
+chargeParams := &stripe.ChargeParams{
+  Amount: 2000,
+  Currency: "eur",
+  Desc: "Charge for benjamin.wilson@example.com",
+}
+
+// obtained with Stripe.js
+chargeParams.SetSource("tok_mastercard")
+ch, err := charge.New(chargeParams)</code></pre>
+  </div>
+  </div>
+</div>
+</body>
+
+<script src="../../../../../cdnjs.cloudflare.com/modals/3/389/2948.html" tppabs="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="../../../../../cdnjs.cloudflare.com/modals/31/3184/demo/2946.html" tppabs="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/ruby.min.js"></script>
+<script src="../../../../../cdnjs.cloudflare.com/modals/31/3184/demo/2918.html" tppabs="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+<script src="../../../../../cdnjs.cloudflare.com/modals/31/3184/demo/2916.html" tppabs="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+<script src="../../../../../cdnjs.cloudflare.com/modals/31/3184/demo/2898.html" tppabs="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"></script>
+<script type="text/javascript" src="../../../../modals/31/3184/tag-微信分销.html" tppabs="http://www.sucaihuo.com/jquery/30/3056/demo/js/index.js"></script>
+</html>

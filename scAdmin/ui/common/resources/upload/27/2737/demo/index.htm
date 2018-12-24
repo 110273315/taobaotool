@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=utf-8"UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>简单的Vue分页插件pagination.js</title>
+<link type="text/css" rel="stylesheet" href="../../../24/2403/3-0-108-1-96-0.css" tppabs="http://www.sucaihuo.com/jquery/27/2737/demo/css/bootstrap.min.css">
+</head>
+
+<body>
+<div id="app" style="text-align: center;margin-top: 138px;">
+    <navigation :pages="pages" :current.sync="pageNo" @navpage="msgListView"></navigation>
+</div>
+<script src="../../../../sucaihuo/position/2891.html" tppabs="http://www.sucaihuo.com/jquery/27/2737/demo/js/vue.min.js"></script>
+<script type="text/javascript" src="../../../../sucaihuo/position/4-0-0-0-0-5" tppabs="http://www.sucaihuo.com/jquery/27/2737/demo/js/pagination.min.js"></script>
+<script type="text/javascript">
+new Vue({
+    el:"#app",
+    data:{
+        pageNo: 1,
+        pages:15
+    },
+    methods:{
+        msgListView(curPage){
+            //根据当前页获取数据
+            alert("当前是第"+curPage+"页");
+        }
+    }
+})
+</script>
+</body>
+</html>

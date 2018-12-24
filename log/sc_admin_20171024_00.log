@@ -1,0 +1,22 @@
+[D] 21:35:08.886(0000000000001CB4):master log socket server started! host=::, port=49359
+[I] 21:35:08.886(0000000000001CB4):master log channel started!port=49359
+[W] 21:35:09.915(0000000000001CB4):try restart worker 0# ...
+[I] 21:35:09.978(0000000000001CB4):start worker success,pid=1FD0(0#)
+[D] 21:35:11.116(0000000000001CB4):worker process log socket connected!
+[D] 21:35:11.102(0000000000001FD0):worker 0# ready to connect master log socket server, port=49359
+[D] 21:35:11.118(0000000000001FD0):worker 0# log socket connected!
+[I] 21:35:15.158(0000000000001FD0):PBEncoder success load file 'E:\项目\product\protocol\sc_system.proto.js'
+[T] 21:35:15.564(0000000000001FD0):Http is running,port is 18910
+[W] 23:21:11.549(0000000000001CB4):recv 'Ctrl+C' break sign!next exit!
+[D] 23:21:11.668(0000000000001CB4):worker process log socket error!err=Error: read ECONNRESET
+    at exports._errnoException (util.js:1020:11)
+    at TCP.onread (net.js:568:26)
+[D] 23:21:11.669(0000000000001CB4):worker process log socket close!
+[W] 23:21:11.798(0000000000001CB4):worker 1FD0(0#) died.
+[W] 23:21:11.968(0000000000001CB4):try restart worker 0# ...
+[I] 23:21:13.443(0000000000001CB4):start worker success,pid=3EC(0#)
+[D] 23:21:17.123(0000000000001CB4):worker process log socket connected!
+[D] 23:21:17.103(00000000000003EC):worker 0# ready to connect master log socket server, port=49359
+[D] 23:21:17.126(00000000000003EC):worker 0# log socket connected!
+[I] 23:21:23.762(00000000000003EC):PBEncoder success load file 'E:\项目\product\protocol\sc_system.proto.js'
+[T] 23:21:24.504(00000000000003EC):Http is running,port is 18910

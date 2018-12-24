@@ -26,14 +26,14 @@ function indexController($scope, $http, $location, $filter, $route, $dialogs) {
     $(this).closest(".login-info").toggleClass("login-info--unfold")
   })
   // 头部工具栏目的操作
-  $('.tool_wrapper').hover(function() {
-    $(this).find('dd').slideDown('fast')
-  }, function() {
-    $(this).find('dd').slideUp('fast')
-  })
-  $('.tool_wrapper').on('click', 'dd', function() {
-    $(this).hide()
-  })
+  // $('.tool_wrapper').hover(function() {
+  //   $(this).find('dd').slideDown('fast')
+  // }, function() {
+  //   $(this).find('dd').slideUp('fast')
+  // })
+  // $('.tool_wrapper').on('click', 'dd', function() {
+  //   $(this).hide()
+  // })
     //首页
   if (!$ui.getItem("lastRoute")) {
     //页面默认跳转页
@@ -54,15 +54,15 @@ function indexController($scope, $http, $location, $filter, $route, $dialogs) {
   $scope.$on('$viewContentLoaded', function() {
     // 显示页面各部分
     $("#main-wrapper").css('display', 'block');
-    $("#leftbarApp").show();
-    $("#copyright").show();
+    // $("#leftbarApp").show();
+    // $("#copyright").show();
     // $('.page-nav-header').width($("#main-wrapper").width() - 40)
     // 关闭遮罩
-    $ui.closeMask();
+    // $ui.closeMask();
     //form的validate初始化
     $ui.formValidate();
     // 重计算左侧菜单栏的高度
-    $ui.resizeLeftMenuHeight();
+    // $ui.resizeLeftMenuHeight();
     var currProjectId = $ui.getProjectId();
     $ui.setProjectId(currProjectId);
     // $scope.$$phase || $scope.$apply();
